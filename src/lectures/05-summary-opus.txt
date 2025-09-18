@@ -1,0 +1,135 @@
+# Lecture 5: Hands-On with Climate Integrated Assessment Models
+
+## Introduction and Course Transition
+
+This lecture marks a significant transition point in the Applied Earth Economy Modeling course. The first third of the course has focused on establishing foundational concepts and understanding the trajectory of where the field is headed. Now, the course shifts toward hands-on work with specific tools and applications. The distinction between understanding what earth economy modeling is, which has been covered in previous lectures, and actually applying specific tools in practice represents the core focus of this transition. A key goal of the course is to equip students with practical tools that enable independent research capabilities. This objective drives both the inclusion of a research project in the curriculum and the structured approach to practicing with these tools together before students embark on independent work.
+
+The lecture begins with an essential discussion of where climate integrated assessment models (IAMs) fit within the broader ecosystem of modeling approaches. Following this contextual framework, the session examines two critical readings that represent both the foundation and evolution of climate IAMs. The first is a seminal article by Nobel Prize-winning economist William Nordhaus, who created the Dynamic Integrated Climate-Economy (DICE) model. The second reading, by Francis Moore, presents Green DICE, a modern extension of Nordhaus's framework that incorporates ecosystem services and natural capital. While these theoretical discussions provide important context, the primary focus of the session is getting hands-on experience with Julia programming language and running the DICE 2016 model directly on students' computers.
+
+## Technical Setup and Installation Verification
+
+Before diving into the theoretical content, it's important to verify that all students have successfully completed the technical setup required for the hands-on portion of the lecture. The installation process involves downloading Julia, a powerful scientific computing language, along with approximately 3 gigabytes of packages representing about half a million lines of code. This collection represents the collective knowledge and contributions of many developers in the scientific computing community. While not all of these lines of code will execute for the specific applications in this course, having this powerful computational framework installed provides students with a sophisticated calculator capable of complex mathematical operations and model simulations.
+
+The ease of modern installation processes can make it easy to forget how impressive this capability is. In approximately fifteen minutes, students have access to tools that would have required extensive manual configuration and compilation just a few years ago. This accessibility democratizes advanced computational modeling, allowing students to engage with Nobel Prize-winning economic models on their personal computers.
+
+## Positioning Climate IAMs in the Modeling Landscape
+
+Understanding where climate IAMs fit within the broader landscape of modeling approaches is crucial for appreciating their strengths and limitations. The conceptual framework used to organize different types of models considers two primary dimensions: economic detail and biophysical detail. Within this framework, integrated assessment models occupy a specific niche, though the category itself contains significant diversity.
+
+The DICE model, which serves as the primary focus of this lecture, is positioned in the lower left of this conceptual space when considering both economic and biophysical detail. It represents a single-sector, single-region model, making it relatively undetailed in both spatial and sectoral dimensions. However, this simplicity is balanced by its inclusion of optimizing agents over time, which provides meaningful economic and temporal dynamics. This positioning reflects a deliberate design choice that prioritizes tractability and transparency over comprehensive detail.
+
+Climate IAMs, as a category, typically emphasize the economic component more than physical detail. They generally include sophisticated climate modeling capabilities but maintain limited representation of landscape dynamics and spatial heterogeneity. This contrasts with other types of IAMs, such as those used in developing the Shared Socioeconomic Pathways (SSPs) and Land Use Harmonization (LUH2) scenarios, which often provide more detailed spatial and sectoral resolution but may sacrifice some economic sophistication.
+
+## William Nordhaus and the Origins of DICE
+
+William Nordhaus represents a pivotal figure in the development of climate economics. His work on the DICE model fundamentally shaped how economists approach the question of optimal climate policy. Understanding Nordhaus's contribution requires appreciating both the elegance of his approach and the controversies it has generated.
+
+The context for understanding Nordhaus's influence can be illuminated through the work of Bjorn Lomborg, a well-known environmental economist who frequently supports non-consensus opinions on environmental issues. Lomborg has earned a reputation as an intelligent climate skeptic who systematically examines environmental topics through economic analysis, often making counter-arguments against environmental protection based on cost-benefit calculations. His famous article "Recycling is Trash" exemplifies this approach, arguing that recycling can sometimes be worse for the planet when subjected to rigorous cost-benefit analysis.
+
+Lomborg's recent book attempts a comprehensive climate skepticism, delving into scenarios, scientific measurement accuracy, and economic analysis. However, his entire argument ultimately hinges on one crucial number: the cost of solving climate change. The source for this number, which underpins much of modern climate skepticism's economic arguments, is Nordhaus's 2017 paper and the DICE model it describes.
+
+## The Mathematical Framework of DICE
+
+The DICE model's mathematical structure embodies a utilitarian approach to climate policy optimization. Nordhaus aims to maximize social welfare, denoted as W, over time. This optimization is not myopic but extends from the present (T=1) to a terminal time period (T_max), capturing the long-term nature of climate policy decisions. The framework's sophistication lies in its integration of economic production, climate dynamics, and policy choices within a single optimization problem.
+
+The utility function at the heart of the model depends on consumption over time, indexed by T. Population dynamics matter significantly in this framework, so utility is multiplied by the number of people in each time period. The discount factor, R, emerges as perhaps the most crucial and controversial parameter in the entire model. This discount rate fundamentally determines how much climate mitigation the model considers optimal, as it governs the relative weight given to future versus present welfare.
+
+The specific functional form chosen for utility is a constant relative risk aversion (CRRA) function: C\^(1-alpha). This function is elegantly simple, monotonic in consumption, and homogeneous of degree one, making it mathematically tractable while capturing essential features of how utility changes with consumption levels. Abatement efforts are indexed over time, reflecting the temporal flexibility in climate policy where society can choose to abate emissions now or defer action to later periods.
+
+Climate damages represent another critical component of the model, formulated as a quadratic function of average temperature at time t. The specific coefficients of this damage function, along with the discount rate, constitute the most heavily debated aspects of the DICE framework. Despite the complexity of the climate-economy system being modeled, the mathematical structure remains remarkably simple and grounded in standard economic theory. The model maximizes utilitarian value, produces consumption through a production function, and allows society to choose how much to invest in abatement. Abatement increases utility by reducing future climate damages, but this benefit must be weighed against the opportunity cost of reduced current consumption.
+
+The production function in DICE allocates economic efforts to produce output (Y_T), which equals consumption minus the costs of abatement and mitigation. This structure creates a clear trade-off between current consumption and future climate protection, with the optimal balance determined by the model's parameters, particularly the discount rate.
+
+## The Discount Rate Debate
+
+The central question addressed by DICE is determining the optimal level of climate mitigation, and this fundamentally depends on how much society cares about the future relative to the present. If society places high value on future welfare, early mitigation becomes highly effective because benefits accrue over extended time periods and reduce cumulative damage. Conversely, if future welfare is heavily discounted, minimal mitigation appears optimal because the benefits seem too distant to justify current sacrifices.
+
+Nordhaus advocates for what he terms a descriptive approach to setting the discount rate, arguing it should reflect actual economic outcomes observed in real markets. This contrasts with the prescriptive approach, used in other prominent analyses like the Stern Review, which bases the discount rate on normative goals such as achieving specific climate targets. Nordhaus contends that the descriptive approach is superior because it grounds the analysis in observable behavior rather than subjective judgments about what ought to be.
+
+However, this argument faces significant philosophical challenges. Observing only current behavior introduces an inherent bias toward those who exist now, systematically excluding the preferences of future generations who cannot participate in current markets. If one believes future people matter morally, the descriptive approach fails to solve the underlying ethical problem of intergenerational equity. The debate between Nordhaus and Nicholas Stern, who used a much lower discount rate and consequently found much more mitigation to be optimal, characterizes much of modern climate economics.
+
+This philosophical divide has practical implications. The Nordhaus model's relatively high discount rate leads to conclusions favoring modest near-term climate action and relatively low estimates of the social cost of carbon. These results explain why the DICE model is frequently cited by climate skeptics to support arguments against aggressive climate policy.
+
+## Key Results from DICE 2016
+
+The DICE 2016 model generates several important empirical results that illuminate the relationship between economic growth, emissions, and optimal climate policy. Industrial CO2 emissions in the model are directly tied to aggregate GDP, creating a fundamental link between economic activity and climate forcing. Nordhaus compares different model versions, showing that the original DICE 2013 projected higher emissions while the 2016 update shows somewhat lower trajectories.
+
+The model also enables comparison with other modeling efforts through model intercomparison exercises. The RCP8.5 scenario represents the most pessimistic emissions pathway in the climate modeling community, and both DICE 2013 and 2016 generate baseline runs that approach this high-emissions scenario. Nordhaus analyzes how base parameters affect optimal mitigation levels and the social cost of carbon, finding values significantly lower than those advocated in the Stern Review.
+
+These results have profound policy implications. The relatively low social cost of carbon generated by DICE supports arguments for modest climate action, while the model's structure suggests that some degree of warming may be economically optimal when balancing mitigation costs against climate damages. This conclusion has made DICE both influential and controversial in climate policy debates.
+
+## Technical Implementation: From Theory to Practice
+
+Moving from theoretical understanding to practical application requires engaging with the model's computational implementation. The canonical DICE 2016 model was originally implemented in GAMS (General Algebraic Modeling System), a specialized software package for optimizing large systems of equations used extensively in integrated assessment modeling. However, GAMS presents significant barriers to accessibility, with licensing costs around \$3,000 per year and additional expenses for advanced solvers.
+
+The movement toward open-source alternatives represents a democratization of climate-economy modeling. Julia has emerged as a powerful challenger to GAMS's traditional dominance in this space. Julia offers exceptional speed for numerical computation, particularly when combined with the JuMP library for mathematical programming. JuMP provides connections to various solvers, including some originally developed for GAMS, while also enabling the use of free, open-source alternatives.
+
+This shift toward open-source tools has pedagogical importance beyond mere cost savings. The tools students learn in an academic setting will remain accessible after they leave the university environment and lose access to expensive institutional licenses. This continuity enables ongoing engagement with climate-economy modeling throughout their careers.
+
+## Green DICE: Extending the Framework
+
+While the standard DICE model provides important insights, its treatment of natural capital and ecosystem services remains limited. Francis Moore and colleagues developed Green DICE to address this limitation, extending the DICE framework to explicitly incorporate environmental values beyond climate damages. This work, co-authored with Bastian Olvera, represents a significant conceptual and technical advance in integrated assessment modeling.
+
+The standard DICE production function includes manufactured capital (K) and human capital represented as effective labor (A × L), where the A factor captures technological progress and human capital accumulation. This formulation follows standard economic theory where output Y generates social welfare through consumption. The optimization problem remains maximizing utility from consumption subject to production constraints.
+
+A fundamental criticism of the standard model centers on its absence of environmental inputs to production. While manufactured capital and labor are explicitly represented, natural capital remains invisible in the production function. Green DICE addresses this gap by adding natural capital as an explicit factor of production. This natural capital can enter the production function directly alongside K and L, or it can be disaggregated into marketed values such as timber production and ecosystem services like sediment retention and water purification.
+
+The distinction between marketed and non-marketed ecosystem services proves crucial. While marketed natural capital values enter the production function directly, ecosystem services often provide value that markets fail to capture. Green DICE focuses primarily on marketed values but emphasizes the importance of non-marketed ecosystem services for complete welfare accounting. The model also incorporates direct valuation of ecosystem services through existence value and bequest value, representing ways society values the environment beyond its contribution to economic production.
+
+## Quantitative Results from Green DICE
+
+The Green DICE framework is not merely conceptual but fully quantitative, with every component corresponding to specific equations and variables that can be solved computationally. Running Green DICE generates results that can be directly compared with standard DICE outputs while highlighting the impact of incorporating ecosystem services.
+
+The standard DICE model, represented by dotted lines in comparative analyses, shows optimal emissions increasing until approximately 2060 before beginning to decline. Adding ecosystem services fundamentally alters this trajectory. When only market values of ecosystem services are included, emissions begin falling earlier. Including use values strengthens this effect further, and the complete specification incorporating all ecosystem service values results in immediate emission reductions.
+
+Perhaps most significantly, the complete Green DICE specification barely crosses the 1.5°C warming threshold established in the Paris Agreement, contrasting sharply with the 3.0°C warming by 2100 projected by DICE 2016 under optimal policy. This dramatic difference demonstrates how incorporating environmental values changes optimal climate policy prescriptions while maintaining the same fundamental economic framework and optimization approach.
+
+## Social-Economic Feedbacks and Policy Implementation
+
+Recent extensions of Green DICE incorporate additional feedback loops between policy adoption and the socioeconomic system. Implementation of climate policy depends crucially on public support, creating feedback dynamics that influence both the feasibility and effectiveness of emissions reductions. These feedbacks recognize that climate policy does not occur in a vacuum but rather emerges from and shapes social and economic conditions.
+
+Coupling social-economic feedbacks with the Green DICE framework results in emissions trajectories lower than RCP7 in most model runs. While outcomes vary depending on specific parameter assumptions, most runs project approximately half a degree less warming than standard scenarios. However, even aggressive policy scenarios in these extended models barely achieve the Paris Agreement target of limiting warming to 1.5°C, reflecting how much warming is already committed due to past emissions and system inertia.
+
+This sobering result underscores that while mitigation remains crucial, adaptation to climate change has become equally important. The damages already baked into the climate system from historical emissions mean that even optimal policy beginning immediately cannot avoid significant impacts. This reality demands a dual focus on both reducing future emissions and preparing for unavoidable changes.
+
+## Hands-On Implementation with Julia
+
+The practical portion of the lecture focuses on implementing and running climate IAMs using Julia. The installation process begins with downloading the long-term support release of Julia for Windows, Mac, or Linux operating systems. Setting the path variable ensures the command prompt can locate Julia, enabling command-line access to the interpreter. This setup may seem archaic to those accustomed to graphical interfaces, but command-line proficiency remains central to scientific computing and becomes increasingly valuable with advanced usage.
+
+Opening Julia from the command prompt displays ASCII art and loads the compiler. Once ready, the Julia prompt appears, providing access to a powerful calculator environment. While interactive computation is useful, copying and pasting commands becomes inefficient for complex analyses. Script files with the .jl extension provide a better workflow, allowing users to save and run sequences of commands. Julia scripts can be executed by calling Julia with the script filename from the command line.
+
+Julia integrates seamlessly with Jupyter Notebooks, which combine formatted text, code, and outputs in a single document. This integration facilitates reproducible research and educational materials. The most advanced usage involves integrated development environments like VS Code, which provides syntax highlighting, debugging capabilities, and project management tools.
+
+## Package Management and Mimi Framework
+
+Julia's built-in package management system simplifies installing and maintaining scientific software. Entering package mode by typing the right bracket character at the Julia prompt provides access to package management commands. The Mimi modeling framework, developed by David Anthoff, provides specialized tools for running integrated assessment models in Julia. Mimi is well-documented and available on GitHub, with comprehensive tutorials covering installation and usage.
+
+The installation process includes core packages like GDAL for geospatial data, CSV handling utilities, and statistical functions. Updating all packages ensures compatibility and access to the latest features. The course also requires installing MimiDICE2016.jl directly from GitHub, demonstrating how Julia can incorporate packages from various sources beyond the official registry.
+
+After installation, loading packages makes their functionality available in the current session. The command "using Mimi" imports the Mimi framework, while importing MimiDICE2016 loads hundreds of equations defining the DICE model's structure. These equations encode the optimization problem of maximizing social welfare subject to production constraints and climate damages.
+
+## Running and Exploring the DICE Model
+
+Creating a model object with the command "M = MimiDICE2016.get_model()" instantiates a complete representation of the DICE model including data, equations, and solution methods. This object-oriented approach encapsulates all model functionality within a single entity that knows how to configure and solve itself. The analogy to an airplane object with a takeoff procedure illustrates how the model object contains both data and methods for its own execution.
+
+Running the model with "run(m)" triggers the solution process using Julia and JuMP to maximize social welfare and compute all endogenous variables like production, emissions, and temperature over time. The solution process involves sophisticated numerical optimization techniques but remains accessible through simple function calls.
+
+The Mimi framework includes powerful visualization capabilities through the Explore functionality. Executing "explore(m)" launches a user interface, likely built with Electron, providing interactive exploration of model results. Users can examine economic variables like GDP, climate variables like radiative forcing and ocean temperature, and the connections between biophysical systems, emissions, and damages. This exploration tool enables replication of results from Nordhaus's 2017 paper while also facilitating sensitivity analysis and scenario exploration.
+
+## Version Control and Collaborative Development
+
+As earth economy modeling advances toward more complex, interconnected systems, version control becomes essential. Git has emerged as the standard tool for code collaboration, used by major technology companies and the open-source community. Proficiency with Git has become essential for technical positions in both academia and industry.
+
+The Earth Economy DevStack repository, developed at the University of Minnesota, provides a playground for linking multiple models. While DICE represents one self-contained model and Green DICE extends it with additional functionality, researchers often need to combine results from multiple models addressing different aspects of the earth-economy system. The DevStack facilitates these model coupling exercises.
+
+Cloning a repository downloads a complete copy including all files and version history. The hidden .git folder stores this history and enables synchronization with remote repositories. This distributed version control model allows multiple researchers to collaborate on model development while maintaining a complete audit trail of changes.
+
+## Looking Forward: Assignment Structure and Research Applications
+
+The upcoming Assignment 3 represents the first substantial technical assignment of the course, building on the setup completed in Assignment 2. Students will modify existing models to answer research questions like exploring the impact of different discount rates on optimal climate policy. Rather than accepting model results based on others' assumptions, students will gain the capability to rerun models with alternative parameters and examine sensitivity to key assumptions.
+
+This hands-on capability transforms students from passive consumers of model results to active participants in climate-economy research. The ability to access, modify, and run Nobel Prize-winning economic models on personal computers represents a democratization of scientific tools that would have been unimaginable just a generation ago. These skills provide a foundation for independent research that extends beyond the classroom into professional careers in climate policy, economic analysis, and integrated assessment modeling.
+
+## Conclusion
+
+This lecture has bridged the gap between theoretical understanding of climate IAMs and practical implementation skills. Starting from the conceptual positioning of these models within the broader modeling landscape, through the mathematical foundations established by Nordhaus, to the extensions developed in Green DICE, and finally to hands-on implementation in Julia, students now possess both the theoretical knowledge and practical tools for engaging with climate-economy modeling. The combination of understanding the assumptions and debates underlying these models with the ability to modify and run them independently provides a powerful foundation for contributing to one of the most important policy challenges of our time.

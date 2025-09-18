@@ -1,0 +1,120 @@
+---
+title: "Syllabus for APEC 8602: Applied Earth-Economy Modeling"
+format:
+  html: 
+    default
+  pdf:
+    documentclass: article
+    papersize: letter
+    margin-left: 1in
+    margin-right: 1in
+    margin-top: 1in
+    margin-bottom: 1in
+---
+
+
+University of Minnesota\
+Department of Applied Economics
+
+Fall 2025 Tu/Th 8:45-10:00, Ruttan Hall, B22
+
+Associate Professor Justin Johnson\
+Office: 337H Ruttan\
+Phone: 912-961-2382\
+email: jajohns\@umn.edu Office hours: by appointment (or whenever)
+
+2 Credit course.
+
+Office hours: Whenever. I have an open-door policy and would love to chat outside class hours. Just grab a spot on my UMN calendar or stop on by.
+
+## Course Content and Objectives
+
+This course explores the frontier of integrated assessment modeling that links human economic systems with Earth's natural systems. Students will develop hands-on skills in state-of-the-art modeling frameworks that connect climate dynamics, ecosystem services, land-use change, and global economic equilibrium to address critical sustainability challenges.
+
+Building on foundations in natural resource economics and the economics of sustainability, presented in APEC 8601, this course advances into practical applications of earth-economy models including:
+
+-   Hands-on use of climate and land-focused integrated assessment models (IAMs) including DICE and its extensions
+-   Computable general equilibrium models (GTAP, MAGNET, ENVISAGE)
+-   Ecosystem services valuation platforms (InVEST)
+-   Integrated economic-environmental modeling frameworks (IEEM, GTAP-InVEST)
+
+Students will gain proficiency in both the theoretical underpinnings and computational implementation of these models through hands-on coding sessions and problem sets. The course emphasizes the coupling of biophysical and economic systems at multiple scales—from local ecosystem service provision to global climate-economy feedbacks.
+
+Key learning outcomes include:
+
+-   Understanding how to link ecological and economic models across spatial and temporal scales
+-   Developing skills to evaluate policy interventions using computable general equilibrium (CGE) models
+-   Analyzing trade-offs between development goals and environmental sustainability
+-   Creating and interpreting scenarios for future land-use and climate pathways
+-   Critically evaluating the strengths and limitations of integrated assessment approaches
+
+## Prerequisites
+
+APEC 8000-8004 or equivalent (graduate level microeconomic theory). It is possible to take microeconomic theory concurrently. If you haven’t had such classes (or are taking them concurrently) please talk to me about what you will need to do to keep up.
+
+## Course Schedule
+
+See the up-to-date schedule on the [Course Homepage](index.qmd).
+
+
+## Course Grading
+
+Class participation 5%\
+Weekly insights 10%\
+Problem sets 25%\
+Midterm 15%\
+Research project first draft/repository 5%\
+Peer reviews 5%\
+Research project final draft/repository 20%
+
+### Class Participation
+
+We'll examine foundational and cutting-edge articles in sustainability economics, available on Canvas. Understanding the literature's evolution is essential for developing analytical skills. Classes combine lectures with discussion, so completing readings beforehand is crucial for meaningful participation.
+
+### Weekly Insights
+
+Submit a brief question or insight (a few sentences) by Wednesday 6pm via Canvas, drawn from lectures, readings, or current events. Thursday classes begin with discussions of selected submissions, developing them into researchable questions and modeling approaches. These exercises often evolve into mini-workshops on research design and may seed your course projects.
+
+### Problem Sets
+
+Regular problem sets—both analytical and computational—reinforce learning through practice. You'll need proficiency in Python, R, or Matlab (examples will use Python, but any language is acceptable). Collaboration is encouraged, though individual submissions are required.
+
+### Research Project
+
+Each student completes an independent research project with:
+
+-   Initial proposal and outline
+  
+-   First draft with peer review (two classmates)
+
+-   Final paper with revisions based on feedback
+
+-   GitHub repository for replication
+
+-   Class presentation
+
+Projects can extend problem sets or existing literature. The peer review process mirrors academic journal standards, with reviewers providing written critiques and suggestions.
+
+### Late Work Policy
+
+Submit assignments on time or arrange extensions in advance. Late work without valid excuse loses one letter grade per day. Last-minute crises due to procrastination are not acceptable excuses.
+
+## Academic Dishonesty and Plagiarism
+
+The University of Minnesota defines academic dishonesty as “Submission of false records of academic achievement; cheating on assignments or examinations; plagiarizing; altering, forging, or misusing a University academic record; taking, acquiring, or using test materials without faculty permission; acting alone or in cooperation with another to falsify records or to obtain dishonestly grades, honors, awards, or professional endorsement” (University of Minnesota’s Board of Regents Student Conduct Code). Plagiarism is the “use the words or ideas of another person as if they were your own words or ideas” (Merriam Webster Dictionary). If you want to use the exact wording from a previously published work in your own work you must put the wording in quotation marks and cite the source (as shown by example in the prior sentence). If you use ideas or specific facts from a source but do not use the exact words then you still must cite the source of the original ideas or facts. Evidence of academic dishonesty will be forwarded to the Student Scholastic Conduct Committee. TurnItIn is used to check for plagiarism on written assignments.
+
+## Credits and Workload Expectations
+
+One credit is defined as equivalent to an average of three hours of learning effort per week (over a full semester) necessary for an average student to achieve an average grade in the course. For example, a student taking a three credit course that meets for three hours a week should expect to spend an additional six hours a week on coursework outside the classroom.
+
+## Students with Disabilities
+
+The University of Minnesota is committed to providing equitable access to learning opportunities for all students. Disability Services (DS) is the campus office that collaborates with students who have disabilities to provide and/or arrange reasonable accommodations. If you have, or think you may have, a disability (e.g., mental health, attentional, learning, chronic health, sensory, or physical), please contact DS at 612-626-1333 to arrange a confidential discussion regarding equitable access and reasonable accommodations. If you are registered with DS and have a current letter requesting reasonable accommodations, please let me know early in the semester so we can agree on accommodations that will be applied in the course.
+
+## Students with Mental Health Issues
+
+As a student you may experience a range of issues that can cause barriers to learning, such as strained relationships, increased anxiety, alcohol/drug problems, feeling down, difficulty concentrating, and/or lack of motivation. These mental health concerns or stressful events may lead to diminished academic performance or reduce your ability to participate in daily activities. University of Minnesota services are available to assist you with addressing these and other concerns you may be experiencing. You can learn more about the broad range of confidential mental health services available on campus via www.mentalhealth.umn.edu.
+
+## AI Usage Policy
+
+Feel free to use it in whatever way you want, with or without attribution. Mistakes from AI, however, are still your own.

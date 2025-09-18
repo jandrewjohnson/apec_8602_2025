@@ -1,0 +1,142 @@
+All right, everyone, let's get started. Welcome to Lecture 4: Scenarios for the Future and Land Use Change Modeling.
+
+I want to quickly go over the agenda and take stock of where we are. Today, we're going to talk about scenarios, building on the framework from last class, but this time we'll discuss them much more specifically—not just scenarios in general, but specific datasets, particularly for land use and land cover. I assigned two key readings: Pop et al. 2017 and Hurtt et al. 2020. I’ll also mention another paper, Riahi 2017, which I didn’t require but is relevant. These will catch you up to the state of the art on scenarios and land use within those scenarios.
+
+After discussing these topics in general, we’ll get hands-on with QGIS and some of the LUH2 data. Hopefully, everyone saw my message to have QGIS installed on your computer. Any issues with that? Good, excellent.
+
+That’s our plan for today. I also want to look ahead at the calendar and review where we’ve come from. We started with an introduction to earth economy modeling, looked at its origins in national sustainability models and general equilibrium approaches, and today we’re focusing on the scenarios that go into these models.
+
+Looking ahead, we’ll shift gears a bit for Tuesday’s class and take a hands-on approach to understanding integrated assessment models for climate change. Who has heard of William Nordhaus or the DICE model? It’s a pretty famous model, as I mentioned before. It’s been used by climate skeptics to argue that climate change won’t be that bad, but it’s still a foundational model. We’ll also look at an update called the Green DICE Model from Frances Moore. I’ll send instructions for installing that on your computer. Starting today, and especially on Tuesday, we’ll be more hands-on and really embrace the applied nature of this course. We want to not just learn about these concepts, but use the tools.
+
+From there, we’ll have a lecture on inclusive wealth, and then move on to another hands-on session with ecosystem services. That’s the roadmap for the next few classes.
+
+Before diving into the lecture, let’s start your data downloading so it’s ready for the hands-on part at the end of class. But first, I need to explain a bit about the context and how we’ll organize our files.
+
+We’ll return to this in a moment, but please check out the Google Drive link I shared with you. I’ve been writing it as “ya’ll,” but I was recently informed by a classmate from the South that the correct spelling is “y’all.” Apparently, that’s important. I like it because it’s a gender-inclusive word and sounds friendly. Anyway, I shared a Google Drive link with you all. Did everyone get that? Excellent. That’s the link to the NATCAP team’s base data—many terabytes of data, though not the full 50 terabytes.
+
+Ideally, you’d use Google Drive Desktop Sync or something similar to get the data on your computer, but I don’t require you to install that. That’s how I do it, and it’s much faster than downloading individual files. The backup method, which we’ll use today, is to manually download the files if you don’t have the sync app. Everything I say today can also be adapted to work with Google Drive Sync, which is still the preferred method.
+
+Let’s take a look at what I sent you. Did everyone get the link?
+Here’s the critical part, so I’m going to share it with you right now. Did everyone else get it? Okay, I must have typed in a wrong name or something. This won’t go on the recording video. Is that the email you prefer? Let me send it again. Yes, I sent it to your UMN address. Maybe I hit the wrong one. Anyway, that’s the link we’ll use throughout, so it’s good to get that right.
+
+When I shared that with you, I shared something in our shared drive. You don’t have access to the whole drive, but in a folder called Files, we have this base data, and that’s where we’ll be using all the data. In the screenshot, I’m pointing to a specific subset of the base data: the invest sample data, and specifically the carbon model. Let’s take a look at this live, so I’m going to unshare my screen for a moment.
+
+That’s the web version, but what we’re going to do is download the files in such a way that they maintain the exact file structure. I want to make a quick side note: I spend a lot of time programming, and the majority of coding bugs you’ll run into are almost always just pointing to a file that doesn’t exist. I don’t have a source for that statistic, but that’s how it feels to me. Having taught many courses, almost all bugs you get until you reach an advanced stage in programming boil down to downloading a file, putting it in the wrong place, and then telling your program to look for it in the wrong location. To avoid this, we’re all going to use the same file organization, so the sample code I provide will work for everyone.
+
+To follow best practices among programmers, we’re going to use your user directory. If you already do this, great. If not, you might have to get used to it. We’ll organize things in a way that’s the same for all of us. In particular, let me show you: I have a shortcut here, but on Windows, the C drive has a Users directory, and then your username (for example, J.A. Johns). This is important because it allows your code to work across Windows, Mac, and Linux. Many people store everything in the user directory, but I don’t like that because it gets messy with configuration files from different programs. For convenience, I have us create a folder called Files, and that’s where we’ll keep everything we control.
+
+You can see my full organization here. Create a directory called BaseData. From this directory, we’re going to mimic the structure from all the other files. You can see in the shared drive, the path is NetCap Teams > Files > Base Data. All the folders after base data, we’re going to replicate in our user directory. Whenever I say to download a file, like the land use land cover map we’ll get to in a minute, you’ll replicate that folder structure. You wouldn’t just download it into base data; you’d create a folder called Invest Sample Data, then a folder called Carbon, and then download the file into that.
+
+If you have the Google Drive Sync application, it will do that automatically for you. But we’re not just going to download random files; we’re going to keep everything in this directory structure.
+
+Because I’d like to start your downloads now, go ahead and do that with the LULC_CurrentWillamette.tiff file. That’s in the Invest Sample Data > Carbon folder. Is everyone with me? This is one of the most boring points of class, but we have to get it right so we don’t spend a lot of time later not finding files.
+
+Just to show it from the Google Drive interface: the internet here isn’t doing well today, probably because we’re all downloading files at the same time and overwhelming the network. Has anyone besides you (since you don’t have your computer) not gotten the files downloaded, or is there anything about the organization that doesn’t make sense? I shared this base data folder with you. In there, go to Invest Sample Data, then the Carbon folder. I’d like you to download the LULC_CurrentWillamette.tiff file. There are lots of other files that look similar, so make sure you get the exact right one. We don’t want the .tiff.ox.xml file; we want the one that is just .tiff. If you’re using the web interface, you can download it, but it’s tempting to put it in the wrong place. When the download screen pops up on Windows, don’t save it in the Downloads folder. If you do that by mistake, move it afterward. Instead, navigate to your user directory, then Files, then Base Data, and create all the necessary folders if you haven’t already.
+
+We’re going to copy that structure: Invest Sample Data > Carbon. I’ve downloaded everything because I sync the whole drive, but this is where you should have downloaded the LULC_CurrentWillamette.tiff file.
+
+One other note: this course will be increasingly hands-on, with you doing things on your computers. Please, when I ask a question like “Does everybody have it?” that’s not hypothetical—I actually want to see heads nod or thumbs up. It’s hard for me to keep everyone on the same page, so please respond actively if you’re up to speed, or raise your hand if you’re not. It’s much easier to stop and fix a question than to have everyone get out of sync. So, does everyone have the LULC_CurrentWillamette.tiff downloaded in the right location?
+
+It should be in your own user path: user > Files > Base Data > Invest Sample Data > Carbon. Any questions about that?
+Okay, back at it. That's the first file I wanted you to download. That one should have been relatively quick, since it's not a huge file. I also want you to download another file, which is much larger. This is the land use harmonization data that we'll use later today. For that, go into the Google Drive interface on the web, navigate to base data again, but this time, instead of "Invest Sample Data," go to "LUH2." 
+
+From there, go to "raw data." Let me show you on my screen. Let's go up a few levels—here's the base data, LUH2, and then raw data. We're going to learn what all these numbers mean in a moment. Pick one of the files at random, besides the historical one. For example, I'm going with RCP4.5SSP2, but you can choose a different one if you want some variety. In this folder, you'll find a few files. The file names are long, so make sure you can see the end of the file name to get the right one. 
+
+I want you to download the file that starts with "multiple states" and ends with ".nc"—not ".NCOUX." Download this file, but again, make sure you keep the same folder structure as before.
+
+This means that in your file structure, under your user directory, go to Files > Base Data, and create a folder called LUH2, then inside that, "raw data," and then have a folder name that exactly matches the one you chose. I know the screen is a little small, but try to match the folder names exactly.
+
+You only need to create the folders that contain the file I'm asking you to download. The reason this is important is that syncing base data sets can be a nightmare, especially since most of you probably don't have 10 terabytes of storage on your hard drive. If any of you do, I'd be very impressed. I pay a lot just to have 4TB on my machine, and I've never heard of anyone having 10TB locally.
+
+So, if you're downloading this file, just create the folders that contain it. For example, I have base data > LUH2 > raw data, and I chose RCP26_SSP1. Into that folder, I pasted this large file. It's about 612 megabytes, so it's large enough to potentially overwhelm our Wi-Fi for a bit.
+
+Is anyone having trouble getting that download started? If so, please wave your hand at me, because I'm going to assume these files are on your computer after this.
+
+Great. While that's downloading, let's jump back to the slides and talk about what we've just started to download.
+
+Fantastic. Thank you, Geronimo. Sorry, everyone.
+Sorry, I'm just reading the long series of texts. I did feel my phone vibrate, but I don't typically answer my phone when I'm lecturing. I'm going to assume you can see the screen now—is that true? Nobody's answering. Let's move on for the people in person. If we don't hear from you, you'll be voted off the island. Yes, thank you, Haku! Now let's go forward.
+
+Hopefully, everyone online was able to get to the point where you're downloading the base data. Let's jump back into the discussion of scenarios and the data we're using.
+
+Last class, we talked about scenarios in general, and now we're going to talk about very specific scenarios and data. The context for this originates largely from an international body called IPBES, the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services. This organization is dedicated to summarizing the current state of our understanding of biodiversity and ecosystem services. They combine, fund, and support science in this area, addressing the fact that biodiversity has often been ignored compared to issues like climate change. You may have heard of the IPCC, the Intergovernmental Panel on Climate Change. IPBES is essentially the equivalent for biodiversity.
+
+IPBES became well-known through a publication by Sandra Diaz et al. in 2015, which presented their conceptual framework. We won't go into the details of this framework, as it's quite theoretical, but one of the most practical things they did was to identify a useful typology for scenarios. I want to talk through these.
+
+The four scenario types in the IPBES conceptual framework are: exploratory, target-seeking, policy screening, and retrospective.
+
+First, exploratory scenarios are what we usually think of when we talk about scenarios. We're at a point in time, we've seen what's happened in the past, and we want to explore the space of possible futures. For example, if nature's benefits have been declining, we want to know how we might reverse that trend. These scenarios explore possibilities without being specific about how to achieve them.
+
+Second, target-seeking scenarios are about achieving a specific goal, such as the Paris Climate Agreement's target of limiting warming to 1.5 to 2 degrees. Here, we look at what pathways could feasibly get us to that target and rule out those that don't.
+
+Third, policy screening scenarios are perhaps the most common in sustainability science. We might have a menu of different policy options—like a carbon tax, payments for ecosystem services, or a law banning coal—and we try out these scenarios to see how they perform. This helps us identify which policies are most effective on our chosen metrics.
+
+The last type is retrospective scenarios. These are useful for assessing how a policy that was actually implemented performed. We model what we thought would happen, compare it to what actually did happen, and analyze the gap. This is also useful for calibrating our models to reality.
+
+In this context, IPBES and other communities, in coordination with the IPCC, decided to develop specific versions of these scenarios, which led to the creation of the SSPs—Shared Socioeconomic Pathways. The SSPs come from a major paper by Riahi et al. (2017), which involved multiple teams and stakeholders to define a comprehensive set of scenarios for assessing biodiversity and nature in the future.
+
+The SSPs were designed to provide the same benefits for broader sustainability questions as the RCPs—Representative Concentration Pathways—did for climate. RCPs are specific to climate change and describe trajectories of greenhouse gas concentrations, from which we can derive climate change impacts. The SSPs, in contrast, are broader and include factors like population and productivity, making them more complex.
+
+Developing the SSPs involved stakeholder engagement to define different storylines or narratives about the future. These storylines are then translated into specific drivers, such as population, urbanization, and productivity. Policies are also considered, allowing for policy screening within the scenarios. The result is a comprehensive set of country-level projections for inputs like GDP and population, as well as outputs like energy supply, demand, and land use change.
+
+These scenarios are intended to help communities plan for sustainability in a complex world. The SSPs define not just climate variables, but also socioeconomic challenges related to climate change.
+
+To visualize the SSPs, imagine a space with two axes: mitigation challenges (vertical) and adaptation challenges (horizontal). Mitigation refers to preventing climate change, such as through reducing emissions or investing in renewable energy. Low mitigation challenges mean it's easy to reduce emissions, while high challenges mean it's difficult.
+
+Adaptation refers to dealing with the impacts of climate change, such as through air conditioning or health infrastructure. Low adaptation challenges mean it's easy and affordable to adapt, while high challenges mean it's difficult, often due to factors like income inequality.
+
+In this space, the "good" scenarios are those with low challenges for both mitigation and adaptation. For example, SSP1 represents low challenges on both axes. SSP3, on the other hand, represents high challenges for both mitigation and adaptation—the worst-case scenario. The off-diagonal scenarios are also interesting: for example, high mitigation challenges but low adaptation challenges might represent a world where climate change is severe, but societies are resilient and able to cope, perhaps through widespread use of air conditioning. The opposite—low mitigation challenges but high adaptation challenges—might occur if we can reduce emissions but still face significant inequality or lack of infrastructure.
+
+SSP2 is the middle scenario, often called the baseline or business-as-usual, and refers back to what we discussed last lecture.
+Any questions on the overall framing of that?
+Excellent. Unlike what we discussed in the previous lecture, where we talked about general scenarios, these are very specific. This table gives you a sense of the differences: for each scenario, there are different assumptions about the percentage change in cropland, maximum population, the percentage of kilocalories from beef and other sources, GDP, fertilizer, irrigation, and many other factors.
+
+One of the most confusing aspects of the SSPs is how they combine with the RCPs. As I mentioned, RCPs are Representative Concentration Pathways. These are always expressed with a number, which refers to the watts per meter squared of radiative forcing. For example, if 1.9 watts per meter squared are hitting the Earth, that will result in very little climate change. If 8.5 watts per meter squared are hitting, that will result in severe climate change. You can almost think of these as the number of degrees Celsius hotter it will be, though that's not exactly what they define, but it's a useful approximation.
+
+It's possible to pair any SSP with any RCP. In theory, you could have a "good" SSP but still have high emissions, though in practice that combination is unlikely. In reality, there are a set of marker scenarios that are specific combinations of an SSP and an RCP. For example, SSP1 paired with RCP2.6 is referred to as SSP126. Similarly, SSP5 with RCP8.5 is SSP585. While you could do all possible combinations, for computational reasons, only a subset are typically used. This is a limitation that can introduce biases in analyses, but it's the current practice.
+
+With these combinations in place, we can start to make projections. For each scenario, we define assumptions about population, education, GDP, and other factors. These assumptions are the foundation for the different scenarios.
+
+From there, we can calculate projections for critical outcomes, such as energy production and the mix of energy sources. I want to highlight a figure called the primary energy triangle, which shows the different sources of energy: oil and gas, coal, renewables, and nuclear. For example, in 1858, most energy came from burning wood, which is considered renewable. With the Industrial Revolution, coal became dominant, and later, oil and gas. By 2010, the energy mix had shifted again. The different SSPs have different trajectories for the mix of energy sources. SSP1, for example, moves toward renewables.
+
+You might wonder how the input parameters, like population and GDP, are chosen. The Riahi et al. and Pop et al. papers discuss this in detail. Each SSP has a descriptive name: SSP1 is "Sustainability, Taking the Green Road," SSP2 is "Middle of the Road," SSP3 is "A Rocky Road," SSP4 is "A Road Divided" (inequality), and SSP5 is "Fossil-fueled Development." For example, SSP4 represents a world where some countries cut themselves off from international collaboration, leading to greater inequality. SSP5 is interesting because, while it involves high fossil fuel use, it also assumes successful economic growth and adaptation, creating a kind of techno-utopia where climate change occurs but societies adapt, such as in wealthy cities with extensive air conditioning.
+
+Game theory can be relevant here, especially when countries are competing and facing the free rider dilemma. For example, if one country doesn't invest in climate change mitigation because it expects others not to, this can lead to suboptimal outcomes.
+
+The Pop et al. paper, which you read, dives deeper into land use in the different SSPs. Just as you can input SSP assumptions into an energy model to project future energy mixes, you can do the same with land use models. For example, if crop yields increase significantly, less land may be needed for agriculture. The SSPs enable nuanced, quantitative exploration of a wide range of potential futures.
+
+The SSP database provides detailed, downloadable information on all these metrics, and we'll use it in future assignments.
+
+All of these projections are generated by models. In the first paper of the semester, we saw a plot of earth economy models, categorized by economic and spatial detail. The main integrated assessment models (IAMs) used with the SSPs are AIM, GCAM, IMAGE, MESSAGE-GLOBIOM, and REMIND-MAgPIE. These are complex models that solve cost-minimization problems to achieve objectives like food production and minimizing environmental impact, given certain assumptions.
+
+Most of these models are partial equilibrium models, meaning they represent some sectors in detail while holding others fixed. This contrasts with general equilibrium models, which allow all sectors to interact. For example, the DICE model by Nordhaus is a general equilibrium model focused on climate, while the IAMs paired with the SSPs are partial equilibrium and focus on sectors like agriculture and energy.
+
+A key limitation of partial equilibrium models is that they may assume away critical constraints. For example, they might assume agricultural yields will be sufficient to feed the world, rather than modeling yield as an endogenous outcome. If yields are lower than expected, the models may not capture the resulting food shortages. Thus, these models often assume the most important challenges are solved, and then ask what should be done next.
+
+For the last part of class, we'll focus on key outputs from these models related to land use and land cover scenarios, as reported in Pop et al. Their task was to take the SSPs and project what will happen to land use, using the best comprehensive IAMs. They produced projections of land use activities, their effects on the climate system, and how to generate spatially and temporally detailed projections consistent with historical data.
+
+A major contribution of their work is making the data usable by Earth system models. For example, they report changes in crop demand, cropland and pasture, and forest cover under different scenarios. These outputs were combined into the Land Use Harmonization Project, as described in Hurtt et al. (2020). This project connects historical land use data (going back to 10,000 BCE) with future projections under the SSPs and RCPs, creating consistent time series of land use transitions.
+
+Now, let's dive into the data. Hopefully your downloads have finished. We'll look at two maps: a specific land use/land cover map, and the LUH2 time series.
+
+First, you downloaded a TIFF file. A TIFF is just a two-dimensional matrix of numbers, where each number represents a land use class (e.g., 90 for woody wetlands, 82 for cultivated crops). This is what you found in the invest sample data, in the carbon directory: the WillametteCurrentLULC.tiff file.
+
+Let's load this into QGIS. QGIS is free and open source, and has become a superior alternative to ArcGIS for many users. To add data, the easiest way is to drag and drop the file into QGIS. Make sure you select the correct file extension. Once loaded, you can view the legend and see the different land use classes.
+
+If your map appears in black and white, you can change the display settings. Double-click the layer, and in the symbology tab, select "single-band pseudocolor" to apply a color ramp. This will color the map according to the land use classes. The legend will update accordingly. Each pixel represents 30 meters, so you can estimate distances and areas.
+
+This is just an introduction; we'll use this data more in future assignments.
+
+Next, let's load the LUH2 dataset. This is a NetCDF file, which is a time series of rasters (essentially, a stack of TIFFs over time). Drag the NetCDF file into QGIS. It won't display immediately because NetCDFs can have multiple dimensions. In this case, there are layers for different variables and years.
+
+Select the variable "rangeland" and add the layer. If you don't see anything, right-click and choose "zoom to layer" to adjust the view. This map shows the proportion of each grid cell covered by rangeland, as calculated by Pop et al. and the Land Use Harmonization Project.
+
+To improve the display, double-click the layer, go to the symbology tab, and select "single-band pseudocolor." You can choose which year to display by selecting the appropriate band (e.g., time equals 11 corresponds to 2026). Apply a color ramp to visualize the data.
+
+This map shows the distribution of rangeland globally. For example, in some regions, nearly all land is rangeland, while in others, such as the U.S. crop belt, there is little rangeland.
+
+We'll pause here, as we're out of time. Assignment 2 will have you explore these datasets further, looking at changes over time. Are there any questions? Did everyone get both datasets loaded into QGIS?
+
+Excellent. You are now QGIS specialists and will use these skills throughout the course.
+
+Cool. Alright, we're done for now. Thanks, everybody.

@@ -1,0 +1,11 @@
+# 01 - Gitting up to Speed
+
+This assignment will ensure you have the basic tools configured on your machine and that you understand the very basics of version control with git. See the course scehdule on the homepage for due dates. Note that this is a greatly simplified version of what you would learn in APEC 8222. If you are taking that course next, you will return to this in more depth.
+
+1. Install the VS Code editor from [here](https://code.visualstudio.com/).
+2. Install git from [here](https://git-scm.com/downloads).
+3. If you don't already have a Github account, create one [here](https://github.com). REMINDER: don't pick a silly username; this will likely stick with you for life. I'm looking at you, "xX_NoScope360Lol_Xx"...
+4. Navigate to the course Github repository [here](https://github.com/jandrewjohnson/apec_8602_2025) and click the "Fork" button in the upper right corner. This will create a copy of the repository under your own Github account.
+5. Email me the URL to your own copy of the repository (it should look something like `github.com/YOUR_github_username/apec_8602_2025`).
+
+Done!

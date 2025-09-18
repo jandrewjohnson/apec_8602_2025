@@ -1,0 +1,1229 @@
+[
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus for APEC 8602: Applied Earth-Economy Modeling",
+    "section": "",
+    "text": "University of Minnesota\nDepartment of Applied Economics\nFall 2025 Tu/Th 8:45-10:00, Ruttan Hall, B22\nAssociate Professor Justin Johnson\nOffice: 337H Ruttan\nPhone: 912-961-2382\nemail: jajohns@umn.edu Office hours: by appointment (or whenever)\n2 Credit course.\nOffice hours: Whenever. I have an open-door policy and would love to chat outside class hours. Just grab a spot on my UMN calendar or stop on by.",
+    "crumbs": [
+      "Home",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-content-and-objectives",
+    "href": "syllabus.html#course-content-and-objectives",
+    "title": "Syllabus for APEC 8602: Applied Earth-Economy Modeling",
+    "section": "Course Content and Objectives",
+    "text": "Course Content and Objectives\nThis course explores the frontier of integrated assessment modeling that links human economic systems with Earth’s natural systems. Students will develop hands-on skills in state-of-the-art modeling frameworks that connect climate dynamics, ecosystem services, land-use change, and global economic equilibrium to address critical sustainability challenges.\nBuilding on foundations in natural resource economics and the economics of sustainability, presented in APEC 8601, this course advances into practical applications of earth-economy models including:\n\nHands-on use of climate and land-focused integrated assessment models (IAMs) including DICE and its extensions\nComputable general equilibrium models (GTAP, MAGNET, ENVISAGE)\nEcosystem services valuation platforms (InVEST)\nIntegrated economic-environmental modeling frameworks (IEEM, GTAP-InVEST)\n\nStudents will gain proficiency in both the theoretical underpinnings and computational implementation of these models through hands-on coding sessions and problem sets. The course emphasizes the coupling of biophysical and economic systems at multiple scales—from local ecosystem service provision to global climate-economy feedbacks.\nKey learning outcomes include:\n\nUnderstanding how to link ecological and economic models across spatial and temporal scales\nDeveloping skills to evaluate policy interventions using computable general equilibrium (CGE) models\nAnalyzing trade-offs between development goals and environmental sustainability\nCreating and interpreting scenarios for future land-use and climate pathways\nCritically evaluating the strengths and limitations of integrated assessment approaches",
+    "crumbs": [
+      "Home",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#prerequisites",
+    "href": "syllabus.html#prerequisites",
+    "title": "Syllabus for APEC 8602: Applied Earth-Economy Modeling",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nAPEC 8000-8004 or equivalent (graduate level microeconomic theory). It is possible to take microeconomic theory concurrently. If you haven’t had such classes (or are taking them concurrently) please talk to me about what you will need to do to keep up.",
+    "crumbs": [
+      "Home",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-schedule",
+    "href": "syllabus.html#course-schedule",
+    "title": "Syllabus for APEC 8602: Applied Earth-Economy Modeling",
+    "section": "Course Schedule",
+    "text": "Course Schedule\nSee the up-to-date schedule on the Course Homepage.",
+    "crumbs": [
+      "Home",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-grading",
+    "href": "syllabus.html#course-grading",
+    "title": "Syllabus for APEC 8602: Applied Earth-Economy Modeling",
+    "section": "Course Grading",
+    "text": "Course Grading\nClass participation 5%\nWeekly insights 10%\nProblem sets 25%\nMidterm 15%\nResearch project first draft/repository 5%\nPeer reviews 5%\nResearch project final draft/repository 20%\n\nClass Participation\nWe’ll examine foundational and cutting-edge articles in sustainability economics, available on Canvas. Understanding the literature’s evolution is essential for developing analytical skills. Classes combine lectures with discussion, so completing readings beforehand is crucial for meaningful participation.\n\n\nWeekly Insights\nSubmit a brief question or insight (a few sentences) by Wednesday 6pm via Canvas, drawn from lectures, readings, or current events. Thursday classes begin with discussions of selected submissions, developing them into researchable questions and modeling approaches. These exercises often evolve into mini-workshops on research design and may seed your course projects.\n\n\nProblem Sets\nRegular problem sets—both analytical and computational—reinforce learning through practice. You’ll need proficiency in Python, R, or Matlab (examples will use Python, but any language is acceptable). Collaboration is encouraged, though individual submissions are required.\n\n\nResearch Project\nEach student completes an independent research project with:\n\nInitial proposal and outline\nFirst draft with peer review (two classmates)\nFinal paper with revisions based on feedback\nGitHub repository for replication\nClass presentation\n\nProjects can extend problem sets or existing literature. The peer review process mirrors academic journal standards, with reviewers providing written critiques and suggestions.\n\n\nLate Work Policy\nSubmit assignments on time or arrange extensions in advance. Late work without valid excuse loses one letter grade per day. Last-minute crises due to procrastination are not acceptable excuses.",
+    "crumbs": [
+      "Home",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#academic-dishonesty-and-plagiarism",
+    "href": "syllabus.html#academic-dishonesty-and-plagiarism",
+    "title": "Syllabus for APEC 8602: Applied Earth-Economy Modeling",
+    "section": "Academic Dishonesty and Plagiarism",
+    "text": "Academic Dishonesty and Plagiarism\nThe University of Minnesota defines academic dishonesty as “Submission of false records of academic achievement; cheating on assignments or examinations; plagiarizing; altering, forging, or misusing a University academic record; taking, acquiring, or using test materials without faculty permission; acting alone or in cooperation with another to falsify records or to obtain dishonestly grades, honors, awards, or professional endorsement” (University of Minnesota’s Board of Regents Student Conduct Code). Plagiarism is the “use the words or ideas of another person as if they were your own words or ideas” (Merriam Webster Dictionary). If you want to use the exact wording from a previously published work in your own work you must put the wording in quotation marks and cite the source (as shown by example in the prior sentence). If you use ideas or specific facts from a source but do not use the exact words then you still must cite the source of the original ideas or facts. Evidence of academic dishonesty will be forwarded to the Student Scholastic Conduct Committee. TurnItIn is used to check for plagiarism on written assignments.",
+    "crumbs": [
+      "Home",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#credits-and-workload-expectations",
+    "href": "syllabus.html#credits-and-workload-expectations",
+    "title": "Syllabus for APEC 8602: Applied Earth-Economy Modeling",
+    "section": "Credits and Workload Expectations",
+    "text": "Credits and Workload Expectations\nOne credit is defined as equivalent to an average of three hours of learning effort per week (over a full semester) necessary for an average student to achieve an average grade in the course. For example, a student taking a three credit course that meets for three hours a week should expect to spend an additional six hours a week on coursework outside the classroom.",
+    "crumbs": [
+      "Home",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#students-with-disabilities",
+    "href": "syllabus.html#students-with-disabilities",
+    "title": "Syllabus for APEC 8602: Applied Earth-Economy Modeling",
+    "section": "Students with Disabilities",
+    "text": "Students with Disabilities\nThe University of Minnesota is committed to providing equitable access to learning opportunities for all students. Disability Services (DS) is the campus office that collaborates with students who have disabilities to provide and/or arrange reasonable accommodations. If you have, or think you may have, a disability (e.g., mental health, attentional, learning, chronic health, sensory, or physical), please contact DS at 612-626-1333 to arrange a confidential discussion regarding equitable access and reasonable accommodations. If you are registered with DS and have a current letter requesting reasonable accommodations, please let me know early in the semester so we can agree on accommodations that will be applied in the course.",
+    "crumbs": [
+      "Home",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#students-with-mental-health-issues",
+    "href": "syllabus.html#students-with-mental-health-issues",
+    "title": "Syllabus for APEC 8602: Applied Earth-Economy Modeling",
+    "section": "Students with Mental Health Issues",
+    "text": "Students with Mental Health Issues\nAs a student you may experience a range of issues that can cause barriers to learning, such as strained relationships, increased anxiety, alcohol/drug problems, feeling down, difficulty concentrating, and/or lack of motivation. These mental health concerns or stressful events may lead to diminished academic performance or reduce your ability to participate in daily activities. University of Minnesota services are available to assist you with addressing these and other concerns you may be experiencing. You can learn more about the broad range of confidential mental health services available on campus via www.mentalhealth.umn.edu.",
+    "crumbs": [
+      "Home",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#ai-usage-policy",
+    "href": "syllabus.html#ai-usage-policy",
+    "title": "Syllabus for APEC 8602: Applied Earth-Economy Modeling",
+    "section": "AI Usage Policy",
+    "text": "AI Usage Policy\nFeel free to use it in whatever way you want, with or without attribution. Mistakes from AI, however, are still your own.",
+    "crumbs": [
+      "Home",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html",
+    "href": "lectures/05-hands_on_with_climate_iams.html",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "",
+    "text": "NOTE THE REQUIRED BEFORE-CLASS SOFTWARE INSTALL\nInstall Julia and the Mimi modeling framework on your laptop. To do so, first install Julia by following the installation steps documented in this powerpoint: Julia Installation Instructions. All of these steps will be done using the Terminal (Mac/Linux) or Command Prompt (Windows). This might feel awkward at first, but trust me, it’s a critical skill to get good at. Also note that the install might take a while, so please do this well before the lecture and be patient with it. Please do all these steps and confirm they are working before lecture on 2025-09-16.\nReading: Nordhaus 2017, Moore et al. 2022\nOptional readings: Barrage and Nordhaus (2024), Waldhoff et al. (2014)\nSlides as Powerpoint: Download here\nVideo link: On Youtube",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#introduction-and-course-transition",
+    "href": "lectures/05-hands_on_with_climate_iams.html#introduction-and-course-transition",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "Introduction and Course Transition",
+    "text": "Introduction and Course Transition\nThis lecture marks a significant transition point in the Applied Earth Economy Modeling course. The first third of the course has focused on establishing foundational concepts and understanding the trajectory of where the field is headed. Now, the course shifts toward hands-on work with specific tools and applications. The distinction between understanding what earth economy modeling is, which has been covered in previous lectures, and actually applying specific tools in practice represents the core focus of this transition. A key goal of the course is to equip students with practical tools that enable independent research capabilities. This objective drives both the inclusion of a research project in the curriculum and the structured approach to practicing with these tools together before students embark on independent work.\nThe lecture begins with an essential discussion of where climate integrated assessment models (IAMs) fit within the broader ecosystem of modeling approaches. Following this contextual framework, the session examines two critical readings that represent both the foundation and evolution of climate IAMs. The first is a seminal article by Nobel Prize-winning economist William Nordhaus, who created the Dynamic Integrated Climate-Economy (DICE) model. The second reading, by Francis Moore, presents Green DICE, a modern extension of Nordhaus’s framework that incorporates ecosystem services and natural capital. While these theoretical discussions provide important context, the primary focus of the session is getting hands-on experience with Julia programming language and running the DICE 2016 model directly on students’ computers.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#technical-setup-and-installation-verification",
+    "href": "lectures/05-hands_on_with_climate_iams.html#technical-setup-and-installation-verification",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "Technical Setup and Installation Verification",
+    "text": "Technical Setup and Installation Verification\nBefore diving into the theoretical content, it’s important to verify that all students have successfully completed the technical setup required for the hands-on portion of the lecture. The installation process involves downloading Julia, a powerful scientific computing language, along with approximately 3 gigabytes of packages representing about half a million lines of code. This collection represents the collective knowledge and contributions of many developers in the scientific computing community. While not all of these lines of code will execute for the specific applications in this course, having this powerful computational framework installed provides students with a sophisticated calculator capable of complex mathematical operations and model simulations.\nThe ease of modern installation processes can make it easy to forget how impressive this capability is. In approximately fifteen minutes, students have access to tools that would have required extensive manual configuration and compilation just a few years ago. This accessibility democratizes advanced computational modeling, allowing students to engage with Nobel Prize-winning economic models on their personal computers.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#positioning-climate-iams-in-the-modeling-landscape",
+    "href": "lectures/05-hands_on_with_climate_iams.html#positioning-climate-iams-in-the-modeling-landscape",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "Positioning Climate IAMs in the Modeling Landscape",
+    "text": "Positioning Climate IAMs in the Modeling Landscape\nUnderstanding where climate IAMs fit within the broader landscape of modeling approaches is crucial for appreciating their strengths and limitations. The conceptual framework used to organize different types of models considers two primary dimensions: economic detail and biophysical detail. Within this framework, integrated assessment models occupy a specific niche, though the category itself contains significant diversity.\nThe DICE model, which serves as the primary focus of this lecture, is positioned in the lower left of this conceptual space when considering both economic and biophysical detail. It represents a single-sector, single-region model, making it relatively undetailed in both spatial and sectoral dimensions. However, this simplicity is balanced by its inclusion of optimizing agents over time, which provides meaningful economic and temporal dynamics. This positioning reflects a deliberate design choice that prioritizes tractability and transparency over comprehensive detail.\nClimate IAMs, as a category, typically emphasize the economic component more than physical detail. They generally include sophisticated climate modeling capabilities but maintain limited representation of landscape dynamics and spatial heterogeneity. This contrasts with other types of IAMs, such as those used in developing the Shared Socioeconomic Pathways (SSPs) and Land Use Harmonization (LUH2) scenarios, which often provide more detailed spatial and sectoral resolution but may sacrifice some economic sophistication.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#william-nordhaus-and-the-origins-of-dice",
+    "href": "lectures/05-hands_on_with_climate_iams.html#william-nordhaus-and-the-origins-of-dice",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "William Nordhaus and the Origins of DICE",
+    "text": "William Nordhaus and the Origins of DICE\nWilliam Nordhaus represents a pivotal figure in the development of climate economics. His work on the DICE model fundamentally shaped how economists approach the question of optimal climate policy. Understanding Nordhaus’s contribution requires appreciating both the elegance of his approach and the controversies it has generated.\nThe context for understanding Nordhaus’s influence can be illuminated through the work of Bjorn Lomborg, a well-known environmental economist who frequently supports non-consensus opinions on environmental issues. Lomborg has earned a reputation as an intelligent climate skeptic who systematically examines environmental topics through economic analysis, often making counter-arguments against environmental protection based on cost-benefit calculations. His famous article “Recycling is Trash” exemplifies this approach, arguing that recycling can sometimes be worse for the planet when subjected to rigorous cost-benefit analysis.\nLomborg’s recent book attempts a comprehensive climate skepticism, delving into scenarios, scientific measurement accuracy, and economic analysis. However, his entire argument ultimately hinges on one crucial number: the cost of solving climate change. The source for this number, which underpins much of modern climate skepticism’s economic arguments, is Nordhaus’s 2017 paper and the DICE model it describes.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#the-mathematical-framework-of-dice",
+    "href": "lectures/05-hands_on_with_climate_iams.html#the-mathematical-framework-of-dice",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "The Mathematical Framework of DICE",
+    "text": "The Mathematical Framework of DICE\nThe DICE model’s mathematical structure embodies a utilitarian approach to climate policy optimization. Nordhaus aims to maximize social welfare, denoted as W, over time. This optimization is not myopic but extends from the present (T=1) to a terminal time period (T_max), capturing the long-term nature of climate policy decisions. The framework’s sophistication lies in its integration of economic production, climate dynamics, and policy choices within a single optimization problem.\nThe utility function at the heart of the model depends on consumption over time, indexed by T. Population dynamics matter significantly in this framework, so utility is multiplied by the number of people in each time period. The discount factor, R, emerges as perhaps the most crucial and controversial parameter in the entire model. This discount rate fundamentally determines how much climate mitigation the model considers optimal, as it governs the relative weight given to future versus present welfare.\nThe specific functional form chosen for utility is a constant relative risk aversion (CRRA) function: C^(1-alpha). This function is elegantly simple, monotonic in consumption, and homogeneous of degree one, making it mathematically tractable while capturing essential features of how utility changes with consumption levels. Abatement efforts are indexed over time, reflecting the temporal flexibility in climate policy where society can choose to abate emissions now or defer action to later periods.\nClimate damages represent another critical component of the model, formulated as a quadratic function of average temperature at time t. The specific coefficients of this damage function, along with the discount rate, constitute the most heavily debated aspects of the DICE framework. Despite the complexity of the climate-economy system being modeled, the mathematical structure remains remarkably simple and grounded in standard economic theory. The model maximizes utilitarian value, produces consumption through a production function, and allows society to choose how much to invest in abatement. Abatement increases utility by reducing future climate damages, but this benefit must be weighed against the opportunity cost of reduced current consumption.\nThe production function in DICE allocates economic efforts to produce output (Y_T), which equals consumption minus the costs of abatement and mitigation. This structure creates a clear trade-off between current consumption and future climate protection, with the optimal balance determined by the model’s parameters, particularly the discount rate.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#the-discount-rate-debate",
+    "href": "lectures/05-hands_on_with_climate_iams.html#the-discount-rate-debate",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "The Discount Rate Debate",
+    "text": "The Discount Rate Debate\nThe central question addressed by DICE is determining the optimal level of climate mitigation, and this fundamentally depends on how much society cares about the future relative to the present. If society places high value on future welfare, early mitigation becomes highly effective because benefits accrue over extended time periods and reduce cumulative damage. Conversely, if future welfare is heavily discounted, minimal mitigation appears optimal because the benefits seem too distant to justify current sacrifices.\nNordhaus advocates for what he terms a descriptive approach to setting the discount rate, arguing it should reflect actual economic outcomes observed in real markets. This contrasts with the prescriptive approach, used in other prominent analyses like the Stern Review, which bases the discount rate on normative goals such as achieving specific climate targets. Nordhaus contends that the descriptive approach is superior because it grounds the analysis in observable behavior rather than subjective judgments about what ought to be.\nHowever, this argument faces significant philosophical challenges. Observing only current behavior introduces an inherent bias toward those who exist now, systematically excluding the preferences of future generations who cannot participate in current markets. If one believes future people matter morally, the descriptive approach fails to solve the underlying ethical problem of intergenerational equity. The debate between Nordhaus and Nicholas Stern, who used a much lower discount rate and consequently found much more mitigation to be optimal, characterizes much of modern climate economics.\nThis philosophical divide has practical implications. The Nordhaus model’s relatively high discount rate leads to conclusions favoring modest near-term climate action and relatively low estimates of the social cost of carbon. These results explain why the DICE model is frequently cited by climate skeptics to support arguments against aggressive climate policy.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#key-results-from-dice-2016",
+    "href": "lectures/05-hands_on_with_climate_iams.html#key-results-from-dice-2016",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "Key Results from DICE 2016",
+    "text": "Key Results from DICE 2016\nThe DICE 2016 model generates several important empirical results that illuminate the relationship between economic growth, emissions, and optimal climate policy. Industrial CO2 emissions in the model are directly tied to aggregate GDP, creating a fundamental link between economic activity and climate forcing. Nordhaus compares different model versions, showing that the original DICE 2013 projected higher emissions while the 2016 update shows somewhat lower trajectories.\nThe model also enables comparison with other modeling efforts through model intercomparison exercises. The RCP8.5 scenario represents the most pessimistic emissions pathway in the climate modeling community, and both DICE 2013 and 2016 generate baseline runs that approach this high-emissions scenario. Nordhaus analyzes how base parameters affect optimal mitigation levels and the social cost of carbon, finding values significantly lower than those advocated in the Stern Review.\nThese results have profound policy implications. The relatively low social cost of carbon generated by DICE supports arguments for modest climate action, while the model’s structure suggests that some degree of warming may be economically optimal when balancing mitigation costs against climate damages. This conclusion has made DICE both influential and controversial in climate policy debates.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#technical-implementation-from-theory-to-practice",
+    "href": "lectures/05-hands_on_with_climate_iams.html#technical-implementation-from-theory-to-practice",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "Technical Implementation: From Theory to Practice",
+    "text": "Technical Implementation: From Theory to Practice\nMoving from theoretical understanding to practical application requires engaging with the model’s computational implementation. The canonical DICE 2016 model was originally implemented in GAMS (General Algebraic Modeling System), a specialized software package for optimizing large systems of equations used extensively in integrated assessment modeling. However, GAMS presents significant barriers to accessibility, with licensing costs around $3,000 per year and additional expenses for advanced solvers.\nThe movement toward open-source alternatives represents a democratization of climate-economy modeling. Julia has emerged as a powerful challenger to GAMS’s traditional dominance in this space. Julia offers exceptional speed for numerical computation, particularly when combined with the JuMP library for mathematical programming. JuMP provides connections to various solvers, including some originally developed for GAMS, while also enabling the use of free, open-source alternatives.\nThis shift toward open-source tools has pedagogical importance beyond mere cost savings. The tools students learn in an academic setting will remain accessible after they leave the university environment and lose access to expensive institutional licenses. This continuity enables ongoing engagement with climate-economy modeling throughout their careers.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#green-dice-extending-the-framework",
+    "href": "lectures/05-hands_on_with_climate_iams.html#green-dice-extending-the-framework",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "Green DICE: Extending the Framework",
+    "text": "Green DICE: Extending the Framework\nWhile the standard DICE model provides important insights, its treatment of natural capital and ecosystem services remains limited. Francis Moore and colleagues developed Green DICE to address this limitation, extending the DICE framework to explicitly incorporate environmental values beyond climate damages. This work, co-authored with Bastian Olvera, represents a significant conceptual and technical advance in integrated assessment modeling.\nThe standard DICE production function includes manufactured capital (K) and human capital represented as effective labor (A × L), where the A factor captures technological progress and human capital accumulation. This formulation follows standard economic theory where output Y generates social welfare through consumption. The optimization problem remains maximizing utility from consumption subject to production constraints.\nA fundamental criticism of the standard model centers on its absence of environmental inputs to production. While manufactured capital and labor are explicitly represented, natural capital remains invisible in the production function. Green DICE addresses this gap by adding natural capital as an explicit factor of production. This natural capital can enter the production function directly alongside K and L, or it can be disaggregated into marketed values such as timber production and ecosystem services like sediment retention and water purification.\nThe distinction between marketed and non-marketed ecosystem services proves crucial. While marketed natural capital values enter the production function directly, ecosystem services often provide value that markets fail to capture. Green DICE focuses primarily on marketed values but emphasizes the importance of non-marketed ecosystem services for complete welfare accounting. The model also incorporates direct valuation of ecosystem services through existence value and bequest value, representing ways society values the environment beyond its contribution to economic production.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#quantitative-results-from-green-dice",
+    "href": "lectures/05-hands_on_with_climate_iams.html#quantitative-results-from-green-dice",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "Quantitative Results from Green DICE",
+    "text": "Quantitative Results from Green DICE\nThe Green DICE framework is not merely conceptual but fully quantitative, with every component corresponding to specific equations and variables that can be solved computationally. Running Green DICE generates results that can be directly compared with standard DICE outputs while highlighting the impact of incorporating ecosystem services.\nThe standard DICE model, represented by dotted lines in comparative analyses, shows optimal emissions increasing until approximately 2060 before beginning to decline. Adding ecosystem services fundamentally alters this trajectory. When only market values of ecosystem services are included, emissions begin falling earlier. Including use values strengthens this effect further, and the complete specification incorporating all ecosystem service values results in immediate emission reductions.\nPerhaps most significantly, the complete Green DICE specification barely crosses the 1.5°C warming threshold established in the Paris Agreement, contrasting sharply with the 3.0°C warming by 2100 projected by DICE 2016 under optimal policy. This dramatic difference demonstrates how incorporating environmental values changes optimal climate policy prescriptions while maintaining the same fundamental economic framework and optimization approach.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#social-economic-feedbacks-and-policy-implementation",
+    "href": "lectures/05-hands_on_with_climate_iams.html#social-economic-feedbacks-and-policy-implementation",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "Social-Economic Feedbacks and Policy Implementation",
+    "text": "Social-Economic Feedbacks and Policy Implementation\nRecent extensions of Green DICE incorporate additional feedback loops between policy adoption and the socioeconomic system. Implementation of climate policy depends crucially on public support, creating feedback dynamics that influence both the feasibility and effectiveness of emissions reductions. These feedbacks recognize that climate policy does not occur in a vacuum but rather emerges from and shapes social and economic conditions.\nCoupling social-economic feedbacks with the Green DICE framework results in emissions trajectories lower than RCP7 in most model runs. While outcomes vary depending on specific parameter assumptions, most runs project approximately half a degree less warming than standard scenarios. However, even aggressive policy scenarios in these extended models barely achieve the Paris Agreement target of limiting warming to 1.5°C, reflecting how much warming is already committed due to past emissions and system inertia.\nThis sobering result underscores that while mitigation remains crucial, adaptation to climate change has become equally important. The damages already baked into the climate system from historical emissions mean that even optimal policy beginning immediately cannot avoid significant impacts. This reality demands a dual focus on both reducing future emissions and preparing for unavoidable changes.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#hands-on-implementation-with-julia",
+    "href": "lectures/05-hands_on_with_climate_iams.html#hands-on-implementation-with-julia",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "Hands-On Implementation with Julia",
+    "text": "Hands-On Implementation with Julia\nThe practical portion of the lecture focuses on implementing and running climate IAMs using Julia. The installation process begins with downloading the long-term support release of Julia for Windows, Mac, or Linux operating systems. Setting the path variable ensures the command prompt can locate Julia, enabling command-line access to the interpreter. This setup may seem archaic to those accustomed to graphical interfaces, but command-line proficiency remains central to scientific computing and becomes increasingly valuable with advanced usage.\nOpening Julia from the command prompt displays ASCII art and loads the compiler. Once ready, the Julia prompt appears, providing access to a powerful calculator environment. While interactive computation is useful, copying and pasting commands becomes inefficient for complex analyses. Script files with the .jl extension provide a better workflow, allowing users to save and run sequences of commands. Julia scripts can be executed by calling Julia with the script filename from the command line.\nJulia integrates seamlessly with Jupyter Notebooks, which combine formatted text, code, and outputs in a single document. This integration facilitates reproducible research and educational materials. The most advanced usage involves integrated development environments like VS Code, which provides syntax highlighting, debugging capabilities, and project management tools.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#package-management-and-mimi-framework",
+    "href": "lectures/05-hands_on_with_climate_iams.html#package-management-and-mimi-framework",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "Package Management and Mimi Framework",
+    "text": "Package Management and Mimi Framework\nJulia’s built-in package management system simplifies installing and maintaining scientific software. Entering package mode by typing the right bracket character at the Julia prompt provides access to package management commands. The Mimi modeling framework, developed by David Anthoff, provides specialized tools for running integrated assessment models in Julia. Mimi is well-documented and available on GitHub, with comprehensive tutorials covering installation and usage.\nThe installation process includes core packages like GDAL for geospatial data, CSV handling utilities, and statistical functions. Updating all packages ensures compatibility and access to the latest features. The course also requires installing MimiDICE2016.jl directly from GitHub, demonstrating how Julia can incorporate packages from various sources beyond the official registry.\nAfter installation, loading packages makes their functionality available in the current session. The command “using Mimi” imports the Mimi framework, while importing MimiDICE2016 loads hundreds of equations defining the DICE model’s structure. These equations encode the optimization problem of maximizing social welfare subject to production constraints and climate damages.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#running-and-exploring-the-dice-model",
+    "href": "lectures/05-hands_on_with_climate_iams.html#running-and-exploring-the-dice-model",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "Running and Exploring the DICE Model",
+    "text": "Running and Exploring the DICE Model\nCreating a model object with the command “M = MimiDICE2016.get_model()” instantiates a complete representation of the DICE model including data, equations, and solution methods. This object-oriented approach encapsulates all model functionality within a single entity that knows how to configure and solve itself. The analogy to an airplane object with a takeoff procedure illustrates how the model object contains both data and methods for its own execution.\nRunning the model with “run(m)” triggers the solution process using Julia and JuMP to maximize social welfare and compute all endogenous variables like production, emissions, and temperature over time. The solution process involves sophisticated numerical optimization techniques but remains accessible through simple function calls.\nThe Mimi framework includes powerful visualization capabilities through the Explore functionality. Executing “explore(m)” launches a user interface, likely built with Electron, providing interactive exploration of model results. Users can examine economic variables like GDP, climate variables like radiative forcing and ocean temperature, and the connections between biophysical systems, emissions, and damages. This exploration tool enables replication of results from Nordhaus’s 2017 paper while also facilitating sensitivity analysis and scenario exploration.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#version-control-and-collaborative-development",
+    "href": "lectures/05-hands_on_with_climate_iams.html#version-control-and-collaborative-development",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "Version Control and Collaborative Development",
+    "text": "Version Control and Collaborative Development\nAs earth economy modeling advances toward more complex, interconnected systems, version control becomes essential. Git has emerged as the standard tool for code collaboration, used by major technology companies and the open-source community. Proficiency with Git has become essential for technical positions in both academia and industry.\nThe Earth Economy DevStack repository, developed at the University of Minnesota, provides a playground for linking multiple models. While DICE represents one self-contained model and Green DICE extends it with additional functionality, researchers often need to combine results from multiple models addressing different aspects of the earth-economy system. The DevStack facilitates these model coupling exercises.\nCloning a repository downloads a complete copy including all files and version history. The hidden .git folder stores this history and enables synchronization with remote repositories. This distributed version control model allows multiple researchers to collaborate on model development while maintaining a complete audit trail of changes.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#looking-forward-assignment-structure-and-research-applications",
+    "href": "lectures/05-hands_on_with_climate_iams.html#looking-forward-assignment-structure-and-research-applications",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "Looking Forward: Assignment Structure and Research Applications",
+    "text": "Looking Forward: Assignment Structure and Research Applications\nThe upcoming Assignment 3 represents the first substantial technical assignment of the course, building on the setup completed in Assignment 2. Students will modify existing models to answer research questions like exploring the impact of different discount rates on optimal climate policy. Rather than accepting model results based on others’ assumptions, students will gain the capability to rerun models with alternative parameters and examine sensitivity to key assumptions.\nThis hands-on capability transforms students from passive consumers of model results to active participants in climate-economy research. The ability to access, modify, and run Nobel Prize-winning economic models on personal computers represents a democratization of scientific tools that would have been unimaginable just a generation ago. These skills provide a foundation for independent research that extends beyond the classroom into professional careers in climate policy, economic analysis, and integrated assessment modeling.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/05-hands_on_with_climate_iams.html#conclusion",
+    "href": "lectures/05-hands_on_with_climate_iams.html#conclusion",
+    "title": "Lecture 05 - Hands on with Climate IAMs",
+    "section": "Conclusion",
+    "text": "Conclusion\nThis lecture has bridged the gap between theoretical understanding of climate IAMs and practical implementation skills. Starting from the conceptual positioning of these models within the broader modeling landscape, through the mathematical foundations established by Nordhaus, to the extensions developed in Green DICE, and finally to hands-on implementation in Julia, students now possess both the theoretical knowledge and practical tools for engaging with climate-economy modeling. The combination of understanding the assumptions and debates underlying these models with the ability to modify and run them independently provides a powerful foundation for contributing to one of the most important policy challenges of our time.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "05 - Hands on with Climate IAMs"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "",
+    "text": "Reading: Banerjee et al. (2025) also skim the Supplemental Info\nOptional readings: Banerjee et al. (2020)\nSlides as Powerpoint: Download here\nVideo link: On Youtube",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#the-dual-channel-approach",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#the-dual-channel-approach",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "The Dual-Channel Approach",
+    "text": "The Dual-Channel Approach\nThe course structure represents a departure from traditional lecture-heavy formats. While we maintain the academic rigor of lectures and readings typical of graduate courses, we simultaneously implement a hands-on channel focused on practical software skills. Everyone has successfully set up their GitHub accounts and shared their links, marking the first step in this dual approach. This parallel track ensures that theoretical knowledge is matched with practical implementation skills.\nThe software installation process is being rolled out gradually to ensure everyone has the necessary tools operational before we begin coding. Assignment 2, which will be available shortly after class, focuses on installing QGIS on your systems. While some students have prior GIS experience, we start from the beginning to ensure everyone develops proficiency with QGIS as our primary GIS tool. This systematic approach to software installation includes Git, VS Code, and other essential tools that will form our technical infrastructure.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#course-materials-and-future-impact",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#course-materials-and-future-impact",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "Course Materials and Future Impact",
+    "text": "Course Materials and Future Impact\nThe comprehensive course website and organized structure serve multiple purposes beyond this semester. Every lecture is being recorded and edited into YouTube videos, with transcripts being generated and refined through AI assistance. This material is being compiled to create a fully open-source textbook on applied earth economy modeling. The skeleton of this book is already emerging from the course structure, with each lecture contributing a chapter or section.\nThis effort responds to a significant gap in the field. At the recent annual meeting of GLASS-MED (Global to Local Analysis of Systems Sustainability), a major five-year National Science Foundation grant led by Purdue and Tom Hertel, participants identified the absence of teaching materials linking Earth and economy models. This course appears to be unique in addressing this gap, which explains the substantial interest from the $2 million NSF project in scaling up teaching in this area.\nThe website serves as a repository for future iterations of the course, though realistically, the content will likely be updated each time the course is taught, reflecting the rapidly evolving nature of the field. The digital materials, including edited videos that remove transition times and technical difficulties, create a professional resource for asynchronous learners worldwide.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#the-changing-landscape-of-environmental-economics",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#the-changing-landscape-of-environmental-economics",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "The Changing Landscape of Environmental Economics",
+    "text": "The Changing Landscape of Environmental Economics\nThe state of environmental and natural resource economics in 2025 reflects dramatic shifts from traditional focuses. Historically, the field concentrated on policies like CAFE fuel efficiency standards, analyzing U.S. policies for increasing automobile fuel efficiency. Environmental economists devoted substantial effort to evaluating such regulations or studying policies for coal-fired power plants. These traditional topics are becoming less relevant as the energy transition accelerates.\nThe automotive industry exemplifies this transformation. Nearly every major automaker had announced plans to transition to all-electric vehicles by specific target dates. However, the 2025 update reveals that many companies have moderated this rhetoric, influenced by changing political winds and the potential removal of EV credits. This reversal suggests that initial optimism may have been premature, though the general trend toward electrification continues. Fuel efficiency concerns are diminishing in importance as the fleet gradually electrifies.\nA fundamental market shift has occurred with wind and solar energy becoming cheaper than fossil fuel alternatives. Previously, environmental economics focused extensively on designing subsidies to make renewables competitive. That challenge has been resolved by market forces, as renewables are now literally cheaper than fossil alternatives. Current policy faces limited options to reverse this market reality, with only costly and likely ineffective coal subsidies potentially slowing the transition. The widespread global growth of wind and solar represents a positive development that market forces now drive independently of policy support.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#the-end-of-an-era-and-the-emergence-of-new-challenges",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#the-end-of-an-era-and-the-emergence-of-new-challenges",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "The End of an Era and the Emergence of New Challenges",
+    "text": "The End of an Era and the Emergence of New Challenges\nWe are witnessing the end of traditional challenges in environmental economics, particularly regarding fuel efficiency. The Bugatti Chiron, with its 304 mph top speed and 1,578-horsepower W16 engine equipped with four turbochargers, was thought to represent the pinnacle and finale of internal combustion engine development. However, the release of the Tourbillon, featuring a V16 engine producing 1,800 horsepower through a combination of naturally aspirated combustion and 800 horsepower from electric motors, demonstrates that the future is more complex than a simple transition to electrification. This vehicle, achieving approximately 4 miles per gallon with substantial carbon emissions, illustrates the ongoing tension between technological achievement and environmental responsibility.\nAs we move beyond the era of subsidizing clean energy to replace dirty alternatives, the critical remaining challenge is land. Land represents a fundamentally limited resource that environmental and natural resource economics must now address comprehensively. Land use and land cover maps will become key inputs to our models, as the field shifts back to considering land as the critical constrained resource it truly is.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#historical-perspective-on-land-in-economic-theory",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#historical-perspective-on-land-in-economic-theory",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "Historical Perspective on Land in Economic Theory",
+    "text": "Historical Perspective on Land in Economic Theory\n\nThe Physiocrats and Early Economic Thought\nThe current mainstream economic models largely ignore land, but this represents a historical anomaly. Land was critical to the origins of economic thought. The physiocrats in 18th-century France, one of the earliest groups of economists, argued that land was the source of all wealth because it represented the only source of value that could neither be created nor destroyed. François Quesnay, a phenomenal economist predating Adam Smith, developed the Tableau Économique, essentially the first input-output model. He collected data and defined how different sectors used inputs to produce outputs, creating a systematic understanding of economic flows.\nQuesnay is largely forgotten because most economic history courses begin with Adam Smith and classical economics. These courses typically present Smith as finally moving beyond the physiocrats by demonstrating that perfect competition and capital accumulation were sufficient to understand the economy. Smith argued that growth emerged from free exchange, though he still included land extensively in his models. While representing a move away from land-centric thinking, Smith recognized land as a key input to production.\n\n\nThe Disappearance of Land from Economic Models\nLand subsequently disappeared from economic models through a series of influential theoretical developments. Frank Ramsey’s Optimal Savings Model, a foundational macroeconomic model, focused exclusively on capital, examining the optimal balance between current consumption and saving for future growth. This approach continued with the Solow model in the 1950s, another key model of economic growth that excluded land. The standard Arrow-Debreu general equilibrium model, taught in PhD-level economics programs, defined general equilibrium for the entire economy using only capital and labor.\nThis exclusion occurred because economics at the time focused on maximizing growth, and land appeared relatively unimportant as a fixed input. Economic growth couldn’t be accelerated by accumulating land, unlike capital accumulation, which drove productivity increases. The focus shifted entirely to capital accumulation and technological progress as growth drivers.\nThe emphasis on economic growth had historical context in the 1950s. World War II had demonstrated that strong economic production capability determined military success, and the looming Cold War reinforced the imperative to grow economies into superpower status. This focus had real environmental consequences, including the rise of the military-industrial complex and widespread environmental degradation. The single-minded pursuit of growth through capital accumulation ignored the environmental constraints that land represents.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#reincorporating-land-into-economic-models",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#reincorporating-land-into-economic-models",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "Reincorporating Land into Economic Models",
+    "text": "Reincorporating Land into Economic Models\n\nThe Mathematical Framework\nWe need to reexamine economic growth models to reincorporate land systematically. The Ramsey growth model provides a starting point for understanding this integration. In the standard formulation, production Y is a function of capital at time t raised to some power α, multiplied by labor L at time t raised to the power (1-α). This represents a simple Cobb-Douglas production function. The equation of motion states that capital at time t+1 equals depreciated capital from time t plus production minus consumption. This framework examines optimal savings rates to balance current utility from consumption against future growth from capital accumulation.\nThe critical modification involves shifting from Y as a function of only capital and labor to Y as a function of capital, labor, and resources R. Natural resources, typically denoted R though L for land would be preferable if not already claimed by labor, include minerals and other inputs but critically encompass land. This addition is fundamental because land differs qualitatively from other production inputs.\nCapital can accumulate indefinitely as we create more capital to enhance future productivity. The labor force can grow through population increase. However, land is fundamentally fixed in quantity. While minor additions are possible through coastal reclamation using sand, soil, and aggregate deposits, the total stock of land remains essentially constant. This fixity means that as economies grow, land prices increase, creating scarcity. More importantly, competing uses for land create incentives to convert all land to production rather than preservation.\n\n\nThe Malthusian Connection\nThis argument connects to Malthusian concerns about fixed land constraining food production as populations grow. The optimization problem becomes maximizing utility from consumption subject to the production function including land and the capital equation of motion. Without land, the model focuses solely on consumption utility and capital productivity benefits. Including land fundamentally changes the optimization dynamics.\n\n\nThe Return of Land to Economic Models\nWhile land was largely excluded from mainstream economic models, certain threads maintained its importance. As environmental sustainability gained prominence, leading economic models began reincorporating land out of necessity. Meaningful analysis of global sustainability and environment-economy trade-offs requires explicit land consideration.\nThe World 3 model and Limits to Growth approach emphasized resource limitations, necessitating land’s inclusion in economic models. Computable general equilibrium (CGE) models, being data-driven rather than purely theoretical, naturally included land because empirical data shows substantial economic value in land and real estate transactions. The empirical reality that land represents significant asset value challenges theoretical models claiming only capital and labor matter.\nOur department gained recognition for work on questions that drove new CGE model development, particularly assessing biofuel benefits. Ethanol was long considered by environmentalists as a potential solution, allowing fossil fuel replacement through fuel crop cultivation. However, analysis revealed that converting all corn production to ethanol would be insufficient while causing massive food price increases and cropland expansion. If corn supplies cannot meet both food and fuel demand, dramatic cropland expansion follows. This research demonstrated that biofuels might not be beneficial, as they increase food prices and potentially worsen food insecurity.\nSubstitution effects complicate the analysis. As corn becomes more expensive, consumers substitute other products like soybeans and wheat, which also require land. Quantitative estimates of price increases when land demand rises depend on substitution elasticities away from corn. This represents a key analytical challenge we’ll address using our modeling tools.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#the-purpose-and-power-of-scenarios",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#the-purpose-and-power-of-scenarios",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "The Purpose and Power of Scenarios",
+    "text": "The Purpose and Power of Scenarios\nScenarios enable future analysis despite massive uncertainty. They allow exploration of different narratives to assess whether we favor particular directional outcomes. While not necessarily predictive, scenarios help evaluate ranges of possible futures and their implications. This approach proves critical for environmental development planning and policy analysis.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#scenarios-in-environmental-development",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#scenarios-in-environmental-development",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "Scenarios in Environmental Development",
+    "text": "Scenarios in Environmental Development\nThe Natural Capital Project (NatCap) originated in creating water funds, which match downstream residents willing to pay for improved water quality with upstream farmers who can protect land through conservation practices. While the Coase theorem suggests these groups should negotiate win-win solutions, transaction costs make direct negotiation impractical. Water funds act as Coase accelerators, scaling up these transfers efficiently. Over 200 water funds now exist, particularly in Latin America, representing successful payments for ecosystem services (PES) programs.\nWater funds catalyzed productive discussions among farmers, residents, municipalities, and planning bodies about green development paths. In developing countries during the 1990s and early 2000s, conservation efforts often involved creating multiple watershed future scenarios, typically including at least a green development plan with PES and a business-as-usual alternative. Stakeholder engagement generated scenarios relevant to local interests. NatCap’s origins lie in supporting water funds and green development plans through scientific scenario analysis.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#from-stakeholder-engagement-to-exogenous-forces",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#from-stakeholder-engagement-to-exogenous-forces",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "From Stakeholder Engagement to Exogenous Forces",
+    "text": "From Stakeholder Engagement to Exogenous Forces\nInitial approaches assumed scenarios emerged from stakeholder engagement, but local stakeholders often lacked specific visions and sought expert guidance for scenario development. Tools like scenario modelers and land use change regression models were employed, but ultimately, large exogenous factors determined most scenarios.\nWatersheds cannot control macroeconomic forces that drive landscape change. Economic shifts making crop expansion profitable represent external drivers beyond local control. NatCap discovered that model results were predominantly driven by these external factors, leading them to employ economics and other tools to understand these forces and create scenarios connected to macroeconomic trends.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#scenario-terminology-and-structure",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#scenario-terminology-and-structure",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "Scenario Terminology and Structure",
+    "text": "Scenario Terminology and Structure\nUnderstanding scenario terminology is essential for consistent analysis. “Baseline” and “business as usual” are essentially synonymous, both referring to scenarios without new interventions. Economists prefer “baseline” while environmentalists favor “business as usual.” In climate change analysis, business as usual might reference RCP 8.5, a high-emissions scenario now considered unrealistic. Calculating green policy benefits depends critically on baseline selection. Using RCP 6.0 rather than RCP 8.5 as the comparison changes mitigation value estimates substantially.\nWe develop proficiency with scenarios because all our models generate results for different scenario sets, analyzing economic and environmental performance under each. The typology includes a base representing a single historical divergence point, such as hectares protected at the starting point H₀. Future projections include a baseline HB showing hectares protected under business as usual, and conservation scenarios HC contrasting with the baseline.\nTwo critical differences emerge: the temporal change between future and base years (land change in the baseline compared to original conditions), and the inter-scenario difference (conservation action benefits). These deltas represent key analytical outputs, with the scenario difference quantifying conservation benefits for cost-benefit analysis.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#paper-structure-and-innovation",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#paper-structure-and-innovation",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "Paper Structure and Innovation",
+    "text": "Paper Structure and Innovation\nThe Banerjee 2025 paper, “Investing in Forests Enhances Ecosystem Services and Economic Growth in Cambodia: Evidence from the Integrated Economic Environmental Modeling (IEM) Model,” represents a breakthrough in model complexity. It was among the first to advance into high complexity by linking environmental aspects, specifically ecosystem services, directly with a computable general equilibrium model. This paper pioneered the earth economy modeling space by establishing endogenous ecosystem service impacts on economic outcomes.\nThe national scope represented a computational necessity, as calculating ecosystem services nationally is far more tractable than global calculations due to pixel quantity differences. Despite this limitation, the approach remains highly novel and excellent in execution. O’Neill Banerjee, the lead author, has leveraged this approach as a consultant, producing country-level reports using the AIM model. His publication strategy scales well, with similar analyses for Thailand, Mexico, and other countries. While stakeholder engagement and relevant scenarios differ by country, the core methodology remains consistent: connecting computable general equilibrium models with land use change and ecosystem service models.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#the-role-of-computable-general-equilibrium-models",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#the-role-of-computable-general-equilibrium-models",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "The Role of Computable General Equilibrium Models",
+    "text": "The Role of Computable General Equilibrium Models\nComputable general equilibrium models are essential tools, as Kenneth Arrow, the Nobel laureate, argued. He stated that applied general equilibrium models, now called CGEs, represent standard policy analysis tools. Any analysis requiring whole-economy understanding with impacts filtering across sectors requires CGE methodology. Ignoring these tools risks missing critical economic implications. For analyzing widespread economic impacts, CGEs are indispensable.\nCGEs differ fundamentally from machine learning models. CGEs are structural models allowing causal pathway tracing, while machine learning models are primarily predictive without causal understanding. In CGEs, coefficient changes create traceable substitution between labor and capital, affecting sectoral production through explicit causal mechanisms. Machine learning provides prediction without causal stories; structural models offer specific causal pathways.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#gtap-a-foundational-cge-framework",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#gtap-a-foundational-cge-framework",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "GTAP: A Foundational CGE Framework",
+    "text": "GTAP: A Foundational CGE Framework\nThroughout the course, we focus on GTAP (Global Trade Analysis Project), founded in 1992 by Tom Hertel. GTAP represents a large consortium with thousands of global members, including the Asian Development Bank, OECD, FAO, IFPRI, WTO, and numerous national supporters.\nGTAP provides two critical resources. First, the GTAP database offers standardized, harmonized, curated economic indicators across regions. The challenge in creating this database is substantial, as simply aggregating input-output tables from 175 regions produces inconsistent totals. The standardization process is labor-intensive but captures detailed economic structure. While theoretical models often have single regions and sectors, CGEs like GTAP incorporate many regions and sectors for maximum realism and detail.\nSecond, GTAP provides the GTAP Computable General Equilibrium model itself. Initially a demonstration model for the database, it has evolved into one of the most widely used CGE models for quantitative predictions about trade wars, geopolitical conflicts, and policy changes. GTAP represents a powerful toolkit and network, with growing employment opportunities for economists skilled in model-based predictions, including positions at consulting firms like McKinsey.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#the-iem-model-architecture",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#the-iem-model-architecture",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "The IEM Model Architecture",
+    "text": "The IEM Model Architecture\nThe IEM model’s core consists of a CGE feeding into a land use change model, which feeds into ecosystem service models, which then feed back to the CGE. The circular flow demonstrates the modeling components: the economy calculates land use change, the land use change model determines spatial allocation, this provides input for ecosystem services, and ecosystem service changes create economic shocks in the CGE. The approach, termed IEM plus ESM, can run as a standalone economic model or comprehensively when connected to land use and ecosystem services.\nThe system employs Dynaclue for land use change modeling, developed by Peter Verburg, and InVEST for ecosystem service calculations. While similar to previous approaches, differences exist in specific model choices. IEM differs from GTAP, and Dynaclue offers different advantages than alternative land use models.\nThe 2020 mathematical structure paper provides detailed documentation with thousands of equations solved through linear programming, typical for CGEs. It documents database connections, with GTAP using its proprietary database while IEM creates country-specific databases using environmentally extended social accounting matrices (SAMs).",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#social-accounting-matrices-and-natural-capital",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#social-accounting-matrices-and-natural-capital",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "Social Accounting Matrices and Natural Capital",
+    "text": "Social Accounting Matrices and Natural Capital\nSocial accounting matrices express systems of national accounts in CGE-ready format. While traditional CGE courses cover converting national accounts to SAMs, we focus on using rather than creating SAMs. The environmentally extended SAM incorporates environmental data, evolving into natural capital accounting approaches we’ll explore later. The SAM parameterizes the model, linking to the environment through ecosystem services.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#the-cambodia-case-study",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#the-cambodia-case-study",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "The Cambodia Case Study",
+    "text": "The Cambodia Case Study\nCambodia presents an ideal case for integrated modeling, seeking economic growth while experiencing among the world’s highest deforestation rates. The interaction between land use change and economic activity is pronounced, with strong economic incentives driving agricultural expansion at forest expense. This expansion occurs because it’s profitable, yet the country seeks production improvements without undermining natural capital. Illegal logging presents additional challenges for prediction and control. The goal involves protecting ecosystem services beyond climate regulation, enabling progression to middle or high-income status without natural capital depletion.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#model-components-and-linkages",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#model-components-and-linkages",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "Model Components and Linkages",
+    "text": "Model Components and Linkages\nIEM consists of three integrated components: the dynamic computable general equilibrium model, the land use change model (Dynaclue), and ecosystem service models (InVEST). The Cambodia application employs four InVEST ecosystem service models: carbon storage, erosion mitigation, water yield, and water purification.\nThe critical element is the dependencies calculation, translating ecosystem service changes into CGE inputs. In this application, only erosion mitigation among the four ecosystem services endogenously affected the economy. This limitation is important to acknowledge. Carbon storage doesn’t directly affect the economy except through climate damages, which weren’t included in this model.\nThe mechanism is straightforward. Literature, particularly Panagos 2018, demonstrates through field studies and econometrics that farm erosion beyond certain thresholds reduces yields. Every farmer understands this intuitively, but Panagos’ paper quantifies it at large scales with evidence supporting geographical extension. The ecosystem service calculation determines soil tonnage leaving each grid cell through gullies, rivulets, and other erosion forms.\nThis erosion result enters the dependency calculation, changing production function parameters. Land entering the production function becomes less effective. Solving the full equation set with this “shock” (the paper’s terminology) requires the model to re-solve general equilibrium with different crop productivity parameters due to soil loss. This represents the specific implemented linkage.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#data-accessibility-and-resources",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#data-accessibility-and-resources",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "Data Accessibility and Resources",
+    "text": "Data Accessibility and Resources\nThe IEM approach demonstrates exemplary openness through curated data availability. Many claim openness, but without accessible, well-documented data, true openness doesn’t exist. The IEM team excels here, with data hosted on the Inter-American Development Bank website. Data packets for approximately 20 countries are downloadable, though coverage favors IDB countries plus Portugal (Banerjee’s origin) and India (due to large contracts).\nMore effective data access exists through our course Google Drive. Students gain access to the NATCAP Teams data directory, organizing substantial information resources. The university provides 1TB standard storage, insufficient for our needs. Cloud storage costs approximately 2-7 cents per gigabyte, making the 50TB allocation ($1,000 annually) necessary for our data requirements. The base data folder contains various useful inputs for exercises and projects.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#scenario-analysis-in-the-cambodia-study",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#scenario-analysis-in-the-cambodia-study",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "Scenario Analysis in the Cambodia Study",
+    "text": "Scenario Analysis in the Cambodia Study\nThe Banerjee 2025 paper presents multiple scenarios requiring careful navigation. The base scenario (business as usual) provides the counterfactual reference for all alternatives. Substantial work underlies these scenarios, particularly population projections that most impact economic growth. While many use United Nations projections supplemented by International Monetary Fund data, trade relationship changes remain difficult to predict. Regardless, the baseline enables comparison with policy-relevant scenarios.\nThe “No Deforestation” scenario (Node4) simulates eliminating deforestation by 2045. The land use change model constrains deforestation to specified amounts. Eliminating deforestation costs significantly through enforcement and land purchases. In CGE models, nothing is free—preventing deforestation requires funding that must originate somewhere, often through taxes that themselves affect the economy. This illustrates general equilibrium’s theoretical consistency: money cannot appear from nowhere. Funding sources must be specified and their economic impacts modeled.\nAdditional scenarios include afforestation (planting 1.6 million hectares with trees), involving large planting costs but generating ecosystem service returns. The restoration scenario improves 1.1 million hectares of degraded forests, enhancing existing forest quality rather than converting non-forest land. Combination scenarios mix afforestation, restoration, and business as usual into “COMB” and “COMB+” alternatives.\nImportantly, results are reported with and without dependency impacts from erosion. Comparing scenarios with and without soil protection benefits isolates protection value. Results show GDP impacts varying by scenario: no deforestation alone reduces GDP, afforestation increases GDP despite costs due to increased forest resources, restoration falls between, and combinations can optimize outcomes. Comparing COMB to COMB* reveals ecosystem service valuation effects.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/03-national_sustainability_in_general_equilibrium.html#applications-and-future-directions",
+    "href": "lectures/03-national_sustainability_in_general_equilibrium.html#applications-and-future-directions",
+    "title": "Lecture 3: National Sustainability in General Equilibrium",
+    "section": "Applications and Future Directions",
+    "text": "Applications and Future Directions\nThe analysis extends to GDP indicators over time (given the model’s dynamic nature), investment net present values, and cost-benefit analyses regarding ecosystem services. Central banks, finance ministries, and international organizations increasingly demand this information. Central banks particularly view GDP losses from degraded ecosystem services, or “nature collapse threats,” as major stability concerns requiring quantitative assessment.\nThis integrated approach to earth economy modeling represents the frontier of sustainability analysis, combining economic rigor with environmental detail to inform critical policy decisions. As we progress through the course, we’ll develop the skills to implement and extend these modeling approaches, contributing to the growing field of integrated assessment at the economy-environment interface.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "03 - National Sustainability in General Equilibrium"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "",
+    "text": "Welcome to APEC 8602!\nIn this first lecture, we will cover the big picture of the course, including the main topics we will cover and how they fit together. We will also go over the syllabus in detail, including the course structure, assignments, grading, and expectations. Please make sure to read the syllabus carefully and reach out if you have any questions.\nSlides as Powerpoint: Download here\nVideo link: On Youtube",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#welcome-to-applied-earth-economy-modeling",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#welcome-to-applied-earth-economy-modeling",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Welcome to Applied Earth Economy Modeling",
+    "text": "Welcome to Applied Earth Economy Modeling\nWelcome to the first lecture of the newly reformed Applied Economics 8602 course. This represents the inaugural teaching of this redesigned version, though it builds upon a substantial history of related concepts and methodologies. The rebranding to Applied Earth Economy Modeling reflects a comprehensive approach that encompasses much of what students would traditionally encounter in a typical environmental economics or natural resource economics PhD course. The goal and scope of this reformulation should become increasingly clear as we progress through the material.\nThe course structure emphasizes interactivity and hands-on application. Applied Earth Economy Modeling means we will be working primarily on our computers, engaging directly with models, data, and collaborative exercises. This practical approach ensures that theoretical concepts are immediately reinforced through computational implementation and real-world application.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#instructor-background-and-expertise",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#instructor-background-and-expertise",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Instructor Background and Expertise",
+    "text": "Instructor Background and Expertise\n\nAcademic Journey and Research Focus\nI am Justin Johnson, having completed my PhD in Applied Economics from this institution in 2014. My doctoral work was conducted under the supervision of Steve Pulaski, who currently teaches the companion course 8601, which focuses more intensively on dynamics, mathematics, and the theoretical definition of sustainability within economics. Following graduation, I spent five years at the Institute on the Environment, initially as a postdoctoral researcher and subsequently as a self-funded researcher, before joining the faculty here in 2020. My recent tenure achievement, while exciting, has not diminished my enthusiasm for teaching and research in this critical field.\n\n\nResearch Initiatives and Institutional Contributions\nMy extensive collaboration with the Natural Capital Project, co-founded by Steve Pulaski, will feature prominently throughout this course. Recently, Steve and I established a spin-off organization called NATCAP Teams, also known as The Earth Economy Modelers, which represents a new research center within Applied Economics. Some of you are already involved with this initiative and understand its mission to advance earth economy modeling methodologies.\nBeyond earth economy modeling, my interests extend to coding and open-source science. The question of how we replicate and validate knowledge has become increasingly important in the age of artificial intelligence, where machines can perform much of the computational work, yet human understanding remains critical for interpretation and application. This theme will recur throughout our discussions. My research receives funding from AI Leaf—Land, Economy, Agriculture, and Forestry—which was previously known as AI Climate and focuses on leveraging artificial intelligence to understand and address sustainability challenges.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#course-structure-and-connections",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#course-structure-and-connections",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Course Structure and Connections",
+    "text": "Course Structure and Connections\n\nIntegration with Other Courses\nThis half-semester course connects directly with 8222, which I will begin teaching at the midpoint and which is being renamed Big Data, Machine Learning, and Artificial Intelligence for Economists. That subsequent course will be even more intensively hands-on and code-focused. Ideally, the order would be reversed to allow students to gain familiarity with Python and Julia tools before tackling earth economy modeling, but the current departmental structure dictates that the R course precedes the machine learning course.\n\n\nDepartmental Context and PhD Requirements\nThis course fits within the evolving PhD requirements in our department, which are transitioning from two three-credit courses to four half-semester courses. The new structure includes Economics and Dynamics of Sustainability taught by Steve Pulaski, Modern Environmental Economics taught by Jay Coggins, and Econometrics of Environment and Development taught by Rahil Madok. Each course draws from different aspects of environmental and development economics, creating a comprehensive educational framework for doctoral students in this field.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#student-introductions-and-research-interests",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#student-introductions-and-research-interests",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Student Introductions and Research Interests",
+    "text": "Student Introductions and Research Interests\n\nDiverse Backgrounds and Research Trajectories\nThe class comprises students from various backgrounds and research interests. Libby, in her sixth year of the APAC PhD program, works with NATCAP Teams and focuses her dissertation on urban ecosystem service modeling, specifically modeling ecosystem services provided by trees across the United States. She also contributes to projects measuring the Global Gross Ecosystem Product, which quantifies the monetary value of ecosystems.\nDave brings a background in higher education leadership and sees this course as presenting significant opportunities for expanding his understanding of earth economy modeling. Alvin, a second-year NPAC program student, focuses on labor and adaptation, and while this isn’t directly related to the class material, he maintains strong interest in researching deforestation impacts.\nOther students bring expertise in environmental and labor economics, with experience as research assistants exploring interactions between agroecosystems and the environment. Some focus on public water economics and sustainable agriculture, seeking to understand how to approach these topics through modeling frameworks. Students with chemistry research backgrounds focusing on microplastics and water resources contribute unique perspectives on water resource economics and the application of data methods to socially relevant issues.\n\n\nInternational Perspectives and Collaborative Learning\nThe course benefits from international perspectives, including visiting professor Hemandas Lohano from the Institute of Business Administration in Karachi, who is interested in replicating ecosystem services valuation for GEP and advancing toward valuing grassland contributions. Online participants like Natalie, a master’s student in Bioproducts and Biosystems Science Engineering and Management, focus on water contamination and specific research questions about chemicals and pollutants in water runoff from structural fires. These diverse perspectives enrich our collective understanding and create opportunities for cross-cultural and interdisciplinary learning.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#conceptual-foundation-from-holocene-to-anthropocene",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#conceptual-foundation-from-holocene-to-anthropocene",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Conceptual Foundation: From Holocene to Anthropocene",
+    "text": "Conceptual Foundation: From Holocene to Anthropocene\n\nUnderstanding the Holocene Stability\nWe are experiencing a fundamental transition from the Holocene—a remarkably stable geological era that has been extraordinarily favorable for human development and agriculture—to what many scientists now call the Anthropocene. Historical data showing Earth’s surface temperature over thousands of years reveals the Holocene as a period of unprecedented stability. Agriculture emerged shortly after the Holocene began, followed by the development of major human civilizations. This “Goldilocks zone” represents a stable climate range that enabled the flourishing of human civilization as we know it. The profound concern among scientists is that if we leave this band of stability, conditions could change dramatically and potentially irreversibly.\n\n\nDebating the Anthropocene\nThere exists ongoing scientific debate about whether we have officially entered a new geologic era called the Anthropocene. Various scientific bodies have deliberated on its official status, with some arguing for formal recognition while others maintain we remain technically in the Holocene. Regardless of the formal geological classification, the evidence overwhelmingly indicates we have entered a world where human activity has become the dominant force shaping Earth’s systems, from climate and water cycles to biodiversity and biogeochemical processes.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#stability-landscapes-and-planetary-thresholds",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#stability-landscapes-and-planetary-thresholds",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Stability Landscapes and Planetary Thresholds",
+    "text": "Stability Landscapes and Planetary Thresholds\n\nThe Marble in a Bowl Metaphor\nThe concept of stability landscapes provides a useful framework for understanding our current predicament. Imagine a marble resting in a bowl—this represents the Holocene’s stable equilibrium. As we push against various boundaries, particularly temperature thresholds, we risk rolling the marble over the edge into a different bowl, representing a new equilibrium such as a “hothouse Earth” scenario. Once the system settles into a new equilibrium, returning to the previous state becomes extraordinarily difficult if not impossible. The challenge facing humanity is to steward Earth’s systems carefully enough to avoid crossing these critical thresholds while maintaining conditions suitable for human flourishing.\n\n\nPlanetary Boundaries Framework\nThe concept of planetary thresholds has become prominent in sustainability science, with the most famous conception being the planetary boundaries framework. This framework identifies biophysical boundaries that humanity should not cross to maintain a safe operating space for civilization. The safe operating space is typically visualized as a green area within these boundaries, but current assessments indicate that many metrics have already exceeded these planetary boundaries. The critical takeaway is that we should proceed with extreme caution, as the consequences of persistently exceeding these thresholds remain uncertain and potentially catastrophic.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#beyond-planetary-boundaries-the-social-foundation",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#beyond-planetary-boundaries-the-social-foundation",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Beyond Planetary Boundaries: The Social Foundation",
+    "text": "Beyond Planetary Boundaries: The Social Foundation\n\nLimitations of the Biophysical Framework\nWhile the planetary boundaries framework has gained significant popularity and provides important insights, I find it limited in several crucial ways. Most significantly, it doesn’t address what specific policies we should pursue to remain within these boundaries, nor does it incorporate the fundamental goal of ensuring a thriving human society. From an anthropocentric perspective—which I embrace and which we’ll revisit throughout this course—we must avoid surpassing the ecological ceiling while simultaneously ensuring we stay above the social floor. This social floor represents access to foundational goods and services including healthcare, food, water, shelter, and other necessities that enable human dignity and flourishing. This dual focus is central to growth and development economics.\n\n\nDonut Economics and Safe Operating Spaces\nKate Raworth’s “Donut Economics,” published in 2017, elegantly captures this dual focus through a visual framework where planetary boundaries form the ceiling and the social foundation ensures quality of life for all. Sustainability, in this framework, means staying within the “donut”—below the ecological ceiling and above the social foundation. This conceptualization has been echoed and refined in recent literature, such as Rockstrom et al.’s 2023 work on “safe and just corridors.” While I appreciate this more comprehensive framework, it still doesn’t fully answer the crucial question of what specific policies we should pursue to achieve these goals. This gap is precisely why I believe economics provides powerful and necessary tools to help humanity navigate within planetary boundaries while ensuring social justice and human flourishing.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#historical-achievements-of-economic-tools",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#historical-achievements-of-economic-tools",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Historical Achievements of Economic Tools",
+    "text": "Historical Achievements of Economic Tools\n\nResponse to Economic Crises\nEconomics has demonstrated remarkable effectiveness at improving physical consumption and well-being, particularly in response to major crises such as the Great Depression. The development of systems of national accounts (SNAs) and the conceptualization of Gross Domestic Product (GDP) provided crucial metrics and tools for policy navigation during times of economic turmoil. While GDP is frequently and justifiably criticized for its narrowness and failure to capture many aspects of human well-being, it proved extraordinarily useful for organizing and implementing policies aimed at increasing material welfare during periods of economic hardship.\n\n\nModeling and Policy Analysis\nTools such as computable general equilibrium (CGE) models have enabled economists to estimate the impacts of various policies, including trade tariffs, and make quantitative predictions about their effects. Other models address crucial fiscal and growth-based questions, helping policymakers understand and manage inflation, implement stabilization policies, and promote economic development. These tools have contributed to significant poverty reduction worldwide, with the probability of living in extreme poverty having decreased dramatically over the past century. While distributional issues certainly remain and deserve serious attention, increased GDP generally correlates with higher average consumption and improved material well-being.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#quantifiable-improvements-in-human-welfare",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#quantifiable-improvements-in-human-welfare",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Quantifiable Improvements in Human Welfare",
+    "text": "Quantifiable Improvements in Human Welfare\n\nLife Expectancy and Violence Reduction\nThe practical application of economic tools and policies has contributed to substantial improvements in human welfare by various metrics. Life expectancy has increased dramatically—over a century ago, it averaged 42 years in the Americas, while today it has nearly doubled in many regions. Homicide rates have declined significantly, as documented by scholars like Steven Pinker and others, suggesting that economic and social progress has led to reduced violence and increased human security. These improvements reflect the power of economics to build tools that describe and manipulate economic systems, enabling us to test policies before implementing them and predict outcomes with reasonable accuracy.\n\n\nThe Power of Economic Modeling\nEconomics has developed sophisticated tools to describe and manipulate the economy, enabling policymakers to test policies through models before implementing them in the real world. These models help us predict outcomes and guide decision-making in complex systems where intuition alone might lead us astray. The success of these tools in addressing problems of underconsumption and economic stagnation during the twentieth century provides valuable lessons for addressing the different but equally pressing challenges we face today.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#traditional-economics-and-earth-systems",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#traditional-economics-and-earth-systems",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Traditional Economics and Earth Systems",
+    "text": "Traditional Economics and Earth Systems\n\nThe Separation Fallacy\nHowever, traditional economic tools often treat the Earth as separate from the economy, viewing natural resources as external inputs rather than integral components of economic systems. The fundamental premise of this course is that we need to reconceptualize the economy as embedded within the Earth system, not the other way around. This perspective actually draws from early economic thought, which considered economic growth as a function of converting land and natural resources, mixed with labor and capital, into goods and services that provide utility to humans.\n\n\nNatural Resource Economics: Necessary but Insufficient\nNatural resource economics has traditionally focused on optimal extraction—determining how to manage forests, fisheries, and other renewable and non-renewable resources for long-term sustainability. While these questions remain important and we will build upon these established tools, they don’t fully address current challenges like climate change, biodiversity loss, and the complex interactions between human and natural systems at planetary scales. Pollution and waste management represent newer concerns that have generated policy responses including carbon taxes and fuel efficiency standards. Still, these approaches don’t capture the full complexity of the economy’s relationship with the biosphere.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#the-earth-economy-framework-understanding-complex-linkages",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#the-earth-economy-framework-understanding-complex-linkages",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "The Earth Economy Framework: Understanding Complex Linkages",
+    "text": "The Earth Economy Framework: Understanding Complex Linkages\n\nBidirectional Relationships\nThis course aims to develop comprehensive understanding of the complex linkages between the economy and the biosphere, including both impacts and dependencies. As the global economy grows, it increasingly affects natural systems through pollution, land use change, and resource extraction, while simultaneously depending on nature for ecosystem services, resource inputs, and system stability. We will use quantitative models to capture these bidirectional relationships and guide sustainable development pathways that respect both planetary boundaries and human needs.\n\n\nScale and Planetary Impact\nThe reality we must confront is that the economy is no longer small compared to the Earth system. As consumption scales up globally, the economy has become a dominant force affecting planetary boundaries. While technological advances such as fusion energy could potentially alter these boundaries in the future, current evidence indicates we are already pushing past several critical thresholds. This situation demands new approaches and tools that can help us navigate within planetary limits while ensuring human flourishing.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#developing-navigational-tools",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#developing-navigational-tools",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Developing Navigational Tools",
+    "text": "Developing Navigational Tools\n\nLearning from Historical Precedents\nOur challenge parallels historical economic challenges but requires new tools and frameworks. Just as systems of national accounts and general equilibrium models helped address problems of underconsumption during the Great Depression, we now need navigational tools for sustainable development that can address overconsumption and global, interconnected challenges. These tools must be detailed, computationally useful, and quantitatively predictive to help us understand how to stay within planetary boundaries while ensuring social justice.\n\n\nToward General Earth-Economy Models\nWe need to develop more general models—essentially general equilibrium models that account for both economic and ecological dynamics. These models must capture the reality that the economy is embedded within the Earth system, with impacts and dependencies flowing in both directions. Environmental economics has traditionally focused on impacts, but dependencies are becoming increasingly important, especially for policymakers who need to understand how economic systems rely on functioning ecosystems.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#technical-infrastructure-and-open-science",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#technical-infrastructure-and-open-science",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Technical Infrastructure and Open Science",
+    "text": "Technical Infrastructure and Open Science\n\nCommitment to Transparency\nThe course website serves as the primary resource for all course materials, with Canvas functioning merely as a link to this central repository. This approach reflects my commitment to open-source science—creating transparent, reproducible content that anyone can access and build upon. All course materials are available on GitHub and can be cloned or modified by anyone interested in the content. This radical transparency extends to showing the complete commit history, revealing my own learning process and iterations.\n\n\nGitHub and Version Control\nThe first assignment, due next Tuesday, involves getting up to speed with essential technical tools. Students will install VS Code and Git, create a GitHub account, and send me their GitHub username to confirm everything works properly. A GitHub account is essential for anyone pursuing technical work in modern research or industry settings. Students should choose professional usernames that will serve them throughout their careers, as these identifiers tend to persist.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#assessment-and-participation",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#assessment-and-participation",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Assessment and Participation",
+    "text": "Assessment and Participation\n\nGrading Components\nClass participation comprises 5% of the grade and requires students to attend with their computers and follow along with code demonstrations. Technical issues should be communicated early so we can resolve them together. Weekly insights are required and can be submitted via Canvas or email, asking students to comment on what they found interesting, confusing, or valuable. This requirement helps develop essential communication skills while providing feedback on course content.\n\n\nProblem Sets and Research Projects\nThe course includes several problem sets that can be completed using Python, R, MATLAB (though MATLAB support will eventually be removed), or Julia. Collaboration is strongly encouraged, but submissions must be individual and distinct to ensure personal understanding. A research project will involve an applied earth economy modeling problem, with the goal of producing compelling figures and insights rather than a polished paper given the short course duration. Ideally, these projects will serve as foundations for future research or dissertation work.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#use-of-artificial-intelligence",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#use-of-artificial-intelligence",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Use of Artificial Intelligence",
+    "text": "Use of Artificial Intelligence\n\nEmbracing AI Tools\nStudents are free to use AI tools in any way they choose, with or without attribution. However, any mistakes remain the student’s responsibility, and understanding how to use AI effectively will be part of the course learning objectives. This policy reflects the reality that AI tools are becoming integral to research and analysis, and students need to develop skills in leveraging these tools while maintaining critical thinking and verification abilities.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#first-section-context-and-tools",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#first-section-context-and-tools",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "First Section: Context and Tools",
+    "text": "First Section: Context and Tools\n\nGlobal Sustainability and General Equilibrium\nThe semester breaks into three main parts, beginning with big picture context and introduction to essential tools. The first third of the course introduces the theoretical and practical context for earth economy modeling, focusing on global sustainability challenges and general equilibrium approaches. We will discuss scenarios, especially land use change modeling, which is central to earth economy models and provides the spatial resolution necessary for ecosystem service assessment.\n\n\nIntegrated Assessment Models\nWe will work hands-on with economic tools that link Earth systems and economic systems. The DICE model represents a classic integrated assessment model, but we will use more modern versions such as Fran Moore’s Green DICE model that better capture ecological dynamics. We will also cover inclusive wealth, a key metric for sustainability that relies heavily on economic theory to assess whether current development paths are sustainable.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#second-section-ecosystem-services",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#second-section-ecosystem-services",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Second Section: Ecosystem Services",
+    "text": "Second Section: Ecosystem Services\n\nConceptual Development and Application\nThe second part of the course focuses intensively on ecosystem services, a concept that this department helped develop and refine. Steve Pulaski co-founded the Natural Capital Project and contributed significantly to establishing ecosystem services as a practical decision-making tool. We will learn to compute ecosystem service values under different scenarios, understanding both the theoretical foundations and practical applications of these assessments.\n\n\nComputable General Equilibrium Models\nWe will cover computable general equilibrium (CGE) models in detail, as these represent the workhorse of economics for analyzing sectoral and trade impacts. Students will run these models on their own computers, gaining hands-on experience with their structure, assumptions, and applications. This practical experience is essential for understanding both the power and limitations of these widely-used tools.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#third-section-integration-and-frontiers",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#third-section-integration-and-frontiers",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Third Section: Integration and Frontiers",
+    "text": "Third Section: Integration and Frontiers\n\nLinking Models Across Scales\nThe third part of the course addresses the critical challenge of integrating ecosystem service models with general equilibrium models, primarily through land use change modeling. This field predicts landscape changes driven by human activity and provides the crucial link between general equilibrium models operating at large scales and the fine resolution needed for ecosystem services analysis.\n\n\nResearch Frontiers and Applications\nWe will discuss key papers and newer developments in the field, including the GTAP-Invest linkage, which represents a major contribution by combining the most widely-used CGE model (GTAP) with the most extensively applied ecosystem service model (Invest). Additional topics include gridded economic analysis and emerging research frontiers. The course culminates in a “season finale” where students present their research projects, sharing compelling figures and insights that ideally will serve as foundations for future research endeavors.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#open-science-and-reproducibility",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#open-science-and-reproducibility",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Open Science and Reproducibility",
+    "text": "Open Science and Reproducibility\nThe course embodies principles of open science and reproducibility, with all materials freely available and modifiable. Lectures are recorded and posted online for reference, though personal discussions are edited out to maintain privacy. This approach reflects the belief that advancing the field requires transparency and accessibility, allowing others to build upon and improve the materials developed here.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#building-tools-for-the-anthropocene",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#building-tools-for-the-anthropocene",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Building Tools for the Anthropocene",
+    "text": "Building Tools for the Anthropocene\nThe overarching goal of this course is to equip students with the conceptual understanding and practical tools necessary to address the challenges of the Anthropocene. By developing models that capture the complex relationships between economic and Earth systems, we can better navigate toward sustainable futures that respect planetary boundaries while ensuring human flourishing. The integration of traditional economic tools with ecosystem service assessments and earth system science represents a crucial evolution in how we approach sustainability challenges.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "lectures/01-big_picture_and_syllabus_introduction.html#collaborative-learning-and-future-applications",
+    "href": "lectures/01-big_picture_and_syllabus_introduction.html#collaborative-learning-and-future-applications",
+    "title": "Lecture 01 - Big Picture and Syllabus Introduction",
+    "section": "Collaborative Learning and Future Applications",
+    "text": "Collaborative Learning and Future Applications\nThe interactive, hands-on nature of the course ensures that students not only understand theoretical concepts but can also apply them to real-world problems. Through collaboration, open discussion, and practical application, we will collectively advance our understanding of earth economy modeling and its potential to guide humanity toward sustainable development pathways. The skills and perspectives developed in this course will prove essential as we face the interconnected challenges of the twenty-first century and beyond.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "01 - Big Picture and Syllabus Introduction"
+    ]
+  },
+  {
+    "objectID": "assignments/index.html",
+    "href": "assignments/index.html",
+    "title": "APEC 8602: Applied Earth-Economy Modeling",
+    "section": "",
+    "text": "See all of the specific assignments on the left-menu navigation or on the Homepage’s course schedule.",
+    "crumbs": [
+      "Home",
+      "Assignments"
+    ]
+  },
+  {
+    "objectID": "assignments/02-geographic_information_systems_gis_in_1_hour.html",
+    "href": "assignments/02-geographic_information_systems_gis_in_1_hour.html",
+    "title": "Assignment 02: Geographic Information Systems (GIS) in 1 Hour",
+    "section": "",
+    "text": "Assignment 02: Geographic Information Systems (GIS) in 1 Hour\nGIS is a powerful tool for visualizing and analyzing spatial data. This assignment will introduce you to the basics of GIS using QGIS, a free and open-source GIS software. By the end of this assignment, you will have installed QGIS, learned how to load and visualize spatial data, and performed basic spatial analysis.\n\nInstall QGIS from here. Follow the instructions for your operating system. I recommend the Offline (Standalone) installers Long Term Version (LTR).\nDownload the netCDF file that reports land-use, land cover for one of the RCP/SSP combinations from https://luh.umd.edu/data.shtml. If you got the right file, it should have layers such as:\nprimf: forested primary land\nprimn: non-forested primary land\nsecdf: potentially forested secondary land\nsecdn: potentially non-forested secondary land\npastr: managed pasturerange: rangeland\n\nMake sure to get the release for v2f.\nI’m not giving you the direct link because part of the assignment is learning how to navigate data repositories. If you have trouble finding it, start with the LUH2_v2f README.\n\nUse QGIS to make two maps: One of C3 Annuals in 2025 and one in 2100. You might need to read the README again to figure out which layer is which. Give each map a title and a legend in whatever way you want.\nWrite a 1 paragraph summary of what you see in the maps. How does this particular land use change over time? Describe the spatial hotspots of expansion and contraction or anything else you find interesting.\nCreate a PDF of your two maps and your paragraph. Submit this PDF to the assignment submission link on the course homepage.\n\nDone!",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "02 - Geographic Information Systems (GIS) in 1 Hour"
+    ]
+  },
+  {
+    "objectID": "assignments/01-gitting_up_to_speed.html",
+    "href": "assignments/01-gitting_up_to_speed.html",
+    "title": "01 - Gitting up to Speed",
+    "section": "",
+    "text": "01 - Gitting up to Speed\nThis assignment will ensure you have the basic tools configured on your machine and that you understand the very basics of version control with git. See the course scehdule on the homepage for due dates. Note that this is a greatly simplified version of what you would learn in APEC 8222. If you are taking that course next, you will return to this in more depth.\n\nInstall the VS Code editor from here.\nInstall git from here.\nIf you don’t already have a Github account, create one here. REMINDER: don’t pick a silly username; this will likely stick with you for life. I’m looking at you, “xX_NoScope360Lol_Xx”…\nNavigate to the course Github repository here and click the “Fork” button in the upper right corner. This will create a copy of the repository under your own Github account.\nEmail me the URL to your own copy of the repository (it should look something like github.com/YOUR_github_username/apec_8602_2025).\n\nDone!",
+    "crumbs": [
+      "Home",
+      "Assignments",
+      "01 - Gitting up to Speed"
+    ]
+  },
+  {
+    "objectID": "assignments/03-hands_on_with_climate_iams.html",
+    "href": "assignments/03-hands_on_with_climate_iams.html",
+    "title": "Assignment 03 - Rolling the DICE",
+    "section": "",
+    "text": "We have now run DICE using the default parameters used in Nordhaus 2017. Now, we will tweak the model to answer additional questions by comparing runs with different inputs. To learn how to do this, visit the Mimi Tutorial 3. The beginning may look daunting, but focus on the part showcasing the DICE example. Remember, you are allowed to work together if you need to, so long as you all submit your own, different code. Please write all of your results to a single PDF, which you will upload to canvas.\nQ1: Run the default DICE2016 model as we did in class and use the exlore() functionality to look at the results. Write a paragraph describing these results, noting what the optimal level of mitigation is over time (a graph may be useful here), along with the amount of money spent on abatement.\nQ2: Write 1 to 3 paragraphs supporting or critiquing this sentence in Nordhaus 2017. Be sure to follow the referenced study. Compare this with other (more recent than 2015) data on the costs of mitigation.\n\nQ3: In Nordhaus 2017, section “Growth-Corrected Discounting”, explain in your words how he argues for the discount rate he chooses and why he thinks this is better than alternative estimates. Do you agree?\nQ4: Rerun the DICE2016 model with a lower discount rate (you may choose the exact reduction). Document with graphs and a paragraph what is different in your new equilibrium. As documented in the Tutorial, the model is structured into Components and then Variables/Parameters. You can access these by name from the model object m, using notation like this:\nm[:ComponentName, :VariableName] # returns the whole array of values\nm[:ComponentName, :VariableName][100] # returns just the 100th value\nTo get the exact ComponentName and VariableName, use the Mimi Explorer Window (via explore(m) ) and find the exact names there."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to APEC 8602: Applied Earth-Economy Modeling!",
+    "section": "",
+    "text": "Location: Ruttan Hall B22 (preferred) or online via Zoom (contact me to get link)\nTiming: Tuesdays and Thursdays, 8:45-10:00am CT, from September 2 to October 16.\nGithub repo: https://github.com/jandrewjohnson/apec_8602_2025\nSyllabus: syllabus.html\nGoogle drive: https://drive.google.com/drive/folders/14tJubCW5hm3T6cMYwTDElNsvxk1rptgS?usp=sharing\nVideo playlist for all lectures: https://www.youtube.com/playlist?list=PLir2vw2cQ_Nsn_zNtX050t5Y49YkxcNRt\n\n\nThis will be updated as we proceed. If there’s not a link to a resource yet, it is not finalized yet and might change.\n\n\n\nDate\nTitle\nRequired Reading(s)\nVideo\nSlides\nAssignments\n\n\n2025-09-02\n01 - Big Picture and Syllabus Introduction\n\n01\n01\n\n\n\n2025-09-04\n02 - Introduction to Earth-Economy Modeling\nJohnson et al. (2025)\n02\n02\nAssignment 01 - Gitting up to Speed. Due 2025-09-09.\n\n\n2025-09-09\n03 - National Sustainability in General Equilibrium\nBanerjee et al. (2025) also skim the Supplemental Info, Banerjee et al. (2020)\n03\n03\nAssignment 02 - Geographic Information Systems (GIS) in 1 hour. Due 2025-09-16.\n\n\n2025-09-11\n04 - Scenarios for the Future and Land-use Change Modeling\nHurtt et al. (2020) and Popp et al. (2017)\n04\n04\n\n\n\n2025-09-16\n05 - Hands on with Climate IAMs\nNordhaus 2017, Moore et al. 2022\n05\n05prep, 05\n\n\n\n2025-09-18\nInclusive Wealth, Changing Wealth of Nations, Ecosystem Services\nPolasky et al. (2015)\n\n\n\n\n\n2025-09-23\nHands on with Ecosystem services - Part 1\nPolasky and Segerson (2009)\n\n\n\n\n\n2025-09-25\nHands on with Ecosystem services - Part 2\nChaplin-Kramer et al. (2019)\n\n\n\n\n\n2025-09-30\nHands on with Computable General Equilibrium - Part 1\nShoven and Whalley (1984)\n\n\n\n\n\n2025-10-02\nHands on with Computable General Equilibrium - Part 2\nCorong et al. (2017)\n\n\n\n\n\n2025-10-06\nLinking models of land-use change modeling, ecosystem services and macroeconomy\nVerburg and Overmars (2009)\n\n\n\n\n\n2025-10-08\nGTAP-InVEST\nJohnson et al. (2023)\n\n\n\n\n\n2025-10-14\nTopics within CGEs, Gridded Economic Analysis, National scale, R&D\nBaldos et al. (2019), Baldos et al. (2020)\n\n\n\n\n\n2025-10-16\nSeason Finale and Student Presentations",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Welcome to APEC 8602: Applied Earth-Economy Modeling!",
+    "section": "",
+    "text": "This will be updated as we proceed. If there’s not a link to a resource yet, it is not finalized yet and might change.\n\n\n\nDate\nTitle\nRequired Reading(s)\nVideo\nSlides\nAssignments\n\n\n2025-09-02\n01 - Big Picture and Syllabus Introduction\n\n01\n01\n\n\n\n2025-09-04\n02 - Introduction to Earth-Economy Modeling\nJohnson et al. (2025)\n02\n02\nAssignment 01 - Gitting up to Speed. Due 2025-09-09.\n\n\n2025-09-09\n03 - National Sustainability in General Equilibrium\nBanerjee et al. (2025) also skim the Supplemental Info, Banerjee et al. (2020)\n03\n03\nAssignment 02 - Geographic Information Systems (GIS) in 1 hour. Due 2025-09-16.\n\n\n2025-09-11\n04 - Scenarios for the Future and Land-use Change Modeling\nHurtt et al. (2020) and Popp et al. (2017)\n04\n04\n\n\n\n2025-09-16\n05 - Hands on with Climate IAMs\nNordhaus 2017, Moore et al. 2022\n05\n05prep, 05\n\n\n\n2025-09-18\nInclusive Wealth, Changing Wealth of Nations, Ecosystem Services\nPolasky et al. (2015)\n\n\n\n\n\n2025-09-23\nHands on with Ecosystem services - Part 1\nPolasky and Segerson (2009)\n\n\n\n\n\n2025-09-25\nHands on with Ecosystem services - Part 2\nChaplin-Kramer et al. (2019)\n\n\n\n\n\n2025-09-30\nHands on with Computable General Equilibrium - Part 1\nShoven and Whalley (1984)\n\n\n\n\n\n2025-10-02\nHands on with Computable General Equilibrium - Part 2\nCorong et al. (2017)\n\n\n\n\n\n2025-10-06\nLinking models of land-use change modeling, ecosystem services and macroeconomy\nVerburg and Overmars (2009)\n\n\n\n\n\n2025-10-08\nGTAP-InVEST\nJohnson et al. (2023)\n\n\n\n\n\n2025-10-14\nTopics within CGEs, Gridded Economic Analysis, National scale, R&D\nBaldos et al. (2019), Baldos et al. (2020)\n\n\n\n\n\n2025-10-16\nSeason Finale and Student Presentations",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "lectures/02-introduction_to_earth_economy_modeling.html",
+    "href": "lectures/02-introduction_to_earth_economy_modeling.html",
+    "title": "Lecture 2: Introduction to Earth Economy Modeling",
+    "section": "",
+    "text": "Reading: Johnson et al. (2025).\nSlides as Powerpoint: Download here\nVideo link: On Youtube",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "02 - Introduction to Earth-Economy Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/02-introduction_to_earth_economy_modeling.html#course-structure-and-expectations",
+    "href": "lectures/02-introduction_to_earth_economy_modeling.html#course-structure-and-expectations",
+    "title": "Lecture 2: Introduction to Earth Economy Modeling",
+    "section": "Course Structure and Expectations",
+    "text": "Course Structure and Expectations\n\nAttendance and Participation Requirements\nThe course maintains specific requirements for different categories of participants. In-person attendance is mandatory for all credit-seeking students, reflecting the interactive and discussion-based nature of the material. The university recognizes that Earth Economy Modeling represents an emergent research field, and consequently allows auditors to participate, acknowledging the broader academic interest in this developing discipline. For students taking the course for credit, completion of assignments and consistent in-person attendance form the core requirements. While flexibility exists for occasional absences through email communication with the instructor, the emphasis remains firmly on in-person participation as a crucial element of the learning experience.\n\n\nSkills and Technical Requirements\nThis iteration of the course deliberately minimizes mathematical requirements, marking a departure from previous versions that emphasized natural resource economics with intensive mathematical components. The mathematical foundations previously central to this course have been relocated to Economics 8601, Economics of Sustainability and Dynamics, taught by Steve Pulaski. The current Applied Earth Economy Modeling course adopts a more practical approach, where mathematical concepts find expression through code implementation rather than theoretical proofs.\nNo prior coding experience is assumed for students entering this course. The advent of large language models has fundamentally transformed the landscape of programming education, making coding more accessible than ever before. While reliance on these tools may result in missing certain nuances of programming, the course focuses on ensuring students grasp essential concepts. Syntax-related challenges can be readily addressed using preferred language models, allowing students to concentrate on understanding fundamental programming logic and application.\nThe course primarily utilizes Python as its programming language, with one session dedicated to Julia. Starter code will be provided for all programming assignments, with student tasks primarily involving the editing and modification of input parameters rather than building complex systems from scratch. Programming itself is becoming increasingly language-agnostic, and once fundamental programming concepts are understood, the specific language becomes less critical. Students are encouraged to reach out early if questions or concerns arise about the technical aspects of the course.\n\n\nDiscussion Format and Remote Participation\nClassroom discussions form the backbone of the learning experience, with most taking place during in-person sessions. While occasional remote participation is accommodated, the focus remains on those physically present in the classroom. Remote participants who wish to contribute to discussions are encouraged to actively speak up and make their presence known. The midterm date and other administrative details are still being finalized and will be communicated as the course progresses.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "02 - Introduction to Earth-Economy Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/02-introduction_to_earth_economy_modeling.html#defining-the-field",
+    "href": "lectures/02-introduction_to_earth_economy_modeling.html#defining-the-field",
+    "title": "Lecture 2: Introduction to Earth Economy Modeling",
+    "section": "Defining the Field",
+    "text": "Defining the Field\nThe reading assignment for this lecture provides critical context for understanding Earth Economy Modeling as a discipline. This foundational paper, written at the request of Annual Reviews, serves as an official introduction to the field. The authorship includes contributors from our own department, including Steve Pulaski and myself, along with Becky Chaplin Kramer from the Natural Capital Project, representing a collaborative effort to define and establish this emerging field.\nThe fundamental premise of Earth Economy Modeling stems from the recognition that human activities, particularly in the context of climate change and biodiversity loss driven by economic activity, are pushing against planetary boundaries. The absence of comprehensive models capable of guiding decisions and policies in this complex context represents a significant problem for both policymakers and researchers. Traditionally, Earth systems and economic systems have been modeled as separate entities, with models like Dynamic Stochastic General Equilibrium (DSGE) models operating largely removed from environmental considerations. The integration of these previously separate modeling approaches has become not just beneficial but necessary.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "02 - Introduction to Earth-Economy Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/02-introduction_to_earth_economy_modeling.html#historical-context-and-evolution",
+    "href": "lectures/02-introduction_to_earth_economy_modeling.html#historical-context-and-evolution",
+    "title": "Lecture 2: Introduction to Earth Economy Modeling",
+    "section": "Historical Context and Evolution",
+    "text": "Historical Context and Evolution\n\nEarly Focus on Impacts\nThe initial development of integrated models focused primarily on impacts, examining how economic outputs such as growth affect the environment through mechanisms like deforestation or pollution. This approach proved adequate when the primary concerns centered on externalities and common property management. However, as the global economy has expanded and begun to approach planetary boundaries, the importance of dependencies has become increasingly apparent. Changes in the environment now significantly affect economic outcomes in ways that extend far beyond traditional resource extraction considerations.\n\n\nPlacement Within Existing Literature\nWhen situating Earth Economy Modeling within the broader academic literature, three primary strands of research emerge as foundational. The first strand encompasses resource allocation over time, including optimal extraction models for minerals or oil, exemplified by the Faustman and Hotelling models. These eventually evolved into bioeconomic models that consider biological resources like fisheries, incorporating population dynamics into economic decision-making. However, these models remained limited to single resources and lacked connections to broader ecosystem or economic systems.\nThe second strand focuses on valuation, specifically placing monetary values on environmental goods and services. Methods such as travel cost analysis and hedonic analysis employ econometric models to infer the value of nature from observed behavior. While Jay Coggins covers these approaches in detail in Economics 8603, and while they remain important for understanding environmental economics, they historically did not emphasize the broader systemic connections that Earth Economy Modeling seeks to capture.\nThe third area, systems dynamics, emerged from engineering and optimization disciplines rather than economics. The landmark 1972 publication “The Limits to Growth” utilized computer-based systems dynamics modeling through the World3 model to simulate feedback loops between population, resources, and pollution. This work produced the first quantitative estimate demonstrating that environmental problems could potentially undercut the natural conditions necessary for continued economic activity, suggesting that unchecked economic and population growth could lead to ecological collapse.\n\n\nThe Malthusian Legacy and Modern Debates\nThomas Malthus argued that populations grow exponentially while food production increases only linearly, predicting perpetual scarcity as an inevitable outcome. The Limits to Growth model mathematically expressed and extended this idea beyond food to encompass all resources. Paul Ehrlich’s “The Population Bomb” predicted widespread starvation based on similar logic, though these predictions proved incorrect. Julian Simon, an economist, countered that market responses and human ingenuity would solve resource scarcity problems. Their famous bet on commodity prices, which Simon won, became emblematic of the debate between environmental pessimists and technological optimists, though later analyses suggest Simon may have been fortunate in his timing rather than fundamentally correct in his assessment.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "02 - Introduction to Earth-Economy Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/02-introduction_to_earth_economy_modeling.html#the-computational-revolution-in-modeling",
+    "href": "lectures/02-introduction_to_earth_economy_modeling.html#the-computational-revolution-in-modeling",
+    "title": "Lecture 2: Introduction to Earth Economy Modeling",
+    "section": "The Computational Revolution in Modeling",
+    "text": "The Computational Revolution in Modeling\n\nThe Evolution of Model Complexity\nThe development of computer models has enabled increasingly complex representations of economic and environmental systems over time. The concept of a computational budget has emerged as a key consideration, referring to how computational resources are allocated between economic and environmental complexity within a model. Early models like World3 were necessarily small due to computational limitations, but as processing power has grown exponentially, models have become increasingly complex, incorporating more sectors and achieving higher resolution in both spatial and temporal dimensions.\n\n\nThe Complexity Frontier\nOur paper introduced a conceptual framework visualizing models along a frontier with axes representing economic and environmental complexity. Different models allocate their computational resources differently, with some prioritizing economic detail while others focus on environmental processes. The goal of Earth Economy Modeling is to advance along both dimensions simultaneously, leveraging increased computational resources to build more comprehensive and integrated models that capture the full complexity of human-environment interactions.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "02 - Introduction to Earth-Economy Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/02-introduction_to_earth_economy_modeling.html#systematic-model-identification",
+    "href": "lectures/02-introduction_to_earth_economy_modeling.html#systematic-model-identification",
+    "title": "Lecture 2: Introduction to Earth Economy Modeling",
+    "section": "Systematic Model Identification",
+    "text": "Systematic Model Identification\nTo identify relevant models for our analysis, we developed an algorithm seeded with papers that listed existing models, then systematically searched citations and employed a large language model to identify similar models in the literature. Each model underwent manual verification to ensure relevance and quality. This process synthesized thousands of papers into a core set of 119 relevant models. We supplemented this with a systematic literature review to confirm our findings, focusing specifically on models that incorporated both economic and environmental components, offered high-resolution representation, provided accessible code, and included adequate documentation.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "02 - Introduction to Earth-Economy Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/02-introduction_to_earth_economy_modeling.html#ecosystem-services-framework",
+    "href": "lectures/02-introduction_to_earth_economy_modeling.html#ecosystem-services-framework",
+    "title": "Lecture 2: Introduction to Earth Economy Modeling",
+    "section": "Ecosystem Services Framework",
+    "text": "Ecosystem Services Framework\n\nConceptual Foundations\nOne crucial subset of models focuses on ecosystem services, a concept that gained prominence at the University of Minnesota. The framework recognizes that sustainable human well-being requires explicit accounting for the value of natural capital and the ecosystem services it provides. Natural capital refers to the Earth’s ecosystems and biodiversity as stocks, while ecosystem services represent the valuable benefits that flow to humans from that capital. This stock-flow relationship mirrors traditional economic models of capital and production, providing a familiar framework for economists to understand environmental dynamics.\n\n\nCategories of Ecosystem Services\nEcosystem services encompass four primary categories that capture different ways nature benefits humanity. Provisioning services include tangible products extracted from ecosystems, such as fish, wood, and fresh water. Supporting services comprise fundamental processes like photosynthesis and soil formation that underpin all other services. Regulating services include climate regulation through carbon storage, water purification, and disease control. Cultural services encompass recreation, aesthetics, education, and spiritual connections to nature. The Natural Capital Project, founded by Steve Glaske, developed InVEST (Integrated Valuation of Ecosystem Services and Tradeoffs), a suite of open-source ecosystem service models that encapsulate consensus science on these biophysical processes.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "02 - Introduction to Earth-Economy Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/02-introduction_to_earth_economy_modeling.html#model-typology",
+    "href": "lectures/02-introduction_to_earth_economy_modeling.html#model-typology",
+    "title": "Lecture 2: Introduction to Earth Economy Modeling",
+    "section": "Model Typology",
+    "text": "Model Typology\n\nIntegrated Assessment Models (IAMs)\nIntegrated Assessment Models represent one of the earliest attempts to combine economic and environmental systems within a single framework. Climate IAMs, such as the DICE model, focus primarily on climate change mitigation and the economic costs of various policy interventions. More comprehensive IAMs expand beyond climate to include land use, water resources, and other environmental sectors. These models vary significantly in their treatment of economic and environmental complexity, with some prioritizing detailed economic sectors while others emphasize biophysical processes.\n\n\nGeneral Equilibrium Models\nComputable General Equilibrium (CGE) models and Dynamic Stochastic General Equilibrium (DSGE) models bring sophisticated economic theory to bear on environmental questions. CGE models solve for equilibrium prices and quantities across all markets simultaneously, allowing for analysis of how environmental policies ripple through the entire economy. DSGE models extend this framework to include optimal allocation decisions over time, incorporating uncertainty and forward-looking behavior. While these models excel at economic complexity, they traditionally included limited environmental detail.\n\n\nSpecialized Environmental Models\nEcosystem service models assess different scenarios but often lack direct linkages to economic models, operating instead as standalone assessments of biophysical changes. Land use change models bridge economic predictions and high-resolution spatial patterns, enabling integration with ecosystem service models that require spatially explicit inputs. Additionally, numerous domain-specific models exist for hydrology, climate, soil movement, and other environmental processes. These specialized models, when paired with economic questions, represent a frontier for further integration efforts.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "02 - Introduction to Earth-Economy Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/02-introduction_to_earth_economy_modeling.html#the-challenge-of-comprehensive-valuation",
+    "href": "lectures/02-introduction_to_earth_economy_modeling.html#the-challenge-of-comprehensive-valuation",
+    "title": "Lecture 2: Introduction to Earth Economy Modeling",
+    "section": "The Challenge of Comprehensive Valuation",
+    "text": "The Challenge of Comprehensive Valuation\nAs models became more integrated, a fundamental question emerged regarding the total value of nature to the global economy. Various methods attempt to express this value as a percentage of global GDP, each with distinct advantages and limitations. Dependency ratios examine how much specific sectors, such as agriculture, depend on natural inputs and ecosystem services. Contingent valuation methods survey individuals about their willingness to pay for environmental preservation or improvement. However, scaling individual valuations to encompass entire systems raises significant methodological problems, particularly regarding general equilibrium effects.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "02 - Introduction to Earth-Economy Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/02-introduction_to_earth_economy_modeling.html#general-equilibrium-considerations",
+    "href": "lectures/02-introduction_to_earth_economy_modeling.html#general-equilibrium-considerations",
+    "title": "Lecture 2: Introduction to Earth Economy Modeling",
+    "section": "General Equilibrium Considerations",
+    "text": "General Equilibrium Considerations\nThe diamond asteroid example illustrates why partial equilibrium approaches fail when applied to large-scale changes. If humanity captured an asteroid rich in diamonds, we would not become infinitely wealthy because the price of diamonds would collapse due to the massive increase in supply. General equilibrium models address these systemic effects, providing theoretically sound estimates of large-scale changes by accounting for price adjustments and substitution effects throughout the economy. The GTAP (Global Trade Analysis Project) model serves as a premier example of general equilibrium modeling applied to economy-wide questions.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "02 - Introduction to Earth-Economy Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/02-introduction_to_earth_economy_modeling.html#the-world-wildlife-fund-initiative",
+    "href": "lectures/02-introduction_to_earth_economy_modeling.html#the-world-wildlife-fund-initiative",
+    "title": "Lecture 2: Introduction to Earth Economy Modeling",
+    "section": "The World Wildlife Fund Initiative",
+    "text": "The World Wildlife Fund Initiative\nThe World Wildlife Fund commissioned a comprehensive effort to estimate the total value of nature to the global economy. The resulting report recommended linking InVEST and GTAP models, creating a workflow that projects economic changes, translates these to land use changes, assesses resulting ecosystem service changes, and then expresses productivity impacts back into the economic model. This approach embraces general equilibrium thinking, allowing for quantitative estimates of nature’s value that account for systemic feedbacks and price adjustments.\nA key finding from this work demonstrates that baseline economic forecasts prove overly optimistic by missing environmental headwinds. When ecosystem service changes are incorporated into economic projections, growth trajectories become lower, and the difference between these scenarios represents nature’s economic value. This methodology avoids the pitfalls of scaling partial equilibrium estimates while providing policy-relevant assessments of environmental contributions to economic well-being.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "02 - Introduction to Earth-Economy Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/02-introduction_to_earth_economy_modeling.html#platform-architecture",
+    "href": "lectures/02-introduction_to_earth_economy_modeling.html#platform-architecture",
+    "title": "Lecture 2: Introduction to Earth Economy Modeling",
+    "section": "Platform Architecture",
+    "text": "Platform Architecture\nThe Integrated Economic Environment Modeling Platform (IEMP) was developed to capture the complex dynamics linking economy, land use, ecosystem services, and back to economic outcomes. This platform represents the first model to include non-material regulating and cultural ecosystem services in addition to provisioning services, and to compute these linkages at a country scale with high spatial resolution. The architecture follows a logical flow from economic drivers through environmental changes back to economic impacts, creating a closed loop of feedbacks.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "02 - Introduction to Earth-Economy Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/02-introduction_to_earth_economy_modeling.html#core-components-and-characteristics",
+    "href": "lectures/02-introduction_to_earth_economy_modeling.html#core-components-and-characteristics",
+    "title": "Lecture 2: Introduction to Earth Economy Modeling",
+    "section": "Core Components and Characteristics",
+    "text": "Core Components and Characteristics\nEarth Economy Models possess five defining characteristics that distinguish them from earlier modeling approaches. First, they maintain global scope, recognizing that environmental and economic systems operate at planetary scales. Second, they employ general equilibrium frameworks to capture systemic interactions and price effects. Third, they utilize high-resolution Earth system inputs, often at spatial scales of kilometers or finer. Fourth, they represent economic actors with high resolution, distinguishing between different sectors, regions, and sometimes household types. Fifth, they feature two-way endogenous linkages between economy and environment, allowing changes in each system to affect the other dynamically.\nThe theoretical framework encompasses four main model components working in concert. The economic model, typically GTAP or similar, provides projections of economic activity and responds to environmental changes. The land use change model translates economic drivers into spatial patterns of land transformation. The ecosystem service model assesses how land use changes affect the provision of various ecosystem services. The impacts and dependencies model translates ecosystem service changes back into economic productivity effects, closing the feedback loop.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "02 - Introduction to Earth-Economy Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/02-introduction_to_earth_economy_modeling.html#implementation-and-computational-challenges",
+    "href": "lectures/02-introduction_to_earth_economy_modeling.html#implementation-and-computational-challenges",
+    "title": "Lecture 2: Introduction to Earth Economy Modeling",
+    "section": "Implementation and Computational Challenges",
+    "text": "Implementation and Computational Challenges\nOur research lab developed a specific implementation using GTAP for economic modeling, SEALS (Spatial Economic Allocation Landscape Simulator) for land use change, InVEST for ecosystem services, and custom pathways for impacts and dependencies. The least developed component remains the translation of ecosystem service changes into economic model shocks, representing an active area of research. Future lectures will explore these technical details in depth.\nComputing global ecosystem services at high resolution was first achieved in Chaplin Kramer et al. 2019, enabling impact modeling at unprecedented scales. Each ecosystem service requires different biophysical pathways and significant computational resources. Services like sediment retention, climate regulation through carbon storage, pollination, and coastal protection each demand distinct modeling approaches and data inputs. The computational requirements for running these models globally remain substantial, often requiring high-performance computing clusters.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "02 - Introduction to Earth-Economy Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/02-introduction_to_earth_economy_modeling.html#central-bank-engagement",
+    "href": "lectures/02-introduction_to_earth_economy_modeling.html#central-bank-engagement",
+    "title": "Lecture 2: Introduction to Earth Economy Modeling",
+    "section": "Central Bank Engagement",
+    "text": "Central Bank Engagement\nFollowing the World Wildlife Fund’s initial project, interest from central banks and ministries of finance has grown rapidly. Central banks, traditionally responsible for controlling inflation and maintaining financial system stability, have become increasingly interested in understanding systemic risks arising from potential nature collapse. These institutions recognize that environmental degradation could pose risks to financial stability comparable to or exceeding those from traditional economic shocks.\nOur work has been presented to central banks in Chile, Norway, France, and other nations, each seeking to understand how environmental changes might affect their monetary policy objectives and financial stability mandates. The Norwegian Sovereign Wealth Fund, the world’s largest sovereign wealth fund, has expressed particular interest in assessing risks to its global investment portfolio from environmental changes, recognizing that climate change and ecosystem degradation could significantly affect asset values across multiple sectors.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "02 - Introduction to Earth-Economy Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/02-introduction_to_earth_economy_modeling.html#research-opportunities-and-future-directions",
+    "href": "lectures/02-introduction_to_earth_economy_modeling.html#research-opportunities-and-future-directions",
+    "title": "Lecture 2: Introduction to Earth Economy Modeling",
+    "section": "Research Opportunities and Future Directions",
+    "text": "Research Opportunities and Future Directions\nThis field offers exceptional opportunities for new research, representing a research-rich environment with numerous unexplored areas. The complexity of linking economic and environmental systems creates abundant opportunities for methodological advances, empirical applications, and theoretical developments. Graduate students who can navigate this complexity will find numerous possibilities for publishable work and PhD dissertation topics.\nThe rapid evolution of the field means that contributions can have immediate policy relevance while also advancing academic knowledge. The intersection of environmental science, economics, computer science, and policy creates unique interdisciplinary research opportunities. As computational power continues to increase and data availability improves, the potential for more sophisticated and useful Earth Economy Models will only grow.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "02 - Introduction to Earth-Economy Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html",
+    "href": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html",
+    "title": "Lecture 4: Scenarios for the Future and Land Use Change Modeling",
+    "section": "",
+    "text": "Reading: Hurtt et al. (2020) and Popp et al. (2017)\nSlides as Powerpoint: Download here\nVideo link: On Youtube",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "04 - Scenarios for the Future and Land-use Change Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#introduction-and-course-context",
+    "href": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#introduction-and-course-context",
+    "title": "Lecture 4: Scenarios for the Future and Land Use Change Modeling",
+    "section": "Introduction and Course Context",
+    "text": "Introduction and Course Context\nThis lecture focuses on scenarios for the future and land use change modeling, building upon the theoretical framework established in previous sessions while moving toward more specific applications and datasets. The session emphasizes practical implementation through hands-on work with QGIS software and the Land Use Harmonization 2 (LUH2) dataset, marking a transition in the course toward more applied methodologies in earth economy modeling.\nThe course trajectory has evolved from introducing earth economy modeling and examining its origins in national sustainability models and general equilibrium approaches to now focusing on the specific scenarios that serve as inputs to these complex models. This progression reflects the pedagogical approach of moving from theoretical foundations to practical applications, ensuring students understand both the conceptual frameworks and their real-world implementations.\nLooking ahead in the course schedule, the next session will shift focus toward understanding integrated assessment models for climate change through hands-on exploration. This will include examination of the DICE model developed by William Nordhaus, which despite its controversial use by climate skeptics to minimize climate change impacts, remains a foundational model in the field. The course will also explore the Green DICE Model update from Frances Moore, continuing the emphasis on practical application through direct engagement with these modeling tools. Subsequent lectures will cover inclusive wealth concepts and ecosystem services, maintaining the balance between theoretical understanding and practical implementation that characterizes this applied course approach.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "04 - Scenarios for the Future and Land-use Change Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#data-organization-and-file-management",
+    "href": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#data-organization-and-file-management",
+    "title": "Lecture 4: Scenarios for the Future and Land Use Change Modeling",
+    "section": "Data Organization and File Management",
+    "text": "Data Organization and File Management\n\nEstablishing a Standardized File Structure\nThe importance of proper file organization cannot be overstated in computational modeling and data analysis. The majority of programming errors encountered by students, particularly those new to coding, stem from incorrect file paths and misplaced data files. This fundamental issue, while seemingly trivial, can consume significant time and create frustration that detracts from learning the substantive content of the course. To address this challenge proactively, the course implements a standardized file organization system that all students must adopt.\nThe standardization follows best practices established in the programming community, utilizing the user directory as the foundation for file organization. This approach ensures cross-platform compatibility across Windows, Mac, and Linux operating systems, eliminating potential issues that arise from system-specific file path conventions. The user directory, typically located at C:[username] on Windows systems or /Users/[username] on Mac systems, serves as the root location for all course-related files.\nWithin the user directory, students create a folder called “Files” to maintain separation from system configuration files and other program-generated content that typically populates the user directory. This Files folder serves as the container for all course materials, providing a clean organizational structure that prevents confusion with system files while maintaining accessibility for course work.\n\n\nImplementing the Base Data Structure\nThe core of the file organization centers on the BaseData folder, which resides within the Files directory. This folder mirrors the structure of the shared Google Drive repository, ensuring consistency between the cloud-based source and local implementations. The mirroring approach means that any file path referenced in course materials or sample code will work identically for all students, regardless of their individual system configurations.\nWhen downloading files from the shared Google Drive repository, students must replicate the exact folder hierarchy found in the cloud storage. For instance, the LULC_CurrentWillamette.tiff file resides in the path BaseData &gt; Invest Sample Data &gt; Carbon. Students must create each of these folders in sequence, maintaining the exact naming conventions, including capitalization and spacing. This precision in folder naming prevents errors that could arise from minor variations in folder names when code attempts to access specific files.\nThe Google Drive Desktop Sync application offers an automated alternative to manual file downloading and organization. Students who install this application benefit from automatic synchronization that maintains the proper folder structure without manual intervention. However, recognizing that not all students may have access to sufficient storage space or prefer to install additional software, the manual download method remains the primary approach taught in the course.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "04 - Scenarios for the Future and Land-use Change Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#the-ipbes-framework-and-scenario-typology",
+    "href": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#the-ipbes-framework-and-scenario-typology",
+    "title": "Lecture 4: Scenarios for the Future and Land Use Change Modeling",
+    "section": "The IPBES Framework and Scenario Typology",
+    "text": "The IPBES Framework and Scenario Typology\n\nUnderstanding the Intergovernmental Science-Policy Platform\nThe Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES) represents a crucial international body dedicated to synthesizing current understanding of biodiversity and ecosystem services. This organization serves as the biodiversity equivalent to the more widely known Intergovernmental Panel on Climate Change (IPCC), addressing the historical imbalance in attention between climate change and biodiversity conservation. IPBES combines, funds, and supports scientific research in biodiversity and ecosystem services, providing a coordinated international approach to understanding and addressing biodiversity loss.\nThe organization gained significant recognition through the publication by Sandra Diaz and colleagues in 2015, which presented the IPBES conceptual framework. While the framework itself contains substantial theoretical complexity that extends beyond the scope of this course, its practical contribution lies in establishing a useful typology for scenarios that has become standard in the field. This typology provides a structured approach to thinking about different types of future projections and their applications in sustainability science.\n\n\nFour Types of Scenarios in Sustainability Science\nThe IPBES framework identifies four distinct types of scenarios, each serving different purposes in sustainability analysis and decision-making. Exploratory scenarios represent the most common understanding of scenario analysis, where researchers examine the space of possible futures from a current starting point. These scenarios explore various trajectories without prescribing specific pathways, allowing for broad investigation of potential outcomes. For instance, given observed declines in nature’s benefits to people, exploratory scenarios investigate various ways this trend might continue, stabilize, or reverse, without necessarily specifying the mechanisms for achieving particular outcomes.\nTarget-seeking scenarios take a fundamentally different approach by starting with a specific desired outcome and working backward to identify feasible pathways to achieve that goal. The Paris Climate Agreement’s target of limiting global warming to 1.5 to 2 degrees Celsius exemplifies this approach. Researchers using target-seeking scenarios examine which combinations of policies, technologies, and behavioral changes could feasibly achieve this temperature target, systematically ruling out pathways that fail to meet the specified goal. This backward-looking approach provides crucial information for policy-makers about the feasibility and requirements of achieving specific sustainability targets.\nPolicy screening scenarios occupy a particularly important role in applied sustainability science, as they directly evaluate the potential impacts of specific policy interventions. Researchers develop a menu of policy options, such as carbon taxes, payments for ecosystem services, or regulations banning certain activities like coal extraction, and then model the outcomes of each policy under various conditions. This approach enables systematic comparison of policy effectiveness across chosen metrics, providing evidence-based guidance for policy selection and design. The ability to test policies in a modeling environment before real-world implementation represents a crucial advantage in addressing complex sustainability challenges.\nRetrospective scenarios serve a unique validation and learning function by examining policies that have already been implemented. These scenarios model what analysts expected would happen when a policy was proposed, compare those projections to actual observed outcomes, and analyze the gaps between prediction and reality. This retrospective analysis serves two critical functions: it enables model calibration to improve future predictions, and it provides insights into why certain policies succeeded or failed relative to expectations. The learning generated from retrospective scenarios feeds back into improving all other types of scenario analysis.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "04 - Scenarios for the Future and Land-use Change Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#shared-socioeconomic-pathways-ssps",
+    "href": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#shared-socioeconomic-pathways-ssps",
+    "title": "Lecture 4: Scenarios for the Future and Land Use Change Modeling",
+    "section": "Shared Socioeconomic Pathways (SSPs)",
+    "text": "Shared Socioeconomic Pathways (SSPs)\n\nDevelopment and Purpose of the SSPs\nThe Shared Socioeconomic Pathways emerged from a major collaborative effort documented in the Riahi et al. 2017 paper, involving multiple research teams and stakeholders working to define a comprehensive set of scenarios for assessing biodiversity and nature’s future. The SSPs were explicitly designed to provide for broader sustainability questions what the Representative Concentration Pathways (RCPs) had achieved for climate change analysis. While RCPs focus specifically on greenhouse gas concentration trajectories and their climate impacts, SSPs encompass a much broader range of socioeconomic factors including population dynamics, economic development, urbanization patterns, and productivity trends.\nThe development process for the SSPs involved extensive stakeholder engagement to define different storylines or narratives about possible futures. These narratives go beyond simple quantitative projections to include qualitative descriptions of how societies might evolve, what values might predominate, and how international cooperation might develop or deteriorate. The storylines provide context and coherence to what would otherwise be disconnected numerical projections, helping users understand the internal logic of each scenario.\nThese narrative storylines undergo translation into specific quantitative drivers that can be incorporated into models. Population projections, urbanization rates, productivity growth, and technological development rates all flow from the underlying narratives, ensuring internal consistency within each scenario. Policy assumptions are also incorporated, allowing for policy screening within the broader scenario framework. The result is a comprehensive set of country-level projections for both inputs like GDP and population, and outputs like energy supply and demand patterns and land use change trajectories.\n\n\nThe Two-Dimensional Challenge Space\nThe SSPs are conceptualized within a two-dimensional space that captures the fundamental challenges facing climate action. The vertical axis represents mitigation challenges, referring to the difficulty of preventing climate change through emission reductions or renewable energy deployment. Low mitigation challenges indicate conditions where transitioning to low-carbon systems is relatively easy and affordable, while high mitigation challenges suggest substantial barriers to emission reductions, whether technological, economic, or political.\nThe horizontal axis captures adaptation challenges, representing the difficulty of managing climate change impacts through measures like infrastructure improvements, agricultural adaptation, or public health interventions. Low adaptation challenges suggest societies with strong institutions, adequate resources, and equitable distribution systems that can effectively respond to climate impacts. High adaptation challenges indicate vulnerable populations, weak institutions, or resource constraints that limit adaptive capacity.\nThis two-dimensional framework creates distinct regions with different implications for climate action. The lower-left corner represents the most favorable conditions, with low challenges for both mitigation and adaptation, suggesting a world well-equipped to both prevent and manage climate change. The upper-right corner represents the most challenging conditions, where both preventing and adapting to climate change face substantial obstacles. The off-diagonal corners present interesting asymmetries: high mitigation challenges with low adaptation challenges might represent a fossil fuel-dependent world with strong institutions and resources for adaptation, while low mitigation challenges with high adaptation challenges might occur if renewable energy becomes cheap but inequality and weak institutions limit adaptive capacity.\n\n\nSpecific SSP Narratives and Characteristics\nEach SSP carries a distinctive narrative that shapes its quantitative projections. SSP1, titled “Sustainability - Taking the Green Road,” represents a world that successfully addresses both environmental and social challenges through global cooperation, technological innovation, and shifts toward sustainable consumption patterns. This scenario assumes strong international institutions, reduced inequality, and successful transitions to renewable energy and sustainable land use practices.\nSSP2, “Middle of the Road,” represents a continuation of current trends without dramatic shifts in either positive or negative directions. This scenario serves as a baseline or business-as-usual projection, assuming moderate progress on some sustainability challenges while others remain unresolved. Economic and social development proceeds unevenly, with some countries achieving sustainability goals while others lag behind.\nSSP3, “A Rocky Road - Regional Rivalry,” depicts a world fragmenting into regional blocks with limited cooperation on global challenges. Countries prioritize national security and economic competitiveness over environmental protection, leading to material-intensive consumption, slow technological progress on sustainability, and increasing inequality both within and between nations. This scenario represents high challenges for both mitigation and adaptation.\nSSP4, “A Road Divided - Inequality,” explores a world of increasing disparities both within and between countries. While some regions and populations achieve high levels of development and successfully address environmental challenges, others are left behind, lacking resources and capacity for either mitigation or adaptation. This scenario highlights how inequality can undermine global sustainability efforts even when some actors are highly capable.\nSSP5, “Fossil-fueled Development - Taking the Highway,” presents a paradoxical scenario of rapid economic growth and technological development powered primarily by fossil fuels. While this leads to high emissions and significant climate change, the economic prosperity and technological capability enable substantial adaptation efforts. This scenario explores whether societies can successfully adapt to severe climate change through technology and wealth, essentially creating climate-controlled environments for human habitation.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "04 - Scenarios for the Future and Land-use Change Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#integration-of-ssps-with-representative-concentration-pathways",
+    "href": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#integration-of-ssps-with-representative-concentration-pathways",
+    "title": "Lecture 4: Scenarios for the Future and Land Use Change Modeling",
+    "section": "Integration of SSPs with Representative Concentration Pathways",
+    "text": "Integration of SSPs with Representative Concentration Pathways\n\nUnderstanding RCP-SSP Combinations\nThe integration of SSPs with RCPs creates a matrix of possible future scenarios that combine socioeconomic development pathways with climate forcing outcomes. RCPs are expressed numerically as watts per square meter of radiative forcing, with values ranging from 1.9 (very low forcing and minimal climate change) to 8.5 (high forcing and severe climate change). While not precisely equivalent to temperature increases, these values provide a useful approximation of climate change severity.\nTheoretically, any SSP can be combined with any RCP, creating a vast space of possible scenarios. However, certain combinations are more plausible than others. For instance, SSP1’s sustainable development narrative aligns naturally with lower RCP values, while SSP3’s regional rivalry and limited cooperation makes higher RCP values more likely. Despite this logical alignment, the framework allows for exploration of seemingly contradictory combinations, such as sustainable development with high emissions or fossil-fueled development with low emissions, though achieving these combinations would require specific conditions or policies.\nPractical constraints limit the number of SSP-RCP combinations that are fully developed and modeled. Computational limitations, resource constraints, and the need for tractable analysis lead to the selection of marker scenarios that represent specific SSP-RCP pairs. These marker scenarios, designated by combining the SSP and RCP numbers (e.g., SSP126 for SSP1 with RCP2.6, or SSP585 for SSP5 with RCP8.5), receive the most detailed analysis and are most commonly used in research and policy applications.\n\n\nImplications for Energy and Land Use Projections\nThe SSP-RCP combinations generate specific projections for critical sustainability outcomes, particularly in energy production and land use patterns. Energy projections vary dramatically across scenarios, with different trajectories for the mix of oil and gas, coal, renewables, and nuclear power. The primary energy triangle visualization effectively captures these transitions, showing how energy sources shift over time under different scenarios. Historical patterns show transitions from biomass to coal during industrialization, then diversification to include oil and gas, with future scenarios diverging based on whether renewable energy expands rapidly (as in SSP1) or fossil fuels continue to dominate (as in SSP5).\nLand use projections similarly vary across SSP-RCP combinations, reflecting different assumptions about agricultural intensification, dietary transitions, urbanization patterns, and forest conservation. For instance, scenarios with high crop yield improvements may require less agricultural land, potentially allowing for reforestation or habitat restoration. Conversely, scenarios with growing meat consumption and limited yield improvements may drive agricultural expansion into natural ecosystems. These land use trajectories have profound implications for biodiversity, ecosystem services, and the carbon cycle.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "04 - Scenarios for the Future and Land-use Change Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#integrated-assessment-models-and-the-ssps",
+    "href": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#integrated-assessment-models-and-the-ssps",
+    "title": "Lecture 4: Scenarios for the Future and Land Use Change Modeling",
+    "section": "Integrated Assessment Models and the SSPs",
+    "text": "Integrated Assessment Models and the SSPs\n\nModel Architecture and Capabilities\nThe SSP projections are generated using sophisticated Integrated Assessment Models (IAMs) that combine representations of human and natural systems. The primary models used with the SSPs include AIM (Asia-Pacific Integrated Model), GCAM (Global Change Assessment Model), IMAGE (Integrated Model to Assess the Global Environment), MESSAGE-GLOBIOM, and REMIND-MAgPIE. Each model has unique strengths and approaches, but all solve complex optimization problems to project future development pathways that meet specified objectives while respecting various constraints.\nThese models typically employ partial equilibrium approaches, meaning they represent certain sectors in great detail while treating others as exogenous or simplified. This contrasts with general equilibrium models that attempt to capture all economic interactions simultaneously. The partial equilibrium approach allows for much greater detail in key sectors like agriculture, energy, and land use, but may miss important feedback effects between sectors. For instance, a model might detail agricultural production and land use decisions while treating industrial development as an external input rather than an outcome influenced by agricultural patterns.\nThe models solve cost-minimization problems subject to various constraints, seeking efficient pathways to meet demands for food, energy, and other goods and services while respecting resource limitations and policy constraints. This optimization framework assumes rational economic actors and efficient markets, assumptions that may not hold in reality but provide useful benchmarks for analysis. The models can incorporate various policy instruments, technological options, and behavioral changes, allowing for extensive exploration of intervention strategies.\n\n\nLimitations and Considerations\nA critical limitation of partial equilibrium models lies in their treatment of key constraints and assumptions. These models often assume that certain fundamental challenges are resolved, then explore what additional actions are needed. For example, models might assume that agricultural yields will be sufficient to feed the global population, treating yield as an exogenous input rather than an endogenous outcome influenced by climate change, soil degradation, and other factors. If yields fall short of assumptions, the models may not capture resulting food security crises or land use pressures.\nThe assumption of economic optimization and rational behavior may not reflect real-world decision-making, which is influenced by cultural values, political constraints, institutional failures, and behavioral biases. Models may underestimate transaction costs, implementation challenges, and resistance to change that characterize real-world transitions. These limitations don’t invalidate the models but suggest caution in interpreting results and the need for complementary analyses that address these gaps.\nDespite limitations, IAMs paired with SSPs provide invaluable insights into possible futures and the implications of different development pathways. They offer internally consistent, quantitative projections that can inform policy debates and identify key leverage points for intervention. The models help identify trade-offs between objectives, unexpected consequences of policies, and conditions necessary for achieving sustainability goals.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "04 - Scenarios for the Future and Land-use Change Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#the-land-use-harmonization-project",
+    "href": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#the-land-use-harmonization-project",
+    "title": "Lecture 4: Scenarios for the Future and Land Use Change Modeling",
+    "section": "The Land Use Harmonization Project",
+    "text": "The Land Use Harmonization Project\n\nConnecting Historical Data with Future Projections\nThe Land Use Harmonization Project (LUH2), described in Hurtt et al. 2020, represents a monumental effort to create consistent, spatially explicit land use datasets spanning from historical reconstructions to future projections. The project addresses a critical need in Earth system modeling for land use data that maintains consistency across the historical-future transition, enables model intercomparison, and provides the spatial and temporal resolution required for contemporary modeling applications.\nThe historical component of LUH2 extends back to 10,000 BCE, reconstructing land use transitions based on archaeological evidence, historical records, and modeling of agricultural expansion and intensification. This deep historical perspective provides context for understanding current land use patterns and rates of change, while also serving as validation data for models that must reproduce historical transitions before projecting futures. The historical reconstruction reveals the acceleration of land use change with industrialization and population growth, providing baselines for assessing future scenarios.\nThe future component incorporates the SSP-RCP scenarios, translating the aggregate land use projections from IAMs into spatially explicit, grid-cell level changes. This translation involves sophisticated downscaling algorithms that respect local constraints, historical patterns, and biophysical suitability while achieving aggregate targets. The resulting datasets provide annual, half-degree resolution global land use maps for multiple land use categories including cropland, pasture, forest, and urban areas.\n\n\nData Structure and Applications\nThe LUH2 dataset employs a state-and-transition framework that tracks both land use states (the amount of each land use type) and transitions between states (the annual flows between land use categories). This framework captures the dynamics of land use change, including gross transitions that may be masked in net change analyses. For instance, simultaneous forest loss in one region and forest gain in another might result in little net forest change, but the gross transitions have important implications for carbon cycling, biodiversity, and ecosystem services.\nThe dataset uses the NetCDF format, a standard in climate and Earth system modeling that enables efficient storage and access of multidimensional data. Each file contains multiple variables (different land use types), multiple time steps (annual data), and global coverage at half-degree resolution. This structure allows users to extract specific variables, time periods, or regions as needed for their applications. The standardized format ensures compatibility with major Earth system models and analysis tools.\nApplications of LUH2 data span numerous research domains and practical applications. Climate modelers use the data to account for land use impacts on carbon cycling, surface energy balance, and atmospheric chemistry. Biodiversity researchers apply the data to assess habitat loss, fragmentation, and species exposure to land use change. Agricultural scientists use the projections to evaluate food security, water resources, and sustainable intensification strategies. Policy makers reference the scenarios to understand implications of different development pathways and identify intervention opportunities.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "04 - Scenarios for the Future and Land-use Change Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#practical-implementation-with-qgis",
+    "href": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#practical-implementation-with-qgis",
+    "title": "Lecture 4: Scenarios for the Future and Land Use Change Modeling",
+    "section": "Practical Implementation with QGIS",
+    "text": "Practical Implementation with QGIS\n\nWorking with Land Use/Land Cover Data\nThe practical component of the course introduces students to working with actual land use data using QGIS, a free and open-source geographic information system that has become increasingly popular in academic and professional settings. QGIS provides capabilities comparable to commercial alternatives like ArcGIS while offering the advantages of open-source software including free access, community support, and extensibility. The software handles various data formats common in land use analysis, including raster data (like TIFF files) and multidimensional datasets (like NetCDF files).\nThe LULC_CurrentWillamette.tiff file serves as an introduction to raster land use data. This file contains a two-dimensional matrix where each cell holds a numerical value representing a specific land use class. The classification system assigns unique numbers to different land use types: 90 for woody wetlands, 82 for cultivated crops, and so forth. This numerical encoding allows for efficient storage and processing while maintaining categorical information about land use types. The 30-meter resolution of this dataset provides sufficient detail for landscape-level analysis while remaining computationally manageable.\nLoading and visualizing this data in QGIS demonstrates fundamental GIS operations that students will use throughout the course. The drag-and-drop interface simplifies data loading, while the symbology tools enable customization of visualization to highlight patterns of interest. Converting from the default grayscale display to a pseudocolor representation using appropriate color ramps makes land use patterns immediately visible and interpretable. The ability to zoom, pan, and query individual pixels provides interactive exploration of the data, helping students develop intuition about land use patterns and spatial relationships.\n\n\nExploring Temporal Dynamics with LUH2 Data\nThe LUH2 NetCDF files introduce additional complexity through their temporal dimension, containing annual land use data spanning historical reconstructions and future projections. This multidimensional structure requires more sophisticated handling than simple raster files, as users must specify which variables and time steps to visualize. QGIS handles this complexity through a selection interface that allows users to choose specific variables (such as cropland, rangeland, or forest) and specific years from the time series.\nThe rangeland variable provides an illustrative example of the data’s content and utility. Each pixel contains the proportion of that grid cell covered by rangeland, ranging from 0 (no rangeland) to 1 (complete rangeland coverage). This proportional representation acknowledges that half-degree grid cells (approximately 55 km at the equator) contain mixtures of land use types rather than homogeneous coverage. Visualizing rangeland distribution reveals global patterns such as the extensive rangelands of central Asia, Australia, and parts of Africa, contrasting with the minimal rangeland in tropical forests or intensive agricultural regions like the U.S. Corn Belt.\nThe temporal dimension enables analysis of land use change over time, a critical capability for understanding trends and projecting futures. By selecting different time bands within the same dataset, students can observe how land use patterns evolve under different scenarios. For instance, comparing rangeland extent in 2020 versus 2100 under different SSPs reveals dramatically different trajectories depending on assumptions about agricultural intensification, dietary choices, and conservation policies. This temporal analysis provides concrete illustrations of how different development pathways lead to different environmental outcomes.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "04 - Scenarios for the Future and Land-use Change Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#synthesis-and-future-applications",
+    "href": "lectures/04-scenarios_for_the_future_and_land_use_change_modeling.html#synthesis-and-future-applications",
+    "title": "Lecture 4: Scenarios for the Future and Land Use Change Modeling",
+    "section": "Synthesis and Future Applications",
+    "text": "Synthesis and Future Applications\n\nConnecting Concepts to Applications\nThe integration of conceptual frameworks, quantitative scenarios, and practical data analysis tools provides students with a comprehensive toolkit for engaging with land use and sustainability challenges. Understanding the IPBES scenario typology enables appropriate selection of analytical approaches for different questions. Familiarity with the SSPs and their underlying assumptions allows critical evaluation of projections and their applicability to specific contexts. Hands-on experience with actual datasets and GIS tools transforms abstract concepts into concrete analytical capabilities.\nThis foundation prepares students for increasingly sophisticated analyses in subsequent course modules. Future assignments will build on these basics to explore topics such as ecosystem service modeling, where land use scenarios drive changes in carbon storage, water provision, and biodiversity habitat. Students will learn to couple land use projections with process models to assess impacts on specific sustainability outcomes. The combination of scenario analysis and spatial modeling provides powerful capabilities for evaluating policy options and identifying sustainable development pathways.\n\n\nImplications for Sustainability Science and Practice\nThe tools and concepts covered in this lecture have immediate relevance for contemporary sustainability challenges. The Paris Agreement’s global stocktake process relies on scenarios like the SSPs to assess collective progress toward climate goals. National and subnational governments use land use scenarios to develop territorial plans that balance development needs with environmental protection. Conservation organizations apply these approaches to identify priority areas for protection under different development scenarios.\nThe limitations and uncertainties inherent in scenario analysis also carry important lessons. No model or scenario can perfectly predict the future, and all projections embed assumptions that may prove incorrect. However, the value of scenarios lies not in prediction but in systematic exploration of possibilities, identification of robust strategies that perform well across multiple futures, and recognition of key uncertainties that require monitoring and adaptive management. By engaging with both the power and limitations of these tools, students develop the critical thinking necessary for effective sustainability practice.\nThe increasing availability of open-source tools like QGIS and freely accessible datasets like LUH2 democratizes access to sophisticated analytical capabilities that were once restricted to well-resourced institutions. This democratization enables broader participation in sustainability analysis and decision-making, potentially leading to more inclusive and locally relevant solutions. As students develop proficiency with these tools, they join a global community of researchers and practitioners working toward sustainable futures, equipped with shared frameworks, data, and analytical approaches that enable collaboration across disciplines and borders.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "04 - Scenarios for the Future and Land-use Change Modeling"
+    ]
+  },
+  {
+    "objectID": "lectures/index.html",
+    "href": "lectures/index.html",
+    "title": "APEC 8602: Applied Earth-Economy Modeling",
+    "section": "",
+    "text": "See all of the specific course lectures on the left-menu navigation or on the Homepage’s course schedule",
+    "crumbs": [
+      "Home",
+      "Lectures"
+    ]
+  }
+]

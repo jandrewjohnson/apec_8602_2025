@@ -1,0 +1,357 @@
+# Lecture 3: National Sustainability in General Equilibrium
+
+Reading:  [Banerjee et al. (2025)](https://doi.org/10.1016/j.ecoser.2024.101695) also skim the Supplemental Info
+
+Optional readings: [Banerjee et al. (2020)](https://doi.org/10.1016/j.ecoser.2020.101202)
+
+Slides as Powerpoint: [Download here](https://docs.google.com/presentation/d/1bn52m-L8MBG1OOsLOfUmqRJHiXmNqG98?rtpof=true&usp=drive_fs)
+
+Video link: [On Youtube](https://www.youtube.com/watch?v=8arFLjNf9_g&list=PLir2vw2cQ_Nsn_zNtX050t5Y49YkxcNRt&index=3)
+
+
+# Content
+
+
+Welcome to Lecture 3 of Applied Earth Economy Modeling, where we focus on national questions of sustainability in the context of general equilibrium. This lecture requires substantial setup to establish the foundational concepts that will guide our analysis throughout the course. We begin with important administrative notes about the course structure and the innovative dual-channel approach we're implementing for both readings and software installation. Assignment 2 will be posted shortly after this lecture, continuing our progression toward hands-on modeling work.
+
+The lecture then transitions into two critical background concepts that form the theoretical foundation for our work. First, we examine the role of land in economic models, exploring why this fundamental resource has been historically overlooked and why its reincorporation is essential for understanding sustainability. Second, we discuss scenarios as analytical tools, understanding how they enable us to analyze future outcomes despite substantial uncertainty. These concepts prepare us for the main focus of today's reading, the Banerjee 2025 paper, which represents the latest advancement in integrated economic-environmental modeling. While Banerjee 2020 was previously used as optional reading, the rapid pace of research in this field allows us to work with the most current publications each year.
+
+## The Dual-Channel Approach
+
+The course structure represents a departure from traditional lecture-heavy formats. While we maintain the academic rigor of lectures and readings typical of graduate courses, we simultaneously implement a hands-on channel focused on practical software skills. Everyone has successfully set up their GitHub accounts and shared their links, marking the first step in this dual approach. This parallel track ensures that theoretical knowledge is matched with practical implementation skills.
+
+The software installation process is being rolled out gradually to ensure everyone has the necessary tools operational before we begin coding. Assignment 2, which will be available shortly after class, focuses on installing QGIS on your systems. While some students have prior GIS experience, we start from the beginning to ensure everyone develops proficiency with QGIS as our primary GIS tool. This systematic approach to software installation includes Git, VS Code, and other essential tools that will form our technical infrastructure.
+
+## Course Materials and Future Impact
+
+The comprehensive course website and organized structure serve multiple purposes beyond this semester. Every lecture is being recorded and edited into YouTube videos, with transcripts being generated and refined through AI assistance. This material is being compiled to create a fully open-source textbook on applied earth economy modeling. The skeleton of this book is already emerging from the course structure, with each lecture contributing a chapter or section.
+
+This effort responds to a significant gap in the field. At the recent annual meeting of GLASS-MED (Global to Local Analysis of Systems Sustainability), a major five-year National Science Foundation grant led by Purdue and Tom Hertel, participants identified the absence of teaching materials linking Earth and economy models. This course appears to be unique in addressing this gap, which explains the substantial interest from the $2 million NSF project in scaling up teaching in this area.
+
+The website serves as a repository for future iterations of the course, though realistically, the content will likely be updated each time the course is taught, reflecting the rapidly evolving nature of the field. The digital materials, including edited videos that remove transition times and technical difficulties, create a professional resource for asynchronous learners worldwide.
+
+# The Centrality of Land in Environmental Economics
+
+## The Changing Landscape of Environmental Economics
+
+The state of environmental and natural resource economics in 2025 reflects dramatic shifts from traditional focuses. Historically, the field concentrated on policies like CAFE fuel efficiency standards, analyzing U.S. policies for increasing automobile fuel efficiency. Environmental economists devoted substantial effort to evaluating such regulations or studying policies for coal-fired power plants. These traditional topics are becoming less relevant as the energy transition accelerates.
+
+The automotive industry exemplifies this transformation. Nearly every major automaker had announced plans to transition to all-electric vehicles by specific target dates. However, the 2025 update reveals that many companies have moderated this rhetoric, influenced by changing political winds and the potential removal of EV credits. This reversal suggests that initial optimism may have been premature, though the general trend toward electrification continues. Fuel efficiency concerns are diminishing in importance as the fleet gradually electrifies.
+
+A fundamental market shift has occurred with wind and solar energy becoming cheaper than fossil fuel alternatives. Previously, environmental economics focused extensively on designing subsidies to make renewables competitive. That challenge has been resolved by market forces, as renewables are now literally cheaper than fossil alternatives. Current policy faces limited options to reverse this market reality, with only costly and likely ineffective coal subsidies potentially slowing the transition. The widespread global growth of wind and solar represents a positive development that market forces now drive independently of policy support.
+
+## The End of an Era and the Emergence of New Challenges
+
+We are witnessing the end of traditional challenges in environmental economics, particularly regarding fuel efficiency. The Bugatti Chiron, with its 304 mph top speed and 1,578-horsepower W16 engine equipped with four turbochargers, was thought to represent the pinnacle and finale of internal combustion engine development. However, the release of the Tourbillon, featuring a V16 engine producing 1,800 horsepower through a combination of naturally aspirated combustion and 800 horsepower from electric motors, demonstrates that the future is more complex than a simple transition to electrification. This vehicle, achieving approximately 4 miles per gallon with substantial carbon emissions, illustrates the ongoing tension between technological achievement and environmental responsibility.
+
+As we move beyond the era of subsidizing clean energy to replace dirty alternatives, the critical remaining challenge is land. Land represents a fundamentally limited resource that environmental and natural resource economics must now address comprehensively. Land use and land cover maps will become key inputs to our models, as the field shifts back to considering land as the critical constrained resource it truly is.
+
+## Historical Perspective on Land in Economic Theory
+
+### The Physiocrats and Early Economic Thought
+
+The current mainstream economic models largely ignore land, but this represents a historical anomaly. Land was critical to the origins of economic thought. The physiocrats in 18th-century France, one of the earliest groups of economists, argued that land was the source of all wealth because it represented the only source of value that could neither be created nor destroyed. François Quesnay, a phenomenal economist predating Adam Smith, developed the Tableau Économique, essentially the first input-output model. He collected data and defined how different sectors used inputs to produce outputs, creating a systematic understanding of economic flows.
+
+Quesnay is largely forgotten because most economic history courses begin with Adam Smith and classical economics. These courses typically present Smith as finally moving beyond the physiocrats by demonstrating that perfect competition and capital accumulation were sufficient to understand the economy. Smith argued that growth emerged from free exchange, though he still included land extensively in his models. While representing a move away from land-centric thinking, Smith recognized land as a key input to production.
+
+### The Disappearance of Land from Economic Models
+
+Land subsequently disappeared from economic models through a series of influential theoretical developments. Frank Ramsey's Optimal Savings Model, a foundational macroeconomic model, focused exclusively on capital, examining the optimal balance between current consumption and saving for future growth. This approach continued with the Solow model in the 1950s, another key model of economic growth that excluded land. The standard Arrow-Debreu general equilibrium model, taught in PhD-level economics programs, defined general equilibrium for the entire economy using only capital and labor.
+
+This exclusion occurred because economics at the time focused on maximizing growth, and land appeared relatively unimportant as a fixed input. Economic growth couldn't be accelerated by accumulating land, unlike capital accumulation, which drove productivity increases. The focus shifted entirely to capital accumulation and technological progress as growth drivers.
+
+The emphasis on economic growth had historical context in the 1950s. World War II had demonstrated that strong economic production capability determined military success, and the looming Cold War reinforced the imperative to grow economies into superpower status. This focus had real environmental consequences, including the rise of the military-industrial complex and widespread environmental degradation. The single-minded pursuit of growth through capital accumulation ignored the environmental constraints that land represents.
+
+## Reincorporating Land into Economic Models
+
+### The Mathematical Framework
+
+We need to reexamine economic growth models to reincorporate land systematically. The Ramsey growth model provides a starting point for understanding this integration. In the standard formulation, production Y is a function of capital at time t raised to some power α, multiplied by labor L at time t raised to the power (1-α). This represents a simple Cobb-Douglas production function. The equation of motion states that capital at time t+1 equals depreciated capital from time t plus production minus consumption. This framework examines optimal savings rates to balance current utility from consumption against future growth from capital accumulation.
+
+The critical modification involves shifting from Y as a function of only capital and labor to Y as a function of capital, labor, and resources R. Natural resources, typically denoted R though L for land would be preferable if not already claimed by labor, include minerals and other inputs but critically encompass land. This addition is fundamental because land differs qualitatively from other production inputs.
+
+Capital can accumulate indefinitely as we create more capital to enhance future productivity. The labor force can grow through population increase. However, land is fundamentally fixed in quantity. While minor additions are possible through coastal reclamation using sand, soil, and aggregate deposits, the total stock of land remains essentially constant. This fixity means that as economies grow, land prices increase, creating scarcity. More importantly, competing uses for land create incentives to convert all land to production rather than preservation.
+
+### The Malthusian Connection
+
+This argument connects to Malthusian concerns about fixed land constraining food production as populations grow. The optimization problem becomes maximizing utility from consumption subject to the production function including land and the capital equation of motion. Without land, the model focuses solely on consumption utility and capital productivity benefits. Including land fundamentally changes the optimization dynamics.
+
+### The Return of Land to Economic Models
+
+While land was largely excluded from mainstream economic models, certain threads maintained its importance. As environmental sustainability gained prominence, leading economic models began reincorporating land out of necessity. Meaningful analysis of global sustainability and environment-economy trade-offs requires explicit land consideration.
+
+The World 3 model and Limits to Growth approach emphasized resource limitations, necessitating land's inclusion in economic models. Computable general equilibrium (CGE) models, being data-driven rather than purely theoretical, naturally included land because empirical data shows substantial economic value in land and real estate transactions. The empirical reality that land represents significant asset value challenges theoretical models claiming only capital and labor matter.
+
+Our department gained recognition for work on questions that drove new CGE model development, particularly assessing biofuel benefits. Ethanol was long considered by environmentalists as a potential solution, allowing fossil fuel replacement through fuel crop cultivation. However, analysis revealed that converting all corn production to ethanol would be insufficient while causing massive food price increases and cropland expansion. If corn supplies cannot meet both food and fuel demand, dramatic cropland expansion follows. This research demonstrated that biofuels might not be beneficial, as they increase food prices and potentially worsen food insecurity.
+
+Substitution effects complicate the analysis. As corn becomes more expensive, consumers substitute other products like soybeans and wheat, which also require land. Quantitative estimates of price increases when land demand rises depend on substitution elasticities away from corn. This represents a key analytical challenge we'll address using our modeling tools.
+
+# Scenarios as Analytical Tools
+
+## The Purpose and Power of Scenarios
+
+Scenarios enable future analysis despite massive uncertainty. They allow exploration of different narratives to assess whether we favor particular directional outcomes. While not necessarily predictive, scenarios help evaluate ranges of possible futures and their implications. This approach proves critical for environmental development planning and policy analysis.
+
+## Scenarios in Environmental Development
+
+The Natural Capital Project (NatCap) originated in creating water funds, which match downstream residents willing to pay for improved water quality with upstream farmers who can protect land through conservation practices. While the Coase theorem suggests these groups should negotiate win-win solutions, transaction costs make direct negotiation impractical. Water funds act as Coase accelerators, scaling up these transfers efficiently. Over 200 water funds now exist, particularly in Latin America, representing successful payments for ecosystem services (PES) programs.
+
+Water funds catalyzed productive discussions among farmers, residents, municipalities, and planning bodies about green development paths. In developing countries during the 1990s and early 2000s, conservation efforts often involved creating multiple watershed future scenarios, typically including at least a green development plan with PES and a business-as-usual alternative. Stakeholder engagement generated scenarios relevant to local interests. NatCap's origins lie in supporting water funds and green development plans through scientific scenario analysis.
+
+## From Stakeholder Engagement to Exogenous Forces
+
+Initial approaches assumed scenarios emerged from stakeholder engagement, but local stakeholders often lacked specific visions and sought expert guidance for scenario development. Tools like scenario modelers and land use change regression models were employed, but ultimately, large exogenous factors determined most scenarios.
+
+Watersheds cannot control macroeconomic forces that drive landscape change. Economic shifts making crop expansion profitable represent external drivers beyond local control. NatCap discovered that model results were predominantly driven by these external factors, leading them to employ economics and other tools to understand these forces and create scenarios connected to macroeconomic trends.
+
+## Scenario Terminology and Structure
+
+Understanding scenario terminology is essential for consistent analysis. "Baseline" and "business as usual" are essentially synonymous, both referring to scenarios without new interventions. Economists prefer "baseline" while environmentalists favor "business as usual." In climate change analysis, business as usual might reference RCP 8.5, a high-emissions scenario now considered unrealistic. Calculating green policy benefits depends critically on baseline selection. Using RCP 6.0 rather than RCP 8.5 as the comparison changes mitigation value estimates substantially.
+
+We develop proficiency with scenarios because all our models generate results for different scenario sets, analyzing economic and environmental performance under each. The typology includes a base representing a single historical divergence point, such as hectares protected at the starting point H₀. Future projections include a baseline HB showing hectares protected under business as usual, and conservation scenarios HC contrasting with the baseline.
+
+Two critical differences emerge: the temporal change between future and base years (land change in the baseline compared to original conditions), and the inter-scenario difference (conservation action benefits). These deltas represent key analytical outputs, with the scenario difference quantifying conservation benefits for cost-benefit analysis.
+
+# The Banerjee 2025 Paper: Integrated Economic-Environmental Modeling
+
+## Paper Structure and Innovation
+
+The Banerjee 2025 paper, "Investing in Forests Enhances Ecosystem Services and Economic Growth in Cambodia: Evidence from the Integrated Economic Environmental Modeling (IEM) Model," represents a breakthrough in model complexity. It was among the first to advance into high complexity by linking environmental aspects, specifically ecosystem services, directly with a computable general equilibrium model. This paper pioneered the earth economy modeling space by establishing endogenous ecosystem service impacts on economic outcomes.
+
+The national scope represented a computational necessity, as calculating ecosystem services nationally is far more tractable than global calculations due to pixel quantity differences. Despite this limitation, the approach remains highly novel and excellent in execution. O'Neill Banerjee, the lead author, has leveraged this approach as a consultant, producing country-level reports using the AIM model. His publication strategy scales well, with similar analyses for Thailand, Mexico, and other countries. While stakeholder engagement and relevant scenarios differ by country, the core methodology remains consistent: connecting computable general equilibrium models with land use change and ecosystem service models.
+
+## The Role of Computable General Equilibrium Models
+
+Computable general equilibrium models are essential tools, as Kenneth Arrow, the Nobel laureate, argued. He stated that applied general equilibrium models, now called CGEs, represent standard policy analysis tools. Any analysis requiring whole-economy understanding with impacts filtering across sectors requires CGE methodology. Ignoring these tools risks missing critical economic implications. For analyzing widespread economic impacts, CGEs are indispensable.
+
+CGEs differ fundamentally from machine learning models. CGEs are structural models allowing causal pathway tracing, while machine learning models are primarily predictive without causal understanding. In CGEs, coefficient changes create traceable substitution between labor and capital, affecting sectoral production through explicit causal mechanisms. Machine learning provides prediction without causal stories; structural models offer specific causal pathways.
+
+## GTAP: A Foundational CGE Framework
+
+Throughout the course, we focus on GTAP (Global Trade Analysis Project), founded in 1992 by Tom Hertel. GTAP represents a large consortium with thousands of global members, including the Asian Development Bank, OECD, FAO, IFPRI, WTO, and numerous national supporters.
+
+GTAP provides two critical resources. First, the GTAP database offers standardized, harmonized, curated economic indicators across regions. The challenge in creating this database is substantial, as simply aggregating input-output tables from 175 regions produces inconsistent totals. The standardization process is labor-intensive but captures detailed economic structure. While theoretical models often have single regions and sectors, CGEs like GTAP incorporate many regions and sectors for maximum realism and detail.
+
+Second, GTAP provides the GTAP Computable General Equilibrium model itself. Initially a demonstration model for the database, it has evolved into one of the most widely used CGE models for quantitative predictions about trade wars, geopolitical conflicts, and policy changes. GTAP represents a powerful toolkit and network, with growing employment opportunities for economists skilled in model-based predictions, including positions at consulting firms like McKinsey.
+
+## The IEM Model Architecture
+
+The IEM model's core consists of a CGE feeding into a land use change model, which feeds into ecosystem service models, which then feed back to the CGE. The circular flow demonstrates the modeling components: the economy calculates land use change, the land use change model determines spatial allocation, this provides input for ecosystem services, and ecosystem service changes create economic shocks in the CGE. The approach, termed IEM plus ESM, can run as a standalone economic model or comprehensively when connected to land use and ecosystem services.
+
+The system employs Dynaclue for land use change modeling, developed by Peter Verburg, and InVEST for ecosystem service calculations. While similar to previous approaches, differences exist in specific model choices. IEM differs from GTAP, and Dynaclue offers different advantages than alternative land use models.
+
+The 2020 mathematical structure paper provides detailed documentation with thousands of equations solved through linear programming, typical for CGEs. It documents database connections, with GTAP using its proprietary database while IEM creates country-specific databases using environmentally extended social accounting matrices (SAMs).
+
+## Social Accounting Matrices and Natural Capital
+
+Social accounting matrices express systems of national accounts in CGE-ready format. While traditional CGE courses cover converting national accounts to SAMs, we focus on using rather than creating SAMs. The environmentally extended SAM incorporates environmental data, evolving into natural capital accounting approaches we'll explore later. The SAM parameterizes the model, linking to the environment through ecosystem services.
+
+## The Cambodia Case Study
+
+Cambodia presents an ideal case for integrated modeling, seeking economic growth while experiencing among the world's highest deforestation rates. The interaction between land use change and economic activity is pronounced, with strong economic incentives driving agricultural expansion at forest expense. This expansion occurs because it's profitable, yet the country seeks production improvements without undermining natural capital. Illegal logging presents additional challenges for prediction and control. The goal involves protecting ecosystem services beyond climate regulation, enabling progression to middle or high-income status without natural capital depletion.
+
+## Model Components and Linkages
+
+IEM consists of three integrated components: the dynamic computable general equilibrium model, the land use change model (Dynaclue), and ecosystem service models (InVEST). The Cambodia application employs four InVEST ecosystem service models: carbon storage, erosion mitigation, water yield, and water purification.
+
+The critical element is the dependencies calculation, translating ecosystem service changes into CGE inputs. In this application, only erosion mitigation among the four ecosystem services endogenously affected the economy. This limitation is important to acknowledge. Carbon storage doesn't directly affect the economy except through climate damages, which weren't included in this model.
+
+The mechanism is straightforward. Literature, particularly Panagos 2018, demonstrates through field studies and econometrics that farm erosion beyond certain thresholds reduces yields. Every farmer understands this intuitively, but Panagos' paper quantifies it at large scales with evidence supporting geographical extension. The ecosystem service calculation determines soil tonnage leaving each grid cell through gullies, rivulets, and other erosion forms.
+
+This erosion result enters the dependency calculation, changing production function parameters. Land entering the production function becomes less effective. Solving the full equation set with this "shock" (the paper's terminology) requires the model to re-solve general equilibrium with different crop productivity parameters due to soil loss. This represents the specific implemented linkage.
+
+## Data Accessibility and Resources
+
+The IEM approach demonstrates exemplary openness through curated data availability. Many claim openness, but without accessible, well-documented data, true openness doesn't exist. The IEM team excels here, with data hosted on the Inter-American Development Bank website. Data packets for approximately 20 countries are downloadable, though coverage favors IDB countries plus Portugal (Banerjee's origin) and India (due to large contracts).
+
+More effective data access exists through our course Google Drive. Students gain access to the NATCAP Teams data directory, organizing substantial information resources. The university provides 1TB standard storage, insufficient for our needs. Cloud storage costs approximately 2-7 cents per gigabyte, making the 50TB allocation ($1,000 annually) necessary for our data requirements. The base data folder contains various useful inputs for exercises and projects.
+
+## Scenario Analysis in the Cambodia Study
+
+The Banerjee 2025 paper presents multiple scenarios requiring careful navigation. The base scenario (business as usual) provides the counterfactual reference for all alternatives. Substantial work underlies these scenarios, particularly population projections that most impact economic growth. While many use United Nations projections supplemented by International Monetary Fund data, trade relationship changes remain difficult to predict. Regardless, the baseline enables comparison with policy-relevant scenarios.
+
+The "No Deforestation" scenario (Node4) simulates eliminating deforestation by 2045. The land use change model constrains deforestation to specified amounts. Eliminating deforestation costs significantly through enforcement and land purchases. In CGE models, nothing is free—preventing deforestation requires funding that must originate somewhere, often through taxes that themselves affect the economy. This illustrates general equilibrium's theoretical consistency: money cannot appear from nowhere. Funding sources must be specified and their economic impacts modeled.
+
+Additional scenarios include afforestation (planting 1.6 million hectares with trees), involving large planting costs but generating ecosystem service returns. The restoration scenario improves 1.1 million hectares of degraded forests, enhancing existing forest quality rather than converting non-forest land. Combination scenarios mix afforestation, restoration, and business as usual into "COMB" and "COMB+" alternatives.
+
+Importantly, results are reported with and without dependency impacts from erosion. Comparing scenarios with and without soil protection benefits isolates protection value. Results show GDP impacts varying by scenario: no deforestation alone reduces GDP, afforestation increases GDP despite costs due to increased forest resources, restoration falls between, and combinations can optimize outcomes. Comparing COMB to COMB* reveals ecosystem service valuation effects.
+
+## Applications and Future Directions
+
+The analysis extends to GDP indicators over time (given the model's dynamic nature), investment net present values, and cost-benefit analyses regarding ecosystem services. Central banks, finance ministries, and international organizations increasingly demand this information. Central banks particularly view GDP losses from degraded ecosystem services, or "nature collapse threats," as major stability concerns requiring quantitative assessment.
+
+This integrated approach to earth economy modeling represents the frontier of sustainability analysis, combining economic rigor with environmental detail to inform critical policy decisions. As we progress through the course, we'll develop the skills to implement and extend these modeling approaches, contributing to the growing field of integrated assessment at the economy-environment interface.
+
+# Transcript
+
+All right, everyone, let's get started. Welcome to Lecture 3 of Applied Earth Economy Modeling. Today, we will focus on national questions of sustainability in the context of general equilibrium.
+
+This will require a bit of setup first. I want to start with a few comments about the course structure and the dual-channel approach we'll use for readings and software installation. I'll also mention the soon-to-be-posted Assignment 2.
+
+Then we'll discuss two important background concepts: first, land, and second, scenarios. Finally, we'll dive into today's reading, which is based on Banerjee 2025. Optionally, Banerjee 2020 was the previous reading, but what's fun about teaching in this space is that every year new research comes out, so we're using the latest from that team.
+
+So far, we've been pretty lecture-heavy in this course, but that's going to change. As you saw, everyone got their GitHub accounts set up and sent me the link, which is great. That's an example of what we'll do in this dual-channel approach: lectures and readings like a typical course, but also assignments that are more hands-on, such as installing software on your computer. That includes Git, VS Code, and similar tools. We'll be rolling these out gradually so that when we start coding, you'll have everything up and running. Assignment 2, which will go live shortly after class, will be getting QGIS installed on your system. Who here has done GIS before? Some, but not all—that's great. We'll start from scratch, and one benefit of this course is that you'll become proficient with GIS, using QGIS as our tool. More installation instructions will be included in Assignment 2.
+
+One other note: apologies if I'm a bit scatterbrained today. I got in at 1 a.m. last night from the annual meeting of GLASS-MED, the Global to Local Analysis of Systems Sustainability. It's a major five-year National Science Foundation grant led by Purdue and Tom Hertel, focused on exactly what we do in this class.
+
+I mention this partly to explain why my English may be off today, but also to highlight the growing energy behind this type of research. One key takeaway from this $2 million NSF project is the need to scale up teaching in this area. They actually asked the group if anyone had teaching materials on linking Earth and economy models, and the answer was no—except for this class. That's encouraging.
+
+Related to that, let me show you the course website. Why am I creating a full website for this course? Why is it so organized? You may have noticed I'm also putting together YouTube videos. There I am—I've been editing them so only I appear. If you say something in class and want to make sure it doesn't go online, please let me know.
+
+The reason for all this effort—course pages, videos, transcripts—is that we're using everything from class to generate a book. We'll have a book on applied earth economy modeling, and you can see the skeleton emerging from this class. For example, here's what you just saw me say in the YouTube video, cleaned up by AI, then summarized. It's not perfect, but I'll keep improving it.
+
+We're using the YouTube videos, PowerPoints, and transcripts to create a 100% open-source class on applied earth economy modeling. I hope others will take this course asynchronously in the future. The website is mainly for me, so next time I teach this, I won't have to start from scratch. Realistically, I'll probably update everything again, since I never teach the same course twice. That's my own inefficiency.
+
+The bigger picture is that this will generate a book and content, and there's so much excitement in this area that we might as well do it right.
+
+Let me return to the PowerPoint. I even edit the videos to remove transition time and am learning how to be a YouTube video editor. I always get confused on Zoom about what I'm sharing, but the digital version of you doesn't have to sit through that.
+
+Now we're back to the PowerPoint slides. That's the dual channel of this course: traditional coursework with readings and discussion, plus ongoing software installation.
+
+Let's dive in.
+I want to start with a reflection on the state of environmental economics. These comments are adapted from the last time I taught this course, but now I’m adding a 2025 update. Previously, I argued that environmental and natural resource economics was in an exciting place because it was changing rapidly.
+
+Traditionally, topics in this field focused on issues like CAFE fuel efficiency standards—the U.S. policy for increasing car fuel efficiency. Much work was devoted to analyzing such policies, or others like regulating coal-fired power plants. That’s what many environmental economists spent their time on.
+
+However, nearly every automaker has now announced plans to go all-electric by some year in the near future. Here’s the update: when I said that two years ago, it was true, but now many companies have dialed back that rhetoric. This shift is due to changing political winds and the removal of EV credits, so I was perhaps too optimistic. Still, the point stands that fuel efficiency is becoming less of an issue, especially as we continue to shift toward an electrified fleet.
+
+One thing that remains true is that wind and solar are now cheaper than fossil fuel alternatives. Previously, environmental economics focused on how to subsidize renewables to make them competitive. Now, that’s no longer necessary—they are literally cheaper. There’s little that current policy can do, except perhaps enact costly coal subsidies, to reverse that market situation. Wind and solar are growing everywhere, which is a positive development.
+
+For us, this means we’re approaching the end of some traditional challenges in environmental economics. Especially with fuel efficiency in mind—and as a car enthusiast myself—we’re at the end of an era. For example, the Bugatti Chiron, with a top speed of 304 mph and a 1,578-horsepower engine, represents the pinnacle of the internal combustion engine. It’s a W16 with four turbochargers. I used to say this was the peak, and from here on out, everything would be electrified.
+
+But I was wrong. They released the Tourbillon, which has a V16 engine and 1,800 horsepower, combining a naturally aspirated engine with 800 horsepower of electric motors. The future is more complex—a constant dialogue between greener forces and things like this. The Tourbillon gets about 4 miles per gallon and emits a lot of carbon, as impressive as it is.
+
+So, if we’re moving past the era of subsidizing clean energy to replace dirty energy, what’s left for us to solve? I contend it’s land.
+
+This is a land use/land cover map that we’ll spend a lot of time with. We have an expert here in urban ecosystem services. Libby, what city is this? I don’t know—I was hoping you knew. I’ve forgotten, but the point is, this is a land use/land cover map, and it will be a key input to our models. The reason is that environmental and natural resource economics is shifting back to thinking about land as a limited resource.
+
+I want to put that in historical context. We don’t think much about land in current mainstream economic models, but it was critical to the origins of economics. One of the earliest groups of economists were the physiocrats in 18th-century France. They argued that land was the source of all wealth because it was the only source of value that could not be created or destroyed. François Quesnay, for example, was a phenomenal economist before Adam Smith. He’s known for the Tableau Économique, essentially the first input-output model. He collected data and defined how different sectors used inputs to produce outputs.
+
+He’s largely forgotten because most people think economics starts with Adam Smith and classical economics. In fact, if you take a history of economics course, it often starts with Smith finally moving past the physiocrats and showing that perfect competition and capital are all that’s necessary to understand the economy. Smith argued that growth comes from free exchange, but he still included land extensively in his models. So, while it was a move away from land, he recognized it as a key input.
+
+But then land disappeared from economic models. Why? There was a series of influential models that did not include land. First, Frank Ramsey’s Optimal Savings Model—an important macroeconomic model—focused only on capital: how much to spend now versus save for future growth. This continued with the Solow model in the 1950s, another key model of economic growth. Then, the standard economic model, Arrow-Debreu equilibrium, which you learn in PhD-level economics, defined general equilibrium for the whole economy using just capital and labor.
+
+Why was this? Economics at the time was focused on maximizing growth, and land was relatively unimportant because it was a fixed input. You couldn’t grow an economy faster by accumulating land. Instead, the emphasis was on capital accumulation and growth.
+
+A side note: our West Bank colleagues went further toward realism and applied theory by adding overlapping generations to the Arrow-Debreu equilibrium. These are more realistic but require strong assumptions to connect with reality. There’s a meme: “Help, is there a doctor here? I’m a doctor. Can you help? I’m a doctor of economics. He’s going to die! Did he consume all his assets?” It’s a joke about the obsession with rationality in economics—being rational in the overlapping generations model means consuming all assets before dying.
+
+In summary, land was forgotten because, in the 1950s, the focus was on economic growth. World War II had shown that strong economic production wins wars, and the looming Cold War reinforced the need to grow the economy into a superpower. This had real consequences for environmental quality, such as the rise of the industrial-military complex. Here’s a dated reference: a DALL-E-generated image of a tank driving over soil, leaving big ruts. There are better image generation tools now, but I haven’t updated those yet.
+
+We need to think about economic growth in a way that reincorporates land. Let’s build that ullWe’ll start with one of the simplest related models: the Ramsey growth model. Let’s work through the equations. I said there wouldn’t be much math, but there’s a little. It’s easy. s Let’s work through the equations. I said there wouldn’t be much math, but there’s a little. It’s easy.
+
+Production, Y, is a function of capital at time t raised to some power, multiplied by L (labor) at time t to the 1 minus alpha. This is a simple Cobb-Douglas production function. There’s also an equation of motion: K_{t+1} equals some depreciated level of capital at time t plus whatever production we had. When you produce output, some of it becomes capital in the next period. We depreciate some existing capital but add to it, though not all of it, because we subtract out consumption. In this simplified conception, every bit of production not consumed goes to savings. This is what Ramsey examined: the optimal way to grow the economy by accumulating capital, which increases future production. The incentive to save is to grow faster; the incentive to consume is to maximize utility. If you never consume and only grow, utility is zero. Ramsey found a mathematical representation for optimal savings.
+
+But I think we need to shift from this—where Y is just a function of capital and labor—to Y as a function of capital, labor, and resources. I’m adding R for resources. Natural resources typically use R; I would have liked L for land, but L is labor. Resources include minerals and other inputs, but critically, it’s where land belongs. That’s important because land is fundamentally different from other production inputs.
+
+Capital can accumulate—we can create more capital to be more productive in the future. The labor force can also grow—literally, through population growth. But land is fixed.
+Maybe interstellar travel will change this. There's a little bit of flexibility in that you can create land on the coast by depositing sand, soil, and aggregate, but for the most part, land is fixed. This means that as the economy grows, the price of land will increase, making it a very scarce resource. More importantly, if there are competing uses for land, the rising price creates an incentive to put all land into production, not necessarily preservation.
+
+We'll return to that. I discussed Malthus last lecture—this is a very Malthusian point: land is fixed, and as it becomes more scarce, the ability to produce food becomes more challenging. Malthus argued this would be a major issue.
+
+To optimize, the goal is to maximize utility from consumption, subject to the production function and the equation of motion. Otherwise, there's nothing to do here—it's all capital. The focus is on maximizing utility from consumption and benefiting from capital production.
+
+Land has largely been left out of economic models, but there have been threads we can pick up. As environmental sustainability became a more important topic, some leading economic models started to re-include land. This was necessary to say anything useful about global sustainability and the trade-offs between the environment and the economy.
+
+We talked about the World 3 model, or the Limits to Growth approach. As soon as you start thinking about limited resources, there was an emphasis on re-including land in economic models. One breed of models that became particularly useful is computable general equilibrium (CGE) models, which we'll discuss more. These are data-driven rather than purely theoretical, so it wasn't surprising that they needed to include land. If you look at the value of land and real estate transactions, it's not trivial. If you want to argue with a theoretical economist who says it's only capital and labor, just point to the data—there's a lot of money in land as assets. That challenges the idea that we can ignore it.
+
+Our department is known for work on related questions that drove the development of new CGE models, such as assessing whether biofuels were beneficial. Ethanol, for example, was long regarded by environmentalists as a potential savior, allowing us to move away from fossil fuels by growing our own fuel crops. But what happens if you convert all your corn to ethanol? The price goes up, because now corn has a new use—biofuel.
+
+Our department became known for analyses showing that even if 100% of corn production was converted to ethanol, it wouldn't be enough. This is a real problem for several reasons: it doesn't make sense, and it would cause massive cropland expansion. If there isn't enough corn for both food and fuel, cropland will expand dramatically. The history of this shows that biofuels might not be such a good idea, at least in this case, because it makes food more expensive. There are many reasons to worry that food insecurity could be worsened by emphasizing ethanol.
+
+There's also substitution: as corn gets more expensive, people substitute other products. We'll return to that and learn tools to calculate it. The answer is yes, substitution happens, but only partially. Many substitutes, like soybeans and wheat, also require land. Making quantitative estimates of how much prices will rise when land is in higher demand depends on how much we can substitute away from corn. That's a good point, and we'll discuss it further.
+
+CGE models started to include land. At first, land—even though it's different from capital and labor—was just expressed as a dollar value. In the production function, land was treated as a dollar-denominated type of capital. That's better than nothing, but models needed to advance to recognize land's unique characteristic: physical area. We moved from a dollar sign to a grid cell or field.
+
+That was an advance, because now we weren't ignoring the fixed stock of physical space. But further advances were needed to consider land quality. For example, land in Antarctica is not as useful for growing corn as land in Iowa. The details of what's on each grid cell matter. This started a new line of research, merging with Earth science and the enormous data from satellites. Land use/land cover maps became key inputs, providing information about area, dollar value, quality, and detailed landscape configuration. This has important implications.
+
+Any questions or comments about land? As applied economists, we value land, and this is a complex argument for why applied economics is so important. We're a land-grant institution, so this is part of our history.
+
+Some land is useful for growing corn, others for different crops. Why aren't certain lands used for their most productive crops? Sometimes farmers don't grow the most productive crop for various reasons. That's a good point, and CGE models try to capture this. In the equations, we've simplified to one production good, but in reality, everything is a vector—there are production functions for different crops, each with different coefficients. The same idea holds: maximize utility, but look at data to see how effective land is for different production systems. If we don't include this, we ignore it; if we do, we can analyze optimal choices. That's the intuition I want to discuss.
+
+That's it for the first context point. The second point is scenarios.
+
+Why do we have scenarios? Scenarios let us analyze the future even with huge uncertainty. We can try out different narratives and see if we like the general direction. They're not necessarily predictive, but they help us assess a range of possible outcomes.
+
+Scenarios have been critical to environmental development plans. This is where the Natural Capital Project (NatCap) got its start. NatCap was instrumental in creating water funds, which match downstream residents willing to pay for higher water quality with upstream farmers who can protect land. The Coase theorem says these groups should be able to negotiate win-win solutions, but in reality, transaction costs make this hard. Water funds act as Coase accelerators, scaling up these transfers. There are now more than 200 water funds, especially in Latin America. This is a type of payments for ecosystem services (PES) program.
+
+Water funds often triggered good discussions among farmers, residents, municipalities, and planning bodies about green development plans. In developing countries in the 1990s and early 2000s, conservation often involved creating multiple scenarios for a watershed's future—typically at least two: a green development plan with PES and a business-as-usual plan. Stakeholders were engaged to create scenarios relevant to their interests. NatCap's origins are in helping water funds and green development plans, using science to inform scenario analysis.
+
+This assumes scenarios come from stakeholder engagement, but often, local stakeholders had no particular plan and wanted to work with experts to develop scenarios. Tools like scenario modelers and land use change regression models were used, but ultimately, the scenarios were often determined by large, exogenous factors.
+
+What are exogenous forces that a watershed can't control? The economy. Macroeconomic changes that make crop expansion profitable drive landscape change. NatCap found that model results were mostly driven by external factors, so they began using economics and other tools to understand these forces and create scenarios connected to macroeconomic trends.
+
+A quick note on terminology: "baseline" and "business as usual" are essentially the same. Both refer to scenarios where no new actions are taken. Economists prefer "baseline," while environmentalists prefer "business as usual." In climate change, business as usual might refer to RCP 8.5, a high-emissions scenario. Calculating the benefits of green policies depends critically on what the baseline would have been. For example, RCP 8.5 is now considered unrealistic, so comparisons should be made to lower-emission scenarios like RCP 6.0. This changes the estimated value of mitigation.
+
+We'll get good at scenarios, because all our models will generate results for different scenarios, and we'll analyze how the economy and environment perform under each. This leads to the Banerjee et al. 2025 paper you read. There are many scenarios in that paper, almost confusingly many. I'll give a typology.
+
+We always have a base, which is a single point where we diverge from the historical sequence. Think of it as the number of hectares protected at the starting point, H0. Going into the future, we have a baseline (HB), which is the number of hectares protected under business as usual. We also have one or more conservation scenarios (HC) to contrast with the baseline.
+
+There are two deltas to consider: the difference between a future year and the base year (how much land changes in the baseline compared to the original), and the difference between scenarios (the benefit of conservation action). For example, you might look at maps of HB minus HC to see the proportion conserved. My first notable paper in 2014 (PNAS) identified optimal areas to protect to maximize global carbon storage while meeting food security goals. I'll post that on the website.
+
+The key ideas are base years, baselines, the change over time, and the difference between policy and baseline scenarios. The delta between scenarios is a key part of the analysis, as it represents the benefit of conservation, which is used in cost-benefit analysis.
+
+Any questions on scenarios? We'll spend more time on them, but I want to establish this language.
+
+Now, the reading. What did you think? It was short and easy to follow. Science papers are structured differently from economics papers: they start with an introduction, then results, with methods often in the supplement. If you're interested in methods, you have to read the supplement. I like this approach because it allows for a short paper and a detailed supplement.
+
+The paper, "Investing in Forests Enhances Ecosystem Services and Economic Growth in Cambodia: Evidence from the Integrated Economic Environmental Modeling (IEM) Model," was one of the first to push into the upper right of the model complexity frontier, linking environmental aspects—specifically ecosystem services—directly with a computable general equilibrium model. It was the first in this earth economy space to do so, to that extent, where it was specific to ecosystem services and their endogenous impact on the economy.
+
+One caveat is that it was national in scope. That's why this lecture is called National Sustainability. At the time, this was necessary mostly for computational reasons, as it is much easier to compute ecosystem services at a national scale than at a global scale, simply due to the number of pixels involved. The approach is still very novel, and I think this paper is excellent.
+
+O'Neill Banerjee, the lead author, has become a consultant and is now using the AIM model to produce country-level reports. If you look at his Google Scholar profile, he has many publications with similar titles, but for different countries—such as economic growth in Thailand or Mexico. This is a good publication strategy because it scales well. There are differences, of course—stakeholder engagement becomes critical, and the scenarios that matter in Mexico are different from those in Cambodia. But the core idea is the same: connect a computable general equilibrium model with a land use change model and an ecosystem service model.
+
+Why use computable general equilibrium (CGE) models? This is a key theme throughout the course. If you ever need to argue that something is worth learning, you can cite a Nobel Prize winner. Kenneth Arrow, for example, argued that applied general equilibrium models—what we now call CGEs—are one of today's standard tools of policy analysis. He said that anything requiring an understanding of the whole economy and impacts that filter from one sector to another requires a CGE. If CGEs are not used explicitly, we risk ignoring these implications, which is much worse. So, if you want to analyze anything with widespread economic impacts, this is the tool you need.
+
+A question came up about how CGEs compare to machine learning models. The big difference is that CGEs are structural, while machine learning models are predictive. Machine learning models use large amounts of data to make predictions, often without understanding the underlying reasons. CGEs, on the other hand, are structural models—you can trace the causal pathways. For example, if a coefficient changes, you can see how that causes substitution between labor and capital, which affects sectoral production. Machine learning is prediction without a causal story; a structural model provides a specific causal pathway.
+
+We'll also discuss one specific CGE throughout the course: GTAP. GTAP was founded in 1992 by Tom Hertel, a prominent applied economist. GTAP is a large consortium with thousands of members from around the world, including major organizations like the Asian Development Bank, OECD, FAO, IFPRI, WTO, and many national supporters.
+
+GTAP is known for two things. First, the GTAP database—a standard, harmonized, curated set of comparable databases of key economic indicators. They collect input-output tables from country partners. The challenge is that if you simply add up all the input-output tables from 175 regions, the totals don't match reality. So, there's a huge process to standardize everything, which is labor-intensive but captures the structure of the economy in detail. In contrast, theoretical models often have just one region and one sector, while CGEs like GTAP have many regions and sectors, aiming to be as detailed and realistic as possible.
+
+Second, GTAP is known for the GTAP Computable General Equilibrium (CGE) model. It started as a toy model to illustrate the database's importance but has grown into one of the most widely used CGE models for making quantitative predictions about events like trade wars or geopolitical conflicts.
+
+GTAP is a powerful set of tools and networks. If you're interested in jobs, this is a growth area for economists—using models to make predictions. There are many high-paying jobs in this field, including consulting firms like McKinsey. Of course, if your main goal is to make a lot of money, a PhD in applied economics may not be the fastest route, but these skills are in demand.
+
+The core of what is being computed in these models is something we'll return to later. The IEM model, for example, has a CGE at its core. Their conception of the circular flow diagram highlights the modeling components: the CGE feeds into a land use change model, which feeds into an ecosystem service model, which then feeds back into the CGE. This is what I described earlier: the economy calculates land use change, the land use change model determines where it happens, this is an input to ecosystem services, and the change in ecosystem services is then expressed back onto the CGE as a shock. The IEM approach actually calls this IEM plus ESM, because IEM can be run as a stand-alone economic model, but when you connect it to land use and ecosystem services, it becomes more comprehensive.
+
+They use a land use change model called Dynaclue, developed by Peter Verburg, and Invest for their ecosystem service models. This is similar to what we've done before, but with some differences. The biggest difference is that IEM is different from GTAP, and Dynaclue is a different land use change model with its own pros and cons.
+
+If you want to look in more detail at this particular model, there is a 2020 mathematical structure paper that goes into depth. It contains thousands of equations and uses a linear programming approach to solve them, which is typical for CGEs. It also documents how the model connects to the database. GTAP uses the GTAP database, while IEM creates country-specific databases using something called an environmentally extended social accounting matrix (SAM).
+
+We won't spend much time in this course on social accounting matrices. A more traditional CGE course would cover how to go from systems of national accounts to a SAM that can be used as a model input. For us, it's enough to know that a SAM expresses the systems of national accounts in a way that is ready for CGEs. We'll be users of SAMs rather than creators, but this is a good research topic. The environmentally extended SAM is a way to include environmental data, and this has evolved into natural capital accounting. We'll return to this later in the semester.
+
+For now, the SAM parameterizes the model, and the idea is to link it to the environment through ecosystem services. In the Cambodia case, the country wants to grow economically but has one of the highest rates of deforestation. It's a good example of the interactions between land use change and economic activity, with strong economic forces pushing for agricultural expansion at the expense of forests. People do this because it's profitable, but the country also wants to improve production without undermining its natural capital. There are also challenges like illegal logging, which is hard to stop and predict. The goal is to protect ecosystem services, especially those beyond just climate regulation, so the country can grow into middle- or high-income status without depleting its natural capital.
+
+IEM consists of three parts: the dynamic computable general equilibrium model, the land use change model (Dynaclue), and the ecosystem service models (Invest). Bressler et al. 2009 is a good reference for social accounting matrices, and Verburg 2021 covers Dynaclue. In this application, they used four Invest ecosystem service models: carbon storage, erosion mitigation, water yield, and water purification.
+
+It's tempting to list out the models, but there's another important component: the dependencies calculation. This is the calculation of how to translate a change in ecosystem services into an input for the CGE. In the paper, the only dependency linkage—where a change in ecosystem services affects the CGE—was erosion mitigation. They had four ecosystem services, but only erosion mitigation endogenously affected the economy. It's important to be clear about which services have dependency linkages. For example, carbon storage doesn't directly affect the economy except through climate damages, which were not included in this model.
+
+The idea is straightforward. Literature, most notably Panagos 2018, shows using field study data and econometrics that erosion on a farm, once it passes a certain threshold, reduces yield. Every farmer knows this, but Panagos' paper defines it at a large scale, with evidence that this relationship can be extended to other locations.
+
+The idea is that you calculate ecosystem services, including the amount of erosion that occurs. When we do our hands-on work with Invest, you will calculate this—specifically, the tonnage of soil that leaves a grid cell. This measures how much soil is lost through gullies, rivulets, and other forms of erosion.
+
+That result is then used in the dependency part of the calculation. While I don't have all the math here, you can think of it as changing a parameter in the production function. Now, the land that goes into the production function is less effective. When we solve the full set of equations, we introduce a shock—this is the language used in the paper—a shock file that tells the model to re-solve the general equilibrium, making supply equal demand but with a different productivity parameter (beta) for crop production as a result of the lost soil. That is the specific linkage they implement.
+
+In GTAP, there are more linkages, and this is, frankly, the hardest and most important part of earth economy modeling: specifying more of these dependency linkages with greater precision.
+
+I want to make a quick note about the applied nature of this course. A great aspect of the IEM approach is its openness—they provide curated data. Many claim to be open, but if your data isn't available and well-documented, it's not truly open. The IEM team does a great job of this. You can check out their data, which is hosted on the Inter-American Development Bank (IDB) website. There, you can download data packets for about 20 different countries. The coverage is biased toward countries the IDB covers, as well as Portugal (because O'Neill is from Portugal) and India (due to a large contract). Still, it's a valuable resource.
+
+There is also a more effective way to access this data: Google Drive. In addition to APEC 8602 and credits toward graduation, you get access to the NATCAP Teams data directory. Several NATCAP Teams members use this to organize a large amount of information. I recently had to negotiate with OIT at the University of Minnesota because we were running out of file storage. They give you 1TB, which is not enough for our needs. Cloud-hosted storage is expensive, and the university offers only two plans: 1TB for every faculty member, or 50TB. At 2 cents per gigabyte (the official rate, though the UMN rate is closer to 7 cents), that's $1,000 per year for 50TB. Once they gave me the larger quota, I had plenty of space for our data.
+
+We'll be returning to the base data. After this class, you'll receive an invite to our NATCAP Teams directory and the base data it contains, which we'll use in many exercises and projects. In the base data folder, you'll find a variety of useful inputs.
+
+Now, moving on. We've set up scenarios, discussed land, and introduced CGEs. All that's left is the relatively short Banerjee 2025 paper, which walks through the scenarios. They have a base scenario—business as usual—which serves as the counterfactual reference for all other scenarios. A lot of work goes into these, especially in determining population projections, which have the biggest impact on economic growth. Many use United Nations projections, but also data from the International Monetary Fund and other sources. Other important projections include changes in trade relationships, which are difficult and chaotic to predict. Regardless, the baseline provides a reference point for comparing several policy-relevant scenarios.
+
+The first scenario is "Node4" or "No Deforestation." This simulates a land use map that reduces deforestation, aiming to eliminate it entirely by 2045. The land use change model is constrained so that deforestation is limited to this amount. The cost of eliminating deforestation is significant, requiring enforcement and land purchases. The key point is that in a CGE, nothing is free—any action, such as preventing deforestation, has a cost that must be modeled in the economy. If it costs a million dollars, you must specify where that money comes from, often by increasing taxes, which itself affects the economy. This illustrates the theoretical consistency of general equilibrium: you can't get money for free. If you could, you could pay everyone not to deforest and solve the problem instantly, but that's not how it works. You must consider the source of funding.
+
+Other scenarios include afforestation, where 1.6 million hectares of land are planted with trees. This has a large planting cost, much higher than just preventing deforestation, but it also brings returns in improved ecosystem services. There is also a restoration scenario, which restores 1.1 million hectares of degraded forests. Instead of converting non-forest land into forest (afforestation), restoration improves the quality of existing or degraded forests, which also has benefits.
+
+They also have combination scenarios, which mix and match afforestation, restoration, and business as usual into "COMB" and "COMB+." One important detail is that they report scenarios both with and without the dependency impact—the effect of erosion. For example, the COMB scenario without the benefit of protected soil will differ from the scenario that accounts for it. This is useful because the difference between the two isolates the value of protection.
+
+You can see this in the results. For example, the key results of any earth economy model include indicators like GDP. The change in GDP (in millions of US dollars for Cambodia) is shown for different scenarios. No deforestation by itself is not good for GDP. Afforestation is good for GDP, even with the costs, because there are more forest resources. Restoration is somewhere in between. The combinations of scenarios can be even better. Comparing COMB to COMB*, you see different estimates with and without the ecosystem service valuation component.
+
+I'll leave the analysis of the rest to you, as it's fairly straightforward. You can look at GDP indicators over time (since it's a dynamic model), the net present value of investments, and perform cost-benefit analysis with respect to ecosystem services. This information is increasingly demanded by central banks, ministries of finance, and others. That's why I was in Paris before class started and in DC yesterday. Central banks, for example, have a mandate to protect economic stability, and they see losses to GDP from degraded ecosystem services—or, as they put it, threats from nature collapse—as a major concern.
+
+We'll return to this topic later. I always have an appendix with additional material, but if I don't mention it, you don't need to know it.
+
+Any questions, or shall we finish here? Thanks, everyone!

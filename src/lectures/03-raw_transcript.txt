@@ -1,0 +1,401 @@
+Just this one, yeah.
+One more minute.
+There we go.
+All right, everybody, let's get started. Welcome to Lecture 3 of Applied Earth Economy Modeling. Today, we will focus on national questions of sustainability in the context of general equilibrium.
+This will be…
+requiring a little bit of setup first. First, I want to have a couple of comments about the course structure and the dual-channel reading software installation approach we'll have, and I'll mention the soon-to-be-posted new assignment number two.
+Then we'll talk about two really important background concepts. Number one, land, and number two, scenarios.
+And then finally, we'll dive into the reading of today, which is based on the Banerjee 2025, and then optionally, the Benergy 2020 was the old reading that I used to have, but what's kind of fun teaching in this space is every year new stuff comes out, and so there's always new things to work on, and so we're using the latest and greatest from that research team.
+But first, okay, so far, we've been pretty lecture-heavy in this course. That's gonna be changing. And we saw a little bit of that, insofar as all of you all got your GitHub accounts up, and you sent me the link and everything, that's great. That's an example of what we'll do in this dual-channel approach. We'll have lectures and readings, like a typical course.
+but maybe a little bit less like a typical course. We'll also be, having…
+some assignments that are really easy, like installing stuff on your computer. And so that was Git and VS Code and stuff like that. We're going to slowly be metering those out, so that when we do start to dive into the coding days, we'll have some tools up and running on your computer and making sure that they're working. And so the assignment that's going to go live shortly after class is done here, when I get to it, is going to be
+getting QGIS installed on your system. So, who here has done GIS before?
+Okay, so some, but not all, that's great. We're going to start from scratch, but that's going to be one of the benefits of this course. You'll be, passable at GIS, and we'll be using QGIS to do that. So, I'll have more installation instructions on that in a moment, that'll be a part of Assignment 2.
+Okay, one other thing. Apologies in advance if I'm scatterbrained today. I got in at 1 o'clock, last night, or morning, I guess.
+From coming back from the annual meeting of Glass Med, that's the Global to Local Analysis of Systems Sustainability. It's this big five-year National Science Foundation grant that I've been working with, led by Purdue and Tom Hurtel, and it's, like, laser-focused on exactly what we do in this class.
+And I bring it up, number one, as a way to say sorry that my English will probably be bad today, because I'm so exhausted. But secondly, to say it was a really fun example of the huge energy that is building behind this type of research. And one of the key takeaways of this, you know, $2 million NSF project over five years is that we need to scale up our teaching.
+And, they actually then queried the group, did anybody have any teaching materials on linking Earth and economy models? And the answer was no, except for this class. So that's kind of fun. Related to that point, actually, is
+let's see, I guess I gotta stop sharing if I'm gonna jump onto…
+this, is that's why I'm putting so much… oh, let's see…
+I do want to show the website real quick here, let me, close out of this…
+Okay, what are we looking at now?
+Here is our, course.
+Website. So hopefully you all have been seeing this. This is probably overkill. Like, why am I creating a whole-on website for this course? And why does it, you know, get organized? You may have noticed I'm actually putting together YouTube videos.
+Look, there I am. And like I said, I've been editing them, so nobody else is in them. Hopefully, if you do say something and you really want to make sure it doesn't go online, again, this is a reminder to reach out to me. But the question is, why am I going to this effort of, you know, having
+course pages and everything, you know, here's the actual content we had. This is almost book style, side note. It's also,
+based on the transcript from class, what's going on here? Well, we got some large language model magic going on. I'm actually using everything I say in this class to generate a book. We're going to have a book on applied earth economy modeling, and so you can sort of see the skeleton of it is going to be emerging from this class, and so here's what you just…
+saw me say in that YouTube video, right? And then I… so I had AI clean this up.
+Then, I had AI summarize it, and you know, so this was when I was just going through the syllabus.
+you know, does a pretty good job. It's missing some things, but, you know, I'll iterate on this.
+And so basically, we're using the YouTube videos and the PowerPoints and everything to come together into a 100% open source class on applied earth economy modeling, because I hope to have lots of other people take this course asynchronously or whatever. So yeah, that's kind of the bigger picture of why we've got this website going, and so hopefully it's useful to you.
+But mostly it's there for me, so that next time I teach this, I don't have to do anything. No, I'm kidding. It's gonna be totally updated again, because I've never taught the same course twice. I always feel compelled to completely remake it, and that's my own problem. Very inefficient.
+But, but yeah, that's the context here, is hopefully this is going to be generating book and the content, and there's just so much excitement around this area that we might as well, really
+Hit the ball out of the park on this one.
+Okay, so let me go back to the PowerPoint.
+There's that.
+I even edit the videos, so, like, all this transition time I'm getting rid of, learning how to be a YouTube video editor,
+Because I always get confused when I'm on Zoom about what I'm sharing. See, there it is. Okay.
+So you all have to sit through me trying to find what I'm sharing, but the digital version of you do not. Okay, so now we're back to our PowerPoint slides. Yeah, so that's the dual channel of this course. We'll be doing the typical coursework for reading and discussion and then lecturing, but then also software installation throughout.
+Okay.
+So let's, let's dive in, then.
+And I want to start with a little bit of a reflection on the state of environmental economics.
+And these are copied from my previous time that I taught this course, but now I'm adding a sad 2025 update to what I previously had argued. Last time I taught this, I had argued that environmental and natural resource econ was in a really fun place, because it was changing fast.
+Traditionally, those topics that you would get in a field like this were focused on things like cafe fuel efficiency standards. That's just the U.S. policy for trying to increase the fuel efficiency of cars. And so tons and tons of work was spent on analyzing questions and policies like that.
+Or other ones, like, how can we regulate coal-fired power plants? That's what a lot of environmental economists spent their time doing, but…
+But reflecting on that now, nearly every automaker has announced it will be all-electric by some year in the near future. Here's the part that I have to update. That was true when I said that two years ago. Now a lot of the companies, unfortunately, have dialed back that rhetoric. A lot of that has to do with the shifting political winds, the taking away of the EV credit, and so I was wrong.
+than to be too optimistic there. But I think the point still more or less stands that fuel efficiency is becoming less of an issue, especially as we, I think, still will inevitably shift to a largely electrified fleet.
+This one is true, it hasn't changed.
+Wind and solar are a lot cheaper, and they're cheaper than the fossil fuel alternatives. And so the previous analysis in environmental economics was, how can you subsidize the more expensive renewable option to be the one that is chosen? Now, you don't need to do that anymore. It is literally cheaper, and there's nothing this current administration can do except for, I guess, enact really expensive
+subsidies of coal, to reverse that market situation. They're trying hard, but it's an uphill battle to change around the fact that now wind and solar are cheaper. So, you see it growing everywhere. So that's a really positive thing.
+What it says for us is that we're approaching the end of some of the traditional challenges that environmental economists think about.
+And so, you know, especially with that idea of fuel efficiency in mind, and the fact that I'm a motorhead myself, we're really at the end of an era here. And so, this is…
+the Bugatti Chiron, 304 miles per hour, 1,578 horsepower engine. This is peak automotive success. I really love cars. You know, this thing had a… this represents the pinnacle of the internal combustion engine. It's like, we're waving goodbye to it, but it was awesome. It was not a V8, but a W16. And not one turbocharger, but four turbochargers. And so.
+I wanted to say, last time I taught this class, this is the pinnacle.
+From here on out, we're all electrified. This will be an interesting relic of the past.
+I was wrong. They then released this car. This is the Tour Beyond, Tour billion in English, and now it's a V16, and it's 1800 horsepower mixed between a no-turbocharger engine and 800 horsepower of electric motors.
+Why am I going into this depth, besides the fact that it's fun and I love cars, is…
+the future is more complex. It's going to be a constant dialogue, if you will, between forces that are more green and things like this. This gets about 4 miles per gallon, and so this will throw out a lot of carbon, as cool as it is, and it is really cool.
+I think.
+Okay, so I've just argued, you know, we're moving past that era of thinking about how do we subsidize clean energy to replace dirty energy? Well, if that's not a problem anymore, now that solar and wind are so cheap, what's left to solve for us?
+And I'm gonna contend It's this.
+Land.
+This is a land use land cover map that we will spend lots and lots of time. We have an expert here in urban ecosystem services. Libby, what city is this?
+I don't know, I was hoping you knew.
+No, I truly forgot which city this is, but anyways, this is a land use land cover map. We're going to be spending a lot of time with this as an input to our models. And the reason why, well, besides the fact that it's an input to a lot of interesting models, is I'm arguing that overall, environment and natural resource economics is shifting back, in fact.
+To thinking about land as one of the key things, and that's land as a limited resource.
+I actually want to put that in a historical context, though.
+We don't think of land very much in, sort of, current mainstream econ models, but it was actually critical to the very origins of economics itself. And so one of the earliest set of economists are the physiocrats.
+And the physiographs argued in the 18th century, in France, that land was the source of all wealth. And, they argued, this because it was the only source of value that could not be created or destroyed. So, picture up here, Francois Clinet,
+he was a phenomenal, economist way before Adam Smith. And one of the things that he's most noted for is the… I'm bad at French, but the tablique Economique.
+It was essentially the first input-output model. He went to the trouble of collecting data and defining how different sectors put input products into, you know, the production function to produce outputs.
+He's largely forgotten because most people think economics starts with this guy, Adam Smith.
+For classical economics. And in fact, if you take a history of economics.
+It will often kind of start with this idea that Adam Smith finally dealt with those annoying physiocrats and made everybody realize that perfect competition, that it really boils down to just capital, is all that is necessary to understand the economy. And so, in fact, the physiocrats are almost like a foil to Adam Smith and the real way of doing economics. But, you know, what he argued, among many things.
+is that growth comes from free exchange. And he did, in fact, include land extensively throughout even his model. And so it was a move away from land, but he very much recognized that it was still a key input.
+But then land disappeared.
+Where did it go?
+Basically, I would argue, is that there was a series of influential models that did not include land. So first, we have Frank Ramsey's Optimal Savings Model.
+This is one of the Ramsey model. You learn about this extensively in macroeconomics. It's a really cool model, but it was just capital.
+How much… how should we spend our capital now versus save it to grow and produce more in the future? This continued with the SOLO model, another very important model of economic growth in the 1950s.
+And then sort of the standard economic model, aerod equilibrium, precisely the thing that you learn in our PhD 8000 sequence, defines the general equilibrium of the whole economy.
+And it was focused on just capital and labor.
+And why was this? It's because economics at the time was fixated on the question of how do we maximize growth, but land was relatively unimportant to that at the time. And this is because it was a fixed input. You couldn't grow an economy faster by land accumulation. That doesn't even make sense.
+And so instead, there was this emphasis on capital accumulation and growth.
+Side note, just a shout out to our West Bank colleagues, you know, they also went a little bit further towards realism and applied theory by looking at not just the Arrow-DeBrux equilibrium, but adding important distinctions, like overlapping generations. These are more realistic, but require some pretty strong, assumptions to connect with reality, and so
+I love this, meme. Help, is there any doctor, here? I'm a doctor. Can you help me? I'm a doctor of economics. He's gonna die! Did he consume all of his assets?
+Bad joke, but this is, like, a huge obsession, with, the rationality of humankind, is that economists have a sort of twisted view of reality and rationality, and
+He's being very rational in the overlapping generations model, essentially. All you need to know is that he consumed all of his assets before he died, and then everything is okay. So…
+In summary, on land, it basically, I think, just comes down to land was sort of forgotten.
+And this was because in the 1950s, what was going on? World War II had just shown that strong economic production wins wars.
+And the looming Cold War could already be seen coming, and so many felt that there was need to grow our economy as fast as possible into the strongest superpower. And this had real consequences for environmental quality, of course, you know, like the industrial-military complex.
+Oh, side note, here's another dated reference. This was a dolly-generated image of tank driving over soil, leaving big ruts. Now there's better image generation tools, but I haven't, haven't updated those yet. Still kind of cool.
+Okay.
+So we need to think about economic growth in a way that reincorporates land.
+And let's build that up from the ground.
+And so we're going to start with one of the simplest models, related to this, the Ramsey growth model. And so let's… let's work through the equations really quick. I said there's not going to be much math. I lied. There's a little math. But it's really easy. Okay, so…
+what are we saying about production? Our Y variable.
+And this is a modified version of Ramsey. I'm not going to get into the history of everything. He's basically saying that production is going to be a function of capital at time t raised to some power.
+multiplied by L,
+at time t here, 1 minus alpha. That's a real simple, production function, Cobb-Douglas style. But the idea then is that there's an equation of motion, KT plus 1,
+Is gonna be equal to…
+some sort of depreciated level of capital at time t, right, so whatever happened in the previous period, Plus…
+whatever production we had. So the idea is, why, when you produce output in the economy, one of the things that it can become is capital in the next period, right? So we depreciate some of our existing capital, but we add to it, but we don't add all of it.
+Because we subtract out consumption.
+And so… In this simplified conception, every bit of
+produce… production Y that we don't consume goes on to savings. And so this is the fundamental thing that Ramsey looked at, is what's the optimal way of growing the economy where you have this benefit to growing by accumulating your capital, because if you accumulate it here.
+It goes into the next year's production function and increases the production, and so the incentive to save is that you can grow faster. The incentive, though, to consume is ultimately, and I left it out here, he's maximizing utility, and so if you don't consume anything ever and only grow, your utility will be zero. And so he found a mathematical representation to show optimal savings.
+But for me, what I think we need to do is shift from
+This, you're all right in this slightly different format, in functional form, shift from Y being just a production function that has capital and labor.
+to Y is… Capital, labor, those are really important still.
+I'm gonna add this term, R, resources.
+Natural resources, there's… this is…
+typically uses R. I think I would have liked L, for land, but we can't use L because L is labor. And so resources…
+includes natural resources like minerals and some pretty straightforward things that everybody agrees should go into this production function, but critically, it's a good place to put land into these things. And that's important because, frankly, land is really different than the other things that go into a production function.
+Number one, K here, capital, that can accumulate. We can grow… grow is a funny word, but we can create more capital, to be more productive in the future.
+L, the labor force, can also grow, literally, babies. Don't need to explain that one. But land is fixed.
+Maybe interstellar travel will change this. There's a little bit of wiggle room in terms of you can create land on the coast by sinking lots of sand and soil and aggregate down into it, but more or less, land is fixed.
+And this means that the price of land, is gonna go up as the economy grows, and it becomes a very scarce resource.
+But more importantly, if there are competing uses for this land, the increasing price of it means that it will have incentive to all be put into production, and not necessarily preservation.
+So… We'll return to that.
+You know, the… I talked about Malthus last semester, or last lecture. This is, you know, a very Malthusian point, is that land is fixed as it becomes more scarce.
+the ability to produce food, Malthus argued, would become challenging. Question.
+Optimize cheap.
+Here? Yeah, so I left it out, but,
+Great question. Is that, ultimately, it's maximized the utility from consumption.
+Subject to this being the production function, and this being the equation of motion.
+Yeah, great point.
+Otherwise, there's really nothing to do here. It's just all capital. But yeah, he's only trying to maximize the utility from consumption, and just benefiting from capital production.
+Okay.
+Okay, so…
+land has been left out, largely. There have been a few threads that we're gonna pick up, though, is that,
+As environmental sustainability became a more salient and important topic, some of the forefront economic models did start to re-include land.
+And why was this? It was because it was necessary to be able to say anything useful to questions of global sustainability and the trade-offs between the environment and the economy.
+And so, you know, we talked about the World 3 model, or the Limits to Growth approach. As soon as you start to think about limited resources, there was, emphasis to re-include land in econ models.
+And one of those breeds of models that was particularly useful in this is one we'll be returning to hundreds of times in this course, is computable general equilibrium models, which we'll talk more about. But basically, the context here is these were data-driven rather than theoretical, and so it wasn't surprising that they needed to have land in them, because land, actually, if you look at the value of land and purchases of real estate, this isn't
+a trivial thing. And so, if you want to argue data against an economist who wants to be really theoretical and say it's only capital and labor, well, just point to the data. There's a lot of money that goes into land as assets, and so…
+That kind of puts into question the idea that we can ignore it.
+One of the things that our department is famous for, actually, is a related question that drove the generation of these new CGE models, is assessing whether or not biofuels were good. And so, ethanol.
+For a long time, ethanol was regarded by a lot of environmentalists as a potential savior. It means we don't have to rely on fossil fuel, we can just grow our crops.
+Who knows the problem with that? Does anybody know the history of biofuels and why that wasn't such a widely accepted success?
+Anybody?
+What happens if you grow all of your, fuel, and get it from ethanol, from corn?
+What was the name? What's that? What was the flight?
+No. What I would argue is the price goes up, right? There's gonna be a new, set of things that corn, in this case, can be used for, and that was conversion to biofuel.
+And what our department was quite famous for was really good analyses that say, hey, wait a minute, even if we produced
+Even if 100% of the corn that we produced was converted to ethanol, we're not going to have enough.
+And that this is a real problem for all sorts of reasons. One, it didn't make sense. Two, it would cause massive cropland expansion, because if there isn't enough corn to be able to produce enough biofuels, what's going to happen is we're going to have massive cropland expansion. And so, you can get into the history of this, but our department was quite famous for the idea that, wait a minute.
+Biofuels might not be such a good idea, at least not in this case, because in the simplest argument, it makes food more expensive.
+And so there's all sorts of reasons to be worried that food insecurity could be affected by emphasizing ethanol.
+So… That's that. Okay.
+Yeah, absolutely. The question was maybe there's substitution. As corn gets more expensive, people substitute to other products, and yeah, we'll actually return to that and learn tools to calculate that. The answer is yes, that definitely happens, but only partially. And also, a lot of the other things that you might substitute to also require land as an input to production. So, soybeans also require that, so does wheat.
+But that's a very good point, because trying to make quantitative estimates of how much will price go up when you have this new demander of land as an input to production depends on, among other things, the extent to which we can substitute away from corn. Yeah, great point.
+Okay, so the CGEs started to include it.
+At first, you know, land, even though it's really different than capital and labor, was just expressed as a dollar value. So here's going to be my really good graphics. I'm going to try to draw this out for you. That was better than nothing, so now it's going to be in our production function, but just as a dollar-denoted type of capital.
+And that's better than nothing.
+But models needed to advance to regard it in terms of what it was unique for, and that's the physical area. And so here's my awesome art. We went from a dollar sign to a grid cell, or a field, or whatever you want to call that.
+And that was good, that was an advance, because at least now we're not gonna, be ignoring the idea that there's a fixed stock of actual physical space available.
+But there needed to be more advances, and it started to consider how good is the land? And so, my trees here, and my river here, and my… I think that's a cow.
+I don't know, cows don't have horns, do they?
+Well, they have tiny little horns, not that big, so I guess this is the steer. Anyways, the point was, is we started to have to consider details of how good the land was.
+And, you know, basically, land in Antarctica, one hectare of that, is probably not as useful for growing corn as a hectare in Iowa, or something like that. And so, the details of what's on that grid cell are important. And this really started the new line of research. It is merging with Earth science.
+And the enormous data that we have coming from satellites here. So here I've drawn a land use land cover map. This is now the input, because now we know a lot about the area, the dollar value, the quality, but also the detailed landscape configuration of what goes where, and this has all sorts of important implications.
+Okay. Any questions or comments about land? You know, we're… we're applied economists, we love land, and so in a lot of ways, this is almost just like a really complicated argument for arguing that applied economics is the coolest of all things in the world, but this is my argument.
+Any thoughts?
+We're a land-grant institution here, so this is deeply built into our history here in applied economics.
+Yeah?
+Some of them are super useful to grow corn, but some are super useful for other groups. But why, in reality, they are not back? I mean, maybe…
+If the farmers, if they grow this kind of crop, it will be very productive, but they, they didn't. They, they don't.
+I mean, are there ourselves? That makes me sick or something?
+That's a great point, and that's the sort of detail that actually the computable, generally, equilibrium world does try to model directly. And so, like, just looking at these equations, the way you could think about that is here we've made a huge simplification that there's only one production good. But we could say that, in reality.
+You know, this is a vector, everything's a vector, and that means there's production functions for different
+crops, or whatever. And they might have, different, Okay, let's actually extend this.
+The math won't work, but we might say that the production function for corn has one coefficient, and for soy has something else.
+And so, the same idea can hold, you're still going to maximize utility, but now you look at the data and say, how effective is land as an input to these different production systems? We'll get into the details of that, but that's exactly the right intuition that I'm trying to get discussed here, is that
+you know, if we don't include it, we're going to ignore it, but if we do include it, we can start to actually be included in the idea of what's the optimal choice. So yeah, great point.
+Okay.
+So, that's it for the first context point. That took longer than expected, but, the second point I want to raise is scenarios.
+Why do we have scenarios? Well, number one.
+and we'll argue this throughout the course, and we're actually going to dedicate most of Thursday lecture to looking at the state-of-the-art in-scenario analysis at the global scale, but scenarios let us analyze a future even when it has huge uncertainty. We can try out different narratives and see if we like that general direction. They're not necessarily predictive, though. They're just ways for us to assess the full range of possible outcomes.
+Okay, and so…
+scenarios have been really critical to environmental development plans in general, and this is actually where the Natural Capital Project first got its start, and so I want to talk a little bit about the history there.
+they were, among other things, instrumental in the creation of what are called water funds. And so, what a water fund is.
+It's just an idea that, there are two groups of people, farmers choosing how much quality of their land they're gonna choose to protect, like, should they keep lots of vegetation to keep the streams clear?
+And then there's also residents downstream from those farmers who are going to experience the quality of that water. And so, who knows the COAST theorem? COST says that they should be able to negotiate with each other and come up with a win-win. In reality, COAS is hard because it assumes no transaction costs, and so what water funds were, essentially, is one big COS accelerator.
+Is that it was a set of science and institutions to match downstream residents who would be willing to pay money to upstream farmers
+to have higher quality environmental protection. And this gave the downstream residents direct benefit, because, you know, now they get better water, and it might even be cheaper than paying for the next treatment plant. And so, water funds were just a way of scaling up costing transfers, and they actually got quite large and widespread. There was more than 200 different water funds, especially in Latin America, and basically.
+This is a type of payments for Ecosystem Service program.
+that we'll talk quite a bit about. But in this context.
+It also often triggered really good discussions among the farmers and the residents, but also the municipalities and the bodies that were looking at what's the right development plan for the whole watershed, on how can we do payments for ecosystem services, but also just integrate this into overall green development plans. And so a lot of conservation, especially in developing countries in the 90s and early 2000s, was
+from this idea of, let's generate redevelopment plans. And, essentially, what that would involve is coming up with multiple scenarios
+of what we might think the future looks like for this watershed. And, typically, it would have at least two scenarios. A green development plan that has, you know, has these payments for ecosystem services, and then a business-as-usual plan.
+And, the… throughout, stakeholders would be, thoroughly engaged to try to create a set of scenarios that spoke to what they were interested in assessing.
+And that's really where NatCap got its origins, is helping these water funds, helping with green development plans, and using science to make more informed decisions, for analyzing these scenarios.
+This assumes, though, that scenarios are going to come from the stakeholder engagement process. But in reality, the challenge with this is oftentimes, the stakeholders at the local level had no particular plan, and actually wanted to work with us
+As experts, on development.
+To fill this gap and to, like, try out different tools that we built to do this, like a scenario modeler, simulate crop expansion, there's all sorts of work on land use change regression prediction models that we'll come to. But ultimately, these scenarios that we generated, were of limited use because they were mostly determined
+By large, exogenous factors.
+So what do I mean there? What's an exogenous force that the specific watershed in question might not be able to do anything about?
+the economy.
+Right? And so, if you have massive macroeconomic changes that cause crop expansion to become massively profitable, that's the driver that is going to cause the landscape to change in the way that it does. And so, we discovered at NatCap, basically.
+that the results of our models were mostly driven by these factors going on outside of the watershed in question. And so, we…
+Started to think about how can we use economics and other tools to understand those forces and come up with useful scenarios that do connect to macroeconomic forces.
+Just a quick note, I'll go real fast on this.
+There's confusing terminology between the word baseline and business as usual.
+Essentially, they're the same thing, okay? Both baseline and business as usual are scenarios that look at no actions being done. It's like, what would probably happen if you didn't implement any green policy in this case?
+Economists like the word baseline, like, they think of, like, a baseline going forward of what economic growth will do. Environmentalists like the phrase business as usual, because it sort of
+highlights the tension on inaction. So, like, in climate change, a business-as-usual scenario would be RCP 8.5, where we didn't do anything to mitigate climate change.
+And this is important, though, because when you calculate the benefits of pursuing some sort of green policy, and somebody pointed this out, I think, in a previous class, is the difference between the value you obtained… here, I'll even just draw it again, you know, we had our… that graph of GDP,
+We had a GDP that went like this, with… no ecosystem service.
+Protection, and then up here, with…
+That's the value of protecting the environment, right? This is very critically dependent, though, on what would that baseline have been.
+And so getting these baseline scenarios right is really critical. There's sort of an interesting story about RCP8.5. That's the one with a ton of climate change. There was an influential article a couple of years ago saying we should not use that as the business-as-usual scenario, because it's almost impossible.
+It represents way more emissions than we're gonna do. You know, it may have been the assumption of what was a business-as-usual, no-action scenario if we, you know, in, like, the year 2000 or something, but we've actually made significant investments. We've shifted our renewable strategies, and so now it's extremely likely that RCP 8.5, the hellish scenario, will not happen.
+And so, there's a big push to say, actually, we should be comparing against RCP 6.0 or something, less emissions. And that drastically changes how valuable that mitigation is. So it's an interesting philosophical point.
+Okay.
+For us, though, we're gonna get really good at scenarios, because all the different models we use are going to be, essentially model… model results, four different scenarios, and then we analyze
+How the economy performs and how the environment is protected under these different scenarios.
+And so this is leading towards the, Banerjee et al. 2025 paper that you, that you read. There's a plethora of scenarios in there, very… almost confusingly many. But they… I'm going to give a little bit of typology. We always have a base here.
+This is confusing, it's different than the baseline. It is a single point. It is whatever point we diverge from the historical sequence. And we'll call… you know, you can think of that… I'm going to express it here in terms of hectares protected. So, H0 is the number of hectares protected. You can think of H0 as, like.
+The actual landscape, how much of that is in protected areas.
+And going into the future, then we have…
+a baseline. And so, you know, that would be the one that goes like this.
+We'll call that, HB, and this is so that the hector is protected, under the business-as-usual or baseline scenario.
+But, almost always, we're going to have one, and usually multiple, different conservation scenarios, HC, that we're going to contrast with the HB.
+And, what I want to highlight here is there are two different deltas that we need to think about. We need to think first about, what are the differences between the future year and a base year? So we might want to know, you know, how much does land hectareage under natural states change in the baseline compared to the original? That's the one delta. It's going from the base year
+To some future year, under whatever scenario.
+But then…
+Often, though, the one we really care about is the comparison between the scenarios. And so, you might be looking at these maps and saying, hey, those look identical. That's always the case with global data or anything. They look identical.
+But then when you subtract them, here we're going to look at a map of HB minus HC. And so this here now is the proportion conserved.
+So before, it was just how much of the land was in cultivation, was under cropland, but we had these different forces that we projected into the future, and when we finally look at the difference, the second delta of HC minus HB, then we start to see the key things. You know, this is one where we have a lot more cultivation in these red areas.
+And, that's in order to protect these areas in the blue.
+if you're curious, this was my first published paper of any note, in 2014, PNAS, which sought to identify the optimal areas to protect, basically, the portion conserved here, in order to maximize global carbon storage subject to meeting food security goals. So I'll throw that on the website, but that's what this particular map is.
+But here, I'm just using it to illustrate the ideas that we have base years, baselines, the delta of how things changed over time, and then the baseline
+policy, conservation, or whatever scenario, there's lots of names for it, and the delta between those, is also a key part of the analysis, because it essentially says this is the benefit from pursuing the conservation action. Right, that would be plugged into any sort of cost-benefit analysis framework.
+Any questions on scenarios?
+We'll spend more time on what the scenarios are, but I want to get this language in our head, because we're going to return to it again and again.
+Cool.
+Alright.
+Yeah, so the reading.
+What'd you all think of the reading?
+Kinda short, right?
+Was it easy to follow?
+I like these papers in science because they're super easy to follow. Did anybody go to the supplemental information?
+Yeah, with you? Okay. This is a big culture shock for economists. Economists write papers that are methods forward, meaning, like, you have a bit of an introduction, tons and tons and tons and tons of methods, and then at the end, you're like.
+And we conclude this. Whereas in science, it's a totally different approach. You have an introduction, it might even be a bigger introduction, and then you have a results section immediately. And the results are the highlight of this.
+Then there'll be, like, in PNAS, for instance, you'll then have a… they do have a methods section, but it's actually a smaller font, literally, and it comes after the results.
+Or in the case of this paper, Banerjee, et al. 2025, all the fun stuff was in the supplemental information. And so this was more or less just the results with the methods hidden there. So, I didn't expect everybody to read that, because we're going to talk about the results, but if you… you have to learn this different culture of, yeah, you start with the results.
+But if you're interested in the methods, you then have to dive deeper, and read the supplement.
+And so I commit this problem, too, and actually really like it, because then you can have a short paper, and then have a massive supplement. And so, like, even that 2014 paper that I referenced, I think we had a 60-page supplement. I've had other ones that have had 200-page supplements, and so that's…
+Then you… basically, you don't have word limits anymore, and so you can have as much detail as you want.
+Anyways, yes, so this paper, Investing in Forests Enhances Ecosystem Services and Economic Growth in Cambodia, Evidence from the Integrated Economic Environmental Modeling, or IEM, model.
+And, this was…
+If we think back to last lecture, when I put forth that model space where we had econ complexity and environmental complexity, Ayem was one of the first ones to really push into the upper right of that frontier. And linking… it linked, as you saw in the paper, environmental aspects, specifically ecosystem services, directly with a computable general
+equilibrium model. It was the first one in this earth economy space.
+That did it, to that extent, where it was specific to ecosystem services and their endogenous impact on the economy.
+One caveat is it was national. That's why this lecture today here is called National Sustainability. And so that was, you know, necessary at the time, mostly for computational reasons, is because it is quite easy to compute ecosystem services at a national scale, at least much easier than at a global scale, simply due to the number of pixels involved.
+Okay, but the approach is still going to be, very, very novel, and I love this paper.
+And so, O'Neill Banerjee, he and I are friends, he has become a consultant, and now he's basically using the AIM model and has scaled it up in his consulting to start cranking out country after country report. And so if you look at his Google Scholar profile, he has tons of publications that are essentially like this title, except for an economic growth in Thailand, or economic growth in Mexico. That's a really good publication strategy.
+Because you can just scale it really well. I'm sort of joking, I have nothing but respect. But yeah, so check out those. There's differences, stakeholder engagement becomes critical, identifying the scenarios that Mexico cares about, which are going to be different than the ones that Cambodia cares about.
+But the idea is the same, is that they're going to connect a computable general equilibrium with a land use change model with an ecosystem service model.
+And so, first off,
+Why computable general equilibrium? That's one of the key things throughout all this course, right? Well, if you ever need to argue something is worth learning about, you just cite a Nobel Prize winner, right? That's an easy way. Here, Kenneth Arrow argued in one of his writings that the applied… he called them applied general equilibrium. AGEs are identical to CGEs, the lingo has shifted slightly.
+But he said, applied or computable general equilibrium model is one of today's standard tools of policy analysis.
+And basically, he argues that anything that requires, understanding the whole economy and impacts that might filter from one sector to another require a CGE. And he, Kenneth Arrow even argues that if CGEs are not used explicitly, then we will just have the denying of these implications, and that's much worse.
+And so basically, you know, if you're gonna do anything that has widespread impacts on the economy, this is what you need to do.
+Yeah.
+information. Yep.
+Yeah, great question. For those online. The question was, how does… how do CGEs like this compare to machine learning models? And the big difference is, CGEs are structural, whereas machine learning models are predictive.
+And, you know, there are combinations of the two that we can talk about, but in the simplest form, machine learning models just say, let's take tons of data and make the right prediction without even understanding why the prediction is the way it is.
+a CGE is very, very different, because it might make a projection, and hopefully it's accurate, but it's not some black box, it is a structural model, and essentially, you can trace it backwards, is that supply and demand shifted in a certain way, that's the structure. And so, you know, we can even use the Ramsey example as, you know, we can say, this coefficient changed.
+That caused a substitution towards labor instead of capital, which caused the production of this sector to go down, which caused the production of soybeans to go up.
+And we can trace out the causal pathway. And so, in other words, machine learning is prediction without any causal story, and a structural model is, like, a really specific story on what the causal pathway is.
+Yeah, great question.
+Okay.
+We'll also be talking about one specific CTE throughout, and that's GTAP, and that's where I was yesterday. GlassNet is essentially the GTAP network pulling in new members.
+But GTAP was founded in 1992 by, Tom Hurdle, one of the most famous applied economists ever. He was the president of our, what's it called?
+AAEA, right? Whatever. But he also founded this huge, awesome consortium that has… these numbers are out of date, it's like 20,000 members from basically every country in the world.
+And it's got some of the really big players, like the Asian Development Bank, the OECD, FAO, IFRI, WTO, all the ones that matter, and then many, many national supporters.
+And to be clear, it's kind of confusing, because there's two things that GTAP is known for, and so when you say GTAP, you might be referring to either one, one of which is the database.
+And this is their key product. It's a standard, harmonized, curated set of comparable databases of key economic indicators. In essence.
+They have a bunch of input-output tables, that they have collected from country partners. So all the countries do their own statistical analysis to identify an input-output table, which we'll learn is critical. The challenge, though, is if you have 175 or 141 regions input-output tables, and you add everything up, it doesn't add up. You'll get crazy results, like,
+Twice the amount of total production than actually exists.
+And so there's a huge process that they go through to standardize everything, and that's… that's what they're known for. And so it's a very labor-intensive thing to do this. But it captures, in a lot of detail, the structure of the economy. And so, when we have an overlapping generations model over on our theoretical West Bank.
+How many regions do they have? One.
+How many sectors do they have? One. That's a big difference. I can… and I'm… I'm being a little bit…
+to GLib, you know, they will, you know, you can do a PhD over in the West Bank to say, what if there's two different types of overlapping generations? Or what if there are different sectors that different generations of people have different preferences towards? They will… there's really interesting theoretical things to learn from that.
+CGE, conversely, goes in the other extreme. Let's have an explosion of data, tons of regions, tons of sectors, and let's be as detailed and connected to the reality of the economy as we can.
+The second thing that GTAP is known for is the GTAP Computable General Equilibrium CGE model. And so, it started, actually, as just a sort of toy model to illustrate the importance of the GTAP database. But it's since then grown to be one of the most used
+if not the most used CGE model that makes quantitative predictions about what would happen if, for instance, we started a trade war, or we had a country invaded another country, or stuff like that. It's very useful in calculating those things.
+Oop, this is kind of redundant. I just mean to say that, it's a powerful set of players, and so if you're only interested in the perspective of jobs, this is actually one of the growth areas for economists at the moment, is the use of models to make predictions. There's a lot of good jobs, high-paying jobs, so there's a McKinsey in there, there's a…
+If you really want to make a lot of money, that's the way to go. Of course, if you really want to make a lot of money, I'm not sure a PhD in applied economics is the right choice in the first place, so… I don't know.
+But regardless.
+I'm gonna skip this because we'll spend a lot more time on it, but this is the core of what is being computed, and…
+I'll return to that. And so Ayem, then, has a CGE, What I will draw out…
+Can the screen be seen over here? Yes. Is the,
+they have their own conception of the sort of circular flow diagram that I drew the other day.
+And it highlights the modeling components. CGE,
+Goes to a land use change model.
+Goes to an ecosystem service model.
+goes back to the CGE, right? And so that's what I said the other day, insofar as…
+economy, among other things, calculates land use change. This model says where it happens. That's an input to ecosystem services, and the change in ecosystem services is then expressed back onto the CGE as a shock. The IEM approach, they actually call it IEM…
+plus ESM, that's how they call it, because IEM is kind of stand-alone. You might want to run that model, it's a great model, to just predict things that are… have nothing to do with the environment, and you don't need land use change, and so it's a good, well-calibrated, validated model, that is in, has been employed in a lot of countries. So that's…
+That's just this part.
+I'm gonna label these.
+And then ESM, I guess, really refers to the idea that you might connect Aime with the rest of the ecosystem service modeling stuff, and they use
+A land use change model, called Dynaclue from Peter Verberg. We'll learn more about that.
+And here, they use Invest for their ecosystem service models.
+And so, that's really similar to what we've now done a lot of times, but it's a slight… the biggest difference is that IEM is different than our GTAP, and Dynaclu is a different land use change model with its pros and cons.
+So, if you want to look more,
+in more detail at this particular one, there's tons of great information. If you're a mathematician and you want to see it at that level, check out the 2020 Mathematical structure paper. I'll throw that up in our Google Drive, too. And, you know, there it's essentially just thousands of equations and a linear programming approach to solve them, and that's how essentially all CGEs are.
+But it's all… will also document how it connects to the database. So GTAP, we have the GTAP database. IEM, it creates
+country-specific databases, using something called an environmentally extended social accounting matrix.
+We will not spend a ton of time in this course on social accounting matrices. A more traditional CGE course would. Like, how do you go from the systems of national accounts to a SAM, the social accounting matrix, in a way that is correct and can be used? But basically, what you need to know is a SAM is the way you express that
+the systems of national accounts in a way that is ready to be used as an input to CGEs. We'll be users of SAMs rather than creators of SAMs. But really, that is a good research topic. The environmentally extended social accounting matrices is a great way to think about this. It's further evolved into natural capital accounting.
+And so, many of us here have talked about that, and we will return to that later in the semester, but can we formalize the idea of an environmentally extended SAM into a system of national accounts that actually includes the environment directly? And that's what's referred to as natural capital accounting, and we'll return to this extensively.
+But for now, basically, the SAM is what lets you parameterize the model, and we've seen this one last lecture, but the SAM parameterizes the economy, and then the idea is to link it to the environment with the ecosystem services.
+Here, this was Cambodia.
+And so, you know, Cambodia has some things that are specific to it. It wants to grow a lot, but it has one of the highest rates of deforestation, and so it's a good country to look at the interactions between land use change and economic activity, because there are tons of economic forces pushing towards the expansion of agriculture, you know, at the cost of forests.
+But also, you know, this isn't for no reason. People do that because they make money doing that, and it's also a country that wants to improve the level of production within the economy, and so there's harsh trade-offs to be thought about.
+It's especially challenging because there's also illegal logging, and that's even harder to stop, and harder to predict where it's going to be. But they're thinking about what are the different ways that they could protect the ecosystem services, especially those beyond just climate regulation, so that they can grow into their middle or high-income status
+As a country, but in a way that doesn't undercut all of their national capital, which is really important to them in the first place.
+Okay, so…
+I guess I already said it, but this here is just more details on… so IEM is the three parts, the dynamic computable general equilibrium model,
+Bressinger et al. 2009, is the reference that you can check out if you want to learn more about social accounting matrices. That goes into depth there.
+Dynaclu will spend a day on in class, so if you want to read ahead, you can check out Verberg 2021, but we'll talk about that directly. And then in this particular application, they used four Invest ecosystem service models, the carbon storage model, erosion mitigation, water yield, and water purification model.
+And…
+So, it's tempting to think about, you know, here you can start to list out the models. There's one sort of secret thing, though, and this is the difference that I've detected in the different ways of approaching this, is here we just have three parts.
+when I showed this same drawing, before the other day, I had four parts, right? I had the CGE, Land Use Change Ecosystem Services, but there's another bubble here, which is the,
+and I need a better name for this, but the dependencies calculation. And so that's the calculation of how do you go from a change in ecosystem services
+and express it in a way that is an input to the CGE.
+And to highlight this, You may have caught this, but they say it in the paper.
+The only dependency linkage,
+whereby a change in the ecosystem services affects the CGE, the only one that they included was erosion mitigation. So they had four ecosystem services, which included erosion mitigation, but only one of those endogenously affected the economy. And so this you gotta be kind of clear on, because you can report the provision of carbon storage, but how does carbon storage affect the economy?
+well, not directly, except through climate damages, I guess, but this is not included in it. So you've got to be very clear which are the ones that have dependency linkages or not.
+But here, the idea is very straightforward. Tons of literature, most notably Panagos.
+2018, shows the… using field study data, and econometrics, like we would learn in our courses here, that erosion on a farm, once it passes a certain threshold, will actually start to reduce the yield. And every farmer knows this. If you have a lot of erosion, you don't grow as much crops, so that's sort of trivial to know, but
+Panagos' paper defines it, you know, at a large scale, all of Europe in that case, with lots of good argumentation that this
+Relationship can be extended to other locations.
+Okay, so the idea then is, you calculate ecosystem services, of which you calculate
+the amount of erosion that happens when we do our hands-on with Invest, you will calculate this, but you calculate specifically the tonnage of soil that leaves a grid cell. And so that's, you know, how many gullies, how many rivulets, how much soil leaving do you have.
+That then expresses itself, in the dependency part of the calculation.
+by, you know, I don't have all the math up here, but you could think about it as changing that parameter, or
+Actually, no, I did add the R, so it's, like, changing that parameter. We're saying now the land that is going into the production function is less effective. And so, what this means is
+when we solve the whole series of equations, we're now going to solve it with a shock. And so this is the language they use, a shock file, even as, like, the way they compute it, that just says, okay, re-solve the general equilibrium model, basically make supply equal demand, but with a different beta value, on the crop production productivity as a result of the lost soil.
+And so that's the specific linkage they have.
+In GTAP investors, more linkages, and this… this is, frankly, the hardest and most important part of this earth economy modeling, field, is to think about how can we better specify more of these dependency linkages, and with… with better precision.
+Okay, so…
+I want to make one quick note, and this is a shout out to the applied nature of this course.
+A really awesome part of the IEM approach is it's really open, and that means they provide curated data. You know, everybody wants to say they're open, but if you don't have your data available and, you know, well-documented, you're not really open, they do a great job of that. And so here, you can check this out. It's hosted on the IDB website, Inter-American Development Bank.
+And you can download…
+data packets for about 20 different countries, and so it's very biased in coverage towards what the Inter-American Development Bank covers, as well as Portugal, because O'Neill's from Portugal, and India because they got a big contract with India. But anyways, check this out.
+That's where you can get the data.
+But there's maybe even a slightly more effective way of getting this data.
+And I want to introduce you, thus, to Google Drive.
+So, I feel like a salesperson here. But in addition to 8602 and credits towards graduation, you also get access to the NATCAP Teams data directory, and a couple NATCAP Teams members here, it's, it's how we organize a boatload of information. I had to recently, negotiate with OIT here at the
+University of Minnesota, because we were running out of file storage. They give you 1TB, and I'm like, that's ridiculous. I have more of that than that myself.
+And but, you know, it's expensive to have cloud-hosted stuff, and so they're like, well, really the problem is we only have two plans. You can have one terabyte, that's what every faculty member gets, or you can have 50 terabytes.
+And that's a lot of data. At 2 cents, and this is actually a huge underestimate, it's actually, I think it's more like 7 cents for the UMN rate, but 2 cents per gigabyte is the official rate that Google Cloud Storage goes for. Per gigabyte, that's $1,000 per year that they just gave me. So, I don't know, I thought it was kind of funny. They're, like, they're, like, super restrictive, but then once they did give it to me, I have 50 terabytes, and now…
+I'm gonna fill it up with movies or something, I don't know.
+But I'm just gonna say, I'm gonna… we'll be returning to the base data. After this class, I'll be… you'll see an invite, to our… our NetCap Teams directory and the base data that that covers, because we'll be using that in a lot of our, exercises and projects, even.
+But yeah, so here's just a screenshot. In the base data folder, is all sorts of inputs that you might find interesting.
+Okay, so… Only a little bit of time, but we're doing great on scheduling, because
+the rest of this kind of speaks for itself. We've set up scenarios, we've set up land, we've set up CGEs, what they are. All that's left is the relatively short paper that was Banner G2025, where what they did is they walked through the scenarios. And so, they have
+a base scenario, business as usual. It's the counterfactual reference against which all the other scenarios were compared. And a lot of work always goes into those, because you need to know, for instance.
+What are the population projections? Actually, this is the biggest one that affects, economic growth, is population. If you have more people, it'll grow faster, so you need good information there. Many use the United Nations, but also other things like productivity from the International Monetary Fund. Other things that you need to be able to project is changes in trade relationships. That's hard, and very chaotic.
+But regardless, it creates a baseline against which they compare several different, policy-relevant scenarios, the first of which is Node4, or Node 4, or no deforestation. And this simulates
+a land use map that reduces deforestation, so it's going to be a reduction in the rate of deforestation and eliminating it totally by 2045. And so what this means is
+the land use change model is going to be constrained such that deforestation is limited to this amount, and
+they, in this scenario, identify the cost of doing this, is that eliminating deforestation is expensive, because it requires, you know, enforcement, it requires purchasing of land, but really, I have emphasized the word cost here because
+This is the coolest thing about CGEs, is nothing is free. When you have a general equilibrium model, if you do something, it has to have a cost.
+And so if you do something like deforestation, it has to have a cost, and that cost is going to be modeled in the economy. And so if it costs
+A million dollars, you have to say, in general equilibrium, where did that million dollars come from?
+The easiest way to do that is to increase taxes, and this will actually itself have an effect on the economy. And so, if you're going to increase a cost like that, you have to also change the tax rates such that it is paid for. And what I like about this is it illustrates the
+The sort of theoretical consistency of general equilibrium is… just feels wrong to say that you can get money for free. Well, if money was free, let's just…
+pay for all of it. Then, you know, we can just pay everybody not to deforest, and then we're done. No problem, right? Well, that… it doesn't work that way, because there is no free money, and you need to think about what is the source of funding it.
+A few other scenarios, they have an afforestation one, where they, they afforest on 1.6 million hectares of land, basically a bunch of planting of trees.
+And so it has a cost of planting, which is quite large. It's much more of a cost than just preventing deforestation, but it also has a return, and they argue that this is a return in terms of improved ecosystem services.
+And then they have a restoration scenario. This is restoring 1.1 million hectares of degraded forests, and essentially this is saying, instead of converting land that is not a forest into forest.
+That's afforestation. Restoration is taking lands that used to be a forest, or are like a low-quality forest, and spending money to better plant them, or protect them, or whatever it takes to change their vegetation over to a denser forest. And that also has benefits.
+They have a combination of scenarios, basically are different mixings and matchings of the afforestation and restoration and business as usual scenarios into COMB and COMB+. And one important thing to note is
+this little star here. They report the scenarios in two different ways, with and without the dependency impact. And so, you know, here, the dependency impact is this arrow, that's the erosion effect.
+you could say the combi scenario without the benefit of protected erosion, or protected soil, is going to be different than if you do account for that. And that's actually really useful, because the difference between
+Doing it with and without the dependencies isolates out how valuable was doing the protection in the first place.
+And so you can see that in some of the results. Well, not these ones, these are land use change results. Let me jump ahead.
+Two years ago.
+Sure.
+Yeah, it's this one. And so this is sort of like the key results of any sort of earth economy model, but you have, among other indicators of the economy, of GDP.
+And this is what's the change in GDP, and this is in millions of US dollars for Cambodia under those different scenarios. So we see no deforestation by itself, not good for GDP.
+Aforestation, good for GDP, even with the costs, we now have more forest resources. Restoration, kind of in between.
+But then you see, combinations, of them that are gonna be even better. And so, COMBI compared to COMBI star, you can see that there are different estimates with and without the ecosystem service valuation component.
+I'm going to leave to you the sort of analysis of the rest of it, because frankly, it's pretty straightforward. You want to say, you know, what are the gross domestic product indicators.
+Over time, it's a dynamic model, you can look at it that way. You can look at the net present value of those investments, and all the rest of, essentially, cost-benefit analysis now can be done, but with respect to ecosystem services.
+That is a very useful bit of information that is increasingly demanded by central banks, by ministries of finance, etc. That's why I was in Paris the day before class started, and then why I was in DC yesterday.
+But it's this type of information that it gets…
+I guess, a lot of attention, because a central bank, for instance, has a mandate to protect the stability of the economy. They see losses to GDP from degraded ecosystem services, or as they would express it, threats from nature collapse.
+As a really big component that they need to worry about.
+And so we will return to that.
+Later.
+I always have an appendix with tons of other stuff that I never give to.
+You can always look at those if you want to, but if I don't say it, you don't need to know it.
+Other than that, any questions, or we can be done?
+Thanks, everyone!

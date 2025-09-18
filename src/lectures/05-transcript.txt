@@ -1,0 +1,98 @@
+All right, everybody, let's get started.
+Welcome to Lecture 5: Hands-On with Climate IAMs.
+
+This marks a transition in the course. The first third focused on foundational concepts and where we’re headed. Now, we’re switching to hands-on work with specific tools. This is Applied Earth Economy Modeling. That means we need to learn what earth economy modeling is, which we’ve discussed, but now we’ll focus on applying specific tools.
+
+One key goal of this course is to equip you with tools for independent research. That’s why we have a research project, but I don’t want to send you off without guidance. We’ll practice with these tools together.
+
+Today, I’ll start with a discussion of where climate IAMs—integrated assessment models—fit within the broader modeling space. Then, we’ll jump into two readings: one is a well-known article by Nobel Prize-winning economist William Nordhaus, who created the DICE model. The second is by Francis Moore, who developed Green DICE, a modern extension of Nordhaus’s framework. We’ll spend some time on that, but the fun part is getting hands-on with Julia and running the DICE 2016 model on your computer.
+
+First, did everyone get the install instructions and Julia running on your computers? Any challenges? Did all the packages install correctly? How long did it take? Fifteen minutes? That’s fast. It’s easy to forget how impressive it is—downloading about 3 gigabytes, probably half a million lines of code, representing the collective knowledge of many contributors. Most of those lines won’t run for this, but you’ve set up a powerful calculator.
+
+We’ll get hands-on with that soon.
+
+Let’s start with some context. We’ll keep returning to this as a roadmap for where our models fit. The other day, I circled integrated assessment models. I wish we’d split these into two boxes before publishing, but here’s my updated version. Even within each box, we organized them by economic detail, biophysical detail, or less detail. DICE is placed in the lower left—it’s not numeric, but it’s one sector and one region, so it’s undetailed in both respects. However, it includes optimizing agents over time, so it has economic and sectoral detail.
+
+Climate IAMs focus more on the economic component than physical detail. They typically have detailed climate modeling but limited landscape representation. That’s what we’re plotting on this axis. In contrast, other IAMs, like those from the SSPs and LUH2, are more detailed in other areas.
+
+Now, let’s talk about a key figure: Bill Nordhaus. I like reading books I both agree and disagree with. One of the hardest books I’ve read recently was by Bjorn Lomborg, a well-known environmental economist who often supports non-consensus opinions. He’s a smart climate skeptic. For example, he wrote a famous article, “Recycling is Trash,” arguing that recycling can be worse for the planet based on cost-benefit analysis. He systematically examines environmental topics, often making counter-arguments against protection using economics.
+
+His recent book attempts climate skepticism, going into detail about scenarios, science, and measurement accuracy. But his argument hinges on one number: the cost of solving climate change. How do you get that number? The answer is Nordhaus 2017.
+
+Nordhaus created the DICE model to answer what is the optimal amount of climate mitigation, recognizing both the benefits (less climate damage) and costs (spending on mitigation rather than productive sectors). We chose the 2017 paper because it preceded his Nobel Prize and is a seminal model. There’s also Barrage and Nordhaus 2023, the latest update, but the fundamentals remain similar.
+
+Let’s discuss the math. Nordhaus aims to maximize social welfare—a utilitarian approach. We’ll call that W. He’s not myopic; he maximizes social welfare from now (T=1) to T_max. The utility function is based on consumption over time, indexed by T. Population also matters, so utility is multiplied by the number of people. The discount factor, R, is crucial and controversial. The discount rate determines how much climate mitigation is optimal.
+
+The utility function is a constant relative risk aversion (CRRA) function: C^(1-alpha). It’s simple, monotonic, and homogeneous of degree one. Abatement is indexed over time, as we can choose to abate now or later. Damages are another critical component, modeled as a quadratic function of average temperature at time t, with coefficients. This is the damage function, which, along with the discount rate, is heavily debated.
+
+This is remarkably simple—standard economics: maximize utilitarian value, produce consumption through a production function, and choose how much to invest in abatement. Abatement increases utility by reducing climate damages, offsetting the loss from reduced current consumption.
+
+I won’t test you on this, but it’s elegant. The production function allocates efforts to produce output (Y_T), which equals consumption minus abatement and mitigation costs.
+
+The big question is how much mitigation is optimal, which depends on how much we care about the future. If we care a lot, early mitigation is effective, as benefits accrue over time and reduce cumulative damage. If we don’t care much about the future, little mitigation makes sense, as benefits are too far off.
+
+I won’t dive into the debate here; 8601 covers the mathematics of the discount rate in depth. What I want to highlight is the applied nature of the debate. Nordhaus claims the discount rate should reflect actual economic outcomes—the descriptive approach. The alternative, used in Reference 10 and elsewhere, is the prescriptive discount rate, based on normative goals like reducing climate change by a certain amount.
+
+Nordhaus argues the descriptive approach is better because it’s based on observation, while the prescriptive rate is “making stuff up.” I’d argue against that. If you only observe current behavior, you’re biased toward those who exist now, leaving out future generations. Observing current agents ignores preferences of those not yet born. If you care about future people, the descriptive approach doesn’t solve the ethical problem. If you don’t care about future generations, the two approaches are consistent. But if you think they matter, you must consider their preferences.
+
+Could we create enough capital and consumption goods for future generations to be happy, even without solving climate change? Maybe. The Nordhaus model, and its use in climate skepticism, hinges on the discount rate. The opposite perspective is from Nicholas Stern (Reference 10). The debate between Nordhaus and Stern characterizes much of modern economics. Stern used a lower discount rate and found much more mitigation is optimal.
+
+Key results in Nordhaus: industrial CO2 emissions are tied to aggregate GDP. He compares different models—original DICE 2013 showed more emissions, the update shows less. He also compares model intercomparison groups. RCP8.5 is the most pessimistic scenario, with DICE 2013 and 2016 getting close for baseline runs. He analyzes how base parameters affect optimal mitigation and social cost of carbon. The Stern review argued for a much higher social cost of carbon than DICE. This is why DICE is favored by climate skeptics—it supports low mitigation and low social cost of carbon.
+
+As applied economists, we won’t solve the DICE model by hand—it’s challenging and requires detailed knowledge of the production function and constraints. Instead, we’ll dive into model details. I went to the canonical DICE2016 page to download the model, but it wasn’t on GitHub and wasn’t well documented. The key question is: what happens if we rerun the model with a different discount rate?
+
+GAMS is a software package for optimizing large systems of equations, used extensively in integrated assessment modeling. It’s expensive—about $3,000 per year, more for advanced solvers. I prefer open-source tools. Julia is now challenging GAMS’s monopoly in this space. Julia is fast, especially with the JuMP library for mathematical programming. JuMP links to solvers, including some from GAMS, and allows substitution of free solvers.
+
+The tools you learn now will remain relevant when you lose access to expensive licenses. We’ll use Julia and JuMP when we dive into Nordhaus’s model. But I don’t want to leave you with just the DICE model’s low discount rate and social cost of carbon. Instead, let’s look at Green DICE. Francis Moore et al. 2022 extends DICE. Moore and her collaborator Bastian Olvera (a skilled programmer) co-authored the first Green DICE paper.
+
+Let’s draw this out conceptually. Green DICE takes the basic DICE approach. In the standard model, the production function includes manufactured capital (K) and human capital (A × L). The A factor increases human capital, reflecting effectiveness, not just population. This is standard economics—output Y leads to social welfare. The optimization is to maximize utility from consumption, subject to the production function.
+
+A criticism of the standard model is the absence of the environment—manufactured capital and labor, but no environmental input. Green DICE adds natural capital. Natural capital can be included directly in the production function, alongside K and L. It can also be separated into marketed value (like timber) and ecosystem services (like sediment retention). Ecosystem services may not be valued in the production function, but they’re important. Green DICE focuses on marketed values but emphasizes the importance of ecosystem services.
+
+We also care about the direct value of ecosystem services—existence value, request value. These are direct ways we value the environment. Green DICE is not just a conceptual diagram; every line and box corresponds to equations and variables, making it quantitative and solvable.
+
+When you run Green DICE, you get results similar to DICE but with added ecosystem service value. The standard DICE model (dotted line) shows optimal emissions increasing until 2060. Adding ecosystem services (market-only, use values, complete specification) results in more stringent mitigation, with emissions falling immediately. The complete specification barely crosses the 1.5°C threshold from the Paris Accord, much less than the 3.0°C by 2100 in DICE 2016.
+
+This is persuasive—it uses the same language as DICE but adds details about ecosystem services. The article we read adds more feedback loops, including policy adoption affected by the socioeconomic system. Implementation of climate policy depends on public support, creating feedback loops that influence emissions.
+
+The key output is that coupling social-economic feedback with Green DICE results in lower emissions than RCP7. Most runs are about half a degree less, but even aggressive scenarios barely miss the Paris target of 1.5°C. This reflects that many damages are already baked in, increasing the importance of adaptation as well as mitigation.
+
+There’s more research linking general equilibrium models to explicit land use change components. If you’re interested, explore the referenced papers—great for research topics.
+
+Any questions on the literature before we switch to code?
+
+Let’s review what you’ve done so far. We installed Julia (long-term support release) on Windows or Mac. Any Linux users? I’m switching over—I love Linux. We set the path variable so the command prompt finds Julia. We validated it was running. Who hadn’t used a command prompt before? It looks archaic, but it remains central to computing. The better you get, the more you appreciate it.
+
+On Windows, I use the Start menu to open Command Prompt. Typing “julia” brings up ASCII art and loads the compiler. Once ready, you get the Julia prompt. Julia is a powerful calculator, but typing everything out isn’t efficient. People copy and paste into documents, but script files (.jl) are better. You can run scripts by calling “julia” with the script file.
+
+Julia works natively in Jupyter Notebooks, which combine formatted information and code outputs. R is moving toward Jupyter Notebooks too. The most advanced usage is within an integrated development environment—hence, installing VS Code.
+
+For installing packages, Julia has a built-in package installer. Hit the right bracket to enter package mode. I had you install the Mimi modeling framework, which is a set of Julia scripts for running integrated assessment models, developed by David Anthoff. Mimi is well-documented and available on GitHub. The tutorial covers adding packages. I had you run a line that installs Julia, Mimi, and other packages like GDAL, CSVs, and statistics. We updated everything and imported Mimi.
+
+We also added a package directly from GitHub—Alexandra Pavlov’s MimiDICE2016.jl. Everyone should have reached this point.
+
+Let’s go further. If you’re in the package editor, hit backspace to return to the Julia prompt. Enter “using Mimi.” Does everyone have Julia running? Good.
+
+Now, import MimiDICE2016. It loads hundreds of equations—maximizing social welfare subject to production and climate damages. Now, create the model object: M = MimiDICE2016.get_model(). This returns an object with data, equations, and functions. The get_model function returns the object M, which contains all functionality, including how to run itself.
+
+Think of it like an airplane object with a takeoff procedure. The M object knows how to run. The command “run(m)” tells it to solve the model using Julia and JuMP, maximizing social welfare and assigning variables like production and temperature over time.
+
+The Mimi framework includes an Explore functionality. “explore(m)” launches a user interface (likely Electron). You can explore the model, view the economy, GDP, and parameters over time. This is integrated assessment modeling—radiative forcing, climate dynamics, ocean temperature, and more. The model links biophysical systems to emissions and damages. The Explore tool lets you replicate Nordhaus’s 2017 paper.
+
+For the upcoming assignment, review the Mimi documentation. You’ll want to modify an existing model—once you have DICE or Green DICE on your computer, you can answer questions like “What happens if the discount rate changes?” You won’t rely on someone else’s assumptions; you can rerun the model yourself.
+
+Any questions on what we’ve covered?
+
+One last skill: let’s talk about Git. As we move toward more Earth Economy models, we’ll use a package developed at the University of Minnesota called Earth Economy DevStack—a playground for linking models. DICE is one model; Green DICE links extra functionality. What if you want to pair results with a different model, like an ecosystem service or land use change model? That’s where we’re headed.
+
+Let’s walk through cloning the Earth Economy DevStack repository. If you’re still in Julia, type “exit()” to return to the command prompt. Type “git” to see available commands. The most common is “git clone.” Who has Git experience? When hiring for technical jobs, Git proficiency is essential—it’s the language for code collaboration, used by Microsoft and others.
+
+We’ll clone a repository. Navigate to github.com/jandrewjohnson/eartheconomydevstack. Copy the link. In your command prompt, use “cd” to change directories. “cd ..” goes up a level; “cd files” changes to the files directory. You can use relative or absolute paths. Now, type “git clone [URL].” If you’ve already cloned it, it will say so. Otherwise, it downloads the repository.
+
+When you check your C drive, under Users > [your username] > Files, you’ll see the cloned repository. The hidden .git folder stores the history and enables collaboration. You don’t need to access it directly, but know it’s there.
+
+We’ll use this repository and launch VS Code from it. Did anyone have trouble downloading via git clone? You can do this on MSI (Minnesota Supercomputing Institute), which often requires command line access. The typical workflow is to use Git to get your code, then run Julia or other tools.
+
+Keep an eye out for Assignment 3—the first real assignment. Assignment 2 was mostly about getting tools set up. Any last questions?
+
+Alright, have a good day, everyone!

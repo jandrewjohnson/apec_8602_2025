@@ -1,0 +1,221 @@
+# Lecture 2: Introduction to Earth Economy Modeling
+
+Reading: [Johnson et al. (2025)](https://doi.org/10.1146/annurev-resource-013024-033043).
+
+Slides as Powerpoint: [Download here](https://docs.google.com/presentation/d/1SSEmKUUdwcuprEmDwKgMpmyzEWI7PsTq?rtpof=true&usp=drive_fs)
+
+Video link: [On Youtube](https://www.youtube.com/watch?v=GWIo_f_5XfQ&list=PLir2vw2cQ_Nsn_zNtX050t5Y49YkxcNRt&index=2)
+
+# Content
+
+Welcome to the second lecture in Applied Earth Economy Modeling, where we delve into the foundational concepts and frameworks that define this emerging field. This lecture serves as a comprehensive introduction to Earth Economy Modeling itself, establishing the theoretical groundwork and practical applications that will guide our exploration throughout this course.
+
+## Course Structure and Expectations
+
+### Attendance and Participation Requirements
+
+The course maintains specific requirements for different categories of participants. In-person attendance is mandatory for all credit-seeking students, reflecting the interactive and discussion-based nature of the material. The university recognizes that Earth Economy Modeling represents an emergent research field, and consequently allows auditors to participate, acknowledging the broader academic interest in this developing discipline. For students taking the course for credit, completion of assignments and consistent in-person attendance form the core requirements. While flexibility exists for occasional absences through email communication with the instructor, the emphasis remains firmly on in-person participation as a crucial element of the learning experience.
+
+### Skills and Technical Requirements
+
+This iteration of the course deliberately minimizes mathematical requirements, marking a departure from previous versions that emphasized natural resource economics with intensive mathematical components. The mathematical foundations previously central to this course have been relocated to Economics 8601, Economics of Sustainability and Dynamics, taught by Steve Pulaski. The current Applied Earth Economy Modeling course adopts a more practical approach, where mathematical concepts find expression through code implementation rather than theoretical proofs. 
+
+No prior coding experience is assumed for students entering this course. The advent of large language models has fundamentally transformed the landscape of programming education, making coding more accessible than ever before. While reliance on these tools may result in missing certain nuances of programming, the course focuses on ensuring students grasp essential concepts. Syntax-related challenges can be readily addressed using preferred language models, allowing students to concentrate on understanding fundamental programming logic and application.
+
+The course primarily utilizes Python as its programming language, with one session dedicated to Julia. Starter code will be provided for all programming assignments, with student tasks primarily involving the editing and modification of input parameters rather than building complex systems from scratch. Programming itself is becoming increasingly language-agnostic, and once fundamental programming concepts are understood, the specific language becomes less critical. Students are encouraged to reach out early if questions or concerns arise about the technical aspects of the course.
+
+### Discussion Format and Remote Participation
+
+Classroom discussions form the backbone of the learning experience, with most taking place during in-person sessions. While occasional remote participation is accommodated, the focus remains on those physically present in the classroom. Remote participants who wish to contribute to discussions are encouraged to actively speak up and make their presence known. The midterm date and other administrative details are still being finalized and will be communicated as the course progresses.
+
+# The Emergence of Earth Economy Modeling
+
+## Defining the Field
+
+The reading assignment for this lecture provides critical context for understanding Earth Economy Modeling as a discipline. This foundational paper, written at the request of Annual Reviews, serves as an official introduction to the field. The authorship includes contributors from our own department, including Steve Pulaski and myself, along with Becky Chaplin Kramer from the Natural Capital Project, representing a collaborative effort to define and establish this emerging field.
+
+The fundamental premise of Earth Economy Modeling stems from the recognition that human activities, particularly in the context of climate change and biodiversity loss driven by economic activity, are pushing against planetary boundaries. The absence of comprehensive models capable of guiding decisions and policies in this complex context represents a significant problem for both policymakers and researchers. Traditionally, Earth systems and economic systems have been modeled as separate entities, with models like Dynamic Stochastic General Equilibrium (DSGE) models operating largely removed from environmental considerations. The integration of these previously separate modeling approaches has become not just beneficial but necessary.
+
+## Historical Context and Evolution
+
+### Early Focus on Impacts
+
+The initial development of integrated models focused primarily on impacts, examining how economic outputs such as growth affect the environment through mechanisms like deforestation or pollution. This approach proved adequate when the primary concerns centered on externalities and common property management. However, as the global economy has expanded and begun to approach planetary boundaries, the importance of dependencies has become increasingly apparent. Changes in the environment now significantly affect economic outcomes in ways that extend far beyond traditional resource extraction considerations.
+
+### Placement Within Existing Literature
+
+When situating Earth Economy Modeling within the broader academic literature, three primary strands of research emerge as foundational. The first strand encompasses resource allocation over time, including optimal extraction models for minerals or oil, exemplified by the Faustman and Hotelling models. These eventually evolved into bioeconomic models that consider biological resources like fisheries, incorporating population dynamics into economic decision-making. However, these models remained limited to single resources and lacked connections to broader ecosystem or economic systems.
+
+The second strand focuses on valuation, specifically placing monetary values on environmental goods and services. Methods such as travel cost analysis and hedonic analysis employ econometric models to infer the value of nature from observed behavior. While Jay Coggins covers these approaches in detail in Economics 8603, and while they remain important for understanding environmental economics, they historically did not emphasize the broader systemic connections that Earth Economy Modeling seeks to capture.
+
+The third area, systems dynamics, emerged from engineering and optimization disciplines rather than economics. The landmark 1972 publication "The Limits to Growth" utilized computer-based systems dynamics modeling through the World3 model to simulate feedback loops between population, resources, and pollution. This work produced the first quantitative estimate demonstrating that environmental problems could potentially undercut the natural conditions necessary for continued economic activity, suggesting that unchecked economic and population growth could lead to ecological collapse.
+
+### The Malthusian Legacy and Modern Debates
+
+Thomas Malthus argued that populations grow exponentially while food production increases only linearly, predicting perpetual scarcity as an inevitable outcome. The Limits to Growth model mathematically expressed and extended this idea beyond food to encompass all resources. Paul Ehrlich's "The Population Bomb" predicted widespread starvation based on similar logic, though these predictions proved incorrect. Julian Simon, an economist, countered that market responses and human ingenuity would solve resource scarcity problems. Their famous bet on commodity prices, which Simon won, became emblematic of the debate between environmental pessimists and technological optimists, though later analyses suggest Simon may have been fortunate in his timing rather than fundamentally correct in his assessment.
+
+## The Computational Revolution in Modeling
+
+### The Evolution of Model Complexity
+
+The development of computer models has enabled increasingly complex representations of economic and environmental systems over time. The concept of a computational budget has emerged as a key consideration, referring to how computational resources are allocated between economic and environmental complexity within a model. Early models like World3 were necessarily small due to computational limitations, but as processing power has grown exponentially, models have become increasingly complex, incorporating more sectors and achieving higher resolution in both spatial and temporal dimensions.
+
+### The Complexity Frontier
+
+Our paper introduced a conceptual framework visualizing models along a frontier with axes representing economic and environmental complexity. Different models allocate their computational resources differently, with some prioritizing economic detail while others focus on environmental processes. The goal of Earth Economy Modeling is to advance along both dimensions simultaneously, leveraging increased computational resources to build more comprehensive and integrated models that capture the full complexity of human-environment interactions.
+
+# Methodological Approaches and Model Taxonomy
+
+## Systematic Model Identification
+
+To identify relevant models for our analysis, we developed an algorithm seeded with papers that listed existing models, then systematically searched citations and employed a large language model to identify similar models in the literature. Each model underwent manual verification to ensure relevance and quality. This process synthesized thousands of papers into a core set of 119 relevant models. We supplemented this with a systematic literature review to confirm our findings, focusing specifically on models that incorporated both economic and environmental components, offered high-resolution representation, provided accessible code, and included adequate documentation.
+
+## Ecosystem Services Framework
+
+### Conceptual Foundations
+
+One crucial subset of models focuses on ecosystem services, a concept that gained prominence at the University of Minnesota. The framework recognizes that sustainable human well-being requires explicit accounting for the value of natural capital and the ecosystem services it provides. Natural capital refers to the Earth's ecosystems and biodiversity as stocks, while ecosystem services represent the valuable benefits that flow to humans from that capital. This stock-flow relationship mirrors traditional economic models of capital and production, providing a familiar framework for economists to understand environmental dynamics.
+
+### Categories of Ecosystem Services
+
+Ecosystem services encompass four primary categories that capture different ways nature benefits humanity. Provisioning services include tangible products extracted from ecosystems, such as fish, wood, and fresh water. Supporting services comprise fundamental processes like photosynthesis and soil formation that underpin all other services. Regulating services include climate regulation through carbon storage, water purification, and disease control. Cultural services encompass recreation, aesthetics, education, and spiritual connections to nature. The Natural Capital Project, founded by Steve Glaske, developed InVEST (Integrated Valuation of Ecosystem Services and Tradeoffs), a suite of open-source ecosystem service models that encapsulate consensus science on these biophysical processes.
+
+## Model Typology
+
+### Integrated Assessment Models (IAMs)
+
+Integrated Assessment Models represent one of the earliest attempts to combine economic and environmental systems within a single framework. Climate IAMs, such as the DICE model, focus primarily on climate change mitigation and the economic costs of various policy interventions. More comprehensive IAMs expand beyond climate to include land use, water resources, and other environmental sectors. These models vary significantly in their treatment of economic and environmental complexity, with some prioritizing detailed economic sectors while others emphasize biophysical processes.
+
+### General Equilibrium Models
+
+Computable General Equilibrium (CGE) models and Dynamic Stochastic General Equilibrium (DSGE) models bring sophisticated economic theory to bear on environmental questions. CGE models solve for equilibrium prices and quantities across all markets simultaneously, allowing for analysis of how environmental policies ripple through the entire economy. DSGE models extend this framework to include optimal allocation decisions over time, incorporating uncertainty and forward-looking behavior. While these models excel at economic complexity, they traditionally included limited environmental detail.
+
+### Specialized Environmental Models
+
+Ecosystem service models assess different scenarios but often lack direct linkages to economic models, operating instead as standalone assessments of biophysical changes. Land use change models bridge economic predictions and high-resolution spatial patterns, enabling integration with ecosystem service models that require spatially explicit inputs. Additionally, numerous domain-specific models exist for hydrology, climate, soil movement, and other environmental processes. These specialized models, when paired with economic questions, represent a frontier for further integration efforts.
+
+# Valuing Nature in Economic Terms
+
+## The Challenge of Comprehensive Valuation
+
+As models became more integrated, a fundamental question emerged regarding the total value of nature to the global economy. Various methods attempt to express this value as a percentage of global GDP, each with distinct advantages and limitations. Dependency ratios examine how much specific sectors, such as agriculture, depend on natural inputs and ecosystem services. Contingent valuation methods survey individuals about their willingness to pay for environmental preservation or improvement. However, scaling individual valuations to encompass entire systems raises significant methodological problems, particularly regarding general equilibrium effects.
+
+## General Equilibrium Considerations
+
+The diamond asteroid example illustrates why partial equilibrium approaches fail when applied to large-scale changes. If humanity captured an asteroid rich in diamonds, we would not become infinitely wealthy because the price of diamonds would collapse due to the massive increase in supply. General equilibrium models address these systemic effects, providing theoretically sound estimates of large-scale changes by accounting for price adjustments and substitution effects throughout the economy. The GTAP (Global Trade Analysis Project) model serves as a premier example of general equilibrium modeling applied to economy-wide questions.
+
+## The World Wildlife Fund Initiative
+
+The World Wildlife Fund commissioned a comprehensive effort to estimate the total value of nature to the global economy. The resulting report recommended linking InVEST and GTAP models, creating a workflow that projects economic changes, translates these to land use changes, assesses resulting ecosystem service changes, and then expresses productivity impacts back into the economic model. This approach embraces general equilibrium thinking, allowing for quantitative estimates of nature's value that account for systemic feedbacks and price adjustments.
+
+A key finding from this work demonstrates that baseline economic forecasts prove overly optimistic by missing environmental headwinds. When ecosystem service changes are incorporated into economic projections, growth trajectories become lower, and the difference between these scenarios represents nature's economic value. This methodology avoids the pitfalls of scaling partial equilibrium estimates while providing policy-relevant assessments of environmental contributions to economic well-being.
+
+# The Integrated Economic Environment Modeling Platform
+
+## Platform Architecture
+
+The Integrated Economic Environment Modeling Platform (IEMP) was developed to capture the complex dynamics linking economy, land use, ecosystem services, and back to economic outcomes. This platform represents the first model to include non-material regulating and cultural ecosystem services in addition to provisioning services, and to compute these linkages at a country scale with high spatial resolution. The architecture follows a logical flow from economic drivers through environmental changes back to economic impacts, creating a closed loop of feedbacks.
+
+## Core Components and Characteristics
+
+Earth Economy Models possess five defining characteristics that distinguish them from earlier modeling approaches. First, they maintain global scope, recognizing that environmental and economic systems operate at planetary scales. Second, they employ general equilibrium frameworks to capture systemic interactions and price effects. Third, they utilize high-resolution Earth system inputs, often at spatial scales of kilometers or finer. Fourth, they represent economic actors with high resolution, distinguishing between different sectors, regions, and sometimes household types. Fifth, they feature two-way endogenous linkages between economy and environment, allowing changes in each system to affect the other dynamically.
+
+The theoretical framework encompasses four main model components working in concert. The economic model, typically GTAP or similar, provides projections of economic activity and responds to environmental changes. The land use change model translates economic drivers into spatial patterns of land transformation. The ecosystem service model assesses how land use changes affect the provision of various ecosystem services. The impacts and dependencies model translates ecosystem service changes back into economic productivity effects, closing the feedback loop.
+
+## Implementation and Computational Challenges
+
+Our research lab developed a specific implementation using GTAP for economic modeling, SEALS (Spatial Economic Allocation Landscape Simulator) for land use change, InVEST for ecosystem services, and custom pathways for impacts and dependencies. The least developed component remains the translation of ecosystem service changes into economic model shocks, representing an active area of research. Future lectures will explore these technical details in depth.
+
+Computing global ecosystem services at high resolution was first achieved in Chaplin Kramer et al. 2019, enabling impact modeling at unprecedented scales. Each ecosystem service requires different biophysical pathways and significant computational resources. Services like sediment retention, climate regulation through carbon storage, pollination, and coastal protection each demand distinct modeling approaches and data inputs. The computational requirements for running these models globally remain substantial, often requiring high-performance computing clusters.
+
+# Policy Applications and Institutional Interest
+
+## Central Bank Engagement
+
+Following the World Wildlife Fund's initial project, interest from central banks and ministries of finance has grown rapidly. Central banks, traditionally responsible for controlling inflation and maintaining financial system stability, have become increasingly interested in understanding systemic risks arising from potential nature collapse. These institutions recognize that environmental degradation could pose risks to financial stability comparable to or exceeding those from traditional economic shocks.
+
+Our work has been presented to central banks in Chile, Norway, France, and other nations, each seeking to understand how environmental changes might affect their monetary policy objectives and financial stability mandates. The Norwegian Sovereign Wealth Fund, the world's largest sovereign wealth fund, has expressed particular interest in assessing risks to its global investment portfolio from environmental changes, recognizing that climate change and ecosystem degradation could significantly affect asset values across multiple sectors.
+
+## Research Opportunities and Future Directions
+
+This field offers exceptional opportunities for new research, representing a research-rich environment with numerous unexplored areas. The complexity of linking economic and environmental systems creates abundant opportunities for methodological advances, empirical applications, and theoretical developments. Graduate students who can navigate this complexity will find numerous possibilities for publishable work and PhD dissertation topics.
+
+The rapid evolution of the field means that contributions can have immediate policy relevance while also advancing academic knowledge. The intersection of environmental science, economics, computer science, and policy creates unique interdisciplinary research opportunities. As computational power continues to increase and data availability improves, the potential for more sophisticated and useful Earth Economy Models will only grow.
+
+# Conclusion
+
+Earth Economy Modeling represents a critical advance in our ability to understand and manage the complex interactions between human economic activity and Earth's environmental systems. By integrating previously separate modeling traditions and leveraging modern computational capabilities, these models provide insights essential for navigating the challenges of the Anthropocene. The framework established in this lecture will guide our exploration throughout the remainder of the semester as we dive deeper into specific models and their applications.
+
+The course will continue to explore these models and applied tools in detail, building on the conceptual framework established today. Each subsequent lecture will examine specific components of Earth Economy Models, their implementation challenges, and their policy applications. Students should expect to engage with both theoretical concepts and practical programming exercises as we work to understand and contribute to this rapidly evolving field.
+
+# Transcript
+
+Alright, let's get started. We're missing a few people, but let's begin. Welcome to lecture number two in Applied Earth Economy Modeling. Today, we'll dive into the key topic: introducing Earth Economy Modeling itself.
+
+The agenda for today includes a brief discussion of course requirements and ways to succeed, followed by a deep dive into the reading, which covers the definition, historical emergence, and taxonomy of Earth Economy Modeling. We'll discuss two important examples: AEM and GTAP Invest. Throughout, I'll ask interactive questions and encourage discussion, which is critical for this course.
+
+First, let's discuss expectations and what it means to succeed. We covered the syllabus briefly, but you might wonder if you can succeed in this class. In-person attendance will be required for all credit-seeking members. Many in this class are auditors because this is an emergent research field, and the university allows that. If you are taking this for credit, you must complete assignments and attend in person. If you can't attend, just email me. We can be flexible, but in-person participation is emphasized.
+
+Regarding skills needed, this course does not require much math. Previous versions focused on natural resource economics and were math-intensive, but now, most of that math is in 8601, Economics of Sustainability and Dynamics, taught by Steve Pulaski. This course is more applied, and while math can be applied in code, we will focus on coding examples and problem sets. No prior coding experience is assumed. With tools like large language models, learning to code has become easier. While relying on these tools may mean missing some nuances, I will focus on the essential concepts you need to learn. Syntax issues can be resolved with your preferred language model. If you put in the time, you are likely to succeed.
+
+Discussions will primarily take place in class, with occasional remote participation. Since credit-seeking members will be in person, most discussions will focus on those present. If you are remote and want to participate, please speak up.
+
+Some details, like the midterm date, are still being finalized. If you have questions about succeeding or the syllabus, please ask. The course will primarily use Python, with one day in Julia. Starter code will be provided, and your main programming tasks will involve editing input parameters. Coding is becoming language-agnostic, and once you understand programming concepts, the language matters less. If you have questions or concerns, reach out early.
+
+History will be more relevant in 8601. This course is applied, and while I may occasionally reference math, the emphasis is not on solving Bellman equations or fixed-point theorems. If you are interested in those topics, 8601 is the right course.
+
+Any questions? Anyone feeling confident? I have faith in you all.
+
+The reading is critical and will guide our discussion today. It introduces Earth Economy Modeling. Some authors from our department, including Steve and myself, contributed to it. Becky Chaplin Kramer from the Natural Capital Project was also involved. Annual Reviews asked us to write this paper as an official introduction to the field.
+
+The basic idea is that humans, especially given climate change and biodiversity loss driven by economic activity, are pushing up against planetary boundaries. The lack of models to help navigate decisions and policies in this context is a problem. Traditionally, Earth systems and economic systems have been modeled separately. DSGEs, for example, are removed from the environment. Integrating these systems is necessary.
+
+Early work focused on impacts—how economic outputs like growth affect the environment, such as deforestation or pollution. This approach worked when externalities and common property management were the main concerns. However, as the economy grows and approaches planetary boundaries, dependencies become important—changes in the environment affect the economy. Previously, dependencies were mostly considered in terms of resource extraction, but now, broader linkages are needed.
+
+When writing the paper, we placed Earth Economy Modeling in the existing literature. The first strand is resource allocation over time, such as optimal extraction of minerals or oil, with models like Faustman and Hotelling. These evolved into bioeconomic models, which consider biological resources like fisheries, requiring population dynamics. However, these models were limited to single resources and not linked to the whole ecosystem or economy.
+
+The second strand is valuation—placing a monetary value on environmental goods. Methods like travel cost analysis and hedonic analysis use econometric models to infer the value of nature. Jay Coggins will cover this in 8603. While these approaches are important, they did not emphasize broader connections.
+
+A third area, systems dynamics, came from engineering and optimization, not economics. The Limits to Growth (1972) used computer-based systems dynamics modeling (World3 model) to simulate feedback loops between population, resources, and pollution. Its key conclusion was that unchecked economic and population growth could lead to ecological collapse. This was the first quantitative estimate showing that environmental problems could undercut the natural conditions necessary for economies to continue.
+
+Thomas Malthus argued that populations grow exponentially while food production grows linearly, predicting perpetual scarcity. The Limits to Growth model mathematically expressed this idea, extending it to resources beyond food. The Population Bomb by Paul Ehrlich predicted widespread starvation, but he was proven wrong. Julian Simon, an economist, argued that market responses and human ingenuity would solve resource scarcity. They made a famous bet on commodity prices, which Simon won, though later analyses suggest he may have been lucky.
+
+The development of computer models increased complexity over time. The concept of a computational budget emerged—how much computer time is spent on economic versus environmental complexity. Early models like World3 were small, but as computational power grew, models became more complex, with more sectors and higher resolution.
+
+Our paper introduced a key figure: a frontier with axes for economic and environmental complexity. Models spend computational resources differently, with some focusing on economics and others on the environment. The goal of Earth Economy Modeling is to advance both dimensions, using increased computational resources to build more comprehensive models.
+
+To identify relevant models, we used an algorithm seeded with papers listing models, then searched citations and used a large language model to find similar models. We manually verified each model, synthesizing thousands of papers into 119 relevant models. We also conducted a systematic literature review to confirm our findings, focusing on models with both economic and environmental components, high-resolution representation, code, and documentation.
+
+One subset of models is ecosystem services, a concept popularized at the University of Minnesota. Sustainable human well-being requires accounting for the value of natural capital and ecosystem services. Natural capital refers to the Earth's ecosystems and biodiversity, while ecosystem services are the valuable benefits to humans from that capital. This stock-flow relationship mirrors traditional economic models.
+
+Ecosystem services include provisioning services (e.g., fish, wood), supporting services (e.g., photosynthesis, soil formation), regulating services (e.g., carbon storage), and cultural services (e.g., recreation, aesthetics, education, spiritual connection). The Natural Capital Project, founded by Steve Glaske, developed Invest, a set of open-source ecosystem service models encapsulating consensus science on biophysical processes.
+
+Ecosystem services started one area of research in the frontier of Earth and economic systems complexity. In our paper, we reviewed several types of models: integrated assessment models (IAMs), computable general equilibrium (CGE) models, dynamic stochastic general equilibrium (DSGE) models, ecosystem service models, and land use change models. IAMs combine economy and environment, with climate IAMs like DICE focusing on climate mitigation. Comprehensive IAMs add land and other sectors. CGEs and DSGEs focus on economic complexity, with DSGEs solving for optimal allocation over time.
+
+Ecosystem service models assess scenarios but often lack direct links to economic models. Land use change models connect economic predictions to high-resolution land use maps, enabling integration with ecosystem service models. There are also many domain-specific models (hydrology, climate, soil movement) paired with economic questions, representing a frontier for further integration.
+
+As models became more integrated, a key question emerged: how much is nature worth to the economy? One way to express this is the percentage of global GDP attributable to nature. Methods include dependency ratios (e.g., agriculture's dependence on nature) and contingent valuation (surveying willingness to pay for preservation). However, scaling individual values to the whole system raises problems, such as general equilibrium effects.
+
+For example, capturing a diamond-rich asteroid would not make us infinitely wealthy, as the price of diamonds would collapse. General equilibrium models address these effects, providing systematic and theoretically sound estimates of large-scale changes. The GTAP model is a general equilibrium model used for economy-wide modeling.
+
+The World Wildlife Fund commissioned experts to estimate the total value of nature to the economy. Their report recommended linking Invest and GTAP, projecting economic changes, land use change, and ecosystem services, then expressing changes in productivity back into the economic model. This approach embraces general equilibrium, allowing quantitative estimates of nature's value.
+
+A key figure from the report shows that baseline economic forecasts are overly optimistic, missing environmental headwinds. Incorporating ecosystem service changes results in lower growth trajectories, and the difference represents nature's value. This method avoids the pitfalls of scaling partial equilibrium estimates.
+
+The Integrated Economic Environment Modeling Platform (IEM) was developed to capture these dynamics: economy to land use change to ecosystem services, then back to the economy. This was the first model to include non-material regulating and cultural ecosystem services and to compute these linkages at a country scale. The challenge remains to scale these models globally.
+
+Earth Economy Models have five characteristics: global scope, general equilibrium, high-resolution Earth system inputs, high-resolution economic actors, and two-way endogenous linkage between economy and environment. The theoretical framing includes an economic model (e.g., GTAP), land use change model, ecosystem service model, and impacts and dependencies model. The difference in GDP before and after environmental impacts represents nature's value in a general equilibrium framework.
+
+Our research lab developed a model using GTAP, SEALS (land use change), Invest (ecosystem services), and impacts/dependencies pathways. The least developed component is expressing ecosystem service shocks into the economic model. We'll cover these details in future lectures.
+
+Computing global ecosystem services was first achieved in Chaplin Kramer et al. 2019, enabling modeling of impacts at scale. Each ecosystem service (sediment retention, climate regulation, pollination, coastal protection) requires different biophysical pathways and significant computational resources.
+
+The final step is using ecosystem service changes as inputs into the economic model, affecting production efficiency, endowments, and supply/demand shifts. This allows calculation of individual welfare and assessment of impacts on human well-being.
+
+After the World Wildlife Fund's initial project, interest from central banks and ministries of finance grew rapidly. Central banks, responsible for controlling inflation and maintaining system stability, became interested in understanding systemic risks from nature collapse. Our work has been presented to central banks in Chile, Norway, and France, among others. The Norwegian Sovereign Wealth Fund, the largest in the world, is interested in assessing risks to its investments from environmental changes.
+
+This field is exciting and rapidly evolving, offering many opportunities for new research. It is a research topic-rich environment, with many unexplored areas. If you can navigate the complexity, you will find it invigorating and have ample opportunities for publishable work and PhD topics.
+
+For the rest of the semester, we will dive into these models and applied tools. Today's lecture set the framework for this exploration. Thank you for your attention. I'll stick around for questions, and please feel free to reach out with any concerns.
+
+Bye, everybody online!

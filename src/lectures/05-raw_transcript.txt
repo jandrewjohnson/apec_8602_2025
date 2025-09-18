@@ -1,0 +1,442 @@
+All right, everybody, let's get started.
+Welcome to Lecture 5, Hands-On with Climate IAMs.
+So I like this transition in the course. The first third of the course was getting us acquainted with where we're gonna go. Now we're really switching over to, getting our hands on with some of the specific tools, right? And so this is Applied Earth Economy Modeling, and…
+Number one, that means we need to learn what is earth economy modeling, and that's what we've been talking about so far, but this is applied. And applied means we are going to get good at using specific tools.
+Remember that one of the key goals of this course is to equip you with those tools to be able to do research on your own. And so that's the reason why we'll have, you know, a research project, but I don't just want to send you off into the wilderness to come up with a project, I want to give you some specific tools. So we'll practice with them as we go.
+Today, I will start with a discussion of where climate IAMs, or integrated assessment models, fit within the overall modeling space.
+And then we'll immediately jump over to the two readings that I had. Number one is one of the most famous articles now, at least in a series of articles related to it, from Nobel Prize-winning economist William Nordhaus.
+And he created the dice model. And then the second one is from Francis Moore, a friend of mine, who created green dice.
+Which is a more modern and broader extension of the NordHouse framework. We'll spend a bit of time on that, but the fun part, I think, is when we'll get hands-on with Julia and actually running the DICE 2016 model on your computer. So first off, did everybody…
+Get the install instructions that I sent, and get Julia running on your computers.
+Any challenges with that?
+Cool, all the packages installed correctly. How long did it take, everybody?
+15 minutes? Okay, you have a fast computer. That's, yeah, it takes a little while, but it's, it's, it's easy to forget how awesome of a thing it's doing. It's downloading, like, 3 gigabytes.
+Of… I wish I knew how many lines of code, but probably, I don't know, maybe half a million lines of code. The collective knowledge of a very large group of people making this all work. A lot of those lines of code, we won't actually run for this, but it's like, you've created yourself an awesome calculator that does so much more.
+Anyways, we'll get hands-on with that very soon.
+Okay, so first off, the context…
+This… we'll just keep returning to this as sort of a roadmap of where our different models fit into this space.
+And so, the other day, I had circled integrated assessment models, over there. I really, really wish, if I would have had, like, one more day on the paper before we published it, that we could have.
+actually made this into two boxes. So here's my excellent graphic design skills with the new and updated version of it. We actually did sort of think about this in advance, insofar as the climate IAMs are kind of in one space.
+Even within each box, it's not official, but we did sort of organize them according to, are they more detailed on the economy? Are they more detailed on the biophysics?
+Or are they just less detailed? And so, one of the choices here was to put dice down into the left of this box. You know, this is not actually numeric, and so really, maybe it should probably fit down here, because it's one sector, and there's one region, so that's about as undetailed on both as you can get.
+But it gets a fair amount of economic and sectoral detail, because it does include optimizing agents over the full time span going into the future. Anyways, the Climate AIAMs are kind of the ones up here that are a little bit more focused on that economic component, more so at least than their physical detail.
+They will typically have a fair amount of physical detail on the climate component of their model, but very little on a detailed representation of the landscape, and that's what we're actually plotting on this axis.
+That's in contrast to the other IAMs that we've seen. When we learned about the SSPs and the LUH2 from the Pop et al. and Briyahi and other articles, those are more over here.
+I really wish I would have split these into two different boxes, but maybe that's just the way it is. Okay, so yeah, we're gonna switch then to talking more about this.
+And in that space, There is sort of one figure that stands out as incredibly important, Bill Nordhaus.
+I like to read books that I both agree with and disagree with. I almost like to read books that I disagree with more, because I can…
+I can predict what the things that I agree with are gonna say, and it gets boring after a while. One of the hardest books that I've read recently, was from Bjorn Lomborg. Has anybody heard this name?
+He's a famous environmental economist, where he very much chooses a subset of
+facts and studies to support non-consensus opinions. This is my politically nice way of saying he's a really, really smart climate skeptic. And so, if you want to have a really good argument from an economist's perspective about why climate change doesn't really matter, or, like a bunch of other things that he's written about.
+For instance, he wrote, 20 years ago now, a famous article, Recycling is Trash.
+Where, essentially, he went through the data and tried to make the case
+that when you do the cost-benefit analysis, recycling is actually worse for the planet. And so, he systematically goes through these different environmental topics and tries to make a counter-argument against environmental protection using the language of economics.
+Anyways, this book that I read, for most recently was his sort of recent, attempt to,
+to have climate skepticism. And the book goes into a ton of detail.
+On, you know, what are the actual scenarios, what is the science, why might the temperature measurements be inaccurate? But it actually turns out that almost all of his argument hinges on a single number, and that's the number of how costly will it be
+To solve climate change.
+And… How do you even get that number? Well, the answer is Nordhaus 2017. So, Bill Nordhaus.
+visionary, luminary, created a wonderful integrated assessment model called DICE that tried to answer the question of what is the optimal amount of climate mitigation.
+And this is recognizing that there are benefits from doing climate mitigation in terms of, you know, less damages from climate, but also that there are costs
+Insofar as we might spend less money on productive sectors within the economy, and more on the, as he would call it, unproductive mitigation sectors.
+There have been many papers on this. We chose the 2017 one because this is the one that was put out right before he won the Nobel Prize, and it kind of stands as one of the seminal models. I also have in our optional readings the Barrage and Nordhaus.
+2023, this is the most recent update, to it. But, you know, there are changes, but it's… it remains fundamentally, similar.
+But I want to talk through, the math.
+I said there won't be that much math, but there will be a little bit, and it's just so elegant, I really think it is, that it's worth, jotting down in your notes the basic idea that Nordhaus is thinking about here.
+So what is he trying to do? You probably saw this in the paper. He's a good economist. He wants to make everybody happy. He's a utilitarian. That means he's going to maximize social welfare.
+We'll just call that with a big W, and…
+he's not myopic. We're gonna maximize
+the social welfare, from now, T equals 1, up until T max.
+And for that, there's a variety of different ways you could write it out. I'm going to focus on the second one here.
+It's basically gonna be utility, consumption, a time T.
+Right? That looks really familiar. If we weren't doing a social welfare function, this would be just the individual's welfare function. We're going to maximize the utility we get from consumption. Here, it's a time series, hence C is indexed with T. But we're going to have a couple of other things that matter.
+One, you might care about what's the overall, population, oops.
+And, from there, we're thinking about the utility times the number of people. Now, who remembers what R is?
+Thank you, please.
+Yes, so the discount factor. The discount factor is…
+Another one of those huge, hugely important and hugely controversial numbers.
+I should actually write it down.
+The discount rate, determines, in fact, how much climate mitigation is, optimal.
+But, okay, so diving in, you know, what do we have? The utility function, this is just a constant relative return something, CRRA, utility function, just a…
+So it's just, C to the 1 minus alpha.
+Real simple utility, right? This basically just makes it something that has the correct monotonic, homogeneous of degree 1, all those things you learn in your econ theory class, but really simple.
+But a few other things it has is abatement.
+This is gonna be… also…
+Indexed over time, because in this optimization, when we're maximizing social welfare, you know, we can abate right now at the beginning, or maybe we wait till technology is better, and then we abate in the future, etc.
+damages…
+Is going to be the other critical component of this.
+But let's actually unpack this one.
+So, yeah, it's just scaled, but essentially it comes down to this. What do we see is T,
+The big T, subat, is average temperature.
+And so he's essentially taking a parameterized equation of the Average temperature.
+at time t, times some coefficient, Right? Plus… Another coefficient…
+squared, right? Real simple, just, it's a quadratic equation that as temperature goes up, according to these two coefficients, it's going to be some, damage relationship. And so this is what is called the damage function.
+And that's been the other… other thing, in addition to the discount rate, that has been heavily debated in the literature.
+Okay, so this is remarkably simple, right?
+You might learn this, you know, the first couple of weeks of your PhD micro courses.
+Actually, I forget the order that they do it in, so that might not be right away, but the point is, it's just elegant economics. Maximize everybody's utilitarian value, subject to the standard idea that we need to produce consumption.
+You know, through a production function, essentially, and that is what creates the time series.
+But here, we actually have the choice of investing some of our productive ability in abatement instead.
+And what that would do is it would hopefully increase utility, because now there is less climate damages, and that would, if you did it right, would offset the fact that you had to give up some of your current consumption to invest in that,
+Future Happiness from better climate.
+Okay, so I'm not going to test you on this, but it is just so elegant, I love it.
+Oh, which one is the…
+You'll have to refer to the whole article. There's actually, I don't know how many equations, it's probably over 100. I didn't put that one up here, but it's basically a production function, is you get to put
+your, efforts into producing something, some Y sub T, and that equals the… the C sub T, that you get, less whatever you'd spend on both abatement and,
+And mitigation activity.
+Any other questions?
+So…
+The big question, though, that really is evident in this, is when you do choose this, the…
+sort of key factor that you see is when you solve it, the amount of mitigation that is optimal depends greatly on how much do you care about the future. And so, if you care about the future a whole lot.
+Climate mitigation is one of the most, like, effective things you can do, because, presumably, we'll get better at mitigating than we are now, and also better at adaptation, but the sooner we do it, the more we get to benefit from it, and the less cumulative climate damage there is overall.
+And so, the…
+Problem, then, is that if you don't care about the future very much, it can turn out to be almost no climate mitigation makes sense, because the benefits accrue so far into the future that it just doesn't mean very much to the current generation. Okay.
+So, I'm not going to dive into the debate here, and the reason why is because when you take 8601, Steve, or whoever will be teaching it then, is going to go deep into the mathematics of the discount rate, and how we can derive this from some basic principles in economics.
+But what I want to highlight here is the applied nature of the debate.
+The discount rate, in the Nordhaus model
+behind the dice model, that is, is that he claims the discount rate should reflect actual economic outcomes, and he dubs this the descriptive approach to discounting.
+That sounds pretty good, right? Shouldn't we base our models on what we can observe in the economy?
+Sounds good. The alternative approach, used in Reference 10 and elsewhere, is called the prescriptive discount rate.
+And so instead of just observing the economy and deriving it from our observations.
+He contrasts this with the prescriptive discount rate, which is… it's going to be… the value is going to be assumed based on some sort of normative basis, or a goal. Like, we should reduce climate change by a certain amount.
+And here, you know, I'm kind of joking a little bit, but you can tell there's some academic shade being thrown here. Real hard shade.
+He says that the second approach is determined largely independent of actual market returns on investment. That's… those are… those are fighting birds. Basically saying that the descriptive approach is the right way because it's based on what we can observe, and the prescriptive rate is just making stuff up.
+I would argue strongly against that, and I'm actually curious, I want to open up for discussion for a second.
+How would you argue against the Nordhaus claim here that you should focus only on the descriptive approach, or that you should only derive things, ethical things, like the discount rate, from current observations?
+Does anybody have any thoughts on this?
+Well, if they're only looking at something that would be biased towards those who must be…
+Yes, and who would that leave out?
+Okay. Who would that leave out if you were biased in that direction?
+Yes?
+What else?
+Or who else would that leave out?
+future generations.
+Yeah, it would certainly leave out those who care about the environment, but I'd almost argue that the bigger pool is, that
+just simply observing current behavior, well, what are we doing? We're observing the current behavior, at least of those who exist.
+And that's certainly not those who do not yet exist. And so we cannot take into account their preferences, by just simply observing the behaviors of the current economic agents.
+And so, that would say that, you know, if you care about future people, this still doesn't solve that ethical problem, you know, should we care about future people? But if you do, then you would be ignoring them by taking just the descriptive approach.
+So, these two things would be equivalent if you truly had the, what I think is sociopathic belief that future generations don't matter at all. If you had that belief, these two things would be quite consistent.
+But if you… well, I guess it doesn't answer the question about the environmentalists, who would be left out of this, but at least if you didn't care about the future generations, you could be consistent here. But if you think that they might care.
+Then the question becomes, What would they care about?
+Could we, say, create enough capital value and accumulation and consumption goods that, they actually were happy with us? That we didn't solve climate change and instead gave them a whole bunch of air conditioners? Maybe?
+We'll return to that, throughout, but what I just want to highlight is that, all of this, the Nordhaus model.
+and especially how it is being used to support a relatively robust climate skepticism community comes down to the discount rate. The sort of opposite person from Nordhaus
+called Reference 10 here. This is, Sir Nicholas Stern. The debate between William Nordhaus and Nicholas Stern in the Stern Review
+characterizes much of the modern economic debate on these two different things. So we're not going to read Stern in depth, but basically the difference is Stern used a lower discount rate and found that, much more climate mitigation is optimal.
+All right, so what were the key results in Nordhaus? So this is an integrated assessment model. One of the equations would be industrial CO2 emissions, billions of tons per year, and basically this means that the
+production of, aggregate, you know, Y, or GDP, is going to cause industrial CO2. And he does a good job here of comparing, different models, and so there's the original dice.
+2013, showed more emissions. His update shows much less emissions.
+There's a couple of different model intercomparison groups that he compares against. That's cool. I also like this one here, because this one puts RCP8.5 on the chart. So this one is not emissions, but what is the global mean temperature increase?
+And RCP 8.5,
+is clearly the most pessimistic, it gets much hotter, but DICE, both 2013 and 2016, get pretty close there for its, baseline runs.
+He does do a good job, also throwing academic shade a little bit, on diving into how the different base parameters will affect the optimal amount of mitigation. And so, the base parameters
+versus the 2.5 degree maximum. You know, this would represent different goals, and the charts here is what is the social cost of carbon, that is optimal under these situations. And so, what do we see here? The baseline,
+we do not see a whole lot of increase in the social cost of carbon compared to all these other ones. The key one to notice here is
+The Stern review was arguing that we should have a social cost of carbon of $197 essentially right away. Really high, and it gets much higher into the future.
+But really, the emphasis was here. And this is much higher than the baseline or optimal parameter results.
+In the DICE model. And so, you can see why this is a climate skeptic's dream. It's a really well-thought-out argument for saying that the optimal amount of mitigation, and even the policy, the social cost of carbon, to get to that level of mitigation is really quite low.
+And so, you can dive into the different arguments about, you know, why these two things are different, but I just think it's a fascinating result.
+Okay, but we're an applied economists, right? And even this course is so applied and hands-on that I've already told you I'm not going to make you solve the dice model. It's an interesting, actually pretty challenging exercise to, like, you know, derive the first order conditions, etc, all these things. You could do that. You'd have to have a very specific set of details on what's the production function and what's the constraint, etc. But we're not going to do that. We're going to dive into the model details
+And so, first what I did is went to the canonical dicemodel.2016.htm page, to download it. It's like, well, it's not on GitHub, but maybe it's well documented, because, you know, I'm going to be looking for this file. dice2016R.Gms. That's GAMS.
+Page not found. Okay, big red flag for me. I'm being a little unfair here. But the question that I want to get to as quick as possible is not just, you know, what did the paper find, but what would happen if we play with them all?
+If all of the difference in results comes down to a different social cost of carbon, the sort of really obvious way to dive into this, be like, let's rerun the model exactly as it was in the Nobel Prize-winning work, but with a different discount rate, and see what changes.
+You know, side note, I should say, GAMS is… has anybody used GAMS here?
+Just a little bit. It's,
+It's a software package. I had to learn it when I did my PhD here, and it is really, really good at optimizing a large series of linear or nonlinear equations. So, you could take mathematical optimization or nonlinear optimization, these different courses. GAMS is super good, super fast.
+And solving these large systems of equations.
+And, it's…
+easy to, like, ignore the fact that this is a hard thing because we sort of take it for granted, but there's a whole huge community, and if you want a good job learning how to be good at GAMs and optimizing a system of equations is probably a pretty good career bit of advice.
+Because GAMS is everywhere, the World Bank uses it extensively, almost all CGE modelers use it, and it's pervasive throughout the integrated assessment modeling world.
+I did not have you learn GAMs. I could have.
+It's expensive. It's like $3,000 per year, and it can get much more expensive if you have some of the fancy solvers. You know, somebody spent some hard work and hard time making a really good solver for a very specific mathematical optimization problem. Well, that's even more expensive.
+And I am a bit of an open-source acolyte, as I've said.
+Fortunately, if I had taught this class even last year, I think I still would have done GAMS again, that's what I've done before. But now, the Julia programming language is starting to upset that monopoly power that GAMS has in this space.
+And that's what I had you install on your computers. And so Julia is an awesome language.
+In my next course, 8222, we'll talk a lot about the pros and cons of different languages. I'll ignore that for now. I like Python and Julia and R. They're good at different things, and I think it's important to become, essentially language agnostic, and that's really so that you can answer whatever question you need to using the right tool.
+But when you get into the world of mathematical optimization like this, Julia is definitely the right language. It's much faster than Python, and in this case, it's even faster than default Julia when it relies on a library called Jump.
+JUMP, lowercase u, and this is the Julia mathematical programming tool. It essentially links to the solvers in GAMS, some of them literally in GAMS, and you can still use the expensive ones. There's no way around that, but fortunately, you can also always substitute in some of the pretty good free solvers.
+So, anyways, this is…
+Hoping that the tools you generate expertise now in this class will still be relevant to you when you lose access to the $3,000 GAMS license.
+And…
+We will use that in a moment, actually, when we dive into the details of the Nordhaus Macht. But I don't want to leave you with, sort of, the last word on this model,
+Being one that is very focused on just the sort of dice, low discount rate, low social cost of carbon approach.
+And instead want to emphasize this one, Green Dice. There's quite a few other models out there, but I had you read Francis Moore et al. 2022. I might have been better off having you read this one that I'll talk about first. You can see it's the same person, Frances Moore, but with her, sort of
+programmer buddy, I'm assuming, Bastian Olvera. I know, looking at his GitHub, I kind of feel like he's probably like me, and this is probably like Steve Pulaski, like, the big thinker, and the guy that really loves computers. And so he's… he really loves computers, you can tell, his code's all great.
+So, they, they shared the co-authorship on this first one.
+Okay, so I want to draw this out, not in equation form, like we did for dice.
+But you can think that everything we're gonna draw has essentially the same structure.
+because dice is so well known, the green dice model, and I guess it's not too surprising given its name, takes that basic approach exactly as is. So let's start with, the dice model without any extensions. And so.
+A lot of magic.
+Comes in the standards of, economics, insofar as we have a production function.
+And in this simple case.
+We have a manufactured capital, let's call it K, because we all know what that means.
+I'll call it human capital.
+A times L, who knows what famous model this is referencing?
+The solo model? Okay, okay, yeah, okay, there's some people catching up. But basically saying labor times how much have we invested in our labor. The A factor here increases the human capital, so it's not just population, it's how effective are we. That's a basic part of, modern econ. But to say that
+These two things are what goes into the economic production function, you know, so that would be,
+I said I wasn't going to do any equations, and I just did it. I'm sorry. But basically, this is standard econ, and…
+point of this is we get some sort of output Y,
+And it's… this gets us…
+to our social welfare function. I'm leaving out the full optimization here, because it turns out there's not a lot of interesting things that happen on the consumer side. And so really, and you keep asking the points of how do you express this as the full optimization, it would be maximize utility
+Where you get utility from consumption.
+subject to production function producing that output. So it is here, but, like, this is sort of the convention in this world, is that's sort of assumed, and because there's not much interestingness on the consumer side, although big asterisk, I think that maybe is wrong, there maybe should be more emphasis.
+But nonetheless, it does kind of look at it this way of, okay, yeah, we're just producing as much as we can to get welfare. Question?
+That's what… that's where the green dice model's gonna go. So, and that's a really good criticism of the standard model, is there's nothing about the environment here. Manufactured capital, human labor, what about the environment? You know, I think it matters.
+But in this framing, it doesn't. Okay, but basically the green dice model is going to try to add in that detail to have a more nuanced understanding of this, okay?
+But this is not even yet an integrated assessment model. This is just a standard econ model. You might use this to model the productivity of an economy overall. What Nordhaus adds
+And this is why it's an integrated assessment model. It adds the integration of climate. And that climate.
+is going to be, well, let me start from this. Number one is…
+economic productivity itself that causes climate change. That's a fairly reasonable assumption, right? If we produce a lot of electricity and it's coming from burning coal, well.
+Yeah, that product… productivity is going to actually cause climate change. If you think about it with multiple sectors, the sort of obvious thing you could extend this to think about would be, like, well, what if you look at the intensity of different sectors? Like, obviously, the coal-fired power plant sector is very,
+very impactful on the client, so that's a high impact factor, but something like, oh, I don't know,
+theater. You know, that's a bad example. But lots of other things, like services, or, you know, being a professor,
+Those are all going to have relatively lower climate impacts. But, you know, in this very basic model, there's just a single sector. It causes climate change, and then according to a damage function, it will have an effect, presumably negative, on the output. And so.
+Let's actually label this one. That's that damage function.
+Where in Nordhaus, it was just, quadratic on temperature.
+Okay, so now we got dice. That's basically dice. But…
+the thing that is added by the green dice model is, well, I guess all the green stuff, is we, in this course, are going to be diving deep into the concept of there's more than just manufactured capital and labor.
+It's also natural capital.
+And this has a variety of reasons we might care about it. Number one… Just put circles and everything.
+You might just put it directly in the production function. And so now, instead of K…
+and L, you have KO and, you know, call it R, like we said before. It might directly change the econ production function.
+And… There's…
+A useful distinguishment we can make.
+a lot of natural capital has a really obvious way that it's used in production, like, so timber. Timber is an example of natural capital. If we didn't have it, our houses would be a lot more expensive, right? And so, that's a marketed value, but we also
+have ecosystem service.
+production functions.
+It can get a little squishy what goes in this one versus this one, but a good example of this would be one of the many regulating ecosystem services, which we'll dive into in a couple lectures, but, like, sediment retention. If our natural capital is degraded, our soil all falls off the field and goes into the stream, and all that we have left is a rocky wasteland.
+are, we would not be able to produce as much in the agriculture sector.
+Right? So, natural capital is going to do both things that are marketed and things that are regulating, but largely, we're focusing it as separate because those are unmarketed or non-marketed ecosystem services.
+That's going to be output of the image.
+Oh, yeah, that's a good point.
+That's an interesting point that in this particular graph, I think that's an omission. I've actually talked with Francis about this, but…
+If you think that some of the ecosystem services, like regulating services, are not being valued, they don't actually go in the production function. You might be able to just, like, compress that into this function, but then, you know, you can't see the value. I think the best way to think about this is adding this arrow.
+The green dice model doesn't have that directly, and it does that by saying, let's just focus on the marketed values. The key thing, though, that is useful for having it separate is, is emphasized by this one.
+And this arrow here is the extent to which we care about ecosystem services, directly. And so, you know, I really do like the boundary bars. I like canoeing. I like…
+mountain climbing, although I've not done that in a long time. I used to like, downhill mountain biking, and then I crashed. But, the point is, we also care about
+the direct value we might get from ecosystem services. And that's the existence value, where, request value.
+And so these are just direct ways that we care about it. Okay, so this is the green dice model, and what I really like about it is it is not a conceptual diagram.
+I can't tell you how many annoying papers I've been on, and contributed long debates to, like, should there be another box down here? Should there be this?
+If you don't have equations behind each line.
+and variables behind each box, it's just a conceptual diagram, and it might be a useful way to think about things, but it is not nearly as cool as this, which is one where everything is defined in a system of equations where you can solve it. And the difference is, now you get quantitative estimates out of it. It's not just a squishy concept.
+So…
+when you run it through the paces, you can get results. And this is very similar to the DICE model, as I said, but it adds the value of ecosystem services. And what do we see?
+This is a graph that I didn't really like, because you have to read the legend to actually figure out what the different ones are. But, okay, the standard dice model is the dotted line. So this is standard dice.
+And this is the optimal emissions.
+from 2020 out to 2100. So, taking into account all the benefits of emissions, but the costs of abating those emissions, you know, we're going to see an increase in emissions all the way out until 2060. That's, you know, that's actually a really,
+conservative, you know, anti-climate mitigation conclusion that we should have increasing mitigations all the way out to 2060, and frankly, it doesn't even match reality. We're getting closer to capping it out. Anyways, well, what happens when you add in these additional parts?
+There's various versions of, green dice, so the market-only specification is that, dot-dashed line
+Or when you include all the use values, so from here on up, you get this line, and then the final one,
+complete specification is the solid line. What if you also consider the fact that we care about the actual existence of the environment? Like, biodiversity? Like, I like that,
+zebras or rhinos exist. If you add that value in too, you can see that the optimal mitigation is much more stringent. And in fact, emissions immediately start falling from the beginning of this simulation period. And what's the result of this?
+Lo and behold, this one just barely crosses the 1.5 degree threshold identified in the Paris Climate Accord, and that's a whole lot less than the 3.0 by 2100 that the DICE 2016 model specifies as optimal.
+To me, this is a really persuasive argument, is it uses the language
+that others use, the DICE model, but also economics of, let's optimize our utility subject to our production, but adds details to it to say what happens when we start to care about other things, like ecosystem services?
+What I really liked is the article that I then did have you read, is…
+Even this is a simplification. The paper that we had, that we emphasize in our readings here, adds more feedback loops, and it includes the idea that policy itself and the adoption of that policy.
+are themselves affected by the socioeconomic system underneath. I really like this. To me, on the surface, it seems really obvious that the implementation of climate policy is going to depend not on what an econ model says, but on how strongly the people are behind it.
+And so, if people really do want to have that emissions reduction, it's probably going to have a positive feedback loop on the policy and the adaptation, social conformity, you know, we'll all buy our electric cars.
+These things will all
+Interlink into this broader econ system to determine what are the emissions that we actually see.
+And so, you know, sort of the key outputs there is that when you look at the future emissions pathways in this coupled climate social system, the optimal policy left is this left panel here, and the global CO2 emissions are going to be drastically different when you couple these together. And basically.
+Emissions are going to be much lower when you take, aggressive action paths where humans in the system feed back into it to strengthen the mitigation of the system.
+But, sort of the depressing point, though, is that, they do note that although the results of green dice
+plus having this social-economic feedback system does result in emissions that are lower than RCP7. The vast majority of the runs coming out of this model, they were only about a half degree less.
+And,
+they identified that even the most aggressive scenarios of emissions trajectories fail, although just barely, to meet the ambitious Paris Agreement target of limiting to 1.5 degrees centigrade above pre-industrial levels. And this just reflects the fact that a whole heck of a lot of damages are already baked into the system, and that's
+Just what we're going to have to deal with, and this increases the importance, then, of thinking about not just mitigation, but also adaptation.
+So we could spend a whole lot of time thinking about the whole series of papers. There's another, tightly linked one here. This is the one that Francis Moore, looked at, or presented when she came here. I think it was la- was it last year? I forget.
+really, time flies so much that it's scary. My discount rate must be negative or something, I don't know.
+But she takes a really interesting step and couples it with a dynamic global vegetation model to say, let's add even more complexity. What happens to the distribution of different land use types
+And so, for instance, what's the vegetation carbon content change, or the total area covered, by forests
+And then, like these plots, it just basically looks at the change by latitude,
+How would that, potentially be different under these different climate scenarios?
+Okay, so…
+We're about to shift gears here for a second, but this is sort of the state of the art in taking DICE-style models and updating them to be inclusive of important things. I actually think this one right here, the extension to land use change, is the bigger of the ones. I like the social-economic linkage. Obviously, I like the ecosystem service linkage, but so much of the impact
+I think, boils down to land use change.
+That linking a general equilibrium model to an explicit land use change component like this
+is where a lot of the most interesting research is. So I'm introducing you all to these. If any of these piqued your interest, dive into the different papers that I've referenced, but you'll be, you know, I think that's a great way to find a research topic for this class, or your second year paper, or your dissertation.
+Okay, any questions on the literature before we switch over to code?
+Good, you all want code?
+Okay.
+Share my screen again.
+Okay.
+Well, yep, there's our website, just a reminder, the videos continue to come online a little bit lagged behind. Everybody saw our preparation lectures, those are good.
+Any questions about the assignments so far? They've been really simple so far, right?
+Well, the next one's going to be a little harder, so plan a little bit more time. It'll be going live probably this afternoon, if I have enough energy after teaching back-to-back classes.
+So probably it won't go live this afternoon, but it will be, using Julia and doing some analysis of what we're about to talk about, but look for it here. Okay, so…
+There we go. So, Julia…
+First, I want to give a quick review of what you've already done, just so I can talk about it. Gray slides are ones that you've already done, but basically to review, we installed Julia, I asked you to get the long-term support release.
+And so everybody got their Windows or Mac. Any Linux users here?
+I'm in the process of changing over. It's… I love Linux, it's so awesome.
+We're going to put it so that, on the path variable, all that means is when we run a command prompt or a terminal prompt, it knows how to find the Julia that we just installed.
+And we then validated that, it was running. And so, who here has never used a command prompt or terminal before this lecture? Anybody?
+That's okay. We're gonna… we'll do it together. It is one of the most archaic-looking things. It looks useless. Why would you type this all in when you can have a nice user interface? And that is true, that it's weird, for 99% of users. However, it actually…
+to this date, it's been prophesied that the command line will be gone, of code-free futures.
+won't need to go into that level anymore. However, those prophecies have been going for two decades or more, and the command line continues to be central to all sorts of parts of computing, and the better you get, the more you love it.
+So that's just my, my impassioned plea to… to embrace it. But that's what we did, is on Windows, you know, what I always do is I just hit the start menu and hit Command,
+this is… Really where the computer power happens.
+But we had you type Julia, and not much amazingness happens other than this really nice ASCII art.
+I like that. And it takes a while to load, because it's doing a whole bunch of work. It's getting ready a compiler, and the whole ability to make really fast, performant code. But when that all is done, you get a friendly little Julia prompt, and now, instead of entering into the command prompt that's, you know, saying, what files should we run, we're now going to be directly interfacing with Julia. And so…
+Let's get that going in the background. And like I said,
+Julia is a really good calculator. This is way overkill. If you wanted to add things. Even a large language model maybe is less overkill than this. Actually, no, in terms of computations, that's still probably more.
+But the great part about this is when it's on the command prompt like this, it can then be used in all sorts of other contexts. And in upcoming lectures, we'll talk about various different ways of using Julia.
+pretty much right away, you find that typing everything out is not very effective, because you have to keep copying and pasting things. Actually, what happens is people start copying and pasting their documents into, like, a Word file or a document on the side, and then copying and pasting them back into the prompt. Well, why don't we just have a script file? And that's what a .jl file is.
+And so, here, when we ran 5 plus 3, we were running it directly in the Julia prompt.
+But you could also have a file called example.jl that just had 5 plus 3, and a whole bunch of other commands, and you could do the same thing by calling the word Julia, but not hitting enter, and instead putting a space and having it point to a script file. That's how we'll actually be interfacing with most of the stuff in the future.
+It's like R, with a few important modifications that at first will feel uncomfortable.
+Because it's different, but mostly these, come down to it being a much more generalized programming language, not just one focused on statistics. But yeah, if you're comfortable with the R command line, basic idea there is the same year, r space r script.
+Also, like R, it works natively within Jupyter Notebooks. Even R is now starting to move heavily towards Jupyter Notebooks. Did anybody take the R review course recently?
+Did it use Jupyter Notebooks?
+Okay, well, we'll soon. But Jupyter Notebooks are a nice way of combining well-formatted information about what's being run with the actual code that runs in the document and puts its outputs in the document. And these are used extensively throughout machine learning and everywhere else.
+But finally, the most advanced usage will happen within an integrated development environment. That's why, on one of the first days of class assignment one, I had you already install VS Code, right?
+So, for installing packages, It's a…
+See if we can have them both visible. It's got a built-in package installer, and you just hit the right bracket, and it switches it over into this package mode, and that's where you can install different packages.
+I had you… Why is that there?
+had you install the Mimi modeling framework to illustrate that package tool. And so, what is Mimi? It's, the, sort of an awesome set of Julia scripts for running specifically integrated assessment models.
+And it's made by David Antoff, a really awesome programmer. He's, like, one of the people that I wish I could be like. You know, he's not on the big thinker side of things, although he is a big thinker. He's on the can we program it side of things, and so Mimi is one of the things that he's been deeply involved in. And you can check out the GitHub for it. There's documentation for it.
+And I had you head over to Tutorial 1, and that talked about, adding packages.
+I actually had you do one thing slightly different. I had you run this line, and this installs more than just Julia and the Mimi framework, but also adds a bunch of other stuff, like GDOL. This is an awesome spatial library, CSVs, statistics, a bunch of other stuff.
+We had you update stuff so everything is still up to date.
+And you then enter the commands using Mimi. That's just Julio notation for imported, you know, so at the top of an R script or Python script, you import your different libraries.
+We had you update, the environment to also add something directly from GitHub, so this is kind of nice. This guy, Alexandra Pavlov, he's nice enough to host Mimidice2016.jl on his GitHub page.
+Okay, so that's where you are up to it. Everybody should… it seems like you got there just fine.
+Let's go a little farther.
+Okay, whoops, we're in the package editor, this is a common mistake. If you were to enter Julia code right now, you'd get a…
+convoluted error. I just hit backspace to get out of it. We're back on the Julia prompt.
+Whoa, and that's a bad typo, not Mimeo.
+Using Mimi.
+So enter that in to your Julia prompt. Does everybody have Julia up and running?
+Yeah, good.
+Well, this is not gonna go well. I forgot I reinstalled Julia, and haven't updated any of this.
+Well, as far as things that could go wrong, this is one of the worst. Hmm.
+The what?
+Oh, is that what it was? Was that just a typo? Oh, that's so embarrassing. Thank you.
+What was that online?
+Adriana Castillo Castillo
+Adriana Castillo Castillo
+00:56:52
+I was going to say that is, uppercase instead of lowercase, the mini.
+Justin A Johnson
+Justin A Johnson
+00:57:00
+Thank you so much, Glass.
+10 extra credit points to every… I'm kidding. It's curved, though, so that doesn't matter. Now you all get good grades. Using Mimi.
+It'll take a while, because it's importing the full framework.
+This is going to get the, the tools that are good at running different integrated assessment models.
+We should have had a race.
+See who… is that… does everybody get past this already?
+Anybody, anybody hung up?
+This is telling me I get… I should buy myself a new computer.
+Okay, so now that we've got the Mimi framework in place.
+Now we're gonna bring in one of the specific models. The cool thing about Mimi is there's, like, 15 or 20 different models, and tons of awesome research. All of those will have peer-reviewed things behind them, but, like, this is replicable science. Using Mimi Dice 2016,
+And now it's loading up those hundreds of equations, that I wrote, some of which on the board. So basically, you know, maximize social welfare subject to production but climate damages. Now that's all loaded.
+Now we're gonna have our first interesting line.
+M equals Mimi, dice2016.git underscore model.
+Open and close parentheses. Who knows what object-oriented programming is?
+A little bit, not much. Okay, most people don't need to know this, because you're just going to be the user of object-oriented programming, but it's a really awesome way of organizing really complex code into something simple that allows for lots of reuse in unexpected situations. And that's actually evident here.
+is we imported MimiDice, right? But this getModel function, what does it do? It's going to return an object, and we're saving that object to M. And so, you know, normally, when we think of, like, assigning a variable, it's like M equals 7, okay? Well, that's…
+That's not very detailed. M can actually be an object, which is going to combine a whole bunch of different things into one structure. It's going to be both data, equations, and functions that can operate on that data and other things.
+And so, the mini DICE2016 itself is an object, and the git model thing returns this other object, M.
+I should have hit enter, because that takes a moment.
+But what this will be is an object that has all sorts of other functionality defined, such as how do you run that object? You can think about it like an airplane.
+If you think about an airplane in object-oriented programming, you might have a function airportfectory.getAirplain, and it returns airplane, that's like M. And then the airplane, it's an object, you can get in it, it can also do things. You might have
+airplane.takeoff. And an airplane, if it's a good one, also has defined this procedure for taking off. And in particular, the M object here
+Knows what it means to be run.
+And so this really simple command, run m.
+is saying, hey, Object M, use your information about what it means to be run, and run yourself.
+The language when you're talking about this is kind of funny language.
+Yep.
+It's similar, and I would argue, superior.
+I'm very biased, but yes, all of that will be relevant to being a good programmer in Julia. The syntax will be a little different. The syntax is actually much shorter in Julia. It's far more concise than Java, but it's no… it's actually faster, so…
+Yeah, so that's, like, the least, impressive thing that just happened, but what we just did is Nobel Prize-winning work.
+We have now solved the DICE model.
+But basically all that's happened is we took our model object and ran it.
+And it then did all of the work using Julia and the Jump Library to solve the system of equations, so that it could maximize social welfare, and then it assigns the different choices, like what is the production over time, as well as the derived variables, like what is the temperature over time, to that model object.
+And so…
+The Mimi framework, this is not there by default, but the MINI framework did a bunch of hard work to build this Explore functionality. So now we're going to explore M, and because this M model is a Mimi model, it knows what that means, and what it's actually going to do is it's going to launch a user interface.
+It'll take a second to load. This is… I believe this is Electron, which is a really cool framework.
+But yeah, so… Okay, so it is now loaded, and…
+What's really cool is this allows you to explore the model directly, and so you might want to say…
+Let's look at the economy. Let's look at the gross economy.
+And… let's just look at why. So that's GDP, essentially. What is the production in gross terms in this economy, but in this environment where it's been solved to optimize social welfare given climate change?
+And so, you can go in there, and this was not preloaded, we calculated this. We solved a series of equations of what will GDP be from up to $2,500. I think that's kind of funny, that it goes that far, right? I usually go like this.
+And, zoom in to just up to 2100 or so.
+But we can see what's gonna happen there.
+You can also see all the different parameters that led to that, how they change over time. But this is integrated assessment modeling, so radiative forcing, that's, you know, essentially how much wattage of energy is coming from the sun and getting captured.
+climate dynamics.
+what's the temperature of the ocean? Okay, so the ocean gets a lot hotter. But this is all stuff that comes from the integrated climate model that it has. If you spent a lot of time in the Nordhaus 2017 paper in the supplement, you know, it actually does a fairly decent job of thinking about different reservoirs, like we have the different atmospheric reservoirs and ocean reservoirs, things that are trying to
+Link important parts of the biophysical system
+into the emissions-to-damages pathway. And so, yeah, this… it's hard to, to show all the complexity here, but this is basically a really nice way of exploring Nordhaus's model, and this is… this could be used to replicate, his 2017 paper.
+what, I would like to point out…
+is, wow, you're a Nobel Prize-winning economist. No, no, I'm obviously joking.
+But what I will say we'll do for the assignment coming up is I had you look at the Mimi documentation.
+This is where I… I basically just adapted some of the content on installing, and we've just now followed this. And so if you want a little bit more information.
+This is what we just walked through. You can learn more, about those functions.
+We are going to then also
+See the exploring results here? The key one that I'd like you to take a look at is modify an existing model.
+You don't have to look at it right now, but when you start into the homework, you will almost certainly want to go to this page, because once you have gotten,
+a, model like dice, or eventually green dice, onto your computer, you can then directly answer the questions. What happens if
+the discount rate was different. And you don't have to rely on somebody else's assumption, you can rerun it. I'm probably indicating what the assignment is going to be, but I guarantee you it's going to be something along the lines of modify the discount rate and do some analysis. So hopefully you've got the tools to do that. Any questions on what we've walked through here?
+I don't know. I actually… I figured somebody would ask that, and so I tried to figure it out. I didn't immediately see. Does anybody know?
+Maybe he has a dog named Mimi?
+It's a weird name. Didn't look much.
+this meaningless world. I once looked up Python. That was because… yeah, it does. It's Monty Python. The creator had just watched, Monty Python things.
+Nothing super interesting, but yeah.
+Okay.
+There's one last skill I want to get you, and we probably could call it here, because this is going to feel like it's on a different topic, but I want to leverage the fact that you all have your command prompts up, and talk about Git.
+So, as we progress towards more Earth Economy models, we're going to use a software package that we've developed here at the University of Minnesota called the Earth Economy DevStack. It's basically a playground for linking models.
+And so we just saw the dice model, that's one model. The green dice model is an example where they linked in extra functionality to the dice model, but still solved it in basically the same way. What if you wanted, though, to pair the results of that model to a totally dissimilar model, like an ecosystem service model, or a land use change model?
+That's where we're going.
+And so the steps that we have documented here, I want to start walking through a few of these and get the Earth Economy DevStack, cloned onto your machine. Okay, so in the…
+In the first assignment of class.
+So, exit, I always forget which is which.
+Hey, I got it right on the first try. If you're still in your Julia prompt, you might want to type exit parentheses to get out of it and get back into your command prompt.
+I said before that the command prompt is awesome. One example of why that is, is because of Git. If you just type the word Git, G-I-T, into your command prompt or terminal.
+If you have done the installation instructions that I said, that will give you a sort of list of the key, inputs. This is basically like saying, just call up the help, module. There's much more that you can do.
+But importantly, it identifies a few of the commands that you might want to use. And the one that we'll use in a moment is probably the most frequently used Git command, git clone. Who here has Git experience?
+Okay, what I would tell you is, whenever I'm hiring a person for a technical job.
+Almost independent of what the actual research they'll be doing is.
+I will have to assess, are they good at Git? Because this is, like, the lingua franca, the language that you have to use to collaborate on code. This is what Microsoft uses to work on millions of lines of code, and it scales extremely well.
+But from a very humble starting point, it allows us to take a repository off of GitHub and put it on our local machine in a way that we can modify it and contribute it back to the larger community.
+So what we're gonna do is…
+clone a separate repository. I've already had you clone the class repository. We're going to be using that in upcoming lectures.
+But I want to talk through the process of cloning a different one. And so, first off.
+I'm just gonna navigate.
+to this URL.
+Just so you can see what's there.
+So this is my personal GitHub.
+This is public. There's a bunch of stuff in here. The biggest thing is the documentation.
+You might have noticed on the Mimi site, they did a really good job of documentation. That's, like, the number one sign that you're working with good code, is there's a ton of documentation. We're aiming to have that. We're not to that level yet. But this is the repository. What I want you to do is just copy this link, and if you don't have it, you actually need to type it by hand. github.com slash my username, which is
+J. Andrew Johnson, And then the repository name, which is slash earth economy dev stack.
+So do that, so copy it, and then go over to your command prompt or terminal, and we're going to clone that by doing the very simple set of commands.
+GIPT.
+clone… I should have done one thing first.
+I'm actually not gonna hit enter on this, I forgot to go to the right folder.
+I even had it written out so that I didn't forget that, and I still forgot it. But if we had put git clone, it would put it in whatever directory we're in right now. But in order to organize things, we've got things organized in a very specific way.
+And so I want you to put it in the files directory.
+And so, if you're unfamiliar with the command line, some of these things will be a little bit foreign, but CD is the basic command you need for a change directory. Things like CD dot dot.
+dot dot means go up a level, or CDJohns means that in your current directory, change directory to my username, so I might want to CD files.
+You can also type out a full-on address, like, CDC…
+Windows is backslash, Mac is forward slash, that's super annoying. Users, J, Johns, you can type out the whole path.
+The first ones were relative paths. They were relative because I didn't specify them according to the root, in this case, the hard drive that is my C drive.
+And then the second one, this one here, is an absolute file. We will almost always use relative paths, okay? So,
+using CD files, I just did a relative path files in here. Now, I'm going to type git clone
+and paste, the Earth Economy DevStack URL to here.
+Mine already exists, which is good, because it, was already there and I'd already cloned it, but if you hadn't, now.
+Lo and behold, when we go to our… C drive.
+And I'm just walking through all the steps so you can understand where the files live. Users…
+J.A. Johns, or your username, I told you to go into Files.
+And when you typed git clone this URL, it downloaded it here. And so downloading sounds like something simple. We've all downloaded files, millions of files, right? Well, here, we didn't just download the file.
+I have hidden files, visible, you don't have to have this, but the sort of magic that happens is this hidden file.git
+This is where all of the Git magic happens, that enables Microsoft's 10,000 coders on millions of lines of code to work. This stores the history of all the code in a really useful way, so that it can branch and merge and work, and solve the problem of thousands of people working together on code. You never have to go in here.
+I just want you to know that it's there.
+And instead, know that when we come back to this.
+We will be using this, and in particular, we'll be launching VS Code, using this file here. And so I pre-configured your VS Code in this repository to open up in a way that works for everybody. Did anybody not get that thing downloaded onto their hard drive via Git Clone?
+I'm trying to do this on the other side?
+Yeah, you can do this on MSI.
+MSI is a great example of why the command line is so important. So MSI is Minnesota Supercomputing Institute. They're getting better at it, but for the longest time, all supercomputers basically only gave you command line access. That's not really true anymore, but there's so much stuff that you eventually have to do on the command line that it's just, like, the fundamental language of operating systems. But yeah, the typical workload on a supercomputer is
+You get your code by using Git, which is pre-installed on the supercomputer, get your code, and then Julia, run it, or whatever.
+So, yep.
+Cool. All right, that was disconnected from what we did before, but trust me, we'll use it. Other than that, keep your eyes open for Assignment 3, which will be the first real assignment. And the second one sort of had you think a little bit, but it was mostly just making sure you got the tools up and running. Any last questions?
+Alright, have a good day, everyone!

@@ -1,0 +1,27 @@
+# Assignment 02: Geographic Information Systems (GIS) in 1 Hour
+
+GIS is a powerful tool for visualizing and analyzing spatial data. This assignment will introduce you to the basics of GIS using QGIS, a free and open-source GIS software. By the end of this assignment, you will have installed QGIS, learned how to load and visualize spatial data, and performed basic spatial analysis.
+
+1. Install QGIS from [here](https://qgis.org/download/). Follow the instructions for your operating system. I recommend the Offline (Standalone) installers Long Term Version (LTR).
+
+2. Download the netCDF file that reports land-use, land cover for one of the RCP/SSP combinations from <https://luh.umd.edu/data.shtml>. If you got the right file, it should have layers such as:
+   
+   primf: forested primary land
+
+   primn: non-forested primary land
+
+   secdf: potentially forested secondary land
+
+   secdn: potentially non-forested secondary land
+
+   pastr: managed pasturerange: rangeland
+   
+Make sure to get the release for v2f. 
+
+I'm not giving you the direct link because part of the assignment is learning how to navigate data repositories. If you have trouble finding it, start with the LUH2_v2f README.
+
+3. Use QGIS to make two maps: One of C3 Annuals in 2025 and one in 2100. You might need to read the README again to figure out which layer is which. Give each map a title and a legend in whatever way you want.
+4. Write a 1 paragraph summary of what you see in the maps. How does this particular land use change over time? Describe the spatial hotspots of expansion and contraction or anything else you find interesting.
+5. Create a PDF of your two maps and your paragraph. Submit this PDF to the assignment submission link on the course homepage.
+
+Done!

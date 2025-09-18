@@ -1,0 +1,359 @@
+# Lecture 01 - Big Picture and Syllabus Introduction
+
+Welcome to APEC 8602!
+
+In this first lecture, we will cover the big picture of the course, including the main topics we will cover and how they fit together. We will also go over the syllabus in detail, including the course structure, assignments, grading, and expectations. Please make sure to read the syllabus carefully and reach out if you have any questions.
+
+Slides as Powerpoint: [Download here](https://docs.google.com/presentation/d/1NrH3Suyex8A12C5qWp3f3Ib14RYll8Fb?rtpof=true&usp=drive_fs)
+
+Video link: [On Youtube](https://www.youtube.com/watch?v=rZSMUSTymGw&list=PLir2vw2cQ_Nsn_zNtX050t5Y49YkxcNRt)
+
+# Content
+
+## Welcome to Applied Earth Economy Modeling
+
+Welcome to the first lecture of the newly reformed Applied Economics 8602 course. This represents the inaugural teaching of this redesigned version, though it builds upon a substantial history of related concepts and methodologies. The rebranding to Applied Earth Economy Modeling reflects a comprehensive approach that encompasses much of what students would traditionally encounter in a typical environmental economics or natural resource economics PhD course. The goal and scope of this reformulation should become increasingly clear as we progress through the material.
+
+The course structure emphasizes interactivity and hands-on application. Applied Earth Economy Modeling means we will be working primarily on our computers, engaging directly with models, data, and collaborative exercises. This practical approach ensures that theoretical concepts are immediately reinforced through computational implementation and real-world application.
+
+## Instructor Background and Expertise
+
+### Academic Journey and Research Focus
+
+I am Justin Johnson, having completed my PhD in Applied Economics from this institution in 2014. My doctoral work was conducted under the supervision of Steve Pulaski, who currently teaches the companion course 8601, which focuses more intensively on dynamics, mathematics, and the theoretical definition of sustainability within economics. Following graduation, I spent five years at the Institute on the Environment, initially as a postdoctoral researcher and subsequently as a self-funded researcher, before joining the faculty here in 2020. My recent tenure achievement, while exciting, has not diminished my enthusiasm for teaching and research in this critical field.
+
+### Research Initiatives and Institutional Contributions
+
+My extensive collaboration with the Natural Capital Project, co-founded by Steve Pulaski, will feature prominently throughout this course. Recently, Steve and I established a spin-off organization called NATCAP Teams, also known as The Earth Economy Modelers, which represents a new research center within Applied Economics. Some of you are already involved with this initiative and understand its mission to advance earth economy modeling methodologies.
+
+Beyond earth economy modeling, my interests extend to coding and open-source science. The question of how we replicate and validate knowledge has become increasingly important in the age of artificial intelligence, where machines can perform much of the computational work, yet human understanding remains critical for interpretation and application. This theme will recur throughout our discussions. My research receives funding from AI Leaf—Land, Economy, Agriculture, and Forestry—which was previously known as AI Climate and focuses on leveraging artificial intelligence to understand and address sustainability challenges.
+
+## Course Structure and Connections
+
+### Integration with Other Courses
+
+This half-semester course connects directly with 8222, which I will begin teaching at the midpoint and which is being renamed Big Data, Machine Learning, and Artificial Intelligence for Economists. That subsequent course will be even more intensively hands-on and code-focused. Ideally, the order would be reversed to allow students to gain familiarity with Python and Julia tools before tackling earth economy modeling, but the current departmental structure dictates that the R course precedes the machine learning course.
+
+### Departmental Context and PhD Requirements
+
+This course fits within the evolving PhD requirements in our department, which are transitioning from two three-credit courses to four half-semester courses. The new structure includes Economics and Dynamics of Sustainability taught by Steve Pulaski, Modern Environmental Economics taught by Jay Coggins, and Econometrics of Environment and Development taught by Rahil Madok. Each course draws from different aspects of environmental and development economics, creating a comprehensive educational framework for doctoral students in this field.
+
+## Student Introductions and Research Interests
+
+### Diverse Backgrounds and Research Trajectories
+
+The class comprises students from various backgrounds and research interests. Libby, in her sixth year of the APAC PhD program, works with NATCAP Teams and focuses her dissertation on urban ecosystem service modeling, specifically modeling ecosystem services provided by trees across the United States. She also contributes to projects measuring the Global Gross Ecosystem Product, which quantifies the monetary value of ecosystems.
+
+Dave brings a background in higher education leadership and sees this course as presenting significant opportunities for expanding his understanding of earth economy modeling. Alvin, a second-year NPAC program student, focuses on labor and adaptation, and while this isn't directly related to the class material, he maintains strong interest in researching deforestation impacts.
+
+Other students bring expertise in environmental and labor economics, with experience as research assistants exploring interactions between agroecosystems and the environment. Some focus on public water economics and sustainable agriculture, seeking to understand how to approach these topics through modeling frameworks. Students with chemistry research backgrounds focusing on microplastics and water resources contribute unique perspectives on water resource economics and the application of data methods to socially relevant issues.
+
+### International Perspectives and Collaborative Learning
+
+The course benefits from international perspectives, including visiting professor Hemandas Lohano from the Institute of Business Administration in Karachi, who is interested in replicating ecosystem services valuation for GEP and advancing toward valuing grassland contributions. Online participants like Natalie, a master's student in Bioproducts and Biosystems Science Engineering and Management, focus on water contamination and specific research questions about chemicals and pollutants in water runoff from structural fires. These diverse perspectives enrich our collective understanding and create opportunities for cross-cultural and interdisciplinary learning.
+
+## Conceptual Foundation: From Holocene to Anthropocene
+
+### Understanding the Holocene Stability
+
+We are experiencing a fundamental transition from the Holocene—a remarkably stable geological era that has been extraordinarily favorable for human development and agriculture—to what many scientists now call the Anthropocene. Historical data showing Earth's surface temperature over thousands of years reveals the Holocene as a period of unprecedented stability. Agriculture emerged shortly after the Holocene began, followed by the development of major human civilizations. This "Goldilocks zone" represents a stable climate range that enabled the flourishing of human civilization as we know it. The profound concern among scientists is that if we leave this band of stability, conditions could change dramatically and potentially irreversibly.
+
+### Debating the Anthropocene
+
+There exists ongoing scientific debate about whether we have officially entered a new geologic era called the Anthropocene. Various scientific bodies have deliberated on its official status, with some arguing for formal recognition while others maintain we remain technically in the Holocene. Regardless of the formal geological classification, the evidence overwhelmingly indicates we have entered a world where human activity has become the dominant force shaping Earth's systems, from climate and water cycles to biodiversity and biogeochemical processes.
+
+## Stability Landscapes and Planetary Thresholds
+
+### The Marble in a Bowl Metaphor
+
+The concept of stability landscapes provides a useful framework for understanding our current predicament. Imagine a marble resting in a bowl—this represents the Holocene's stable equilibrium. As we push against various boundaries, particularly temperature thresholds, we risk rolling the marble over the edge into a different bowl, representing a new equilibrium such as a "hothouse Earth" scenario. Once the system settles into a new equilibrium, returning to the previous state becomes extraordinarily difficult if not impossible. The challenge facing humanity is to steward Earth's systems carefully enough to avoid crossing these critical thresholds while maintaining conditions suitable for human flourishing.
+
+### Planetary Boundaries Framework
+
+The concept of planetary thresholds has become prominent in sustainability science, with the most famous conception being the planetary boundaries framework. This framework identifies biophysical boundaries that humanity should not cross to maintain a safe operating space for civilization. The safe operating space is typically visualized as a green area within these boundaries, but current assessments indicate that many metrics have already exceeded these planetary boundaries. The critical takeaway is that we should proceed with extreme caution, as the consequences of persistently exceeding these thresholds remain uncertain and potentially catastrophic.
+
+## Beyond Planetary Boundaries: The Social Foundation
+
+### Limitations of the Biophysical Framework
+
+While the planetary boundaries framework has gained significant popularity and provides important insights, I find it limited in several crucial ways. Most significantly, it doesn't address what specific policies we should pursue to remain within these boundaries, nor does it incorporate the fundamental goal of ensuring a thriving human society. From an anthropocentric perspective—which I embrace and which we'll revisit throughout this course—we must avoid surpassing the ecological ceiling while simultaneously ensuring we stay above the social floor. This social floor represents access to foundational goods and services including healthcare, food, water, shelter, and other necessities that enable human dignity and flourishing. This dual focus is central to growth and development economics.
+
+### Donut Economics and Safe Operating Spaces
+
+Kate Raworth's "Donut Economics," published in 2017, elegantly captures this dual focus through a visual framework where planetary boundaries form the ceiling and the social foundation ensures quality of life for all. Sustainability, in this framework, means staying within the "donut"—below the ecological ceiling and above the social foundation. This conceptualization has been echoed and refined in recent literature, such as Rockstrom et al.'s 2023 work on "safe and just corridors." While I appreciate this more comprehensive framework, it still doesn't fully answer the crucial question of what specific policies we should pursue to achieve these goals. This gap is precisely why I believe economics provides powerful and necessary tools to help humanity navigate within planetary boundaries while ensuring social justice and human flourishing.
+
+## Historical Achievements of Economic Tools
+
+### Response to Economic Crises
+
+Economics has demonstrated remarkable effectiveness at improving physical consumption and well-being, particularly in response to major crises such as the Great Depression. The development of systems of national accounts (SNAs) and the conceptualization of Gross Domestic Product (GDP) provided crucial metrics and tools for policy navigation during times of economic turmoil. While GDP is frequently and justifiably criticized for its narrowness and failure to capture many aspects of human well-being, it proved extraordinarily useful for organizing and implementing policies aimed at increasing material welfare during periods of economic hardship.
+
+### Modeling and Policy Analysis
+
+Tools such as computable general equilibrium (CGE) models have enabled economists to estimate the impacts of various policies, including trade tariffs, and make quantitative predictions about their effects. Other models address crucial fiscal and growth-based questions, helping policymakers understand and manage inflation, implement stabilization policies, and promote economic development. These tools have contributed to significant poverty reduction worldwide, with the probability of living in extreme poverty having decreased dramatically over the past century. While distributional issues certainly remain and deserve serious attention, increased GDP generally correlates with higher average consumption and improved material well-being.
+
+## Quantifiable Improvements in Human Welfare
+
+### Life Expectancy and Violence Reduction
+
+The practical application of economic tools and policies has contributed to substantial improvements in human welfare by various metrics. Life expectancy has increased dramatically—over a century ago, it averaged 42 years in the Americas, while today it has nearly doubled in many regions. Homicide rates have declined significantly, as documented by scholars like Steven Pinker and others, suggesting that economic and social progress has led to reduced violence and increased human security. These improvements reflect the power of economics to build tools that describe and manipulate economic systems, enabling us to test policies before implementing them and predict outcomes with reasonable accuracy.
+
+### The Power of Economic Modeling
+
+Economics has developed sophisticated tools to describe and manipulate the economy, enabling policymakers to test policies through models before implementing them in the real world. These models help us predict outcomes and guide decision-making in complex systems where intuition alone might lead us astray. The success of these tools in addressing problems of underconsumption and economic stagnation during the twentieth century provides valuable lessons for addressing the different but equally pressing challenges we face today.
+
+## Traditional Economics and Earth Systems
+
+### The Separation Fallacy
+
+However, traditional economic tools often treat the Earth as separate from the economy, viewing natural resources as external inputs rather than integral components of economic systems. The fundamental premise of this course is that we need to reconceptualize the economy as embedded within the Earth system, not the other way around. This perspective actually draws from early economic thought, which considered economic growth as a function of converting land and natural resources, mixed with labor and capital, into goods and services that provide utility to humans.
+
+### Natural Resource Economics: Necessary but Insufficient
+
+Natural resource economics has traditionally focused on optimal extraction—determining how to manage forests, fisheries, and other renewable and non-renewable resources for long-term sustainability. While these questions remain important and we will build upon these established tools, they don't fully address current challenges like climate change, biodiversity loss, and the complex interactions between human and natural systems at planetary scales. Pollution and waste management represent newer concerns that have generated policy responses including carbon taxes and fuel efficiency standards. Still, these approaches don't capture the full complexity of the economy's relationship with the biosphere.
+
+## The Earth Economy Framework: Understanding Complex Linkages
+
+### Bidirectional Relationships
+
+This course aims to develop comprehensive understanding of the complex linkages between the economy and the biosphere, including both impacts and dependencies. As the global economy grows, it increasingly affects natural systems through pollution, land use change, and resource extraction, while simultaneously depending on nature for ecosystem services, resource inputs, and system stability. We will use quantitative models to capture these bidirectional relationships and guide sustainable development pathways that respect both planetary boundaries and human needs.
+
+### Scale and Planetary Impact
+
+The reality we must confront is that the economy is no longer small compared to the Earth system. As consumption scales up globally, the economy has become a dominant force affecting planetary boundaries. While technological advances such as fusion energy could potentially alter these boundaries in the future, current evidence indicates we are already pushing past several critical thresholds. This situation demands new approaches and tools that can help us navigate within planetary limits while ensuring human flourishing.
+
+## Developing Navigational Tools
+
+### Learning from Historical Precedents
+
+Our challenge parallels historical economic challenges but requires new tools and frameworks. Just as systems of national accounts and general equilibrium models helped address problems of underconsumption during the Great Depression, we now need navigational tools for sustainable development that can address overconsumption and global, interconnected challenges. These tools must be detailed, computationally useful, and quantitatively predictive to help us understand how to stay within planetary boundaries while ensuring social justice.
+
+### Toward General Earth-Economy Models
+
+We need to develop more general models—essentially general equilibrium models that account for both economic and ecological dynamics. These models must capture the reality that the economy is embedded within the Earth system, with impacts and dependencies flowing in both directions. Environmental economics has traditionally focused on impacts, but dependencies are becoming increasingly important, especially for policymakers who need to understand how economic systems rely on functioning ecosystems.
+
+## Technical Infrastructure and Open Science
+
+### Commitment to Transparency
+
+The course website serves as the primary resource for all course materials, with Canvas functioning merely as a link to this central repository. This approach reflects my commitment to open-source science—creating transparent, reproducible content that anyone can access and build upon. All course materials are available on GitHub and can be cloned or modified by anyone interested in the content. This radical transparency extends to showing the complete commit history, revealing my own learning process and iterations.
+
+### GitHub and Version Control
+
+The first assignment, due next Tuesday, involves getting up to speed with essential technical tools. Students will install VS Code and Git, create a GitHub account, and send me their GitHub username to confirm everything works properly. A GitHub account is essential for anyone pursuing technical work in modern research or industry settings. Students should choose professional usernames that will serve them throughout their careers, as these identifiers tend to persist.
+
+## Assessment and Participation
+
+### Grading Components
+
+Class participation comprises 5% of the grade and requires students to attend with their computers and follow along with code demonstrations. Technical issues should be communicated early so we can resolve them together. Weekly insights are required and can be submitted via Canvas or email, asking students to comment on what they found interesting, confusing, or valuable. This requirement helps develop essential communication skills while providing feedback on course content.
+
+### Problem Sets and Research Projects
+
+The course includes several problem sets that can be completed using Python, R, MATLAB (though MATLAB support will eventually be removed), or Julia. Collaboration is strongly encouraged, but submissions must be individual and distinct to ensure personal understanding. A research project will involve an applied earth economy modeling problem, with the goal of producing compelling figures and insights rather than a polished paper given the short course duration. Ideally, these projects will serve as foundations for future research or dissertation work.
+
+## Use of Artificial Intelligence
+
+### Embracing AI Tools
+
+Students are free to use AI tools in any way they choose, with or without attribution. However, any mistakes remain the student's responsibility, and understanding how to use AI effectively will be part of the course learning objectives. This policy reflects the reality that AI tools are becoming integral to research and analysis, and students need to develop skills in leveraging these tools while maintaining critical thinking and verification abilities.
+
+## First Section: Context and Tools
+
+### Global Sustainability and General Equilibrium
+
+The semester breaks into three main parts, beginning with big picture context and introduction to essential tools. The first third of the course introduces the theoretical and practical context for earth economy modeling, focusing on global sustainability challenges and general equilibrium approaches. We will discuss scenarios, especially land use change modeling, which is central to earth economy models and provides the spatial resolution necessary for ecosystem service assessment.
+
+### Integrated Assessment Models
+
+We will work hands-on with economic tools that link Earth systems and economic systems. The DICE model represents a classic integrated assessment model, but we will use more modern versions such as Fran Moore's Green DICE model that better capture ecological dynamics. We will also cover inclusive wealth, a key metric for sustainability that relies heavily on economic theory to assess whether current development paths are sustainable.
+
+## Second Section: Ecosystem Services
+
+### Conceptual Development and Application
+
+The second part of the course focuses intensively on ecosystem services, a concept that this department helped develop and refine. Steve Pulaski co-founded the Natural Capital Project and contributed significantly to establishing ecosystem services as a practical decision-making tool. We will learn to compute ecosystem service values under different scenarios, understanding both the theoretical foundations and practical applications of these assessments.
+
+### Computable General Equilibrium Models
+
+We will cover computable general equilibrium (CGE) models in detail, as these represent the workhorse of economics for analyzing sectoral and trade impacts. Students will run these models on their own computers, gaining hands-on experience with their structure, assumptions, and applications. This practical experience is essential for understanding both the power and limitations of these widely-used tools.
+
+## Third Section: Integration and Frontiers
+
+### Linking Models Across Scales
+
+The third part of the course addresses the critical challenge of integrating ecosystem service models with general equilibrium models, primarily through land use change modeling. This field predicts landscape changes driven by human activity and provides the crucial link between general equilibrium models operating at large scales and the fine resolution needed for ecosystem services analysis.
+
+### Research Frontiers and Applications
+
+We will discuss key papers and newer developments in the field, including the GTAP-Invest linkage, which represents a major contribution by combining the most widely-used CGE model (GTAP) with the most extensively applied ecosystem service model (Invest). Additional topics include gridded economic analysis and emerging research frontiers. The course culminates in a "season finale" where students present their research projects, sharing compelling figures and insights that ideally will serve as foundations for future research endeavors.
+
+## Open Science and Reproducibility
+
+The course embodies principles of open science and reproducibility, with all materials freely available and modifiable. Lectures are recorded and posted online for reference, though personal discussions are edited out to maintain privacy. This approach reflects the belief that advancing the field requires transparency and accessibility, allowing others to build upon and improve the materials developed here.
+
+## Building Tools for the Anthropocene
+
+The overarching goal of this course is to equip students with the conceptual understanding and practical tools necessary to address the challenges of the Anthropocene. By developing models that capture the complex relationships between economic and Earth systems, we can better navigate toward sustainable futures that respect planetary boundaries while ensuring human flourishing. The integration of traditional economic tools with ecosystem service assessments and earth system science represents a crucial evolution in how we approach sustainability challenges.
+
+## Collaborative Learning and Future Applications
+
+The interactive, hands-on nature of the course ensures that students not only understand theoretical concepts but can also apply them to real-world problems. Through collaboration, open discussion, and practical application, we will collectively advance our understanding of earth economy modeling and its potential to guide humanity toward sustainable development pathways. The skills and perspectives developed in this course will prove essential as we face the interconnected challenges of the twenty-first century and beyond.
+
+# Transcript
+
+All right, let's dive in. Welcome, everyone, to the first lecture of the newly reformed 8602 in Applied Economics. This is the first time we're teaching this version, but it builds on a long history of related concepts, and I think the rebranding will work well. The course is Applied Earth Economy Modeling, covering much of what you'd find in a typical environmental economics or natural resource economics PhD course. I hope that goal becomes clear as we proceed.
+
+Today, I'll discuss the big picture—why we're here—then go over some logistical details about the syllabus, and finally return to more interesting topics to bookend the session.
+
+First, let's talk about the overall agenda. One thing I want to emphasize is that I hope this course will be as interactive as possible. Applied Earth Economy Modeling means we'll be working hands-on, primarily on our computers, and collaborating together.
+
+Let me start with introductions. I'm Justin Johnson. I graduated from here with a PhD in Applied Economics in 2014, working with Steve Pulaski, who teaches the companion course 8601, focused more on dynamics, mathematics, and the definition of sustainability in economics. After graduating, I spent five years at the Institute on the Environment, first as a postdoc and then as a self-funded researcher, before joining the faculty here in 2020. I was recently tenured, which is exciting, but it hasn't changed my enthusiasm for the job.
+
+I've worked extensively with the Natural Capital Project, co-founded by Steve Pulaski, which we'll discuss frequently in this class. Recently, Steve and I co-founded a spin-off called NATCAP Teams, or The Earth Economy Modelers, a new research center in Applied Economics that some of you are already involved with.
+
+Beyond earth economy modeling, I'm interested in coding, especially open-source science. The question of how we replicate and validate knowledge is increasingly important in the age of AI, when machines can do much of the work, but human understanding remains critical. This will be a recurring theme. I'm involved in research funded by a center called AI Leaf—Land, Economy, Agriculture, and Forestry—previously AI Climate, which focuses on how AI can help us understand sustainability issues. I'm also interested in artificial intelligence and machine learning, and many of you may be taking the follow-up course.
+
+This is a half-semester course, so halfway through, I'll begin teaching 8222, which is being renamed Big Data, Machine Learning, and Artificial Intelligence for Economists. That course will be even more hands-on and code-focused. I wish the order were reversed, so you could get introduced to Python and Julia tools first, but that's the department's decision. The R course precedes the machine learning course.
+
+Now, I'd like to hear from you all. As I said, this will be a hands-on course. Please introduce yourselves—your name, program, year, expected fields or research interests, and one research idea you're interested in. It can be something you're already working on or just an idea you might want to pursue. Also, share what led you to this course.
+
+Let's start in the back with Libby.
+
+Hi, everyone. I just started my sixth year in the APAC PhD program. I've been involved with NATCAP Teams, as Justin mentioned. My dissertation focuses on urban ecosystem service modeling, specifically modeling ecosystem services provided by trees across the United States. I'm also working on projects like the Global Gross Ecosystem Product, which measures the monetary value of ecosystems.
+
+Next, let's go over there.
+
+Hi, good evening. I'm Dave. My background is in higher education leadership, and I think this course presents a great opportunity for me.
+
+Welcome. Let's move to the middle row.
+
+Hi, I'm Alvin, a second-year student in the NPAC program. My interest is in labor and adaptation, which isn't directly related to this class, but I'm interested in researching the impact of deforestation.
+
+Excellent. Let's continue in the middle row.
+
+I'm interested in environmental economics and labor economics. After completing my master's, I worked as a research assistant to Professor Fan at Channel Republic University. That's when I started exploring the interaction between agroecosystems and the environment. I think it's a crucial topic, and I'm eager to learn more about models that study these interactions.
+
+Wonderful, welcome. Let's move to the front row.
+
+I'm also a student here. My research interests are in public water economics and environmental economics. I'm in my second year, and I'm currently interested in sustainable and organic agriculture. I want to learn more about how to approach these topics.
+
+Great. Let's continue.
+
+I'm in the first year of my master's program. My background is in chemistry research, focusing on microplastics and water resources. I'm interested in water resource economics and how data methods can be applied to socially relevant issues.
+
+I've also worked on a paper examining racial disparities in mortality rates among American Indian populations. More broadly, I'm interested in the intersection of environmental science, geospatial data, migration, and their economic and social impacts. I joined this course because of my advisor's research interests.
+
+We have a new entrant, William.
+
+I'm interested in defining policies to achieve optimal energy use for welfare.
+
+Let's go online now. Natalie, please introduce yourself.
+
+Hello, everyone. My name is Natalie. I'm a master's student in the Bioproducts and Biosystems Science Engineering and Management program. My main focus is water contamination. My current research idea is to study chemicals and pollutants consistently present in water runoff from structural fires extinguished by fire departments. I joined this course because I work with Dr. Johnson at NATCAP Teams and want to improve my technical understanding of the projects I help manage.
+
+Thank you, Natalie. Heyman, please introduce yourself.
+
+Hi, everyone. My name is Hemandas Lohano. I'm a visiting professor in the Department of Applied Economics, from the Institute of Business Administration in Karachi. I'm interested in replicating ecosystem services valuation for GEP and moving towards valuing grassland contributions. I'm looking forward to learning about modeling in this course.
+
+Thank you, Heyman. Welcome, everyone. Let's dive in.
+
+Let's discuss the premise of this course. Some of this information may be familiar, but it's important to organize and introduce why we're doing what we're doing. Even if it's a review, it's critical to hone the message.
+
+We're transitioning from the Holocene—a stable geological era favorable for humans and agriculture—to the Anthropocene. This graph shows Earth's surface temperature over thousands of years, with the Holocene marked as a period of stability. Agriculture began shortly after the Holocene started, followed by major human civilizations. The Goldilocks zone refers to this stable climate range, which enabled civilization. The concern is that if we leave this band, things could change dramatically.
+
+There's ongoing debate about whether we're entering a new geologic era, the Anthropocene. Scientific bodies have debated its official status, but regardless, we're entering a world where human activity is the dominant force in Earth's systems.
+
+This concept is illustrated by the stability landscape—think of a marble in a bowl. The Holocene represents a stable equilibrium, but as we push boundaries, especially temperature, we risk crossing planetary thresholds into new equilibria, such as a "hothouse Earth." Once in a new equilibrium, it's hard to return. The challenge is to steward Earth's systems to avoid crossing these thresholds and maintain a stable environment.
+
+The idea of planetary thresholds is prominent in sustainability science. The most famous conception is that there are biophysical boundaries we shouldn't cross. The safe operating space is the green area, but many metrics have already exceeded planetary boundaries. The takeaway is that we should tread carefully, as persistence beyond these thresholds is uncertain.
+
+While this framing is popular, I find it limited. It doesn't address what policies we should pursue or incorporate the goal of a thriving human society. I'm anthropocentric in this sense, and we'll revisit this perspective throughout the course. We must avoid surpassing the ecological ceiling but also stay above the social floor—ensuring access to foundational goods and services like healthcare, food, water, and shelter. This is central to growth and development economics.
+
+Kate Raworth's "Donut Economics" (2017) captures this dual focus: planetary boundaries form the ceiling, and the social foundation ensures quality of life. Sustainability means staying within the "donut"—below the ceiling, above the foundation. This framework is echoed in recent literature, such as Rockstrom et al. (2023), with the concept of "safe and just corridors." I appreciate this framework, but it still doesn't answer what policies to pursue.
+
+That's why I'm an economist—I believe economics provides powerful tools to help us stay within planetary boundaries and the safe and just corridor.
+
+Let's pivot to economics and its successes. Economics has been effective at improving physical consumption and well-being, especially in response to crises like the Great Depression. The development of systems of national accounts (SNAs) and GDP provided metrics and tools for policy navigation. While GDP is criticized for its narrowness, it was useful for organizing policies aimed at increasing welfare.
+
+Tools like computable general equilibrium (CGE) models allow us to estimate the impacts of policies, such as trade tariffs, and make quantitative predictions. Other models address fiscal and growth-based questions, like inflation and stabilization policies.
+
+These tools contributed to significant poverty reduction worldwide. The probability of living in extreme poverty has dramatically decreased, though distributional issues remain. Increased GDP generally leads to higher average consumption, and ethical frameworks like John Rawls' "veil of ignorance" support policies that improve overall welfare.
+
+Life expectancy has increased substantially—over a century ago, it was 42 years in the Americas; now it's much higher. Homicide rates have declined, as documented by Steven Pinker and others, suggesting that economic and social progress has led to less violence.
+
+Economics built tools to describe and manipulate the economy, enabling us to test policies before implementing them. Models help us predict outcomes and guide decision-making.
+
+However, traditional economic tools often treat the Earth as separate from the economy. The premise of this course is that we need to think of the economy as embedded within the Earth, not the other way around. This perspective draws from early economic thought, which considered growth as a function of converting land and natural resources, mixed with labor and capital, into goods.
+
+Natural resource economics traditionally focused on optimal extraction—how to manage forests, fisheries, and other resources for sustainability. While these questions are important, they don't fully address current challenges like climate change and biodiversity loss. We'll build on these tools but focus on broader systemic issues.
+
+Pollution and waste management are newer concerns, involving policies like carbon taxes and fuel standards. Still, these approaches don't capture the full complexity of the economy's relationship with the biosphere.
+
+This course aims to understand the complex linkages between the economy and the biosphere, including both impacts and dependencies. As the economy grows, it increasingly affects and relies on nature. We'll use quantitative models to capture these relationships and guide sustainable development.
+
+The reality is that the economy is no longer small compared to the Earth. As consumption scales up, the economy becomes a dominant force affecting planetary boundaries. Technological advances, like fusion energy, could change these boundaries, but for now, we're pushing past them.
+
+Our challenge is to develop navigational tools for sustainable development, similar to how SNAs and general equilibrium models helped address underconsumption during the Depression. Now, we face overconsumption and global, interconnected challenges.
+
+We need detailed, computationally useful, and quantitatively predictive models to understand how to stay within planetary boundaries and the safe and just corridor. We'll explore the specific linkages between the Earth and the economy.
+
+This graphic illustrates the evolving understanding: the economy is embedded in the Earth, with impacts and dependencies flowing both ways. Environmental economics traditionally focused on impacts, but dependencies are increasingly important, especially for policymakers.
+
+To navigate the Anthropocene, we need more general models—general equilibrium models that account for both economic and ecological dynamics.
+
+That's my overview of why this course matters and the direction we'll take. Any questions or thoughts? Are you in the right class? If not, now's the time to speak up.
+
+Now, let's cover the syllabus. Please visit our course website for the official syllabus. This is the first year I'm not printing the syllabus; it's available online for convenience and transparency. The website will be the key document, updating links to readings and lecture slides. I'll also add summaries for each day.
+
+Canvas is just a link to my website; grades will be posted there as required. The reason for using my own website is my commitment to open-source science—transparent, reproducible content that anyone can access. All course materials are on GitHub and can be cloned or modified by anyone. This approach is more open than Canvas, which is a paid, restricted service.
+
+Some common questions: Am I worried about someone stealing my work? Not at all—I'd welcome it, as it advances the field. What about privacy? I've chosen to live openly, and the commit history shows all my changes and learning process. Radical transparency is my goal.
+
+The first assignment, due next Tuesday, is "Getting Up to Speed." You'll install VS Code, Git, and create a GitHub account. The assignment is simply to send me your GitHub username so I can confirm everything works.
+
+Does anyone already have a GitHub account? You should—it's essential for technical roles. Choose a professional username, as it will stick with you.
+
+The GitHub repository is open, but I won't publish problem set solutions to preserve the learning process. Content will be added over time.
+
+The Google Drive link is open to you for data and readings. Please don't share it, as it contains copyrighted materials. Each class day will have a summary of the day's activities.
+
+Regarding grading: Class participation is 5%—show up with your computer and follow along with the code. If you have technical issues, contact me early so we can resolve them together.
+
+Weekly insights are required—submit via Canvas or email. Comment on what you found interesting, confusing, or valuable. This helps train communication skills.
+
+There will be a few problem sets. You can use Python, R, MATLAB (eventually removed), or Julia. Collaboration is encouraged, but submissions must be individual and distinct.
+
+A research project will be assigned, involving an applied earth economy modeling problem.
+
+You are free to use AI tools in any way, with or without attribution. Mistakes are your own, and understanding how to use AI effectively will be part of the course.
+
+Any questions about the syllabus or concerns about AI usage? If you have ethical concerns, please share them.
+
+Let me return to the slides.
+
+The semester breaks down into three parts. First, we'll cover the big picture and syllabus introduction. Your first assignment is to read the designated paper before the next class.
+
+The first third of the course introduces context and tools, focusing on global sustainability and general equilibrium. We'll discuss scenarios, especially land use change modeling, which is central to earth economy models.
+
+We'll then move to hands-on work with economic tools linking the Earth and the economy. The DICE model is a classic integrated assessment model, but we'll use more modern versions, such as Fran Moore's Green DICE model.
+
+We'll also cover inclusive wealth, a key metric for sustainability, relying heavily on economic theory.
+
+The second part of the course focuses on ecosystem services, a concept this department helped develop. Steve Pulaski co-founded the Natural Capital Project and contributed significantly to ecosystem services as a decision-making tool. We'll learn to compute ecosystem service values under different scenarios.
+
+Next, we'll cover computable general equilibrium (CGE) models, the workhorse of economics for sectoral and trade impact analysis. We'll run these models on your computers.
+
+The third part of the course addresses how to integrate ecosystem service models and general equilibrium models, primarily through land use change modeling. This field predicts landscape changes driven by human activity and links general equilibrium models to the resolution needed for ecosystem services analysis.
+
+We'll discuss key papers and newer developments. The GTAP-Invest linkage is a major contribution, combining the most famous CGE model (GTAP) with the most used ecosystem service model (Invest).
+
+We'll also touch on topics like gridded economic analysis and research frontiers. The last day will be a "season finale," where you'll present your research project. The goal is to produce compelling figures and insights, not a polished paper, given the short course duration. Ideally, your project will serve as a foundation for future research or dissertation work.
+
+This course fits within the evolving PhD requirements, which are shifting from two three-credit courses to four half-semester courses: Economics and Dynamics of Sustainability (Steve Pulaski), Modern Environmental Economics (Jay Coggins), and Econometrics of Environment and Development (Rahil Madok). Each draws from different aspects of environmental and development economics.
+
+I've recorded this lecture for your reference. Unless I hear otherwise, I'll continue recording and posting lectures online. Your faces won't be shown, and I'll edit out personal discussions. If you have concerns, let me know privately.
+
+With that, we're only one minute over. Thank you, everyone.
+
+Thank you so much, everybody.

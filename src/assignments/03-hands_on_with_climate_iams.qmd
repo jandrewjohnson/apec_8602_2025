@@ -1,0 +1,20 @@
+# Assignment 03 - Rolling the DICE
+
+We have now run DICE using the default parameters used in Nordhaus 2017. Now, we will tweak the model to answer additional questions by comparing runs with different inputs. To learn how to do this, visit the Mimi [Tutorial 3](https://www.mimiframework.org/Mimi.jl/stable/tutorials/tutorial_3/). The beginning may look daunting, but focus on the part showcasing the DICE example. Remember, you are allowed to work together if you need to, so long as you all submit your own, different code. Please write all of your results to a single PDF, which you will upload to canvas.
+
+Q1: Run the default DICE2016 model as we did in class and use the exlore() functionality to look at the results. Write a paragraph describing these results, noting what the optimal level of mitigation is over time (a graph may be useful here), along with the amount of money spent on abatement.
+
+Q2: Write 1 to 3 paragraphs supporting or critiquing this sentence in Nordhaus 2017. Be sure to follow the referenced study. Compare this with other (more recent than 2015) data on the costs of mitigation.
+
+![](images/paste-1.png)
+
+Q3: In Nordhaus 2017, section "**Growth-Corrected Discounting",** explain in your words how he argues for the discount rate he chooses and why he thinks this is better than alternative estimates. Do you agree?
+
+Q4: Rerun the DICE2016 model with a lower discount rate (you may choose the exact reduction). Document with graphs and a paragraph what is different in your new equilibrium. As documented in the Tutorial, the model is structured into Components and then Variables/Parameters. You can access these by name from the model object m, using notation like this:
+
+```{julia}
+m[:ComponentName, :VariableName] # returns the whole array of values
+m[:ComponentName, :VariableName][100] # returns just the 100th value
+```
+
+To get the exact ComponentName and VariableName, use the Mimi Explorer Window (via `explore(m)` ) and find the exact names there.

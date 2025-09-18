@@ -1,0 +1,112 @@
+project:
+  type: website 
+  output-dir: '../RENDERED_website'  
+
+execute:
+  python:
+    eval: false
+
+website:
+  title: "APEC 8602: Applied Earth-Economy Modeling"
+  navbar:
+    background: primary
+    search: true  
+    left:
+      - text: Home
+        file: index.qmd
+
+      # - text: Data 
+      #   menu:
+      #     - text: "Base year 2019"
+      #       file: data/data_2019.qmd
+
+
+  sidebar:
+    - id: home
+      title: "Home"
+      style: "docked"
+      background: dark
+      collapse-level: 1
+      contents: # The first entry is the one that must be on the top menu bar.
+        - text: Home
+          file: index.qmd
+        - text: "Syllabus"
+          file: syllabus.qmd
+        - text: "Lectures"
+          href: "lectures/index.qmd"  # Optional: makes it explicitly non-navigating
+          # file: lectures.qmd
+          contents:
+          - text: "01 - Big Picture and Syllabus Introduction"
+            file: lectures/01-big_picture_and_syllabus_introduction.qmd # TODOOO should probably note this in conventions how you switch from a name with dashes and spaces to a label with dashes and underscores
+          - text: "02 - Introduction to Earth-Economy Modeling"
+            file: lectures/02-introduction_to_earth_economy_modeling.qmd
+          - text: "03 - National Sustainability in General Equilibrium"
+            file: lectures/03-national_sustainability_in_general_equilibrium.qmd
+          - text: "04 - Scenarios for the Future and Land-use Change Modeling"
+            file: lectures/04-scenarios_for_the_future_and_land_use_change_modeling.qmd
+          - text: "05 - Hands on with Climate IAMs"
+            file: lectures/05-hands_on_with_climate_iams.qmd
+
+        - text: "Assignments"
+          file: assignments/index.qmd
+          contents:
+          - text: "01 - Gitting up to Speed"
+            file: assignments/01-gitting_up_to_speed.qmd
+          - text: "02 - Geographic Information Systems (GIS) in 1 Hour"
+            file: assignments/02-geographic_information_systems_gis_in_1_hour.qmd
+        # - text: "Methods"
+        #   file: methods.qmd
+        #   contents:
+        #   - text: "Crop Provision"
+        #     file: crop_provision_methods.qmd
+        #   - text: "Livestock Provision"
+        #     file: livestock_provision_methods.qmd
+        #   - text: "Renewable Energy Provision"
+        #     file: renewable_energy_provision_methods.qmd
+
+
+
+format:
+  html:
+    theme: flatly
+    toc: true
+    embed-resources: true      # Include all resources in HTML file
+    standalone: true           # Create standalone HTML document
+    self-contained: true
+    self-contained-math: true
+    echo: false               # Hide code blocks - only show results
+    warning: false            # Hide warning messages
+    message: false            # Hide messages
+    anchor-sections: true     # Add anchor links to headers
+    smooth-scroll: true       # Smooth scrolling to anchors
+
+    
+  # pdf:
+  #   echo: false               # Hide code by default in PDF
+  #   documentclass: article    # LaTeX document class
+  #   papersize: letter        # Paper size
+  #   margin-top: 1in          # Top margin
+  #   margin-bottom: 1in       # Bottom margin
+  #   margin-left: 1in         # Left margin  
+  #   margin-right: 1in        # Right margin
+  #   toc: true                # Include table of contents
+  #   toc-depth: 3             # TOC depth
+  #   number-sections: true    # Number sections
+  #   colorlinks: true         # Color links instead of boxes
+    
+  # docx:
+  #   echo: false              # Hide code by default in Word
+  #   toc: true                # Include table of contents
+  #   toc-depth: 3             # TOC depth
+  #   number-sections: true    # Number sections
+  #   highlight-style: github  # Syntax highlighting style
+  #   # reference-doc: custom-reference.docx  # Optional: custom Word template
+    
+  # ipynb:
+  #   echo: true               # Show code in Jupyter notebooks
+  #   output: true             # Include output
+  #   warning: true            # Include warnings
+    
+
+
+

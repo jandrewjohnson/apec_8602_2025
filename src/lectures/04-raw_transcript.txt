@@ -1,0 +1,487 @@
+All right, everybody, let's get started. Welcome to Lecture 4, Scenarios for the Future and Land Use Change Modeling.
+So I want to just quickly…
+go over the agenda and take stock of where we're at for the moment. So, for today, we're going to talk about scenarios, again, building on the framework from last class, but we're going to talk about them much more specifically this time. Like, not just scenarios in general, but specific data sets.
+for, in particular, land use and land cover. And so I had you read, two key readings, Pop et al. 2017 and Hurt et al. 2020. I'm also going to talk about one that I spared you from the required reading list, Riahi 2017. And these will catch you up to the state of the art on scenarios and, land use within those scenarios.
+We're then, after we talk about them in general, we're gonna get our hands dirty with, QGIS and some of the LUH2 data. So hopefully everybody saw my message to have QGIS installed on your computer. Any challenges there?
+Good, good.
+Excellent. Okay, so that's what we're doing today. I also want to just look ahead at the calendar, so where we've come from. You know, we talked about introduction to earth economy modeling, we looked at its origin in national sustainability models for general equilibrium approaches, and today we're going to think about the scenarios that go into these.
+Looking ahead, we're going to shift gears a little bit for class on Tuesday, and we're going to take a hands-on approach to understanding, integrated assessment models for climate change. Who has heard of William Nordhaus, or the Dice model?
+It's a pretty famous model, like I mentioned before. It's one that has been used by lots of climate skeptics to say that climate change won't really be that bad. But it's still, unless a genius model, and we'll think about one of the updates to it called the Green Dice Model from Francis Moore. We'll also be sending along instructions for how to get that installed on your computer, and so this
+starting today, but then especially on Tuesday, we're going to be ever more hands-on and, really embracing the applied nature of this course, where we want to not just learn about the things, but use the tuples, okay?
+And from there, we'll have a lecture on inclusive wealth, and then move on to another one that's hands-on with ecosystem services.
+So that's where we are.
+But before I dive into the lecture, let's start your data downloading so that it's ready for us to do when we get to the last part of class where we do the hands-on. But before we do that, I need to explain a little bit of the context and how we're going to organize our files.
+So we'll return to this in a moment, but check out the Google Drive link that I shared with y'all.
+You notice, I've been writing it this way, YA apostrophe LL, and I was just recently informed by a southerner in our class, that, that's totally wrong and offensive to people from the southern part of America. It's Y apostrophe ALL.
+Apparently, that's a big difference. I like it because it's a gender-inclusive word, and it sounds like I'm old-timey and folksy. Anyways, so I shared with you all a Google Drive link. Did you all get that?
+Excellent. That's what I mentioned, that's a link to the NATCAP team's base data, the 50 terabytes, well, it's not full, but many terabytes of data.
+In terms of how you get it on your computer, ideally, you'd use Google Drive Desktop Sync or something similar, but I don't want to demand that you do that, so I didn't tell you to install that. That's how I do it. It's far faster than trying to download individual files.
+But the bad backup is what we'll actually use, and that's just manually downloading the files if you don't have it. Everything I say today can also be easily modified to have it work with Google Drive Sync. That's, I think still the preferred way.
+But let's take a look at what I sent you.
+You didn't?
+Well, here. It's really critical, so I'm going to…
+Share it with you right now.
+But everybody else got it?
+Okay, I must have typed in a wrong name or something.
+This will not go on the recording video.
+Sure.
+Is that the email that you prefer? This one? Right there?
+What's that?
+Let me send it again.
+Disability.
+Yes, I sent it to your UMN one. Okay, I sent it again. Maybe I must have hit the wrong one.
+Anyways, so yes, that we'll use throughout, so it's good to get that right.
+Okay, back in to this…
+Okay, so when I shared that with you, I shared, something that is,
+in our shared drive, you don't have access to the whole drive, but in a folder called Files, we have this base data, and that's where we're going to be using all the data. Here in the screenshot, I'm pointing to one specific subset of the base data, the invest sample data, and then specifically the carbon model.
+But let's take a look at this, live, so I'm gonna unshare.
+that… Still not minimized…
+Okay, come on, unshare.
+There we go. Okay, so,
+That is the, web version, but what we're going to do is we're going to download the files in such a way that they maintain the exact file structure. And so I guess I had one more thing I wanted to say.
+is just a quick side note. I spend a lot of time programming, that's what I do almost every day. The majority of coding bugs that you ever run into are almost always just simply pointing to a file that doesn't exist.
+I don't have any source on that statistic, other than that's how it feels to me. But regardless, having taught lots and lots of courses, almost
+all bugs that you get until you get to a really advanced stage in programming, basically boiled down to you downloaded a file and put it at a wrong place, and you told your program to look for it, and it's pointing to the wrong place. And so what we're gonna do
+to get around this, we're going to all use the same file organization, so some of the sample code that I work with is going to work for you.
+Adriana Castillo Castillo
+Adriana Castillo Castillo
+00:07:34
+Sorry, Justine.
+Justin A Johnson
+Justin A Johnson
+00:07:36
+follow some best practices among programmers, we're going to use your user directory. If you already do this, great. If not, you might have to get used to it. And we're going to organize things in a way that is the same for all of us.
+And in particular, let me show you…
+So, I have a shortcut here, but on Windows, C drive, there's a users J.A. Johns. That's your user directory. This is important because it allows your code to be workable across Windows, Mac, and Linux. And in there, so a lot of people have everything stored in the user directory.
+I, don't like that, because what do you see here? Tons and tons of configuration stuff. This is, like, the messy part. All the different programs you'll ever use want to control this part. And so I, just for convenience, am gonna have us
+create something called Files, and that's just where we're going to have all the stuff that we control. In there.
+you can see my full organization, this is everything I got.
+Adriana Castillo Castillo
+Adriana Castillo Castillo
+00:08:42
+esteem?
+Justin A Johnson
+Justin A Johnson
+00:08:43
+create… A directory called SpaceData.
+And from…
+Adriana Castillo Castillo
+Adriana Castillo Castillo
+00:08:48
+Justin.
+Justin A Johnson
+Justin A Johnson
+00:08:48
+this, directory?
+we're going to mimic the structure from all of the other files. And so you can see here, this is the link to where it is in the shared drive, and so you can see it's…
+NetCap Teams, files, base data, that's what I shared with you. All of the folders after base data, we're going to replicate those in our user directory.
+And so whenever I say, download a file, like this one that we'll be getting to in a minute, the land use land cover map, you're gonna replicate that folder structure. And so you wouldn't just download it into base data, you'd create a folder called Invest Sample Data, and then you'd create a folder called Carbon, and then you would download it into that.
+If you have the Google Drive Sync application, that will do that automatically for you, but we're not just going to download random files, we're going to keep it in this directory structure, okay?
+And so, because I would like to start your downloads now, go ahead and do that with, the LULC current willamette.tiff, folder. That's going to be in the Invest Sample Data in the Carbon folder, okay?
+Is everybody with me? This is, like, one of the most boring points of class, but we gotta get it right so that we don't spend a whole lot of time not finding files.
+Side note, just showing it from the Google Drive interface.
+The internet here is not doing so well today. Maybe it's because we're all downloading the files at the same time, and we're overwhelmed with that thing.
+Yep, that's definitely what's going on.
+Anybody, besides you because you don't have your computer, anybody else, there we go, not get the files downloaded, or what I'm saying about organization, have not makes sense. What, you know, what you did is, like.
+I shared, this base data folder with you… oh, it's slow.
+This is what I shared with you in there.
+You'll go to Invest Sample Data.
+You'll find the carbon folder.
+And in here, I would like you to download the LULC CurrentWillamette.tiff. Now, there's lots of other files that look similar, so you gotta get the exact right one. We don't want tiff.ox.xml, we want this one that is just TIFF. And if you're using the web interface.
+You know, you can download it, but it's super tempting, to not put it in the right place. And so, when this screen pops up on Windows, you don't want it in the downloads folder, or if you did that by mistake, you'll move it after the fact. And instead, you want to navigate to your user directory.
+your files… Your base data, and create all these if you haven't.
+Now we're gonna copy that structure.
+The, folder is Invest Sample Data.
+carbon… and I've downloaded everything because I just sync the whole drive, but this is where you will have then
+downloaded the, LULC CurrentWillamte.tiff.
+Okay.
+One other side note, this course is going to be increasingly hands-on, where you are doing stuff with your computers, and just a favor, a really important favor to me. When I ask a question like, does everybody have it? That's not a hypothetical question. I actually want to see heads nod, or thumbs up. Really, it's super hard for me to keep everybody on the same page. So, actually respond actively that you've got it.
+Or even more importantly, if you're not up to speed, if I say, does everybody have it and you don't have it, do not hesitate to raise it with me. It's far harder when we all get out of sync than if I stop to fix a question. So does everybody have
+The, LULCwillamette.tiff downloaded in the right location.
+in our own user path. In your own user path, so user is file, so your username, files, base data.
+And carbon, if enough sample data, carbon, yes. Okay, any question there?
+So…
+it's not on your desktop, you will have a user's directory, and that's why I'm insisting on this, because it's the one thing that's the same between Mac and PC. And so let's… let's identify that.
+Nothing. I guess, so…
+To do, like, basically.
+Imperial, gay violence.
+Peace.
+Because it's exactly the same code as we ordered for you in the first. Okay, well, this sounds like I'm being draconian, or a dictator about how you organize your files across. It's the first error.
+Okay, then… Yeah.
+Great.
+Okay, back at it. That's the first one that I wanted you to download.
+That one should have been relatively quick, because it's not a huge file, but I also want you to download one other one that actually is a big file. And that is going to be the land use harmonization data that we're going to use later on today. And so for that one, you're going to go into
+the Google Drive interface on the web, base data again, but now, instead of invest sample data, go to LUH2.
+And then from there, go to raw data, and from there… here, let me show it to you on my screen.
+Oops.
+So let's go up a few levels. So here's the base data.
+LUH2… It's here.
+raw data.
+It's here.
+And we're gonna learn what all these crazy numbers are in a moment. Pick one of them at random, besides the historical one, I guess. But so I'm gonna go with, RCP4.5SSP2, but you can do a different one if you want some variety in your life. And here, you'll find a bunch of files, or three files.
+It's kind of annoying, because there's such long file names, and you need to be able to see the end of the file name, to know you're getting the right one. I want you to get this one.
+It has the word multiple states at the beginning, and it ends with .nc, not .NCOUX, okay? And so download this one, but again, you're going to download it with that same set of folders before it.
+And so, what that means…
+is you're gonna, in your files structure, in your users, files, base data, you're gonna create a folder called LUH2,
+raw data.
+And then, have this folder name exactly match whichever one you chose. I know it's a little small, I wish these screens were better.
+Do we have a phone?
+Just the ones that are containing a file that I'm asking you to download. And the reason why that's important is
+As a programmer, I know syncing base data sets is a nightmare, especially because probably most of you don't have 10 terabytes of storage on your hard drive. Actually, if any of you do, I would be super impressed.
+But… do any of you have 10 terabytes on you?
+No No, I pay big dollars to have 4TB on this machine. Never heard of one having 10.
+But yeah, so you'll just have to… so if you're going to download this file, you just need to have the ones that are containing it.
+And so what I did… so here, the one file we're going to use is this one.
+is I've got base data, LUH2, raw data. I chose RCP26 underscore SSP1.
+And into there, I pasted this large file, it's a… how big is that? It's 612 megabytes, so enough that it'll actually swamp our poor little Wi-Fi node right here for the moment.
+Okay, anybody not get that download started? This is where you're gonna wave your hand at me.
+Because I'm just going to assume these are on your computer after this.
+Great.
+Okay, so while that's downloading, Let's jump back.
+to, the slides, and talk about what we have just started to download, yeah?
+Fantastic.
+Oh, yes.
+Thank you, Geronimo.
+And you're right, I couldn't hear you.
+Sorry, everybody.
+But you saw the… Did you see the first few slides? Yeah, okay. Let's see…
+All right, how about now? In… can you say in chat, can you see the Exploring the Data slide?
+Adriana Castillo Castillo
+Adriana Castillo Castillo
+00:19:56
+Yes. I don't know if you can hear me, but yes.
+Justin A Johnson
+Justin A Johnson
+00:20:15
+Sorry, I'm just reading the long series of texts. Yeah, I did feel my phone vibrate, but no, I don't typically answer my phone when I'm lecturing.
+Alright, I'm gonna assume that you can see the screen now, is that true?
+Nobody's answering.
+Move on for the people in person. If we don't hear from you, you'll be voted off the island. Yes, thank you, Haku! Okay, now let's go forward.
+Sorry about that.
+But hopefully everybody online was able to get it to the point where you're downloading the base data.
+So now let's, jump back in to the discussion of scenarios and the data that we're using.
+Okay.
+So, like I said, last class, we talked about scenarios in general, and now we're going to talk about very specific scenarios in data.
+And, the context for this, first, originates largely from this very interesting international body called IPBES, or IP-BES.
+And this is an organization that, is
+dedicated to, summarizing the current state of our understanding of biodiversity and ecosystem services. So what does it stand for? I should have had that first. It stands for the Intergovernmental Science Policy Platform on Biodiversity and Ecosystem Services.
+And yes, they're not very good at acronyms, because those words do not lead to IP best, they drop a lot of letters. But nonetheless, they do what their full name says. They,
+combine and fund and support science in this area of biodiversity and ecosystem services. Basically.
+They are, addressing the fact that biodiversity has been ignored compared to other things, like climate change. And so you may have heard of IPCC, right? That's quite a famous organization, the International Panel on Climate Change. This is basically trying to be the IPCC, but for biodiversity.
+And so, they really started to become well-known in
+this publication, Sandra Diaz et al, 2015, this is just the conceptual framework of IPBESS. We won't have to learn the details of this, because it's really quite unapplied. But one of the most applied things that they did
+Is identify a really useful typology for the scenarios, and I want to talk through these.
+So the four scenario types in the IPFES
+Conceptual framework are, number one, exploratory.
+So what's exploratory? That's this one, over…
+here… oh, this is annoying that I'm sharing a different screen than you guys can see.
+this is what we usually think of, I think, when we think of scenarios, is we're at this point in time, we've been seeing what's been going on in the past.
+And so this, in this case, it's nature's benefits, and we see it's going down. That's not good. And what we really want to know is how can we set an agenda that hopefully bends that curve, or reverses that downward trajectory and gets to here.
+These are just exploring the space.
+They're not very specific about how exactly you do that.
+But there's another way you could also think about this. Instead of just exploring the full range of possibilities.
+you might want to have target-seeking scenarios, and so what is this? We've all heard of the Paris Climate Agreement, of 1.5 to 2 degrees warming into the future. That's a target, and we know where we want to go.
+And so, this type of scenario is looking at what are the actual pathways that we believe could feasibly get us there. And this helps us rule out different ones, like if a path doesn't make it there, if it ends up here, we're going to ignore that.
+The next one we'll talk about coming around the circle is the policy screening.
+Type.
+This might be the most common, in actual sustainability science, because
+We maybe have, like, a menu of different sustainability options that we might care about, like a carbon tax, or payments for ecosystem services, or a law that says no coal can be burned, or something like that. And in this type of,
+scenario, what we do is we, instead of seeking a target, we try out all the different scenarios and see, well, how do they do? And so in this case, the usefulness of this is it would point out that on our metric, quality of nature, basically, policy A is the one, right?
+The last one… Less common.
+retrospective.
+This is useful for a totally different reason, is it can be used to assess how a policy that was actually implemented ended up performing. We would model what we thought would happen, and then compare what actually does happen, and look at the gap. Another way of thinking about the usefulness of this.
+Is it a way of addressing implementation, or very useful to us in the modeling world, is useful for calibrating our models. We actually can say, we know this is what happened, why does our model not mimic reality? We'll return to that in a moment.
+Okay, so in this context, the IPVESS and a whole bunch of other communities, in coordination with the IPCC, decided that they needed to have specific versions of these scenarios, and this
+spawned, the SSPs.
+which are the Shared Socio… Economic…
+happens.
+We're gonna use this acronym again and again, the SSPs.
+They come from this one paper that I didn't have you read, Riahi et al. 2017. This was a huge multi-team, multi-stakeholder engagement to define a hopefully comprehensive, or aiming to be comprehensive, set of scenarios that could be assessed in a useful way for thinking about biodiversity and nature.
+In the future.
+And, in particular, they were aiming to create a set of scenarios that had a lot of the same benefits that the RCPs
+did for climate. These are the… representative concentration pathways.
+These are probably much more well-known, but a representative concentration pathway, this comes from IPC, it's specific to climate change, and basically it says this is a trajectory, so the yearly emissions
+concentration of greenhouse gases. And so that, from there, you can derive a bunch of other stuff, like how much climate change did happen. But these… the RCPs are specific to climate.
+The SSPs are going to be broader than climate. They also look at other factors besides just the concentration of certain gases, but think about things like the concentration of certain people.
+And in particular, this is going to be a much larger domain of questions now, because…
+When you're talking about the concentration of some gases, that's super easy to define, and you can measure it quite objectively. But with the SSPs, we're talking about socioeconomics. That's far more complex. And so they developed, in Riyahi et al.
+An approach that is very useful for translating the complexity of different storylines or narratives of what the future might look like into a specific set of output parameters that can go into a nice database that we all can use.
+And so the way that works…
+Is to, you know, do stakeholder engagement to figure out what are the storylines.
+And side note, when I say storylines, does anybody here like science fiction?
+No one?
+Really?
+Has anybody read The Three-Body Problem?
+Alright, you all flunked this class.
+Yeah, I'm just kidding. But you know enough about what science fiction is, is that there are super different, divergent futures that are envisioned in science fiction, for instance, like one that's a perfect world where we solved everything, and we have an AI that is benevolent and keeps us well fed, or dystopian ones, where we decide to burn a ton of coal, and the world heats up by 8 degrees, right?
+or something like that. These are different storylines. You can think of, like, different novels, from the science fiction literature.
+Those, then, are converted into specific drivers. The key ones that matter here would be what's the population, what's the urbanization, and what's the overall level of productivity in these different scenarios.
+We'll come back to how they define that, but from there, they couple it with, basically, different policies that we might want to address. So, you know, they're explicitly thinking about policy screening here. What if we have different climate policy, for instance? How does that play out?
+Long story short, this is all a way of generating one giant set of country projections on all the indicators we care about, like the inputs, GDP and population, but also things that are derived from the model, like energy supply and demand, or land use and land cover change.
+And this is, then going to be, hopefully, useful to communities to plan out, how do we want to go? How do we want to proceed in this complex sustainability space?
+And just to highlight,
+These are the non-climate variables, but they're still defined with different socioeconomic challenges related to climate change. I need to get my bracer.
+So I want to chart this one up on the board. Actually, I think I might have space here.
+We're going to create our four… I'm sorry, five different, SSP scenarios in a space that will have
+mitigation.
+Challenges.
+up here… And… adaptation.
+Challenges.
+Down here.
+And so, first off, just to be really clear, what are mitigation and adaptation?
+the mitigation is essentially preventing climate change, right? Through reducing emissions. And so mitigation might be investing in solar, it might be passing laws that have a carbon tax, anything that reduces the total amount of climate change that happens. And on these axes.
+We're gonna have low challenges down here, and high…
+challenges up here. So low would be, like.
+kind of where we're at with solar. Solar is really cheap, it's super easy to get people to mitigate if it's not super expensive. On the high end, mitigation would be very hard, and like, maybe it would turn out that fossil fuels are just really hard to replace. Say, aviation fuel, for instance.
+The second axis, the horizontal one, is the adaptation challenges, and adaptation is different than mitigation. It's essentially dealing with climate change. Not trying to stop it, but, like, it's gonna happen. Some amount of it's gonna happen. How do we adapt and minimize the impact on people?
+And, there, an example would be air conditioners. If you have an air conditioner, it doesn't mitigate climate change, it actually makes it a little worse, probably, because of the carbon emissions related to it, but it certainly makes it more easy to survive.
+I don't know. One time I was,
+I… when I first moved into an apartment with my wife, she was my girlfriend at the time, we were huge environmentalists, and we didn't have an air conditioner because, you know, we didn't like the emissions.
+It was awful. And one really hot day, we were, you know, we were just, like, bickering with each other, fighting. We were walking down the street, and we were in bad, awful moods. It was, like, 95 degrees, and we walked by a hardware store that was selling air conditioners, and I was all angry. I walked into the store, and I bought one off the shelf. I picked it up, paid for it, and I carried it home, like, a mile home.
+It was just one of those cheap window ones, because we didn't have much money at the time. But,
+you know, this is when I was studying PhD economics, and I look at this machine, and I put it in, and I turn it on, and like, you know, I can't measure utility very easily, and you can't, like, think of a technology that, like, produces utility, but this is as close as you could get, because immediately we started stopping our bickering, doing better, and so, like, if you want to think about some machine that can
+Earth's inputs into utility, I think an air conditioner might be your best bet. Or at least it was for me then. Anyways, it might well be, though, that air conditioners are literally necessary for keeping some parts of the world habitable.
+And so it ironically causes climate change, but also might save us from climate change.
+But anyways, the low challenge ones would be
+there's good technology for adaptation, it's cheap to buy air conditioners, or what if we get, like, fusion energy? Wouldn't that be great? But also, it's broader here. Remember, these are the socioeconomic challenges, and so that also means we have proper health infrastructure, or maybe, like, literally cooling centers. One of my students, Li Feng Ren, is working on a summer project to look at where should we put
+cooling centers to protect people who, you know, are suffering from heat problems in a heat wave. And so, low challenges would mean we implement a lot of that health infrastructure.
+but also education, and maybe most importantly, income inequality. The reason this is so important is adaptation is expensive. If you can't afford an air conditioner, it doesn't matter that that air conditioner would have helped you. And so, more than anything else.
+The low-challenging adaptation scenarios are ones where income inequality is less of a problem, whereas here, on the high end of the challenges, you have a bunch of unprotected poor people, basically. And so that is one of the driving factors.
+Okay, so in this space, where are the good ones?
+Bottom left, upper right.
+the good ones? You like high challenge, and… You're right, it's super tempting, because in econ, we always have a production possibilities curve, and you always want to get more of something. Here, we have a negative sign, right? These are challenges.
+And so, this one… this is the worst one, basically. SSP3,
+is going to be high mitigation challenges, it's hard to stop climate change, and high adaptation challenges. Ssp1,
+That's the good one. Not too much mitigation, challenges, not too much adaptation. We also have these off-diagonal ones that are kind of interesting. Like, what if mitigation is really hard?
+But our technology is super good at adapting to it. That would be the air conditioners for everyone example. Like, alright, the world's just gonna heat up by 8 degrees.
+But our societies are strong enough that we're gonna survive, we'll have good cooling centers, everybody has air conditioning. Air conditioning is a human right, or something like that. Kind of a silly scenario, but…
+considering. And then the opposite of that one is SSP4. We're able to stop climate change, maybe because our economy slows down. That's kind of a bad one.
+But we have all sorts of adaptation challenges. This one is driven by inequality, also specifically rising nationalism. This is one of the ones that gets put into the narratives.
+that could lead to high adaptation challenges. If we are a bunch of fragmented states that are constantly fighting with each other, putting trade wars into effect, or invading each other.
+All these hypotheticals that never happened, that would be an example that would get us here.
+And then, usefully, we have SSP2,
+Which is kind of the middle. And this might be what you call the baseline, or the business as usual. And that refers back to what we were talking about last lecture.
+Okay.
+Any questions on the overall framing of that?
+Excellent. And so…
+unlike what we were talking about yesterday, or yesterday lecture, where we just had sort of general scenarios, these are very specific. And so this table just gives you a sense of it, you don't need to write this down, but for each of the different, scenarios, they have different assumptions about what's the percentage change in cropland, for instance, what's the maximum population.
+What percentage of our kilocalories come from, beef and other things? But GDP, fertilizer, irrigation, bunches of other things.
+One of the most confusing parts about this and the SSPs is how they combine with the RCPs. And so I've already said that the RCPs are representative concentration pathways. There.
+These are always going to be expressed with a number right here. So here are all the RCPs. This is actually the watts per meter squared of radiative forcing. And so, if you're a physicist or a climatologist, that's, like, the correct way of measuring climate change, basically, how much heat it is hitting each square meter. You don't need to know anything about that, other than to say that
+If 1.9 watts per meter squared are hitting, that's going to be very little climate change. If 8.5 watts per meter squared are hitting, that's going to be really bad climate change.
+You can almost think about these as the number of degrees Celsius hotter it will be. That's not at all what they're actually defining, but sort of usefully, that's an approximation of what would happen.
+And so, it's possible to think about all of our SSPs being paired with any of the other climate change representative concentration pathways. And so…
+you know, it'd be weird, but you could have a good SSP, but it turned out we had really bad emissions. That one probably wouldn't happen, because if it was easy to mitigate, you probably wouldn't have it.
+But in principle, all of these different empty boxes could be a combination of scenarios. In reality, though, they have…
+a set of marker scenarios that are a specific combination of some SSP and some RCP. And so, this green one here is an example where it pairs SSP1 with RCP2.6.
+And hence the sort of annoyingly terse term SSP126. It's the combination.
+And so other ones, you know, would be SSP5, RCP 8.5 would be SSP585, etc.
+You could do all the other ones, but basically for computational reasons, nobody does. And that's one of my pet peeves, and I've raised this at multiple international fora on why this is causing biases in our analyses, but it is the way it is.
+Okay. With those in place, why is that useful? You can then start to make projections.
+with the different scenarios, you might want to say, well, first, what are our assumptions? This would be a good example of the data that we define. What happens to population and education? What happens to GDP? These are all basically the definition of the different scenarios.
+You know, I'm gonna reshare my screen, because I realize the…
+People online are looking at it, in presenter view, which is annoying.
+I swear, managing Zoom and lecturing and trying to share the right screen is something that is way beyond my mental capacities.
+I don't know what that says about me.
+And mostly it's because Zoom always wants to minimize itself and hide somewhere.
+Okay, so now we're gonna try again.
+I see Geronimo laughing.
+We've dealt with that. Okay.
+Oh, and I need to maximize my screen first.
+I'll be cutting these all out in the video, obviously.
+There.
+I think I found it.
+Okay, now it's maximized.
+Yes, it is. Okay, so now you're all seeing the full thing.
+Okay, so those are the inputs.
+But from there, you can calculate, different projections. And so, unlike population, things that are critical to the outcome, like energy production and how are we producing our energy, can be calculated from different models that we'll learn about soon.
+So I love this figure. This is an example of the primary energy triangle.
+And it's, looking at the different sources of energy. Oil and gas up here, coal down here, renewables or nuclear down here. So what was our energy mix in 1858?
+well, this is kind of… it's not… it's not nuclear, I'll give you a hint there. It was, you know, burning stuff, and burning firewood is actually quite renewable, at least in this definition. But then we had the Industrial Revolution, and we flew over this way to much more coal in the 1900s, then we started to go up this way, where we got good at using oil and gas.
+And right here represents 2010.
+the different SSPs then have different trajectories of what mix of different energy sources are used. And so SSP1, the good one, comes back down this way, follows the green line, back towards renewables and energy.
+And, you know, you can then think about that for calculating what is the overall, in this case, exajoules of primary energy produced by all these different sources of oil, gas, nuclear, biomass, and renewables.
+Okay, so…
+You might be wondering, how did they choose those different sets of input parameters, like population and GDP? I'm not going to go into these in depth, but if you want to, this is where you can read the Riahi paper et al. and the Pop et al. paper, which you did read.
+talks about it a bit. The, they even give them nice names. SSP1 is Sustainability, Taking the Green Road.
+I'll just let the titles speak for themselves, but, you know, they have a full-on statement about what it looks like. You can extract things that are important, that you can see map to the different projections, input assumptions, like crop yields are rapidly increasing. That has some impacts.
+SSP2 is middle of the road, business as usual.
+SSP3,
+a rocky road, is we have both mitigation challenges and adaptation challenges. And then the two off-diagonals. So SSP4 is that inequality one, a road divided, and so we'd have some countries
+Basically cutting themselves off from international collaboration and doing best for themselves, but this also means that some countries will be much worse off.
+Or SSP5, this one is interesting because it sounds like it's the worst, right? It's fossil fuel development, but it's weird because it's successful fossil fuel development. You could, in principle, think of a scenario where we have tons of climate change, but we're able to grow our economies and invest in adaptation, basically a techno-utopia scenario
+where climate change happens, but it's okay, because we all live inside air-conditioned things. Like, sometimes I think of, like, the rich cities in the Middle East, for instance. You know, it's 44 degrees centigrade out there, you know, 110 or whatever like that in Riyadh.
+almost uninhabitable. But everybody's inside all the time, and it loses a lot of energy, but if that's not a problem.
+maybe it's not a problem, right? And so, there's a tendency to think about this one as necessarily bad, but it depends on your perspective.
+Bye.
+Let me talk about this stuff.
+Okay.
+That would be most relevant here, is when countries are competing with each other, then game theory models would be like, okay, if I don't invest in climate change, and I think you won't invest in climate change, you can see how this one would basically be the tragedy of the commons and the free rider dilemma. And so yes, you could use game theory to model some of this.
+Which one would you want, Libby?
+Thank you.
+Yeah. You don't want to live in techno-utopia?
+No, this would be… you ever seen the movie Wall-E?
+In Wall-E, you know, it's a dystopian world, massive environmental degradation, but somehow all the people are living, in those, like, little floating chairs, where they have, like, food being piped into them. I mean, they're like little utility-maximizing robots at that point.
+Kind of making fun of it.
+Okay, so that's where we are with the SSPs.
+The second reading I had you, look at, was from, Pop et al, great guy, friend of mine, and they
+dived deeper into the question of, what about land in these different SSPs? In the same way that you can, input our SSP input assumptions into, like, an energy model, and from there, make a prediction about what energy mix will happen in the future, given that scenario, you can do the same thing with land, and we'll be spending more time learning the details of these models. It's like, if crop yields go
+way, way up, what would happen to land? Might not have to use as much, right? Because land is more effective as an input.
+But regardless, why I actually like the SSPs is they have enabled a blossoming of
+Nuanced discussion that is able to explore a really wide space of potential futures without cutting off too many options, but doing it in a consistent and quantitative way.
+And so all this is to say, you know, you can check out the SSP database, we'll use it in the future.
+You gotta log in, but that gets you access to, you know, downloadable, detailed information on all these metrics, and we'll use those.
+Okay, so this whole time, I've been saying, from those input assumptions, you can calculate those different indicators, like energy mix. You might be wondering, well, how?
+And that's, answered by the models.
+In our very first paper of the semester, we had this plot here, right? And this was all the relevant earth economy models, and this is economic detail and spatial detail, basically. Here, I've circled one of the sub-boxes. These are the different integrated assessment models.
+These are the ones that are paired with the different SSPs to generate predictions on what's going to happen for a whole bunch of different indicators that we care about.
+And so, there's more than these five, but these are the sort of five that are recognized by the SSP community as worth existing. And that's AIM, GCAM, Image, Message Globiome, and Remind Magpie.
+These things are complicated, so I want you to write this one down in detail, and memorize this.
+I'm just kidding. This is, this just is a silly illustration. This is literally the image model, but these are all the different variables and all their different linkages, and so these are all the stocks and flows.
+calculations, interconnections, that goes into analyzing the dynamic long-term environmental change, as documented in STEFEST et al. 2014.
+And so these are intensely detailed models, and essentially what they're trying to do, is figure out what is the cost-minimizing way to achieve a whole bunch of different objectives. So it's a cost minimization problem.
+Where it's like, we know we want to produce this much food, and we know we want to minimize the impact on the environment, given some assumptions.
+How can we do that in a way that minimizes the costs given this intense structure? You don't need to learn this, other than to appreciate that somebody, in this case 200 somebodies or so somewhere, is really good at writing GAM's optimization code to say how to solve these.
+There's lots of them, though. Globiome is another one. This is from the International Institute for Applied Systems Analysis, EASA. These guys are cool. In the 50s, they were using computers to estimate environmental impacts of things. So, like, if you like the history of computing, like, these guys are, like, the OGs of using computers for sustainability.
+The one thing to note is almost all of these models are partial equilibrium models.
+And so what does that mean? What we've said before, the difference, specifically, is that a partial equilibrium model is unlike a general equilibrium model, where the general one lets all of the different equations interact, and doesn't assume, anything, like, doesn't fix any one market.
+Whereas a partial equilibrium will typically fix
+like, basically freeze in place a large part of the economy and just have a detailed representation of some of the specific processes. And most of the IAMs in this context are that way, where they might have, like, detailed livestock sectors, but don't have anything about other sectors in the economy, like computer chips or something.
+It's confusing, though, and this was one of the hardest things that we had to deal with in writing that paper, is there are really two totally different types of integrated assessment models. If you ask an economist.
+what an integrated assessment model is, they'll be like, that's easy, that's the DICE model, Nordhaus, that I talked about, which are basically climate-specific, and these ones actually are general equilibrium, although that's kind of an overstatement for a single-sector model, but it is technically.
+But these ones are focused on thinking about what's the optimal level of climate change. We'll talk about that next lecture.
+The SSPs, conversely, are paired with not climate IAMs, but comprehensive IAMs. These ones are partial and easier to solve, but one of the challenges is
+Things can go wrong when you have a partial equilibrium model. So I want to pause for a second.
+And ask the question.
+given that we have an input into our models, like, what is GDP growth rate, and what is the productivity of different sectors, and like, in particular, what is the yield of agriculture?
+What might go wrong if you analyze things in a partial equilibrium structure and not a general equilibrium structure?
+Can everybody lose.
+What might go wrong if you try to assess
+Global sustainability in a partial equilibrium setting, where you assume different scenarios of crop yields, or things like that, or technology advancement.
+Next, we don't count for the division.
+Yep, everything.
+Exactly. What might be a critical thing that you might forget to make endogenous?
+What leads to whether or not we starve?
+Food? Food. And what's the productivity of food?
+The integrated assessment models typically assume a level of yield that is necessary to feed the world.
+Rather than the other way around, which is…
+Well, we don't know what yield is going to be. That's probably going to come from the system itself.
+What if… The yield of agriculture is not as high as we think it would be.
+Well, then we suddenly can't feed everybody, and so a lot of these integrated assessment models assume away the most important parts of the question, like, can we feed ourselves? Essentially, they answer the question of, assume we do feed ourselves, and that yields increased enough so that happened.
+Then what should we do? That's kind of optimistic, because it could well be the case that yields don't increase that much.
+So, okay.
+We're going to spend, then, the last 15 minutes diving into some of the key outputs from these models that are specific to what we care about in this setting, which are those specific to land. And we will talk
+In particular, about land use and land cover scenarios.
+And so that's what is reported in the POP et al. Their basic task was to take the SSPs and report what's going to happen to land, and that's what they did.
+And essentially applied all the best comprehensive integrated assessment models to answer what's going to happen to land use activities, how is it going to affect the climate system, how is it affected by climate system.
+And, how can we, produce future projections of, land use change that are spatially and temporally detailed, and consistent with the past, but then projected into the future?
+What I really liked about their paper, and the reason I highlight it, is because they also added this. It has to be in a format that is usable by various Earth systems models, and so they… they're very applied, like, let's do it in a way where other people can use our stuff.
+And so I won't… I won't belabor these, you can find them in the paper, but they're reporting for the different SSPs what are the different outputs that the models, the key models, have for, for instance, change in crop demand. So here's millions of tons dry matter crop production per year.
+Under the different scenarios, this is baseline, and then different climate scenarios.
+Cropland and pasture, what's going to happen to forest? You know, we can see the forest is falling in a lot.
+And this is a really useful set of outputs.
+And in particular, they, were then combined into one giant project.
+called the Land Use Harmonization Project, and that's reported in the second thing that I had you read, which is this paper down here, Hurt at All 2020.
+And what they did is… let me speed up a little bit, but, combine some of the key data sets. This one's the history of the Global Environment Database. It's kind of cool, it goes back to 10,000 BCE. So, there's a little bit of uncertainty there, but it's at least very consistent.
+And, they then… take that history and project it under the different SSPs and RCPs into the future.
+I keep on checking my phone in case somebody's texting me about the class or the slides.
+Okay, and the LUH project, Land Use Harmonization Project, essentially sought to connect this historical time series
+in a consistent way, with all the possible trajectories into the future, and all the different land use transitions. And so this is… people love these graphs, I have a hard time interpreting them, but basically this is, from…
+the year 850 to 1849, what is the transition from green cropland to orange managed pasture land? And so we saw this amount of shift from this type into that type, and vice versa.
+But I don't really want to belabor that. Instead, I want to dive into the data. So hopefully your data has finished downloading. We're going to look at two particular maps. First, we're going to look at a specific land use land cover map, and then we're going to dive into the LUH2 time series itself.
+So first, I had you download a TIFF file. We have a little bit of geospatial experience in the room, and so that's good, but we're not going to assume any. What is a TIFF file? It's literally just a two-dimensional matrix of numbers.
+And so, just like the thing you invert in econometrics, right? Except for here, the numbers are going to be reporting different land use classes, and so, like, we might have
+When we have 90,
+That might be referring to, perennial ice and snow, that was a bad example, or… there it is. Which one is it?
+Woody wetlands, thank you. I'm not… I don't think I'm colorblind. This is the first time I've now started to question if I'm colorblind. Anyways, yes, 90 means woody, so 82 cultivated crops, etc. And so this is a matrix that just has each number corresponding to a specific land use type.
+And that's what we found in our invest sample data. I had you go in the carbon directory, and you downloaded the WillametteCurrentLULC.tiff.
+And that was, this one here.
+What we're gonna do now is load it into QGIS.
+So, I should have done this first, because QGIS takes forever to load. Use the most recent one.
+QGIS is,
+an interesting thing in itself. When I started doing all this work, ArcGIS was basically the only game in town.
+And ArcGIS was really expensive. They had a bit of a monopoly in the geospatial software world, and it was expensive.
+And I hated it. QGIS is free and open source, and you might remember on the first day of class, I said, like, I am an acolyte of open source software, and QGIS is a good example of why. Who here knows R?
+Yeah, everybody, right? Who here knows Stata?
+Okay, so we're at a transition point, but if I had asked the same question 10 years ago, when I was taking these classes, everybody knew Stata, and literally nobody knew R. Of the people that did know R, it did exist.
+their opinion would have been, it's free, that's great, but it's an inferior free alternative. And so there's a trade-off. You could use it if you're really poor, but it's inferior. But now R, what's the opinion? Is R inferior to Stata?
+That's a debatable point, but I think the majority of people might argue it's superior to Stata. There might be reasons to use Stata, like a particular library exists, or your professor makes you,
+But most people are coming to the conclusion that if you want to do statistics, you have to do it in R. That's why this department does R for its, like, official R courses. And so R shifted from being a free but inferior alternative to a free and superior alternative.
+And so, why would you use Stata? That's why not many people are using Stata anymore, other than lock-in effects.
+QGIS is exactly the same way. For the longest time, it was an inferior free version of ArcGIS, but now, more and more people are using it as a superior version that is free of ArcGIS.
+And so…
+if… hopefully you heard me say, load it up on your screen, this is what QGIS looks like.
+And I want to just quickly walk you through loading two different data types, because we're going to be using this for the rest of the semester. You might notice that Assignment 2 is up. The first couple of assignments in this class are trivially easy, so, like, if… you know, this really should only take you an hour or less.
+maybe much less. But let's talk about how to look at data.
+And so, there's all sorts of ways to add data. You can use the toolbars up here, but let me tell you, the easiest way for me is to just drag and drop.
+Is that a question?
+Well, fortunately, I had a picture of QGIS up, and so… Let me reshare my screen.
+Okay.
+Okay.
+Now you're seeing my actual QGIS.
+Thank you for, raising your hand right away. So here it is. There's all sorts of ways to add data to this, but what I'm going to recommend is just dragging and dropping. And so, wherever it is that you downloaded your data, so I'm in my user directory, we're going to start with the invest sample data.
+And I had you download, from the carbon one, the Willamette… the LULC current willamette.tiff. One gotcha is some people, by default, have their file extensions turned off, and that will throw you off, because you'll… the…
+all these other extensions will make you click on the wrong one. So if it doesn't work.
+Let me know, but just drag that into QGIS.
+There, you're a GIS expert.
+No, I'm kidding. But what we did is we are now viewing this TIFF file in this viewer, and we can do this little drop-down box here to get more information about the legend.
+Does everybody have this loaded up on their computer and showing in QGIS?
+What's that? It's a second.
+Yours is black and white?
+We'll deal with that in a second, but that's good enough for now.
+Anybody not get it? Wave your hand if you don't. Okay, so let's talk about this. Looks like yours, for some reason, didn't automatically interpolate the legend. That's fine, because I'm actually going to talk about how you can choose custom ways of displaying the data. His was all gray. They were gray shade values. Essentially, white was zero, and black was whatever the maximum number is.
+But at the end of the day, this is just a map that uses specific numbers to denote what land cover there is. And so you can kind of look at this, and it kind of looks like a road, right? One of these fields, probably. But here are more fields, river, etc.
+This is the Willamette Valley, and there's a few different ways you could view this.
+I'm gonna double-click on this layer over here in the layers.
+And it brings up this, which is how my screen is displaying it. This is what's called a palleted, or unique values thing. It puts a specific color on each different number, and it even gives it a label.
+But there's other ways. We're actually going to make it the way yours is. I'm gonna choose single-band gray.
+And, no, I'm gonna jump straight to single-band pseudo-color.
+So go ahead, and on that drop-down, select this one. Pseudo-band, or single-band pseudo-color. I wish this was the default, because it's the one that's usually right. And that's just gonna say, for a given color ramp, like this one.
+Or whatever different color ramp you might want.
+Color it from values 1 being the left-hand side, and the maximum, 95 being the right-hand side.
+You might have to click this button if it didn't automatically pop up, or if you want to change any of the values, you click Classify again. But when you do this and click OK,
+It's now going to recolor it according to that color bar, and so you can see the legend is updated over here. Did that work for you to be colorized now? Everybody get it into a nice color bar?
+All right, so this one maybe is harder to understand, because now it's just shades of green. The palleted one maybe was the actual right choice, because they're discrete, different classes. It's not actually a continuous variable. There's a whole semester of GIS that you could do, but I'm going to trust that you all can do it with
+Less than an hour of introduction. This is a land use land cover map.
+Any questions?
+This is in the Willamette Valley in Oregon.
+It's about,
+I think, like, 20 miles north to south. And it's a famous valley because this is where some of the original work on ecosystem services was done.
+And we'll actually talk about one of those papers. But yeah, more generally, this data exists for the world. We have detailed time series of this data of exactly what cover do we think is covering each pixel on Earth. These pixels are 30 meters.
+And so, you know, a field like this.
+You can actually even say, you know, this is probably… this looks like it's about 10 or 20 pixels. You can say, okay, it's 300 or 600 meters wide, yeah.
+All right, that's the first type of data. I'm just introducing this to you, so we're not going to do anything with it yet.
+We will on the invest day. But I want to have you load one other, dataset into here. It's a little trickier. And so, I'm just going to keep this on top of my screen.
+And go back…
+So I like to have them both visible, so I can just drag and drop again. But let's go all the way out to the base data.
+And instead of invest sample data, I want you to go to that LUH2.
+in here… Raw data, and whichever one you downloaded.
+Go into your folder.
+And here, you should just have one file, because you're not syncing all the many files. But there should be one that, if you did it right, it should say multiple states.
+And then has a bunch of other texts, but, like, what do we see here? Oh, the image model. That makes sense. We heard about the image model. And what do we see here? SSP126. Oh, that's cool, we know what that means. And so this file, long file name is actually quite specific.
+a bunch of other stuff about versioning, but this is for the years 2015 to 2100. The challenging part is it's not a TIFF, it's a net CDF, which is essentially a time series of TIFs.
+We're gonna drag this one in.
+And when you do that, it's not going to display right away, and the reason why is because this is n-dimensional data. A netCDF could be any number of dimensions.
+And instead of a two-dimensional array, like the land use land cover map, it's very flexible. In this case, it has 15 or whatever individual layers, that's one dimension, and each one of those layers is 86 years
+By the last two ones, which are latitude and longitude.
+So this is four-dimensional data. That's what NetCDFs are good at expressing, essentially time series of, rasters. And in here.
+These are the different variables. We're gonna go with rangelend.
+And hit Add Layer.
+The biggest gotcha that can often happen is we added it, and we don't see anything.
+Does anybody else not see anything besides the Willamette map? This is, like, the bane of existence of GIS is, different coordinate reference systems. We'll get solutions to that in a moment, but I'll show you the shortcut. Right-click on it, and just go to zoom to Layer.
+Basically, we're looking at Earth, the map has been loaded, but we are looking at a really different part of Earth. You could, in principle, find both of them at the same time, but it would be really hard, because one of them might be really tiny on the other. When you zoom to it, do you now see this?
+Cool. This is, the amount of rangeland
+calculated by POP et al. and the Land Use Harmonization Project. We're going to quick add a color to it, though, because the default is kind of confusing.
+When we double-click on it, Go to the Symbology tab.
+Here, for render type, it's actually, interpreting it in a sort of weird but wrong way. It's saying, okay, there's 86 different bands of information.
+We know that's one for each of the years between 2015 and 2100. It, incorrectly, is assuming the first one must be red, the second one must be green, and the third one must be blue, because that's how a lot of data is saved, red, green, blue.
+We instead want to go to, again, single-band pseudocolor.
+And then for here, in the band, we can select which one of the years we want to show. And so, it's a little tricky, because the time equals 11 means that's the years since 2015, and so time equals 11, I guess, would be 2026, so next year.
+So I'm gonna select that one.
+And hopefully it populated with 0 to 1, you can give it a nice color bar.
+Now, when you go here, this is now an easier-to-understand map. This is essentially what's the proportion of that grid cell that is covered by rangeland. So what do we see here? Everything here is rangeland. That's the nomadic herders. There's nothing else there other than, nomads going around with, herding,
+In the U.S, we don't have much in the crop belt here, but then, you know, once we get higher elevation, this is where all of our pasture land is.
+And so, with that.
+We're going to take a pause here, because we're at time. The assignment 2 is going to have you do something really trivial. I basically walked you to the point where you can do it now. It's going to have you look at a couple of different time periods and look at where it changes. But any questions? Did everybody get both of the two data sets loaded into their QGIS?
+Excellent. Then you are a QGIS GIS specialist now, and will use that skill for the rest of the time.
+Cool. Alright, we're done for now. Thanks, everybody.

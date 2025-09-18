@@ -1,0 +1,445 @@
+All right. Well, why don't we dive in? Welcome, everybody, to the first lecture of the new and reformed 8602 in Applied Economics. The…
+very first time we've been teaching this, but it has a long history in how we've been teaching related concepts, and so it's gotten a rebranding that I think is going to work really well. So it's Applied Earth Economy Modeling. It's going to cover a lot of the stuff that you would get in a typical environmental economics PhD course and or a natural resource economics course. So hopefully that goal will become really clear as we start to go through
+through. Today, I'm going to talk about the big picture, why are we here, then talk about some boring stuff with the syllabus and how to get there, and then I'm actually going to put that in the middle so we can sandwich it with interesting stuff at the beginning and the end, and that's what we'll do.
+So first.
+Let's talk about the overall agenda, which is what I just said. One thing I will actually mention is that I want to have this be as interactive as possible. This is applied Earth economy modeling, and so that means that we would be getting our hands dirty. Well, not really dirty, but on our computers at least.
+And so that will also be, hopefully, really interactive. We'll be working together, etc.
+But let me just first start the round of introductions. We'll go to you all in a second, but let me introduce myself.
+I'm Justin Johnson. I actually graduated from here. I did my PhD in applied economics and got my PhD in 2014 with Steve Pulaski, who many of you know. He teaches the companion course 8601, which is going to be more focused on the dynamics, mathematics, and the definition of sustainability in economics.
+After I graduated, I went to the Institute on the Environment, which is just a 5-minute walk down the hall, some of you might know about it, for 5 years there, first as a postdoc, and then a self-funded researcher before I came back and joined the faculty here in 2020, and was just tenured, yay. So, yes, now I can,
+I don't know, be less nervous? I don't know, it doesn't actually change anything, because I love this job so much that the idea of working less is not even present. So, some people get lazy when they get tenure, that is not my case.
+Anyways, I've worked extensively with the Natural Capital Project, which is an organization we'll talk a lot about in this class. It was co-founded by Steve Pulaski, and so that's, yeah.
+But we've also, recently, Steve and I have co-founded a spin-off called NATCAP Teams, or The Earth Economy Modelers, which is a new research center here in Applied Economics that some of you are quite already involved with, and that will also come up.
+But besides what we'll talk about in this course on earth economy modeling, you know, I have a lot of other interests, I'm not just this. I'm also just super interested in coding in general, but specifically open source science. I think that the question of how do we replicate knowledge, but more importantly, prove to a human what it means and that we actually understand it.
+is becoming ridiculously more important in this age of AI, when AI can do a lot of the work, and maybe even understand things, but we can't understand it. So that will be a theme throughout. So I'm involved in some research funded there. There's a center that I'll probably mention a lot called AI Leaf, Land, Economy, Agriculture, and Forestry, previously AI Climate, but was rebranded for
+reasons. But, that spends…
+a lot of focus, it's a huge $20 million National Science Foundation grant that looks at how can AI help us understand sustainability issues. So I'm also very interested in artificial intelligence and machine learning. Many of you might also be taking the follow-up course to this class.
+So this is only a half-semester course, of course, of course.
+And, that means that halfway through, this course will end, and I will then start teaching 8222, which is
+officially named Big Data Economics or something like that, but I'm in the process of renaming that one also Big Data, Machine Learning, and Artificial Intelligence for Economists. And that will be a much more hands-on course, much more code-focused.
+But on the other hand, this course will also be very code-focused, and so I kind of wish they were the other way around, where the AI coding-centric one could get you all introduced to the Python and Julia tools that we'll use, but I… so we're going to be a little bit out of order, so you'll just have to deal with that. That's the department's choice, not mine. It's because the R course has to come before the
+Machine learning course.
+Anyways, that's me.
+what about you all? As I said, this will be a very hands-on course. I want to go around, and introduce everybody.
+And, just mention, you know, the basics, your name, program, year, expected fields, focuses.
+etc. But how about also one research idea you're interested in? We all are in different phases of our research, so it could be an obvious one if you're a late PhD person, you probably already had your topic of looking at Libby. But it can also be very early on, and it could just be, like, something that is in the back of your mind that you might want to do. But then also, what led you to this
+Worse.
+So why don't we just start in the back of the room with Libby, because I just mentioned your name. Yeah, hi everybody.
+I just started my sixth year, in the APAC program PhD, and yeah, I've been involved in that. I have teams, as Justin mentioned.
+And my dissertation focuses on, urban ecosystem service modeling. So I model, ecosystem services, microing trees.
+Across the, United States. And then I'm working at some other projects, like Global, Gross Ecosystem product, which actually tries to measure, the monetary value of ecosystems.
+Excellent. Why don't we go over there?
+Sure, yeah.
+Hi, good evening, Dave.
+Very ignorant indeed.
+So, Colorado City, indeed.
+leadership isn't about higher ed, college, so I think that's probably a really good opportunity for me.
+Welcome. I don't go up here. Oh, hi, I'm Alvin, I'm a second year teaching student here at NPAC. My interest is in labor and adaptation, so I'm not very related to this class.
+But I'm interested in, doing research about the impact of deforestation.
+That's my dreams. Nice. Excellent.
+I'm gonna say the middle row.
+To you, I guess.
+Yep.
+That's why I'm, author.
+Environment.
+Awesome, thank you so much. Let's go to the front row here.
+That's good.
+Yes.
+I'm reading about environmental economics and the labor economics.
+But after my graduation of master, I have been, the research assistant to, Professor Fan at Channel Republic University, and, that's
+the moment I started to touch the topic about the interaction between agricosystem and the environment, and I think it's super important, and I heard a lot of models were studying these kind of topics, but at that moment, I have no idea what, it is, so I'm really interested in
+these kind of models, and I want to… I hope that I can have the opportunity to explore more, like, the interaction between the environment and agriculture, so that's why I'm here. Wonderful, welcome.
+I'll appear.
+I'm used to also students. And, my research interest is directed to the public.
+I'm… public water and the, economics and environmental economics. And now my, second, second year.
+Now, I… the topic that I… I'm…
+Some things now I have quite some interest is about, sustainable agriculture and, organic agriculture. And, what's nice about this process is I want to learn more about what to do with the first swallowing.
+Awesome. Middle? Yeah. It's my birthday of my master's here, instead of, sales. So awesome.
+It's good to be here, but yeah.
+I'm really interested in, like, water resource economics. I did chemistry research in undergrad, and microplastics, and kind of, like, water field. And yeah, so I learned to flip this one. So yeah.
+We've already connected, I'm also a former OLI, I should have mentioned that in my introduction, so props to that, over here.
+I'm really interested in looking at, sort of, the intersection of how we provide the data and more data methods in a very socially open,
+Those belong to the media initiatives.
+Currently, I am working on a paper looking at racial disparities based, looking at growing mortality rates in American and vaccinated populations.
+More generally speaking, I think that there's a lot of value in examining, sort of, the interaction between environmental science and, geospatial data with migration, American Indian issues, other sort of,
+Environmentally and economic focus issues, and how they have economic social impacts.
+And I'm here because…
+Just as my intake advisor, and I decided I really liked this research, so I took over with it.
+Good reason. We have a new entrant to the room as well, William. Yes, I, I am…
+Dave?
+So, I mean, the question I'm getting into is, how you can define policies to, achieve optimal and use of energy for welfare, and…
+Bitcoin C.
+Wonderful. And why don't we go online? We're gonna test the audio here, I just changed it around. So, Natalie, why don't you say hi?
+Natalie R Narvaez
+Natalie R Narvaez
+00:20:26
+Hello, everyone. My name's Nami.
+Justin A Johnson
+Justin A Johnson
+00:20:28
+drink.
+Natalie R Narvaez
+Natalie R Narvaez
+00:20:30
+Something?
+Justin A Johnson
+Justin A Johnson
+00:20:30
+No, we can. You're good.
+Natalie R Narvaez
+Natalie R Narvaez
+00:20:32
+Okay. Hi, everyone. My name's Natalie. I am a master's student, and this is my first year. I'm in the Bioproducts and Biosystems Science Engineering and Management program.
+My main focus for my master's program is water contamination.
+And, so kind of unrelated, I would say that, research idea that I'm most interested in right now
+is what chemicals and pollutants are consistently present in water runoff from fires, structural fires that are extinguished by fire departments, and that's when I am
+focusing on for my master's project, but what led me to this course is that I work, with Dr. Johnson at NATCAP Teams, and I am also interested in improving my personal understanding of the technical side of the projects that I help manage and coordinate at the Research Center.
+Justin A Johnson
+Justin A Johnson
+00:21:32
+Awesome, thank you, Natalie. And Heyman.
+Heman Das Lohano
+Heman Das Lohano
+00:21:35
+Hi, everyone. My name is Hemandas Lohano. Currently, I'm visiting professor in the Department of Applied Economics. I come from Karachi. The university is called Institute of Business Administration.
+Where I am a professor. Currently, I'm leave from there.
+So, I'm interested in… I'm very much interested in this course because of various reasons. One, at this point of time, is I would like to replicate some of the ecosystem services valuation for GEP.
+And, I think I'll also be moving towards, valuation of the contribution from Grassland, which is actually recently has been, uploaded. So these are the thoughts I have, but I'm very much interested in moving towards,
+this modeling, and looking forward to learning all these things, and hopefully I will be also joining in the class as well. Thank you very much. Today, I just happened to be online, so thank you very much.
+Justin A Johnson
+Justin A Johnson
+00:22:44
+Wonderful, thank you. So, yeah, welcome to everybody, and let's, let's dive in. So…
+Let's talk for a second about,
+What's the whole premise of this course?
+this, information, some of it may be super present in many of your minds already, but I still want to talk about it, even if it's a review, because
+how we organize this type of information, how we organize the introduction to why we're doing what we're doing, is really critical in getting the message right. And so even if it's stuff you're aware of, we're going to still talk about it, again, to ever more precisely hone that message.
+This is just how I look at it, then. We are in the process of going from the Holocene, which was a really awesome geological era that was super nice for humans and climate, to something called the Anthropocene.
+And so, for me, this graph is one that really draws this out. This is thousands of years before present.
+And it's looking at Earth's surface temperature, and this little circle here is referring to the Holocene. So right here is where the Holocene started. And so that's, shortly thereafter, that's when the beginning of agriculture started. There was no agriculture before then.
+And, you know, it wasn't too much later, actually, that we then had great human civilizations in the Indus and other valleys.
+And so, you know, you might be thinking that this little range here.
+It's kind of like the Goldilocks zone, as many people refer to it. Things were just perfect, and over here on this crazy variability, yes, it was a little, a little cooler, but even more challenging, probably, was that there was massive variation, swings in temperature, and it's only recently that we got into this Goldilocks zone.
+What's the challenge, though, of having everything we care about, like agriculture and civilization, only existing in that relatively narrow, wiggling band? Well, it's that if we left that band, we might worry that, things might change.
+And we have reason to believe things might change, and that's because there's debate, although it continues to go back and forth, on whether or not we're going into a new geologic era. So, from the Holocene to the Anthropocene. And so, you know something is true when the economist reports on it, right? We're economists mostly, so this is definitely true. But actually, the sort of… the context is broader than that.
+It was voted down by various scientific bodies as whether or not it is officially a new epoch, and it has a lot to do with, can it be detected in chemical signals under certain circumstances? But I think, leaving that aside, we are definitely going into a new type of world. And the main thing is one where the dominant force in the Earth's systems that we care about
+Is us, rather than something else.
+And I like to think of it this way.
+you know, these are all cited literature, and so if one of these pops out to you, you know, I have citations in the readings and everything. But this particular one illustrates it really well. The idea that the Holocene is great, it made everything possible, but we could find ourselves tipping out of it and going into places we don't want to go.
+And so this graph, time is on the axis coming towards us, and stability…
+ironically here, increases as you go down. And so, this is actually quite intuitive if you kind of think about, like, the stability of a marble in a bowl. A bottom is pretty stable, right? It's hard to get a marble out of a bottom of a bowl. You have to push it really hard. This would be another stable point. This would be another stable point.
+The point that's being illustrated is here, is we've been in this nice little Holocene era.
+this area here for some time, but we've been pushing more and more on some of the boundaries, specifically temperature. There's other ways of looking at this, of course, but what we worry is that as we go forward, the shape of this terrain
+might be such that our choices depend on whether or not we pass a planetary threshold and find ourselves in a new equilibrium, in this case, hothouse Earth.
+And it's an equilibrium because it's at the bottom of the bowl. The marble is going to rest there. It's really hard to get out of it once you get there. But if you don't want to go there, what do we do? Can we think of earth system stewardship that
+keeps us out over here, away from crossing that threshold, and hopefully we actually are able to change the terrain of this time graph, that we have a new, a little bit more precarious than the other one, stabilized Earth in equilibrium where we are able to keep a lot of the things that we'd like to keep going.
+And so this idea of a planetary threshold, has been heavily, heavily discussed in the sustainability science literature. And the basic idea, this is just one conception, it's probably the most famous, is that there are biophysical boundaries that should not be crossed.
+So this is, Stefan et al, you know, that's a newer one. There's constantly new stuff coming out, and they're always estimating these things.
+the… I think this is a really important one, the idea that we have a safe operating space, that's that green part, and on this particular set of metrics, a lot of these have, burst through the planetary boundary.
+The key takeaway, of course, is that we should tread carefully. We don't have any evidence that this will be able to persist.
+Past those thresholds.
+Okay, so it's a very popular framing, but I actually don't like it that much. I like that it was persuasive among a lot of people to get people thinking about this, but I don't really like it, because, among other things, it's not very useful. Okay, so we're past the threshold, that's scary.
+All right, now we're depressed. That's great. Now what? More importantly, I don't like it because it doesn't incorporate the other side of what I really care about myself personally, which is a thriving life on planet Earth with humans.
+I'm very anthropocentric in that sense, and we're going to return to this throughout, and so there's, you know, possible debate on this point, and that can be something very open and enlightening. But for the time being, I'm going to look at it from the perspective in this class of earth economy modeling.
+That, yes, we should not surpass the ecological ceiling.
+But we also need to stay above the social floor, or something that describes the ability of our economy to provide sufficient access to foundational goods and services, like healthcare, food, water, shelter, and basically everything that
+growth economics and development economics thinks about, right? And so, you know, a lot of people in applied economics here are also interested in development economics, and that's
+focused on those things. How can we think about how policies affect the distribution of goods going to specific groups of people that we care about? Or even maybe more broadly, how can we think about what grows the economy to provide more of those goods?
+This was…
+this idea of having also the social foundation was, written up in a somewhat recent book, 2017, from Kate Rayworth called Donut Economics, and I think this captured it well. The idea that
+We have planetary boundaries, that's what we see here, of course. Slightly different definitions, but here's that ceiling that we don't want to surpass, and we're saying that the red ones, we have surpassed it.
+A little hard to see here, but you're welcome to read the book. There's also a social foundation, and this is, are we producing enough goods and services and getting them to the right people, to provide the fundamental quality of life that we would like to live?
+And the main idea is that, we need to think about sustainability and planetary policies as those that keep us in
+a donut. So, it's a funny shape, or a funny name, I guess, for something so serious, a donut. But yeah, this… can we be below the ceiling, but above the social foundation.
+And this has been, you know, formalized more recently by others in the literature, like Rockstrom et al. 2023, safe and just corridors, but the idea is the same, is how can we stay in that safe and just corridor? So I'll be returning to it very frequently as a conceptual framework.
+Because I really love this framework.
+But it also drives me crazy.
+And that's because it also doesn't answer the question of what policies should we pursue.
+And so it leaves me depressed. It's like, well, what do we do?
+And that's why I'm an economist. I'm an economist because I think it's a powerful set of tools to try to stay within that planetary, donut, within that safe and just corridor.
+So yeah, let's pivot a little bit for a second. And I want to talk about economics and how awesome it is.
+And how it's been wildly successful at the big caveat of what it is good at.
+Now, this is in context that, you know, I've given lots of lectures in different audiences.
+Actually, I literally just got back from France, as I had mentioned, where I was presenting to central bankers, and these are people who are more towards the extreme end of the market is perfect, humans are rational, market failure doesn't happen very often, or if at all, and perfect competition is everywhere and awesome.
+To the other end of the spectrum, I talk about… I'm actually, right after this class, teaching conservation biology, which is people coming from the more ecology, biophysical side of the world, and they often have an opinion of economists are evil, and the free market is evil, and all sorts of things.
+And so, I actually find myself debating both sides of this spectrum very frequently. And so, the reason I'm putting this slide here is partially to pander to you all, because you're in applied economics, so you must be the camp that says the market is awesome, right?
+We'll dive into that in more detail.
+But critically, I do want to say, I think it is really important. I find myself, when I'm among ecologists or people who really hate economic growth or other things like that, to stand up for economics. And I'm going to push on that point. I really, truly do believe there is value there. And that's going to be the premise behind why I think earth economy modeling is a useful way of looking at this.
+And we'll dig about out what that means exactly.
+Okay, but so first, let's have a sales pitch, then, for enlightened economics. And why am I claiming it's been wildly successful?
+And that's because it did phenomenally well at what it was supposed to do, which was improving the physical consumption and getting that well-being that comes from physical consumption.
+And this was particularly important because it was in the context of the Great Depression. A lot else was going on, but a lot of the Great Depression can be described as essentially underconsumption. People were literally starving. There wasn't enough food to go around. People didn't have the things they needed. And so what economics
+set out to do, and quite literally, you know, this co-evolved with the Great Depression. There's, of course, history before it, but it's providing navigational tools
+to get out of the Great Depression, to increase our consumption. It was very specifically focused at that. And so, a big thing that was created, was the systems of national accounts, SNAs, and this is what's responsible for creating the concept of GDP.
+And so, GDP is, one metric of society that gets a lot of hate nowadays from environmentalists, as it should, because it's narrow, and a lot of our active research that we'll talk about is talking about alternatives to it, like GEP, gross ecosystem Product, that we'll get to.
+But from this context, economists did define GDP as a useful metric and as a way of organizing our policies. Like, that's the thing we wanted to improve.
+But really, the SNAs had all sorts of other submetrics, much more details on different accounts, and these were useful for thinking about welfare and doing better.
+It also enabled use of tools, and that's going to be the emphasis of this course.
+Tools, like a big one that was used, is computable general equilibrium. We'll unpack that much more, but it's basically a really hands-on applied tool for saying, what's a policy gonna do? What happens if you start a trade war with a random country, to pick something out of a hat? These are the tools that are used to make quantitative and actually usually quite good, estimates
+in certain contexts of what the impact is going to be. And so, if you want to know what a 10% tariff on one pair of trading countries is, a CGE is a great way of estimating that.
+other models out there, ones that were fiscal or growth-based, to say what happens with inflation, or what happens with stabilization policies, and, you know, can the government improve the stability of the economy by strategic spending at certain times? And, you know, we have models for that, too. We won't talk as much about those. That's a little bit less relevant to our Earth economy framing.
+But it's definitely there as well. And that these… These were good.
+What did they do? They led to huge poverty reductions in the US, but also worldwide, and so…
+This is my Let's Not Be Depressed series of slides. I sometimes find myself getting depressed with the awful news everywhere, but let's pat ourselves on the back for the best we can for some of the things we can. So, world population living in extreme poverty, 1820 to 2015,
+This is a really remarkable change. The amount of people living in poverty truly is falling towards zero. It'll probably never hit zero, because we have distributional issues that are preventing that last bit, and that is ever important.
+But it is absolutely critical to recognize that your probability of being randomly placed as a person in society, the probability that you would be in extreme poverty now is way down. And we still need to think about the tales, but this is good.
+And what does this mean? Well, this is just more consumption. So, more GDP. When you have more GDP, if you don't mess up the distribution completely, you are probably going to increase the average consumption. And so.
+If you're an ethicist, John Rawls, he had a great concept that I like to this day, that we can judge our societies by putting a decision maker behind a veil of ignorance.
+Where they make the decisions about what state of society and policies to get there would they choose.
+But then once the veil of ignorance is pulled back, they then have to be one of the people in that society, including possibly some of the worst-off ones. And so, if you're that type of person, if you're that person behind the decision-making process there, yeah, you'd probably like to be in this world, because the probability you're in the green is much higher than if you chose this world.
+that's been a very persuasive ethical framework that builds on utilitarianism and fixes some of its flaws. That's one. More consumption.
+Also, we're living longer. I like this one because it's not really debatable. It is debatable whether or not consumption… consuming more is good. Maybe… maybe we should be aesthetics who appreciate poetry, but not consumption.
+I'm not going to get into this, but it is undebatable that we're living longer. So here we just see life expectancy, and the one that always stands out to me is, so in…
+Oh, actually, this one, I had a different graph that called out the U.S. specifically. Here, we're lumping the Americas. But a little over 100 years ago, my life expectancy would have been 42 years old from birth. I am 42 years old.
+And that's… that's not that long ago. That's a big difference. I'm alive.
+Less homicide. This one's more controversial,
+But it's also less clear the reason. It's not so controversial that the statistics are correct, but fewer people are getting killed by other people. That seems like a good thing that's sort of undebatable. But this is just Western Europe. It's a long time series, 2050 to 2016, and, you know, really this…
+comes in a big line of literature from Steven Pinker and other, you know, very influential, but also controversial academics.
+who talk about sort of what I'm saying, that the Enlightenment, but also economic activity, has resulted in lots of good things, including less violence. And so he has this book, The Better Angels of Our Soul, and it talks about the long-term trend that we're having much less violence.
+Okay.
+So those are my feel-good slides, but let's be more specific. What did economics actually do, to try to contribute to this? And I said this before, but let me talk about it more conceptually for a minute. We built the tools that describe the economy.
+And give us the ability to then play with the economy. If you have a model of something, you can test what happens.
+To some degree. Of course, if it's a bad model, it says nothing, and no model is perfect, but if you do have a tool that allows you to do tests.
+I like to make is of what the best policy is before it's too late.
+So, what might that look like? Here's the economy, that box.
+And in this box, we filled it with tools. Like, here's… this is kind of a summation of all the intermediate-level, economics that you would learn. You know, so…
+You can see what this is, you know, that's the price line. Here is a production possibilities curve that bounds the Edgeworth box, and that creates trades between the contract curve, blah blah blah. Lots of specificity in there, predicting human behavior, and giving a causal explanation or claim on why the numbers for prices and quantities came out the way they did.
+here's intro economics, you know, so here's that, here's just the circular flow diagram, and we actually will return to this. That's, you know, not as useful, because it doesn't give specific numbers like this one, but still, it's useful for organizing our thoughts, and…
+Here's a question. Who wrote this? This is a picture that is pasted above the printer in the NatCap Teams space, and it's the dual problems, and it's a little hard to see, but you can, you can zoom, you can, you know, you can always download these slides and zoom in on all the pictures, but this is a perfect rendition. Who did this?
+Anybody here? Does anybody know who did this?
+Natalie R Narvaez
+Natalie R Narvaez
+00:41:57
+I have some insight.
+Justin A Johnson
+Justin A Johnson
+00:41:59
+Oh, yeah?
+Natalie R Narvaez
+Natalie R Narvaez
+00:42:01
+The office space that I'm in right now, it was in there.
+Justin A Johnson
+Justin A Johnson
+00:42:06
+Huh?
+Oh, okay.
+Well, I really love this. This is like a…
+I don't know if it's famous, but it should be a famously good rendition of collapsing everything that is in our 8001 to 8004 econ theory sequence down into a really understandable set of information. It's also totally not understandable if you don't study it for a long time in advance, but just trust me, there's a lot of… there's Roy's identity, Shepard's Lemma, these are, like, the
+these are, like, if… like, if you like football, and you know the players' names by heart, and you just know their role on the team, these are, like, the famous, players. These are the Messis, or the other people.
+Anyway, so this is actually the set of tools that were built by those like Paul Samuelson and others, that really helped us understand.
+And I'm gonna make a really big claim that's super controversial here. These tools, building them, it was rather successful.
+And so, in addition to having sustained economic growth, we've all seen those charts, here's another one, is that the rate of recession in the U.S, and this is also broader than just the U.S,
+has, reduced dramatically. And so here, this is 1855 to close to the present, and the pink bars are the times that we are in recession. And you can see there's a ton of recessions. Here's the Great Depression.
+And… Suddenly, you can see it falls off.
+There's COVID, there's the 2008 financial crisis, tech boot.com crash, you know, etc. So there's still events that could make us get shocked out, but it's just…
+simply the case that it is less likely that we have a recession. And there's a huge debate, like, what caused that? Was it really economists? It could be luck, it could be a change in the nature of our economy from being one of manufacturing to one of services, and maybe these don't have, like, the stock flow dynamics that caused the Hessian to be non-invertible and whatever. That's some mathematics that we won't cover in this class.
+But the point is, I'm arguing these tools were useful. And…
+That's one of the reasons why I think we need to have Earth and economy modeling. And so this year, I'm just basically heading off all the arguments that I'll have in my next conservation biology class, and so I'm practicing, so I can be really good for them.
+Anyways, there's a problem, though, with these tools.
+is that… They think of the Earth as being apart from, separate from the economy.
+And I would argue, and the premise of the title of this class, is that we need to think about, I wrote that backwards, the economy in the earth, not the Earth in the economy. That would be kind of hard to envision. That's why it's called, the name of this course. And this is building on a sort of…
+Growing understanding that we need to have these two embedded in a more tight way.
+And so it takes from a very old conception, and that is that
+Sure, the Earth and the economy are linked, and they're linked because we get most of our resources, the endowment of what we have. The very oldest economists thought about the growth of the economy as a function of
+The conversion of land and other natural resources
+mixed with labor and capital to produce things we want, and therefore, it's how do you draw resources from the earth in the most effective way to grow the economy the way you want?
+A theme throughout this course is, though, why we're not just talking about earth economy modeling, but why we're departing from the standard course that you would get in a typical PhD in environmental economics on natural resource economics. The sort of thing that I came into this job with is that
+I really didn't like my natural resource economics class when I took it, I shouldn't say that. But it was essentially how to optimally cut down trees, how to optimally extract oil, how to deal with fisheries to get them right to the edge of collapse but not collapse them. And these are all really cool questions. The math is awesome.
+But a lot of the problems aren't super applicable to our current problems, like climate change, biodiversity loss, and
+I still would argue they're super important, so the sequence here in Environment and Natural Resources PhD will still cover them, and actually that's going to be mostly in Steve's class, because he's going to extract from them, like, the highlights, but also the underlying theme of where those tools were so awesome, which is that they used the tools of economics to give a really compelling, mathematically precise definition
+Of what does it mean to be sustainable?
+And so, yeah, one example of sustainability would be how do you manage forest extraction to not overcut and maximize your forestry revenue? That actually relies on a pretty nuanced understanding of dynamic optimization and the question of temporal utility maximization, so that's cool. But either way, that is all based on… natural resource economics is based on this conception.
+There are, of course, slightly less old ones, like, oh, there's also wastes.
+And so this is newer. We have pollution. So waste is essentially pollution. What do we do with it, and how do we optimally manage it? That's things like, can we put, you know, carbon tax in place? That's cool. Cafe standards on cars, really important.
+but doesn't still answer some of those broader systemic questions. And so the one we'll be focusing on more so is that based on the idea of it's not a transfer of resources and wastes between the Earth and the economy, but rather the economy is embedded in the biosphere.
+And there are many complex linkages. So I didn't have four here, but there's an infinite number of ways that the two interact in positive, in negative ways.
+and all sorts of other ones. And so this course is going to be aimed at understanding it from this conception, and trying to draw quantitative tools to help us understand this, so we can build models that capture this.
+There's a blank slide.
+Okay, so what's the reality?
+I do think it is true that the economy is embedded, but unlike what I showed here.
+the economy is not small compared to the Earth. Here, I did it small, because this is still only slightly better, it's old, is that there are planetary boundaries, but the economy is small, we're far away from pushing them. But what happens as we produce more and more? You can visualize it. This box gets bigger and bigger and bigger.
+And maybe, here, let's just…
+combine some graphics randomly with transparency. So here's the planetary boundaries, now here's the Earth. The economy box, like we had before, has just now expanded beyond them. In other words, we've scaled our consumption to the point where it's a dominant force affecting the biosphere. And so the economy is bigger than the Earth.
+Again, I don't really like this framing of planetary boundaries, because it misses some of the dynamics. Like, well, if technology gets a lot better, suddenly we might fit within the Earth. If fusion happens.
+Side note, Microsoft and Google just put down a whole boatload of money for a Fusion commercial project, and so we might be close to Fusion, which is essentially limitless, pollutionless.
+energy, that would drastically change this, and so that's why I don't like planetary boundaries, is because boundary itself is a function of the technology. Anyways,
+given our current technology, we've definitely scaled to the point where we're pushing past those Earth boundaries. And the problem, though, not just that we've pushed past it, but coming back to this idea of what I want to see.
+We need to develop tools, not just statements, not just the pressing, we've destroyed the Earth, there's nothing to do. We need to come up with an adequate navigational system
+To help guide us to sustainable development. And so, just like with the Depression, the systems of national accounts and general equilibrium that helped us out of the Depression, what are the tools
+that are going to help us in this new context, where it's not a problem of underconsumption, like the depression, but one of overconsumption. That's also a big simplification that I don't love.
+But it is capturing a fair amount of the question, is our problems have become so big that they're pushing those planetary boundaries, the challenges are global, interconnected, based on common resources, and so we need to understand this.
+And so, really, my claim with all of this is that we need detailed models. We don't need planetary donuts, as tasty as they might be. We need computationally useful, quantitatively predictive, accurate, we hope, of course, but models that say, how?
+how do we stay within the planetary boundaries, or the safe and just corridor? Or in other words, what are the specific, detailed linkages between the Earth and the economy?
+And so, this is kind of the graphic that I've been evolving towards using more, and we'll get to more detailed versions of it, but you see a number of features. First off, the economy, the blue box, like we had from before, is indeed embedded in the Earth. It's…
+Earth really goes out here, so that's kind of one of the things I don't like about this one, but we need space to draw the equations of the economy and the equations of Earth, so that's why I formatted it this way. But also, it shows a sort of interesting development in this field.
+As well, is that the prior focus of environmental economics and natural resource economics was really on this
+bar, this arrow. What are the impacts? How do humans degrade nature? And that's really important, because that's caused many of the reasons we're… we care about this now, is we've really degraded it.
+But we also, simultaneously, as we get closer to those Earth boundaries, planetary boundaries, we need to understand the increasingly important way that the economy relies on nature. Not just the economy impacts nature, but how it relies on nature, and so we call those dependencies.
+And so we'll return to this idea of impacts and dependencies throughout. It's becoming really important. Like, when I was in the Central Bank of France, that's kind of the framing that central bankers use, because it puts it in the language that they're used to.
+And so… so yeah, we'll return to that a lot. But the sort of silly phrase that I like that is funny to economists is that to navigate the Anthropocene, we need a more general, generally.
+So economists, they're like the imperialists of the academic world. They're like, our general equilibrium is
+it's better than physics, and it's always correct, and you know, all those things that people make fun of economists for. Well, one way you can criticize that is, well, how general is it? If the Earth is… or the economy is embedded in the biosphere, and their general equilibrium only considers dollar values of exchange.
+well, maybe it's not general enough. And so, you can be like, yeah, you're right, we should have a general equilibrium model. You're so right, you economists are great.
+just not general enough, and sort of hijack that energy. Okay.
+So that's my, sort of, rendition of why I care about this, and what I see as a potential route forward. Any questions? These first days are always kind of lecture-heavy, so, you know.
+Any thoughts?
+Are you in the right class?
+Anybody like, oops, this is not at all what I thought. No, good. Okay, so now the boring thing. So, go see our course site to visit the official syllabus. And so I'm gonna…
+Change my sharing for a second.
+Okay, so… Hopefully in the introduction, emails and stuff that I sent around.
+You have already discovered our course website. Has everybody navigated to here successfully?
+Excellent. You're all adequate browser users. So, the syllabus is here. This is the first year I'm not printing my syllabus. It's sort of like the weird thing that, like, you have to be official about a syllabus, like, you actually print it out, and they archive them, in our department.
+Cool. For you all, I'm just putting it here, because I don't like paper. Anyways, we expected information. I'll walk through this on this… in a moment, but but yeah, here's, like, the contract that we're all signing, that you're all here to enact. But we're gonna pursue these objectives with this sort of information. Yes?
+Thank you. Yep.
+So the online people were seeing the right thing, but not the, in-person people. Yeah, so here's the… Syllabus.
+And so please see this for all the expected information. You know, I think the most important thing, though, that you always typically find on the syllabus is the course schedule, and so here we're going to link to it. I've actually just put it on the home page, because that's the first page you visit here at my website.
+Teaching APEC 8602 is how to get that, so bookmark this. This will be the key document that updates with the links to the readings and the lecture slides. I'll be populating this with additional columns, like the slides themselves. You can always find them in the Google Drive. I've now invited you all to the Google Drive.
+And so you can also find them there, but then I'll put them here for posterity.
+You'll also notice it's not done, and that's because this field is evolving so fast that there might be something that happens between this date and this date that is needed to be added. And so this is what I did last year.
+or last time. And, I hope you're going to be okay with… I'll always try to stay ahead one or two lectures on what we're going to cover, but there will be changes, and that's because we are at the cutting edge, and that's just the way it is.
+And so the only one that's really been specified out here is that, Introduction to Earth Economy Modeling will be our next lecture, and you will read something by me. It may be annoying that I'm making people read stuff by me, but that's been a choice of this class. Our department decided we should double down on this.
+And so this is in annual reviews of resource economics, and is a very recent take on what I think is the state of
+basically what I just said, but in much more detail and specifics of the models we're going to learn, but in the overview setting, and also has a systematic literature review that used AI to be comprehensive, so it was kind of cool. But you'll also see the assignment here.
+So everything is going to be on the website. Canvas, if you visited it, you can see it's just a link to my website. This… this is here.
+the one thing that will be on Canvas is grades, just because
+I think I need to do that. I don't actually know if I need to do it that way. But I don't want to upset the powers that be too much. And so…
+one sort of side note is, why am I doing it this way? This looks like a lot of extra work to, like, have my own website. Well, first off, it's not a lot of extra work once you get good at it. Secondly, apart from Earth economy modeling, my next biggest
+thing I care about is open source science, right? That's what I said at the beginning. And part of open source science is having
+Almost perfectly transparent, and very quickly understandable, reproducible Content that people can learn.
+And so a course is one way of doing that, and so all this course information
+Actually, it just comes from my GitHub profile. You could actually rebuild this whole course if you wanted. You could publish your own website, you could change the name, it's open source, the license says you can do that. I checked with university lawyers, it's my right to do that. But yeah, no, I want this to be as open as possible, and so every single element of this is on GitHub and could be cloned and modified by anybody.
+So, yeah, that's much more open and transparent than Canvas, which is a paid service that you can only get when you're logged in.
+And so some people… so two questions that I get about that is, number one.
+Aren't you worried about somebody stealing your stuff?
+The answer is yes, I would like it if people stole my stuff, because they'd be doing my work for me. If somebody really wanted to publish a book on earth economy modeling, hey, good, please do. You can make money off it if you'd like. That's open source. And the second one is, what about privacy? That one's a trickier one.
+I've personally decided to live my life entirely open, with very few exceptions. And so, yeah, you can, if you want, you can go into the history of every single commit that I've made to this website, including all the typos and, oh, I made a really stupid choice, I was dumb. I'm not afraid of somebody finding out where I was dumb, for two reasons. One, I've probably already fixed it, and it…
+Something that… a mistake that you fixed, it's not one that you've…
+have to care about that much. But secondly, it also shows the learning process, and so this is what I mean by open. It's not just open source that everybody can use it, it's open that you can see all my mistakes and flaws, but also the development. You can see, have I changed my opinion on any of the things we'll learn in this class since the last time I took it? You can see that in the GitHub commit history.
+And so this is radically transparent, is my goal.
+So that's… so that's a year. So anyways, the first assignment that will be, due… Next class…
+Waiting. No.
+next Tuesday, so a week from today, it is…
+Okay, so I'm getting ahead of myself. It's assigned next class. Okay, but you can start it whenever you want. It is due on Tuesday of next week, and that's, Getting Up to Speed. That is not a typo. We are using GitHub, as the collaboration tool. This will have you install VS Code, Git.
+GitHub account, etc. And basically, it's the easiest possible assignment, you just need to send me your GitHub username, and just so I can confirm that everything is working.
+Any questions on that?
+I'll say a little bit more about it next lecture.
+Does anybody here have a GitHub account already?
+Y'all should. This is… whenever I'm on a job search committee or something like that.
+by far, the first thing I do is I look for their GitHub link, and I look at it. And if they don't have it.
+I then consider, does their job need to be… if it's not technical, fine. But if it's a technical job where they're…
+claiming to be an expert on something that should have a codebase, and they don't have a codebase, this is, like, 15 marks against them. And so, yeah, it's important.
+Don't pick a silly username. I'm looking at you, NoScope360. This will be a username that sticks with you. I've seen people get in trouble with that, but yeah.
+do those things, and that's what we'll collaborate with. It's GitHub that actually builds this website for us, so it's doing everything.
+Okay, so back to the syllabus, then. Oh yeah, so the GitHub repo itself…
+The one catch about being open is you'll notice right now the repo doesn't have much on it, and so on the one hand, it is all open, but on the other hand, I don't want to, like, put the problem sets and their answer keys up for you, right? So there's a little bit of lack of openness that I have to have, because if I publish the… had open sourced the problem set solutions, well, that does away with the point of learning. So what I actually have is I slowly push content
+from my repository to this one, the class repository. So this will fill up with the content over time.
+But right now, yeah, that's… it is what it is.
+That's the syllabus. The Google Drive. Here's the link to it. It's,
+open to you all now. You should have, gotten a… I think it sends a message when I changed the sharing permissions, but regardless, let me know if you don't have access.
+And that will not have a ton of content, but what it will host is anything that is data. You never want to put data on GitHub, that's not what it's for. And also readings, because you all, as university students, have legal access to our universities, and so therefore, I'm only providing a convenience service to you by providing the PDFs that you otherwise could have legally obtained through your status as a student.
+Do you like how carefully that was phrased? I don't want to get in trouble.
+But yeah, so don't share that link, just because it does have those copyrighted stuff. I don't think that's a problem. But yeah, so also, one last thing to note is that each one of these days will also have just a little blurb about what we're gonna do, and this will, like, be a summary of what we'll do for the day.
+Any questions on the website?
+Cool.
+Oh yeah, the maybe last bit about the syllabus that I did want to return to is… greeting!
+So here's the basic breakdown.
+Class participation, 5%.
+What that basically means is show up with a computer and follow along with the code. And, you know, I'll work with you hands-on to make sure. If it's hard, we'll solve it, but we do need to solve it, because the point of this course is to build the technical competency on these tubes. So I want you to come with your computer and be ready to have it run, and then work with me early if there's problems. Computers have problems. You might have
+old computers are not enough memory, but come to me as soon as you discover a problem. Don't hold off on it. That's the only way you can get in trouble, is if we don't discover it. We'll fix it together.
+Weekly insights. This is one that's easy to forget. I'll be putting… I'll be populating onto Canvas the submission form, so, right, that's the one thing where you will submit it. I want to give the option, you can also submit it via email to me.
+Just send me an email once a week, and it's gonna be… I'm gonna update this with exactly the timing, or… oh, no, Thursday classes, is then when we're gonna discuss
+I'll anonymize it if needed, but whatever, what people have been interested in. And here, so Wednesday, yeah, I will update this, via Canvas or email, just comment on what insights you've had. That could be something that you found really interesting. It could be something that totally confused you, or that you thought was worthless, or that a direction you'd like to see. And so, it could be roughly two to three sentences, basically, but just
+I want to have… we're training ourselves to communicate well. That's what we're doing.
+We ended 10, right?
+Okay, good. I once went 15 minutes after a class ended, and boy, were the undergrad level, 1,000 level, boy, were they mad.
+Yeah, okay, that's Weekly Insights. It'll be a few problem sets, not a ton, because a lot of the proof that you're learning will be the fact that I can see that you're succeeding, and so I feel less of a need to have too many problem sets, but there will be some.
+You can use Python, R, or MATLAB, haha, that's eventually going to get deleted. Or Julia, I should add. But any language is acceptable, as long as you can get the answer you want. Python and a little bit of Julia will be what we use in class, and so that would be a logical one. I will also give you resources to set up your computer to run everything on Python.
+Collaboration is encouraged. You're allowed to work with each other, but you do need to submit individual ones, and they do need to be different. If you really want to, you can use an AI tool to anonymize it and randomly change around words, whatever.
+And there'll be a research project, and so we'll… I'll send a lot more information about this one, but,
+yeah, there'll be a series of steps, through where you, tackle an applied earth economy modeling problem.
+Okay, the rest of this is all just boilerplate.
+with maybe this one. I wrote this one, that's not from the university. You are free to use AI in whatever way you want, with or without attribution. A lot of people make it illegal, that's dumb. A lot of people require attribution, that's dumb. You can't validate that. And so…
+I'm not sure the world that we're in right now with AI is better than a world without AI, but I know there's nothing I can do about it. And so the best is to embrace it and teach you how to use it well, which is one where it's impossible to prevent it, and it's impossible even to demand that people
+have, like, an ethical AI usage statement, or this is what I did. If I can't tell that you did it with AI, I also can't tell if you're attributing it properly, so you don't even have to attribute it. However.
+Mistakes are your own. And that's, gonna be really where it's at.
+Understanding how to use AI tools will be a part of this course, but they still make mistakes sometimes, and mostly it comes from the fact that you don't have the right understanding to prompt it the right way. AI tools are awesome, and they're past a PhD level on a lot of things, but to be able to get information from them, you need to be at the right level, too. And so that's why I'm totally okay with it, is because
+You couldn't use it in your career. I use it constantly. This isn't actually me, this is just my AI projection. I'm up in my office. That's a bad joke. But no, the point is we're gonna live with it.
+Any questions about the syllabus?
+Any problems? Anybody not like AI?
+You don't like AI? Have you ever used AI?
+I love it. Yeah, no, I mean, ethically and philosophically, I share a lot of concerns, but yeah, I don't… my… my approach is to embrace it.
+I don't know if that's right, but we will embrace it in this course, so you can be our moral guide about that. Whenever we do something, if it makes… yes, if it makes you feel uncomfortable, you're like, oh, I don't know, you guys are doing something that might cause the AI singularity to happen, let us know.
+Okay, joking aside for a second.
+Let me go back to the slides.
+Guess I need to… There it is.
+Zoom is currently fighting with PowerPoint over what the most important thing to share is. I'm gonna try that again.
+But there we go.
+Okay.
+But if I could, I would break this semester down into three basic parts. So now we're going to go over the schedule. It's, on the main page.
+But we're here, big picture and syllabus introduction.
+So I guess your first assignment is to read this paper here.
+Before class tomorrow. This will be, you know, I will… oh, what's that?
+Yes, whenever I say tomorrow, I always mean next lecture, and if I say, yesterday, I always mean previous lecture, so just substitute in your mind, and let's… but thank you, Libby.
+Actually, I started using the words yester lecture and others in my classes because, like, it's like a different schedule in my head. It's like, I have my regular life, and then I have my teaching life, which is immediately back-to-back-to-back and separate from. Anyways.
+What's that?
+Oh, yeah, exactly.
+Okay, so let's overview the sort of big picture here, very quickly, actually, because I think we've covered most of it.
+So basically, we're going to start with the first third of the course, will be introduction, the context, and introduction to the specific tools that we'll use, and the understandings that we need to use them.
+And so, we'll introduce earth economy modeling overall, yes, but then we'll move pretty quickly to global sustainability and general equilibrium. That's going to be a key tool throughout all of this, is economists love general equilibrium, and I'll argue that it's really cool for large sustainability issues.
+Next, we'll talk about scenarios. The question of what should we do in the future is central to all of what we're doing, not just what is the current state of the economy and the Earth, but what different scenarios might we have. And I'll emphasize, in particular, land use change modeling.
+And so, one of the key things that drives a lot of earth economy models, it's almost like the state variable that matters, if you're thinking about this, like, from a mathematical optimization point of view, is the landscape. The land use land cover map, literally a raster file of pixels with different categories of, is this urban, is this…
+is this cropland. And so that will be… so different scenarios of those, as well as all the drivers, are really important to understand how we might think about the future.
+Once we have those, we'll start to get a little bit more hands-on with some of the most, econ-specific tools that try to address the linkage of the earth and the economy. And so.
+If you ask a random person on the street, you know, the average education level, random U.S. city, so what do you think environmental economists think about as the main tool for linking the Earth and the economy? They'd probably say the DICE model.
+I'm kind of joking, because no, the average person would not know that. But the first person you found that did know anything about it would probably say the DICE model. This is one we'll talk about. It was an integrated assessment model that linked
+Basically, a single-sector growth model of the economy with emissions damages, and calculated what is the optimal amount of pollution, given the reduction in harm from less climate change, but also the loss in production and utility from spending money on trying to mitigate climate change.
+We're not going to actually do the dice model, we're going to do a much more modern version. This is from Fran Moore, she actually visited here a couple years ago. She's got the green dice model.
+Okay, so that would be, like, the most traditional economics part. And so, like, if you needed to go to a theory conference, and it was among a bunch of economists that really don't like, environmentalists, this is probably what you could talk about.
+So, there you go. The other one that might be possible is talking about this topic, inclusive wealth.
+Once we have all these tools in place, we'll have enough to be able to define inclusive wealth, and also one example of it that was published under the name Changing Wealth of Nations, but it's what I would identify as probably the best metric
+For defining what does it mean to be sustainable. And, it…
+Comes… it relies on econ theory heavily, talks about what futures do we want, especially focused on the question of, what if there's substitutability between environmental things and produced things?
+And this will lead us into then sort of the second part of the course, kind of actually, I guess here is the part where it switches into the second part, is we'll then go very, very hands-on.
+And we'll have ecosystem services as the key thing we'll talk about.
+Ecosystem services was… is a new concept, and actually, this department, if we're famous for anything, it's almost certainly our role in developing the concept of ecosystem services. So, as I mentioned, Steve Blaski co-founded the National Capital Project and wrote some of the initial seminal books in this area. Of course, there's debate about who is first, but whatever, but I would argue he's incontrovertibly
+done the most, work on making ecosystem services a powerful tool for decision making.
+And so we're going to spend some hands-on time. We're going to learn about them in general, yes, and what they are, but then I want you to be able to compute ecosystem service values under different scenarios. And so this will be very computer-based. We'll talk about that.
+The next hands-on part is computable general equilibrium, CGE. And so CGEs are… they've been listed by many as, like, the workhorse model of economics. There's a few others that are workhorse models, like the DSGE, that's what a Federal Reserve uses.
+But if you actually care about, like, how will sectors be impacted, or how will country trade patterns be impacted, this is the type of model you're going to use, and so we're going to go very hands-on with those and run them on your computer.
+Because… We're then gonna have the third part of the course, Here.
+Switching to the question of how can we stitch together these, land use… or these, I'm sorry, these…
+ecosystem service type models and general equilibrium models together. And sort of the key linkage that has made this possible of late is a part of the literature called land use change modeling, and that's just
+a very old field, even, that looks at, okay, if you have pressures on the landscape to change, like humans wanting to produce more food, how can we predict where that new cropland will happen? So we'll talk about that.
+Burberg and Obermars is one of the seminal papers, but we'll talk about newer stuff, too. The reason this is important is because land use change models are the computational way that we have linked general equilibrium models
+which make estimates of land use change, but at the country scale, and downscales it to this… the level of resolution we need to be able to model ecosystem services. Did you have a question?
+Okay,
+So that's necessary, and that will then get us to be able to talk about this. So this will be the second of my papers. I try to only include two of my papers, because I know that's annoying when professors include their own papers, but…
+Is that annoying?
+Oops, slide into this.
+Okay, yeah. Well, then it is bad, then it's just corrupt. Yeah, y'all, I actually have a $250 textbook, I'm sorry. You actually need to buy it from me directly, and I only accept cash, and it's a PDF.
+So, no, I'm just joking. But yeah, so GTAP Invest is sort of the thing that I've become most known for. So Steve helped invest in the broader context. I've really done a lot of the hands-on work of linking GTAP, which is one of the… it's the most famous computable general equilibrium model, with Invest, which is the most used ecosystem service model, so we'll introduce that.
+Then we'll just talk about some topics within that area, like gridded economic analysis. I think this is an important research frontier, research and development, etc. Some of these will change. I actually have new ones that I want to replace here, because like I said, this field is growing fast. That's just what I did last time.
+And then, the last day of class, we'll have the season finale, and everybody will have a cliffhanger, because I don't think, actually, everybody will be done entirely with their research.
+this project that, you know, sounds scary, because every class is a project, and it's always time-consuming. This will be more clear on the assignment sheet. I want you to make progress with the hands-on models. This isn't going to be a polished paper.
+Writing a polished paper is hard, and it takes a lot of time, and rather what this is, the project, it might just be more, a few key figures.
+like, images that you think are persuasive, and so this is not a low bar, this is still hard, because you need to do the research, but I'm not going to be super focused on
+And if it's a polished research project, because this is such a short course.
+My actual goal is for you to have made something that you present in our season finale with such a compelling cliffhanger that you will be compelled to download the next season and use it as a paper in an upcoming course, or like your second year paper, or your dissertation. Because I… really, my goal in this course is to
+get people to be able to do research in this area of environmental economics, of linking Earth and economy.
+And that is the preview. I had some more slides, the thing I want to end on… so what I didn't talk about is, where does this fit within traditional, environmental economics and natural resource programs? I don't think I need to, I just want to… but I still want to mention that we are, in the process of changing over the PhD requirements to go from the old organization, which was two, three credit courses.
+To… and so that's where Natural Resource Economics, that Steve and I co-taught, and then it was previously called 8602, but now this is 8602, so they renumbered them, which… which is Environmental Economics, taught by Jay Coggins. It's going to split into these four half-semester courses of…
+Economics and dynamics of Sustainability, that's what Steve will do. He's on sabbatical, so that's unfortunate. It probably would have been better to take his course first, but that's life.
+And then… but either way, it's a… you'll still take it. But that… that leads in then to, basically, applied stuff of what you would learn there.
+Shifting gears quite a bit and drawing more from the environmental economics side is, gonna be Jay Coggins doing, modern environmental economics, and then Rahil Madok doing econometrics of environment and development. This one actually is co-listed with development economics, but it is also one of the ones that's included in our field.
+I say a lot more about what's included in these, I'll leave that out, actually. And instead, and on one last logistical note,
+So I've recorded this lecture, and I just want to make sure everybody's comfortable with that. Unless I hear otherwise, I'm going to keep recording each class, and this is for the obvious thing, if you can go back and view it, whatever. I know I talk fast, that's because there's a lot of context.
+And… welcome!
+This is not our class, this is the previous course. You want to introduce yourself?
+Oh, I'm sorry. No, no, this is, hi, I'm Joe. Hi, Johnny.
+I mean, we're teaching… We're teaching the very next class. I've been telling them about conservation biology, and this is applied earth economy modeling, and so they're kind of, like, interesting, bookends, and so, yeah. So we're…
+We are done here, unless you have a concern about recording, I am going to post them all online. Your faces will never be on it, and I also clip out anything that was, like, the discussion, like the introductions and stuff, that will be clipped out, so that won't go public, it'll be just my face and the slides, okay? But if you said something, that's the one thing I can't necessarily… I'll try to clip them all out, but if you said something that you don't want public or whatever.
+just let me know, and I'll make sure that part gets clipped out. Does anybody have any problems with that strategy?
+That's the public ask. You have another chance to ask privately via email if you have any concerns with that, but like I said, I really want to make this an open source course, and that also means making the lectures themselves publicly available to anyone.
+And so with that, only one minute over.
+Thank you so much, everybody.
