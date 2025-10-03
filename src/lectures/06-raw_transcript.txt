@@ -1,0 +1,437 @@
+First to go over the agenda, what we'll be talking about today.
+First, I actually want to just talk some logistical points about the midterm. I'll return to that in a second.
+I guess I kind of give away the punchline. Oh, I'll talk about it now, I guess. The question is, should we have it? Here's what I'm thinking. I've previously had midterms, but that is… was in previous years where I very much had a focus on, you know, mathematics and things that can go on a midterm. But you are hopefully noticing that this iteration of this class is very much focused on
+Giving you the tools, skills, et cetera, to do research in this area. That's not so conducive
+for a midterm. And so, honestly, what happened is I sat down to write the midterm so I could answer that question, and I'm like.
+I don't know, I could make up a bunch of stuff. I could make you solve the Nordhaus dice model, whatever. But that's not the emphasis of this course. You will get plenty of that in the other courses, okay? 8601 will be much more about that, because that's understanding the key theory. But here, we are not understanding theory in its math sense, but we're thinking about its application, right, and how to do it yourself.
+So, I want to take a vote. People in class are the only people who can vote. Sorry, online folks. Who really wants to have the midterm?
+Seriously, this is right… if you raise your hand right now, you can make a whole bunch of enemies. No, I'm kidding. I actually think we're not going to have a midterm. I will send out an updated syllabus with the new grade weighting, but basically the problem sets are going to be the big time sink, and you'll see that once the first one goes live. The first two were obviously just setup ones, and so weren't indicative of how much effort they would be.
+But the problem sets will increase in grading importance.
+As will the research-related products that we'll produce. Is everybody okay with this?
+No objections to fewer tests? Okay. Very okay. Very okay, good.
+Okay. So…
+Oh yeah, just to reiterate, we decided not to have a midterm. Are you okay with that? Okay.
+Alright, we're still all okay with this. This is great. Okay, so the rest of the agenda. I then want to do a quick return to VS Code. We started installing the dev stack, but we didn't really yet open up VS Code, and I want to show you how awesome it is.
+And that's one of the two things that I decided was necessary before I put out this first big assignment, Assignment 3, is just a little bit of hands-on time with VS Code and the Earth Economy DevStack.
+Then I want to return just for a little bit to the question about climate economics and discuss the three big debates that are present there, because this will also be necessary for Assignment 2, but 3.
+Okay, so that should be about half the class, then we'll switch gears over to inclusive wealth and, the reading that you had for today. We'll talk about what it is, and then discuss measurement of it. Okay.
+So let's get started.
+So first off, what is the Earth Economy DevStack?
+I suppose I should unshare my PowerPoint screen, because we're going to go just live for all this.
+Which means I need to reshare it in Zoom, isn't that annoying?
+Alright, people online, yell at me if you can't see anything, but I think I remembered it this time.
+The Earth Economy DevStack is a playground for linking models that has developed out of NATCAP teams here at the Earth Economy Modelers here in our department. And I probably should even just show you, is that, you know, here's our course website, but if you go to my actual website.
+I decided to keep them separate and even gave them different themes, just so they look different and don't get confusing. But you'll notice a bunch more stuff.
+And one of those is, software. Oops.
+And in software, you'll actually see a link for the Earth Economy dev stack.
+And this…
+is what the dev stack is. You've probably already been introduced to a lot of these things. We've already talked about what INVEST is, that's Ecosystem services. We've talked about GTAP and what CGEs are, but there's more stuff that was necessary to glue this all together. So we had a land use change model, seals.
+GTAPI, which is automated CGE analysis. We won't get into these for a while, but basically, it is a software platform that ties together a bunch of tools that enable the linkage of GTAP and Invest, but as it turns out, it also enables linkage of lots of other models, and so we're going to be leveraging that.
+What I had you do at the end of last class yesterday, or yester lecture, was to make sure you had Git cloned it, and I was emphasizing the use of the command line. The command line is necessary, there is absolutely no way to get around using it, and I still use it on a daily basis.
+But actually, most of what I do is in VS Code. VS Code is a… another way that you can interact with Git, and so that's what we're going to learn today. So, in other words, last class, we ended with the…
+really awesome git clone command, where you clone the dev stack into your files directory.
+Now… We're gonna do some more stuff, specifically cloning the course directory, but in VS Code.
+Okay, so… First off, launch VS Code, if you haven't already.
+And so what is it? It's an integrated development environment, IDE is the phrase, and it's basically a text editor with tons of extra functionality and ties together many things. And so, who here has used VS Code before this class?
+Who's used RStudio?
+Yeah, RStudio is also an IDE, insofar as it combines the ability to run the R command, but then also extra visualization, like the list of variables, or, you know, an editor to write out the R script file.
+Vs Code is an IDE, too, except for it works for all languages.
+We've internally debated, actually, should we switch over the R course to not use RStudio, but to use Visual Studio Code? And the reason for this is because, well, number one, a lot of the community is going in that direction anyways, but number two, it's a far more powerful tool than RStudio. I love RStudio, but it's very focused on just R.
+And so it doesn't do all the other things like other programming languages, for instance, and it doesn't have as robust
+things like GitHub interaction. So, I think we decided actually not to go with it for the R course, and just keep with RStudio, because it is still kind of the main thing that people have experience with. But this one, this course here will be where you learn the real tools.
+I like it so much. I do a lot of R still. I don't think I've actually installed RStudio on this machine, and I've had it for 2 years. So, in other words, if you like VS Code, it's a very good drop-in replacement for RStudio.
+Anyways,
+Other things it can do, besides working for all the languages, is that, for instance, you could even use it to write a whole dissertation. Who here knows latex?
+Everybody, oh man, you guys are good economists. Do you want to know my biggest…
+Admission of guilt as an economist.
+is I don't know latex.
+I have never run it, I've never run Overleaf or anything, but yet I've created lots of PDFs that were rendered by LaTeX, and the answer is, is I use VS Code and Porto Markdown Language, which I'll mention in a moment, to be able to render all of my latex stuff that I need.
+And so, on the one hand, I've never actually run it in Overleaf or anything else, but on the other hand, I never need to. I like it, I prefer this approach. So that's my admission of guilt as a not-serious economist, is that I don't know latex.
+Okay, but other things about VS Code, it's customizable, and you can add extensions. This is where a lot of the power comes from.
+And we're gonna be interfacing with it in one particular way very frequently, which is called the command palette. And so… oh, I don't even… oh yeah, my computer crashed right before class, so I don't have anything open.
+I'm gonna open up my VS Code, and mine will look a little different than yours for the moment, but I'll explain that shortly. I have one particular file up.
+But what I want to talk about is the command palette. And if you hit CTRL-Shift-P on, Windows, or, what is it in Mac? It's,
+I had that on the slides, because I knew I'd forget.
+I thought I had it.
+Does anybody know what it is? It's just Command-Shift, okay, good. Yes, so Command-Shift-P brings up the Command Padlet.
+And this is a really useful way for interacting with a whole bunch of different commands that this IDE can do. And so, for instance, if you don't like the default light theme, you can…
+toggle it around, and so if I hit Ctrl-Shift-P, and… I'm already in dark theme, and so, if I just type in the word light, I can toggle between light and dark theme.
+Who likes light theme versus dark theme?
+Hands up for light beam.
+Hands up for Dark Feet.
+All right, okay. This is actually a greater portion that likes light theme than I'm used to having. It seems that dark theme is, is more common. Whatever.
+Okay, so that's what the command palette is. We are going to use it as the key way that we interact with GitHub now. And so, you could do everything in GitHub the old-school way, which is the actual command line, but you might find this more useful. And so, to do that, we first need to connect our VS Code program to our GitHub account, which is
+already created. And so to do that,
+down in the lower left of your VS Code window, you'll see a little icon for GitHub. I'm looking at it on mine. Mine's already logged in, so I can't show you, but it's down here. When you click that.
+It'll prompt you, as you see up here, to sign in and synchronize across devices. One of the things you can actually hit, I think it's called Settings Sync, and we are going to use GitHub to sync our settings. This means that if you have VS Code on different machines, or on your phone, or on your browser, all of which you can do, you will have the same setup. It becomes like your Swiss Army knife of everything.
+Okay, so once you do that, it should pop up a browser, select GitHub as the way to sign in, click some of these things, and it'll authenticate your VS Code, and you are now able to push and pull code directly within VS Code.
+Does everybody have VS Code linked to their GitHub now? Mine says…
+Sing is fun, but I don't seem to.
+Let me check… take a look at your screen.
+It's a sunset.
+Is it possible you've already signed in? Yeah. Oh, if you've already signed in, then you're good. But it doesn't matter.
+I don't think so. We'll find out in a moment, when we do our anchor. Everybody else, were you able to get your VS Code?
+Excellent.
+Actually, to answer your question, the way you can tell, is… What we're gonna do…
+When you're back in VS Code, let's pull up the command palette again, Ctrl-Shift-P, And…
+the, you can see I use this a lot, and so the first recommended one is git clone, but if you… if it's not there for you, just… you can search for it, clone. If you hit Git Clone.
+And you have the option to clone from GitHub, it means you are connected. Does that work for you?
+Then we're good, okay. Actually, I'm going to return to that in a second, sorry to make you do that, but I want to first talk about where we are going to clone to.
+So… Let's talk again about file structure.
+In your users directory, remember we created this files directory, I want you to create a new folder called APEC8602. Apologies if you've already done it with a different name, but I would like you to rename it exactly that, just so that we don't have typo issues in upcoming code.
+So taking a look at mine, so there's my users… There's my files…
+Here, I have APEC 8602.
+And in here, You should have nothing now.
+This, I already cloned it, but this came from GitHub, okay? And so it's a little confusing. The… the GitHub repository is not the outermost APEC 8602. We're going to have one inside, and this is the one with 2025 on it. That's going to be our… what we cloned. And so how do we get that there?
+You could do the command line, but what I'd like you to do is just remember this location.
+And when we go back to VS Code, Now, let's hit… the command palette, Ctrl-Shift-P, Bring up clone.
+And now, at this point, you could copy and paste the course repository, that's sometimes the easiest, but I just want to show you the sort of interface way of doing it, is because we've just now synced our account to GitHub, we can say clone from GitHub,
+your search will probably not find it yet, but when you start to have a big codebase, it does a pretty good job. It looks through all the repositories that you have on your user account, and so I can already see I have jandrewjohnson slash
+APEC 8602-2025. You could search for that if you want to, but probably the best is to just enter the URL.
+And it gets you to this screen.
+Let me pause there. Everybody get it to the point where it's asking you where you would like to put the repository.
+Alright, I need active nodding so that I can… no, okay, thank you. Again, just to reiterate, like, we're getting really hands-on now, and so if I ever say, did everybody get to this point? I mentioned this in the class.
+I really love it when people enthusiastically nod yes, and or enthusiastically nod no when not.
+So that we can troubleshoot and all be on the same page.
+You got it. Okay, perfect. See, I just had to stall a little. Is it cloning?
+Yes, we'll do that in just a second, but let me answer the question over there.
+Yeah, I don't think we are supposed to speak to… Okay.
+So, if you're not connected to VS Code, let's, I'm sorry, your VS Code to GitHub.
+Let's troubleshoot that. The easiest… one way you can do that is… On the command palette, just…
+type a search for GitHub, sign in.
+Command down here.
+Strictly.
+Try closing this.
+And, show me how you look at it.
+Everybody's opening a distributing.
+Excellent.
+with good trust.
+normally the only triggers is we download something, so I don't think you trusted it.
+Now, tribal.
+Right.
+Try a phone behavior.
+It's now as an opportunity to walk everyone.
+Yep, okay, we got it.
+I swear our computer permissions issues is, like, the thing I hate the most. It, like, a lot of bugs come up simply because it was in restricted mode in this case.
+At some point, I should tell you the story of the 6-month fight that I had with OIT here. I bought myself a super awesome supercomputer with 128 cores and a terabyte of memory, and
+they wanted to have it locked down and not give me administrator rights. That's like, I don't know, giving somebody the Sistine Chapel but telling them they can't go in it, or something like that. And so it took me 6 months
+to convince them to just let me wipe the machine. And I had to threaten them that I would do it myself if they wouldn't do it for me. And so, anyways, they were worried about security things, and my answer was.
+assume I'm a security risk, treat me like a knowledgeless student that just needs the Wi-Fi. That's the only thing I needed. I just wanted my machine back. Anyways, that's my rant. I really hate security settings. I understand the purpose, but boy, are they a pain. Anyways…
+Okay, so now we've all logged in, and so now let's go back to the actual clone, and so you did git clone. Hopefully you haven't set where you want the repository to go, because I want to talk through that file structure. So, however you prefer to navigate, go to your users, files.
+select 8602, it should be empty if you haven't, and then select that as the repository. Don't select this, it shouldn't be there so you can't, but make sure it's 8602 that you select, and do that.
+And when you do that.
+you will now have a new directory that was just downloaded, into your 8602, and you should have, then, APEC 8602 2025, which is the actual name of the repository.
+And in there, you should see a bunch of files that were downloaded, like, for instance, examplejulifile.jl.
+Did everybody get to that point and have it organized in this way?
+Yes. So… whenever I…
+I always see the huge trustee authors. Yeah. Is there any time where I should press, you know?
+It's really unlikely, the…
+There are… it is, in principle possible that somebody could have code on your machine that would, like, delete all your files or something, and if you just ran that file, that would be bad.
+I guess that's a risk we take. So do you… if you trust me, yes. You're gonna have a hard time completing this course if you don't trust me. I don't have a good answer for that. All I will say is I've never not trusted something, because I follow basic good practices. You know, I've never… I haven't gotten a virus in decades.
+Because I don't do bad things, and so all the instincts you have for not going to suspicious sites, or falling for phishing scams, or stuff like that, just be a good internet user and you'll be fine.
+The second question, so, let's say you update your GitHub.
+And then…
+Like, should I re-clone again? We'll talk about that. It's called git pull and git push, but we'll come to that in a second. Cloning just creates a brand new one, if there's nothing there.
+And so it doesn't… what we're talking about here is, what happens if you clone a repository, then somebody like me makes a change? This is exactly what Git is designed to work really well on. And so the answer is.
+the sort of workflow that you follow, and I'll dive into this in more depth, is when I log on to any project that is on Git, I actually have my VS Code configured to automatically do a Git pull. Many people like to do that manually, so they can sort of keep control of it, but what happens is when you do a Git pull.
+Either it'll find there are no changes, and it'll say everything is up to date, or it will find that there are new files.
+And then it will check whether or not there's a conflict.
+If there's no conflict, it'll go ahead and download them and add them to your repository. The challenging point is what happens if you edit a file, and I also edit a file, it'll then go into a urge situation, and GitHub has very… or Git has very robust tools for dealing with that.
+We'll come to that in more detail in a subsequent lecture.
+Any other questions?
+Last question. Do I clone to my own rep, or to your rent?
+Cloning refers to getting the files onto your computer. It doesn't necessarily mean putting it on the online GitHub hosting.
+And so you are not actually doing either. You are just cloning directly from my website to your computer, but it hasn't saved it as a repository on your user account either.
+There's all sorts of ways you can do it. Another common workflow is what we did for the Earth Economy dev stack. I showed you how to fork it. So that is… a fork refers to when you take somebody else's online repo.
+and make a copy of it on your personal GitHub account. When you do a clone, then, you could clone your own.
+If you do fork, then when you clone, you clone your fork of the original. Here, we took a shortcut. We didn't even fork it, we just cloned directly from, from mine, and it's not yet on your user account.
+But you could do it in the reverse order and say, okay, now that I've cloned it onto my local machine, I can now publish it, and that will create a new repository on my user account.
+This way, possible.
+Oh, okay. I hadn't thought about that.
+So, what we're gonna do is…
+This is… okay, I should have been more clear.
+I actually want you to clone it again, not from the fork that you created. Apologies about that. So let's talk this through very carefully.
+on GitHub.
+So here's my GitHub, this repository is my version.
+If you go to this one, it's public, and so you're able to get access to this repository.
+From here, that's where the other time… I thought I only had you fork the dev stack, but regardless, we're gonna,
+Go ahead and, create a direct clone of this one, not of your user account.
+And so, what that means is, in particular, I just want you to copy this URL. When you fork it, what happens is it'll create a new version of this, but with your username here.
+And so, just so that we all have the right files today, I want you to go ahead and delete the one that you just cloned, if it was from a fork, or even if it wasn't, let's just do it again for practice. But this time, point directly to this URL, okay? And so for that, copy that.
+VS Code.
+clone… Oops.
+And right after you select clone, instead of using the interface, I think that's where I got y'all confused, is this probably populated with your version of it? So that's why it was the wrong one.
+But instead of the interface, just, directly provide the repository URL, to github.com slash my name slash it.
+Alright, so then when you do that, then save it in the same location. And to verify that you've done it correctly.
+What you can do is go in here and make sure you see all these files.
+Do for a second.
+NPS comes autonomy.
+We just… The search bar will be URLs.
+In the command palette, You first search for clone.
+And once you have clone, it actually asks you for the repository URL.
+I should delete a folder. Yes.
+Police wanted to come in.
+It's like no citizens.
+You might also be in restricted mode.
+No, I don't… Let me take a look.
+So what are you?
+Ctrl-B.
+Different tools we have the same time.
+So, control shifts.
+How's it going over here?
+Alright, you got it all.
+Fair enough, thank you.
+really phrasement.
+When you get entry-level estimate.
+What are you doing?
+Let me see what's needed.
+Should be an old version of it.
+So yeah, what we need to do is,
+delete your repository that you currently have coded, and we clone the one from my URL.
+Yeah, how are you? Yeah. Good, okay.
+The Explorer would probably break, because that's the user interface, rather than just computation.
+So that just might be a different sentence. You could get it to work on.
+That would be important.
+I don't even get the user interface explorer on any side, but…
+MSI, it's really just the basic development industry.
+Still haven't given it to be canceled.
+Alright, I'm gonna make sure everybody's on the same page here.
+Yeah.
+If they actually take a control shift beyond the adjustable consequences.
+It is. Let me make a point on that for the recording.
+All right, we've diagnosed an interesting problem.
+some of what was going on is, instead of hitting the shortcut Ctrl-Shift-P to open up the command palette, some people were clicking this very tempting box.
+When you click on that, it sure looks like the command palette, and it looks like a search window, but it's actually not the command palette, it's the search window. Incidentally, you can type the caret to the right.
+And that converts it to the commands palette. That would have been the same as if I had
+hit Ctrl-Shift-P, you see it just pops up here, and it pre-populates it with the caret to the right. But if you do the tempting thing, and just click on that search box, it won't default to the command palette.
+I agree. Although, to be honest, I use both so frequently, like, I… I rarely use my mouse to navigate to a different file. I just hit… so if you hit CTRL-P, that brings up the search.
+So, like, to switch to a different file, I'll usually just CTRL-P and bring up the file that way. And so, they are both used, but you're right, it is kind of confusing. I'm glad we diagnosed it. Sounds like we got it all, sorted over here.
+Excellent.
+So, side note, this is how the class is supposed to go. Like, it's gonna be a lot of me walking around, making sure the software is working. This is what I think, in my experience, is the fastest way to very quickly get people up to speed with a pretty powerful set of code.
+Okay.
+So, now we have our VS Code, we have cloned the course repository, and you have a number of things that I want to quickly talk through.
+Also, one side note, as an absolute fail-safe, there is also a download zip file option in the green GitHub code one. That's how, like, most people want to interact with Git. It seems like being in charge of your own downloads
+should be doable. The problem is that we'll break your linkage to the GitHub thing, so you won't get updates, or you'll always have an out-of-date one, so we're not going to use that.
+Okay, so actually I'm gonna skip that, and we're now just gonna go straight to configuring VS Code for Julia.
+In VS Code, you, will find an extensions icon on the left search bar, or left toolbar. It's, this one right here.
+Give that a click, and search for Julia.
+Again, this is why VS Code's so awesome. It's got tons and tons of really cool extensions.
+And there's, like, an officially supported Julia one. So some people are like, wait, I just downloaded VS Code and it doesn't already have Julia? Well, no. It has… you have to get the extensions, because it can work for hundreds of different programming languages. Same thing if you want to do Python, you have to get the Python extension, but that's just…
+So that you have total control.
+When you do that, it will, add the extension. If you're a clever person, you might have noticed once you add that extension, the example juliafile.jl will suddenly be colorful.
+Among other things, this means that your VS Code now understands the Julia language and can actually identify typos or mistakes that you've made.
+using here is purple because that's a Julia command. This is git model is yellow because that's a object method, function, etc. And so you know it's working there.
+Okay, so… What's that?
+Of the instant photos of Julia.
+Which is junior, but we've…
+But from here.
+people.
+Yes, let's talk about that.
+Few notes that might be helpful.
+So yeah, Julia is the first one that comes up. Julia language is the publisher, that's, like, the official provider of Julia. One thing I've seen is, how do you get the right file open? And so I'm going to go a little bit out of order here and, mention an important concept in VS Code.
+There are two different ways you can have it opened. You can open it by looking at a specific file, or you can have it looking at a folder, which is also called a workspace. And so, if you just double-click on the examplefile.jl, it's going to open it in the mode where it only has the single file.
+But instead, I should have added this in the instructions, what we're gonna do is add it as a folder.
+And to do that, I want you to go to the File Explorer, so that's this icon here.
+And once you're in the Explorer, just right-click in some open space.
+and Add Folder to Workspace. There's a bunch of other ways you could do this. You could go to File, Add Folder, etc. But add folder to Workspace, and it wants you to select the repo that you just cloned.
+I think a lot of people… I forgot that step, because usually when you clone something, it asks you if you want to do that, and so many people already did it. But if you didn't do it, this is how you get it up manually, is you add that folder
+won't do anything for me, because… actually, it adds two instances of it, interesting.
+Whatever. But you will now have the folder added to your workspace. You can have lots of folders, lots of workspaces, and this is another, powerful feature that goes beyond how R does it. In R, you always have exactly one workspace, I believe. Maybe there's ways around that. But here you can manage multiple projects. Once you have that.
+Now, you're not in file mode, but you're in folder mode. And then, when you click on this.
+that's the right way to get it up, because now you've got the file, but you've also got the whole context of the other files around it. Did that work for you, Varun?
+Okay.
+I'm not going to get into these other optional extensions, but there's tons of other ones. The two that I use the most are Quarto, and that's for publishing the website, that we have. So, actually, okay, I will show you, because it is so cool. In your,
+course repository that you've added, there's a folder called Source, S-R-C,
+And if you go in here, you will see something that is
+looks a whole lot like the website that we have, insofar as there's an assignments folder, there's an electures folder, there's a slides folder. If you go to Lecture.
+What do we see here? We see,
+these QMD files. This is called Quarto Markdown. Many of you know Markdown, or maybe you know R Markdown, which is just like an R flavor of Markdown. Quarto Markdown is like a flavor of R Markdown that adds a little bit extra support. Unless you're doing stuff that's really advanced, it's essentially identical.
+It just marked down.
+But what you can see here is…
+This is the website, in the rawest form.
+My sort of belief in life is if you can't express something with 8 bits of information, which is, you know, what letters are, if you can't get to the actual source of it, it's not open source. Or if you can't even understand the source of it, it's not open source. And so what you've got here is you've got the source to our website.
+The only thing you can't do is you can't push it to my URL.
+you could certainly host it yourself. The only protection is you can't push it to my website. But nonetheless, this is the literal file that is used to render our website. And so, I'll give you a specific example. If you go to Assignments here.
+This is what I was working on, with, getting our assignment 3 up when I decided, you know, we really need to have another day of, Julia content before we have the assignment, but I'm totally open source. You can see exactly what I had written up until the point that I decided, I'm not going to publish this today. So, this is not ready. That's maybe a downside of showing you the full open source, is you can even see my mistakes.
+But yeah, I'm like, we need to talk about Julian notation for this to make sense. Regardless, so there's… that's the full website.
+Also, I gave you a version of the rendered website. That's gonna be the same structure, except for what Porto does is it takes a QMD file, and you do, on the command line, you do Porto render, point to that QMD file, and it goes ahead, and depending on how you set it up.
+creates HTML files. And so here's the source of the HTML file.
+But if you go to your file explorer, here's a repository, we went to a rendered website. Now.
+Let's go to lectures, hands-on with Climate IMs.
+Look, it's our website. Except for notice, it is not coming from the internet. It's coming from…
+users, JA John's files. It's coming from the actual repository, and so you literally have a copy of the whole website on your repository.
+This is me just showing off how cool Git is in open source development.
+The other one… the other extension that I'll mention very briefly is GitGraph.
+I have lots and lots of repositories.
+And, it becomes a really powerful tool, but it gets really confusing when you have lots of people editing it all at the same time. GitGraph is just something that shows you the tree of all the different people editing, and so this is one repository,
+some of them are real simple, like, I'm the only contributor to the website, and so that's just a series of changes, but you can… I could revert the website to any state at any point, by going back to one of these other GitHub commits, as they're called. So that's just a call out to GitGraph, it's a useful way of looking at the stuff.
+But now let's… talk about Julia Code. Okay.
+Okay, so the last thing we'll do before we get into the lecture part of today is let's just confirm that everything is set up correctly, and to do that, go to examplejuliapile.jl.
+And in here, this should look really familiar. This is exactly what we entered in on the command prompt, last class. The difference is, we entered it one line at a time. We wrote, using Mimi, enter, and it computed it. Then the next one it computed. But now, we have a JL file, and so when we run this.
+If we wanted to use the command prompt, we could just type Julia space
+and then examplefile.jl, and it'll run all these commands, right? But we're in an IDE, so let's use the power of that. And so over here, the run button.
+It gives you lots of different, run options,
+Let's just go with the default, hit the run button. As long as this is what's open, this run will now launch that.
+And so, it ran Julia on a terminal, it's just doing it for us.
+this code actually takes a little while to calculate, because it's going to do all the steps. It creates the model, it does the running, and we won't probably see anything until it hits the Explorer. Did anybody get an error message or anything?
+Alright, let's wait till mine pops up, just so we can see.
+In a certain sense, this is annoying code,
+Because there's no indicator that it's working, which is sort of bad design. But you can see now mine has succeeded, we just have solved the dice model again, and we can say, what is the total utility?
+Maximization.
+There are 4,485 trillion units of utility in this optimization. Yay, that's a lot of utility. Okay, I was just stalling to make sure that everybody else's computer caught up. Did everybody's Julia file run successfully to the point where you got this?
+Some yes, no over here.
+So…
+Yeah, it looks like it's just a big island stuff, which is what I see.
+Looks like an expression, hasn't been yet, so it's…
+Okay, I'll send out the mouse… Here's friends. Here's where I'm…
+Okay,
+Couple of gotchas that I saw. The one over there is if you've never run Julia before on your computer, it pre-compiles everything, and that's going to take a really long time, so I'll check in with you to see if it works when it finishes.
+It did work, okay, good. All that was is it was taking the .jl files and converting them to zeros and ones. That's what we mean by compiling. That code runs much faster. That's why Julia is so fast.
+The other thing that I saw is some people were getting errors, like, cannot run using Mimi, or can't find the Mimi thing. That just means that you haven't installed Mimi yet, and so I'm going to leave that to you to do outside of class. You can try to get it done now, but it might take a while. Refer back to my video lecture that we did. You actually have to do the steps that I said
+to, add Mimi as a package, okay?
+Great.
+Okay, and so… now…
+we're at a good point where we have the tools in front of us, where if I were to give you an assignment that were to say something like, oh, I don't know, suppose the climate sensitivity parameter used by Nordhaus is a little too optimistic.
+change that and rerun the model, this is the file that you would change. Maybe create a copy of this or whatever, but I'll give you a hint on the assignment. There'll be some version of
+m dot update parameter, or something like that, I forget the notation. But you now have a scratch pad that runs, and you can make the change, run it again, and use the Explorer to see what the results are.
+Okay.
+So now, after class, I'll finally finish editing that assignment and push it all to you, but you'll have plenty of time to do it.
+Any questions?
+Yes, you can do it however you want. That's probably best. At the end of the day, what the assignment will ask for is, a PDF
+outputting the results that I ask for. And so, in a certain sense, it doesn't matter how you do it, as long as you get that PDF.
+Sensitivity factor would be changing across the main events for 2016. I think so. Oh, no, no, no. In the M model.
+So, like, MimiDice, this is the package, but we used it with this method get modeled. Yep, exactly. So it returns the m object, and then… yeah,
+Don't worry about that now, because I'm gonna be pointing you to…
+Oh, yeah, I didn't publish it on this one yet, but you can see the source file for it. But the Mimi documentation has a really nice tutorial that you will use to learn that notation.
+Great.
+Okay, any last questions before we switch to… debates.
+Okay.
+Awesome. Let's see what happens if I go max…
+Hmm, that's always a problem.
+No, no big there.
+Oh, we had a bunch of chats I've been missing, sorry about this.
+Okay, good, you found the slides…
+Oh, I forgot to push the new slides to the course repo, and so hopefully y'all are… just went to the Google Drive. Yep, y'all are smart. Good.
+Okay. I'm so Julia. Okay.
+So, shifting gears… Let's talk about…
+The one last thing in the climate IAM world that I think is necessary to understand to get this work done. There are three big debates. I indicated a few of them, but let's put some more detail to it.
+Number one is, what is the relationship of a change in carbon to the change in temperature?
+So, there's no doubt our industry produces carbon. We can directly observe CO2 levels are rising. Not even the hardest core climate skeptic will try to say that CO2 is not rising, because that you can validate that yourself with basic equipment.
+The question that is more uncertain, and there is real uncertainty on this in the scientific
+What is the relationship between a change in the concentration of carbon in the atmosphere and the actual temperature?
+And so, this coefficient, essentially the change in the temperature multiplied by the climate sensitivity coefficient, will get… will render a change in temperature. I think… did I say that right? Change in carbon.
+With a coefficient leads to change in temperature, and that's referred to as the climate sensitivity.
+In, in the bottle.
+The second one is, what is the relationship of change in temperature to change in economic damages? That's even harder to establish.
+We can think of all sorts of ways that it would be related, like, hot days mean that we need to spend more money on air conditioning, and that's actually a damage, because now that's money that we can't spend on other productive things.
+Or it could be more directly a damage, like the fact that when it's hot, it is hard to work in a field. And so there's all sorts of empirical evidence on this that our respiratory system doesn't work as well when it's hot.
+You know, I'm trying to stay as uncontroversial as possible. I can't run as fast when it's hot. I know that at a very deep level.
+Anyways, the damage function, the exact shape of that, that's where a lot of the actual, well, debate is, but also a lot of the work on trying to make a better model. There are many different parameterizations of the damage function.
+And the final one, this is the one we have already talked about, is how much do we care about the future? You'll deal with that a lot in 8601, but basically, our choice of the discount rate determines how much we care about the future, and this matters in climate change, of course, because most of the benefits of reducing our emissions are going to be felt by future generations, or even us in the future, but their costs are right now.
+So how you weigh the value of future benefits to current costs is critical.
+So, walking through those.
+I'll give you the TLDR, is this. This is a good recent review of all the evidence on, the climate sensitivity parameter. And so, I'm making this a little bit glib, but, you know, whenever there's a scientific debate.
+the first step you should always almost instinctively look for is what's the most recent peer-reviewed meta-analysis of the work? And hopefully it exists.
+This is, maybe there's a newer one now, but the point is, this Sherwood et al. summarized a whole bunch of different estimates of
+the climate sensitivity parameter, and created a, you know, a best fit, essentially, of all the different estimates out there. And so, I guess the takeaway is it's a little under 3, in terms of the relationship between the temperature increase in degrees C from a doubling of the CO2 atmosphere, and the… this, I guess, here, is the probability density function for that S.
+What I do want to show you… sorry, question?
+Oh, okay.
+is, you know, you might be wondering, okay, well, that's great, you just took it from the literature, that's not very informative, though. Where does it actually come from? In this class.
+We're actually going to learn our last tool, which is Python, in a subsequent lecture. Once we have Python under our belt, we'll actually be able to run one of the models and reconstruct this curve itself and calculate what is the climate sensitivity directly.
+And basically, we're gonna run what is called the magic model. It's very magic. It's a reduced complexity climate model that can actually run on your laptop.
+And it's a… it's one that is used in a lot of the integrated assessment modeling world because it's consensus and easy to run. But basically, it's a model that takes emissions, this is the input from the Econ model.
+Calculates, then, what are the concentrations, you know, this is basically keeping track of all the chemical reactions and, how much of it gets sucked back down by plants, etc. From there, calculates radiative forcing.
+that's measured, basically, how much, effective heating is happening on the surface of the Earth, which…
+finally, results in the climate response, or the delta temperature, the change in temperature. That is then the key thing, that is going to be put into the damage, functions, for how much it impacts the economy.
+If you want to go into depth in this, this is one of my favorite figures. I really… I'm an awful graphic designer, but I… I guess I really like complex graphics. I love this one. This is from the Magic Paper, and it's showing the temperature history in 3D,
+Going out to today is here.
+And then we have different trajectories.
+Under different SSPs.
+And then, you know, these different bars here, for a different SSP, you know, there are different assumptions,
+about, you know, the different inputs into the magic model. And, you know, it also even illustrates what is mitigation? It's basically saying, for a given SSP, how effective are we at reducing it? It means we're going to bend the curve down like that. I love that figure because it's unnecessarily complex and pretty.
+But yeah, in the end of the day, what it's giving us is just
+the results from that for all of the different SSPs and RCPs that we've talked about. You know, you can look into these, but generally speaking, it's, you know, when does temperature peak? This is going to be a really big question for our economy. Here's an example of a bad RCP.
+You know, so looking at this one, this is for…
+8.5, different climate models will have different ones.
+But ultimately, all this can then be summarized back down into that single parameter that we care about as economists.
+You can leave all the climate stuff to the climate experts and just extract from it the climate sensitivity parameter. And so, here's the results of the magic model under a ton of different parameterizations, trying to come up with what is the key estimate for that figure.
+That, then… Transitions into the damage function.
+Econ models, sometimes they will run the climate model, and that's important because then if you have a change in emissions, you can directly calculate the change in climate damage. Some of them just take scenarios, but either way.
+you go from a change in temperature to a change in, I'm sorry, a change in CO2 to a change in temperature, but now we need to go one more step, which is to a change in GDP, or economic damages. And so, you know, what are the impacts of climate change?
+I remember when I was, like, 10, and I first learned about climate change, and they were talking about sea level rise, I was thinking, that… that sounds like science fiction. That doesn't seem very realistic.
+But it is, it's real, it's really realistic, and I think the best proof of that, you know, that these crazy scenarios where all of Florida down here gets inundated with 6 meters of rise, you know, could our climate system really do that?
+Well, this is what the world looked like, 20,000 years ago. Indonesia? Not an island. You can walk to Australia. So basically, you know, here is the existing coastlines, and
+Look at that, hey, not gonna say anything there.
+But the point is, it's very different.
+And so, you know… oh, and the ice sheet's all the way down here. This is, you know, actually, humans made it to North America, very likely, by walking across this. My point is, sea level rise, we don't observe it very directly, but it's definitely possible and drastically changes things.
+Sorry, that was not too related, other than to say it's cool, and you could see where a change in temperature leads to a change in economic damages, like, what if you built a big skyscraper here, or a condo, or something like that? That's going to be some economic damages.
+Okay, so what that relationship is, we're going to dive into that in much more depth in subsequent lectures, and a lot of the advances we've done here in Minnesota with earth economy modeling are adding detail there, essentially. You know, we're saying that ecosystem services also matter to the damage function.
+So we'll return to it. And the final one is just, I've said this before, is that the discount rate is very controversial, and this is because it leads to, very different estimates of damages as expressed by the social cost of carbon.
+And so, if you don't know it, this is one of the key terms that connects
+climate economics with policy is, it identifies in the economics what is the social cost of carbon, you know, measured, for instance, by how many additional dollars of damages to the economy, expressed as GDP, or however you want.
+will come from one more ton emissions of carbon dioxide. And so, it requires all of that modeling change from carbon to temperature, concentrations, etc, through to damages.
+And so before I go on and talk about the specific policies.
+the main contribution, from a policy perspective that the DICE model, did
+And if you have your interface up in Julia, you can now look at this, is it estimates the social cost of carbon. So what… what you ask yourself, why is it running, a simulation without climate change, and then where you… a simulation where you do add in these carbon emissions?
+Well, because it's optimizing GDP, and it's thinking about this, you can actually identify how many dollars of damages for the marginal next ton of carbon is there going to be in that optimal state. You can calculate that either for the baseline, where we have no mitigation policy, or you could calculate
+what that estimate would be under some sort of more realistic policy, but the point is, DICE gets us the social cost of carbon. Run it multiple times and look at what is the, change in GDP from that, they call it an impulse, a little bit extra bit of carbon going into the model.
+And this is, important because, like, the Biden administration, chose $51 per ton of CO2, and this has dramatic implications for any cost-benefit analysis. And so, if you are thinking about the cost-benefits of, you know, building a coal-fired power plant, if you also consider as costs.
+$51 per ton times all the ton of coal that that… or CO2 that will emit, it really quickly flips which things are worth funding and which are not.
+But of course, you know, we're going back and forth, we're in a chaotic era of, of…
+climate policy at the moment, and so I'm not going to dive into the current politics, because I don't understand it myself, other than to say that even in the academic literature, there are differing views on the SSC, or SEC. I would point to one particular study, in Nature that I think was really good, Renards et al. If you need to get, like, just a good estimate of what the correct
+social cost of carbon is, I'd say this is the best one. They report it for a bunch of different discount rates, and so it kind of leaves it to the user. Choose your discount rate, whatever, but with a 2% discount rate, they get, for instance, $185 per ton.
+recall, of course, that I said, that the…
+Social cost of carbon is heavily determined by the discount rate.
+This is an illustration of that. This comes from that Renert et al. Nature 2022 paper, but basically, here, the different colors represent, different, near-term discount rates.
+You'll notice these are all much lower than the Nordhaus rate, so that was kind of the main criticism of Nordhaus, is he used too low of a discount rate. They don't even include his. But you can see with a 3% discount rate, the most likely estimate
+I guess the central point, it's a skewed distribution, so not most likely, but…
+50% of the PDF is, $80, with 3%,
+And with 1.5, it goes up to $308.
+What do you think it goes up to with a 0% discount rate?
+You can't calculate in your head, but is it…
+A lot bigger, right? If you cared about the future as much as you care about the present.
+Basically, it's hard to do anything for yourself, because there is, in principle, an infinite number of people. You know, a lot of our assumptions assume an infinite horizon, infinite number of people, and we care about all of them exactly as much as we care about ourselves. Our utility, no matter how high it is right now, divided by
+infinite utility means that it would be optimal to always invest in only mitigation. And so this is almost a criticism of how some people look at climate change, is
+They think it is unjust to lower how much we care about future generations. We should care about them just as much. The problem is, mathematically, with complete certainty in this argumentation, if you did literally care about future generations exactly as much as you, the optimal amount of money you should spend on yourself is zero. Exactly zero. It's because it's always going to be divided by an infinite sum.
+This is kind of a mathematical aside, because nobody really thinks about that, but in the very least, you do have to have some, at least tiny, discount rate, or you get to very strange results. And I could point you to interesting articles like,
+Weitzman, the dismal Theorem, or stuff like that. They're actually kind of uninteresting papers that essentially are, stupid tricks with infinity. Does anybody get that reference? I'll leave it.
+But basically, a lot of problems happen when you have infinities.
+All right, so, the assignment is essentially going to now have you play around with the DICE model, and try out some of the different values for these different things, and make some conclusions based on it. Any questions before we transition to inclusive wealth in the last 7 minutes?
+Okay.
+This year, I spent much more time on climate IAMs, and I'm happy I did. And I think the reason why I'm happy is because most of the time, when people think about what do environmental economists
+think about, when… what do they work on? It's climate IAMs. That's a very common thing. If you're not doing some sort of causal inference, or other such approach, you might… might probabilistically be very likely in the climate IAM space.
+Okay.
+Transitioning to the article that we read for today about inclusive wealth, I like this paper, and I put it here because its answer is in a really sophisticated and compelling way, I would argue.
+what should we optimize? DICE was essentially optimizing GDP. Get the most GDP, given that we can spend mitigation on avoiding future losses, right? But what if we don't really care about GDP? I don't think I need to,
+point to the huge literature out there that GDP is not a great metric of welfare.
+even if you are only an economist and don't care about any other discipline, we also literally define welfare as equivalent variation, right? That is the area under the curves, the consumer surplus plus the producer surplus. That is literally not the same as GDP. And so,
+in the DICE model, the focus on GDP is just not right. I mean, to be fair, it does include welfare, but there's this undue emphasis on GDP.
+But given this, I also… I also like this quotation.
+I'm claiming here that caring about the future
+with some amount of discounting, is not partisan. Here we have Teddy Roosevelt, 26th President of the United States, saying, the nation behaves well if it treats its natural resources as assets.
+Key econ term there, right? Which it must turn over to the next generation increased, and not impaired in value.
+This is, I think, a pretty nuanced view of what we really mean when we mean sustainability. We need to think not about what is GDP in a given year, but rather.
+What is going on with the assets that we have that we might, in the future, use to generate value?
+We'll return to that. The segue here from climate models is, you know, something like DICE,
+is a great approach for estimating the cost-benefits of mitigation, but they are limited in all sorts of ways. You know, a single aggregate commodity, single link between the economy and Earth's systems.
+Very simplified representation of nature, and all sorts of problems. But the biggest one, perhaps, is that there's a single aggregate damage function that expresses things in a change in total output.
+But in reality, that's… the world is not like that. There are multiple goods. There are multiple links,
+in multiple ways in which the economy is influenced by nature. And so if we try to go ahead and use the DICE model, or something similar in ethics, or decision-making, policy support, it can become quite problematic.
+And so, you know, what does DICE say about sustainable development? Is when you run it, now that you've got the result open on your computer,
+there's a tendency to say, oh, that, that is the optimal sustainable development. But of course, we all know, as good economists, it depends on our assumptions, like one region, one sector. And from there, could we really say anything useful about the optimality of that?
+And it is an optimal, mathematically, but could we say anything useful about, say, which countries or industries are the winners or losers? Well, no, because we only have one region, one sector.
+To be fair, even Nordhaus himself has created the Rice model, which is essentially dice with lots of regions, and so this is a well-known thing. It gets challenging to solve this type of model with lots of regions, and so that's why you don't see it scaled up to tons and tons of regions or high-resolution data, like we'll deal with soon. But I'm just making the point that, you know, I'm a little bit oversimplifying
+the dice model. The reason I chose to do that, though, is the dice model is central in the actual political debates that we have.
+people who want to use the results from the DICE model that say it has a really low social cost of carbon, they're not going to know about the Rice model, or if they do, they're going to pretend it doesn't exist. And so I'm focusing on DICE a little unfairly, but it's because it's so central in politics.
+Okay, but I think the deeper question is, but what is the best approach for dealing with sustainability? And this is yet another example of why I love economics, is we can actually draw a pretty good definition of sustainability directly from econ theory.
+And, I'm gonna skip this. Other than to preview, we'll probably spend the first 10 minutes of next lecture on this, but to preview what I'm gonna say is
+Using econ theory to derive it, inclusive wealth is a pretty good metric. It's my personal one that I use for the thing that we actually do want to optimize to have good sustainability.
+It is defined as the aggregate value of all capital assets
+measured in their current net present value, where the value of a unit of that capital asset is measured by its contribution to current and future well-being, and its aggregate, so all people. We'll unpack that.
+And, let me show you the last thing. Oh, yeah, I got a lot of… oof, boy. I'm gonna cut a lot of this, so don't look at the slides. I just want to get to the punchline. What is inclusive wealth? This is what we will then focus on next lecture. We're going to take our standard framing of production.
+Do what we've talked about before, of including a lot more types of wealth, hence inclusive wealth, but adding lots of other types of capital.
+And then using that equation, to define…
+Yeah, there it is. That's inclusive wealth. This is a preview, so you don't need to understand it, but we'll talk in depth about it, is, the world is good. Is it good and sustainable if the change in total derivative of the value function, taking a vector of capital assets.
+is going to be greater than zero when, calculated over multi-periods. So with that, I think we're good for today. Any questions?
+Sweet. Keep an eye out for Assignment 3, which is going to go live as soon as I finish it, which might be on the plane, I'm going to Chicago in a matter of minutes. No, I have to teach a class before this. I forgot, I have one more class.
+Anyways, bye!

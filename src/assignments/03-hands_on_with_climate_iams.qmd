@@ -10,11 +10,19 @@ Q2: Write 1 to 3 paragraphs supporting or critiquing this sentence in Nordhaus 2
 
 Q3: In Nordhaus 2017, section "**Growth-Corrected Discounting",** explain in your words how he argues for the discount rate he chooses and why he thinks this is better than alternative estimates. Do you agree?
 
-Q4: Rerun the DICE2016 model with a lower discount rate (you may choose the exact reduction). Document with graphs and a paragraph what is different in your new equilibrium. As documented in the Tutorial, the model is structured into Components and then Variables/Parameters. You can access these by name from the model object m, using notation like this:
+Q4: Rerun the DICE2016 model but under a scenario where feedback (e.g., melting permafrost further increases methane emissions) causes the linkage between CO2 and resultant Watts per Meter Squared to be 50% higher. Document with graphs and a paragraph what is different in your new equilibrium. As documented in the Tutorial, the model is structured into Components and then Variables/Parameters. You can access these by name from the model object m, using notation like this:
 
-```{julia}
+
+```julia
 m[:ComponentName, :VariableName] # returns the whole array of values
 m[:ComponentName, :VariableName][100] # returns just the 100th value
 ```
 
-To get the exact ComponentName and VariableName, use the Mimi Explorer Window (via `explore(m)` ) and find the exact names there.
+To get the exact ComponentName and VariableName, use the Mimi Explorer Window (via `explore(m)` ) and find the exact names there. You may also need to puruse the Mimi tutorials and/or the DICE2016 source code to find the exact names.
+
+Q5: Rerun the DICE2016 model with a lower discount rate (you may choose the exact reduction). Document with graphs and a paragraph what is different in your new equilibrium. As documented in the Tutorial, the model is structured into Components and then Variables/Parameters. 
+
+Q6: Rerun the model implementing both of the changes above. Document with graphs and a paragraph what is different in your new equilibrium. Also create a table comparing the key outputs of all four model runs (the default, the higher feedback, the lower discount rate, and both changes). Key outputs should include at least: peak temperature increase, year of peak temperature increase, and total abatement cost over the model run.
+
+Submit a single PDF with all your answers to Canvas.
+
